@@ -1,0 +1,27 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:ktx.graphics$arc(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/arc.html
+$dokka.location:ktx.graphics$arc(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Int)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/arc.html
+$dokka.location:ktx.graphics$box(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector3, kotlin.Float, kotlin.Float, kotlin.Float)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/box.html
+$dokka.location:ktx.graphics$center(com.badlogic.gdx.graphics.Camera, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)ktx.graphics/com.badlogic.gdx.graphics.-camera/center.html
+$dokka.location:ktx.graphics$center(com.badlogic.gdx.graphics.g2d.BitmapFont, kotlin.String, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)ktx.graphics/com.badlogic.gdx.graphics.g2d.-bitmap-font/center.html
+$dokka.location:ktx.graphics$circle(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector2, kotlin.Float)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/circle.html
+$dokka.location:ktx.graphics$circle(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Int)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/circle.html
+$dokka.location:ktx.graphics$cone(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector3, kotlin.Float, kotlin.Float)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/cone.html
+$dokka.location:ktx.graphics$cone(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector3, kotlin.Float, kotlin.Float, kotlin.Int)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/cone.html
+$dokka.location:ktx.graphics$copy(com.badlogic.gdx.graphics.Color, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)ktx.graphics/com.badlogic.gdx.graphics.-color/copy.html
+$dokka.location:ktx.graphics$ellipse(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/ellipse.html
+$dokka.location:ktx.graphics$ellipse(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Int)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/ellipse.html
+$dokka.location:ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)ktx.graphics/com.badlogic.gdx.graphics.-camera/lerp-to.html
+$dokka.location:ktx.graphics$moveTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float)ktx.graphics/com.badlogic.gdx.graphics.-camera/move-to.html
+$dokka.location:ktx.graphics$rect(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/rect.html
+$dokka.location:ktx.graphics$rect(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/rect.html
+$dokka.location:ktx.graphics$rectLine(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2, kotlin.Float, com.badlogic.gdx.graphics.Color, com.badlogic.gdx.graphics.Color)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/rect-line.html
+$dokka.location:ktx.graphics$rotate(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector3, kotlin.Float)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/rotate.html
+$dokka.location:ktx.graphics$scale(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector2)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/scale.html
+$dokka.location:ktx.graphics$scale(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector3)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/scale.html
+$dokka.location:ktx.graphics$translate(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector3)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/translate.html
+$dokka.location:ktx.graphics$triangle(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/triangle.html
+$dokka.location:ktx.graphics$triangle(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2, com.badlogic.gdx.graphics.Color, com.badlogic.gdx.graphics.Color, com.badlogic.gdx.graphics.Color)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/triangle.html
+$dokka.location:ktx.graphics$update(com.badlogic.gdx.graphics.Camera, kotlin.Function1((com.badlogic.gdx.graphics.Camera, kotlin.Unit)))ktx.graphics/com.badlogic.gdx.graphics.-camera/update.html
+ktx.graphics

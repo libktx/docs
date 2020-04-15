@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PooledList.iterate - collections</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">collections</a>&nbsp;/&nbsp;<a href="../index.html">ktx.collections</a>&nbsp;/&nbsp;<a href="index.html">PooledList</a>&nbsp;/&nbsp;<a href="./iterate.html">iterate</a><br/>
+<br/>
+<h1>iterate</h1>
+<a name="ktx.collections.PooledList$iterate(kotlin.Boolean, kotlin.Function2((ktx.collections.PooledList.T, ktx.collections.PooledList.PooledListIterator(()), kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="identifier">iterate</span><span class="symbol">(</span><span class="identifier" id="ktx.collections.PooledList$iterate(kotlin.Boolean, kotlin.Function2((ktx.collections.PooledList.T, ktx.collections.PooledList.PooledListIterator(()), kotlin.Unit)))/reversed">reversed</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="identifier" id="ktx.collections.PooledList$iterate(kotlin.Boolean, kotlin.Function2((ktx.collections.PooledList.T, ktx.collections.PooledList.PooledListIterator(()), kotlin.Unit)))/apply">apply</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">T</span><span class="symbol">,</span>&nbsp;<span class="identifier">PooledListIterator</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<h3>Parameters</h3>
+<p><a name="reversed"></a>
+<code>reversed</code> - if true, the iteration will begin from the last element and end with the first.</p>
+<p><a name="apply"></a>
+<code>apply</code> - will be applied to each element in the list. The action gets a direct reference to the list's
+    <a href="-pooled-list-iterator/index.html">PooledListIterator</a> instance, which can be used to modify the list.</p>
+</BODY>
+</HTML>

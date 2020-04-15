@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DelayedAsset - assets</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets</a>&nbsp;/&nbsp;<a href="./index.html">DelayedAsset</a><br/>
+<br/>
+<h1>DelayedAsset</h1>
+<code><span class="keyword">class </span><span class="identifier">DelayedAsset</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-asset/index.html"><span class="identifier">Asset</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code>
+<p>Represents an <a href="../-asset/index.html">Asset</a> wrapper of resource loaded at demand. The first asset getter call causes the asset to be
+scheduled for loading and loaded eagerly - the <a href="#">AssetManager</a> is updated until the asset is reported as loaded.
+Note that eager asset loading might cause other assets to be loaded synchronously rather than asynchronously,
+so it is advised to load eager assets with another <a href="#">AssetManager</a> instance or use them after all regular assets are
+already loaded.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Represents an <a href="../-asset/index.html">Asset</a> wrapper of resource loaded at demand. The first asset getter call causes the asset to be
+scheduled for loading and loaded eagerly - the <a href="#">AssetManager</a> is updated until the asset is reported as loaded.
+Note that eager asset loading might cause other assets to be loaded synchronously rather than asynchronously,
+so it is advised to load eager assets with another <a href="#">AssetManager</a> instance or use them after all regular assets are
+already loaded.</p>
+<code><span class="identifier">DelayedAsset</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.DelayedAsset$<init>(com.badlogic.gdx.assets.AssetManager, com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.DelayedAsset.Type)))/manager">manager</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetManager</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.DelayedAsset$<init>(com.badlogic.gdx.assets.AssetManager, com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.DelayedAsset.Type)))/assetDescriptor">assetDescriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="asset.html">asset</a></h4>
+</td>
+<td>
+<p>Instance of the wrapped asset. Might not be loaded yet. Calling getter of this property without making sure that
+the asset is loaded might cause an exception.</p>
+<code><span class="keyword">val </span><span class="identifier">asset</span><span class="symbol">: </span><span class="identifier">Type</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="asset-descriptor.html">assetDescriptor</a></h4>
+</td>
+<td>
+<p>The <a href="#">AssetDescriptor</a> used by <a href="#">AssetManager</a> to identify and load the asset.</p>
+<code><span class="keyword">val </span><span class="identifier">assetDescriptor</span><span class="symbol">: </span><span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="manager.html">manager</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">manager</span><span class="symbol">: </span><span class="identifier">AssetManager</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="finish-loading.html">finishLoading</a></h4>
+</td>
+<td>
+<p>Forces eager loading of the asset. Note that due to <a href="#">AssetManager</a> implementation, eager asset loading causes
+all scheduled assets to be loaded synchronously until the desired asset is reported as loaded. It is usually
+sensible to use a separate <a href="#">AssetManager</a> for eagerly loaded assets or load such assets after all regular assets
+are already loaded.</p>
+<code><span class="keyword">fun </span><span class="identifier">finishLoading</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-loaded.html">isLoaded</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isLoaded</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="load.html">load</a></h4>
+</td>
+<td>
+<p>Explicitly marks that the asset should be loaded. If this asset is managed by an <a href="#">AssetManager</a> instance, will
+schedule asset loading.</p>
+<code><span class="keyword">fun </span><span class="identifier">load</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-string.html">toString</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="unload.html">unload</a></h4>
+</td>
+<td>
+<p>Attempts to unload the asset. Might throw an exception if the asset is not loaded at all due to <a href="#">AssetManager</a>
+implementation.</p>
+<code><span class="keyword">fun </span><span class="identifier">unload</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../get-value.html">getValue</a></h4>
+</td>
+<td>
+<p>Extension function that allows <a href="../-asset/index.html">Asset</a> instances to be delegates using the "by" keyword.</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="../-asset/index.html"><span class="identifier">Asset</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">getValue</span><span class="symbol">(</span><span class="identifier" id="ktx.assets$getValue(ktx.assets.Asset((ktx.assets.getValue.Type)), kotlin.Any, kotlin.reflect.KProperty((kotlin.Any)))/receiver">receiver</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="ktx.assets$getValue(ktx.assets.Asset((ktx.assets.getValue.Type)), kotlin.Any, kotlin.reflect.KProperty((kotlin.Any)))/property">property</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-property/index.html"><span class="identifier">KProperty</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Type</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

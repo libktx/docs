@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Context.bindSingleton - inject</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">inject</a>&nbsp;/&nbsp;<a href="../index.html">ktx.inject</a>&nbsp;/&nbsp;<a href="index.html">Context</a>&nbsp;/&nbsp;<a href="./bind-singleton.html">bindSingleton</a><br/>
+<br/>
+<h1>bindSingleton</h1>
+<a name="ktx.inject.Context$bindSingleton(ktx.inject.Context.bindSingleton.Type)"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">bindSingleton</span><span class="symbol">(</span><span class="identifier" id="ktx.inject.Context$bindSingleton(ktx.inject.Context.bindSingleton.Type)/singleton">singleton</span><span class="symbol">:</span>&nbsp;<span class="identifier">Type</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Allows to bind a singleton to the chosen class.</p>
+<h3>Parameters</h3>
+<p><a name="singleton"></a>
+<code>singleton</code> - will be converted to a provider that always returns the same instance. If no type argument is
+    passed, it will be bind to its own class.</p>
+<h3>Exceptions</h3>
+<p><a name="InjectionException"></a>
+<code>InjectionException</code> - if provider for the selected type is already defined.</p>
+<a name="ktx.inject.Context$bindSingleton(kotlin.Function0((ktx.inject.Context.bindSingleton.Type)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">bindSingleton</span><span class="symbol">(</span><span class="identifier" id="ktx.inject.Context$bindSingleton(kotlin.Function0((ktx.inject.Context.bindSingleton.Type)))/provider">provider</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Type</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Allows to bind a singleton to the chosen class.</p>
+<h3>Parameters</h3>
+<p><a name="provider"></a>
+<code>provider</code> - inlined. Immediately invoked a single time. Its result will be registered as a singleton.</p>
+<h3>Exceptions</h3>
+<p><a name="InjectionException"></a>
+<code>InjectionException</code> - if provider for the selected type is already defined.</p>
+<a name="ktx.inject.Context$bindSingleton(kotlin.Array((kotlin.reflect.KClass((ktx.inject.Context.bindSingleton.Type)))), ktx.inject.Context.bindSingleton.Type)"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">bindSingleton</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ktx.inject.Context$bindSingleton(kotlin.Array((kotlin.reflect.KClass((ktx.inject.Context.bindSingleton.Type)))), ktx.inject.Context.bindSingleton.Type)/to">to</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html"><span class="identifier">KClass</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.inject.Context$bindSingleton(kotlin.Array((kotlin.reflect.KClass((ktx.inject.Context.bindSingleton.Type)))), ktx.inject.Context.bindSingleton.Type)/singleton">singleton</span><span class="symbol">:</span>&nbsp;<span class="identifier">Type</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Allows to bind a singleton instance to multiple classes in its hierarchy.</p>
+<h3>Parameters</h3>
+<p><a name="to"></a>
+<code>to</code> - list of interfaces and classes in the class hierarchy of the singleton. Any time any of the passed classes
+    will be requested for injection, the selected singleton will be returned.</p>
+<p><a name="singleton"></a>
+<code>singleton</code> - instance of class compatible with the passed types.</p>
+<h3>Exceptions</h3>
+<p><a name="InjectionException"></a>
+<code>InjectionException</code> - if provider for any of the selected types is already defined.</p>
+<a name="ktx.inject.Context$bindSingleton(kotlin.Array((kotlin.reflect.KClass((ktx.inject.Context.bindSingleton.Type)))), kotlin.Function0((ktx.inject.Context.bindSingleton.Type)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">bindSingleton</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ktx.inject.Context$bindSingleton(kotlin.Array((kotlin.reflect.KClass((ktx.inject.Context.bindSingleton.Type)))), kotlin.Function0((ktx.inject.Context.bindSingleton.Type)))/to">to</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html"><span class="identifier">KClass</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.inject.Context$bindSingleton(kotlin.Array((kotlin.reflect.KClass((ktx.inject.Context.bindSingleton.Type)))), kotlin.Function0((ktx.inject.Context.bindSingleton.Type)))/provider">provider</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Type</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Allows to bind the result of the provider to multiple classes in its hierarchy.</p>
+<h3>Parameters</h3>
+<p><a name="to"></a>
+<code>to</code> - list of interfaces and classes in the class hierarchy of the provider. Any time any of the passed classes
+    will be requested for injection, the selected provider will be returned.</p>
+<p><a name="provider"></a>
+<code>provider</code> - inlined. Immediately invoked a single time. Its result will be registered as a singleton.</p>
+<h3>Exceptions</h3>
+<p><a name="InjectionException"></a>
+<code>InjectionException</code> - if provider for any of the selected types is already defined.</p>
+</BODY>
+</HTML>

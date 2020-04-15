@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Context.getProvider - inject</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">inject</a>&nbsp;/&nbsp;<a href="../index.html">ktx.inject</a>&nbsp;/&nbsp;<a href="index.html">Context</a>&nbsp;/&nbsp;<a href="./get-provider.html">getProvider</a><br/>
+<br/>
+<h1>getProvider</h1>
+<a name="ktx.inject.Context$getProvider(java.lang.Class((ktx.inject.Context.getProvider.Type)))"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <span class="identifier">getProvider</span><span class="symbol">(</span><span class="identifier" id="ktx.inject.Context$getProvider(java.lang.Class((ktx.inject.Context.getProvider.Type)))/forClass">forClass</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Type</span></code>
+<p>Extracts provider of instances of the selected type. This method is internally used by inlined injection methods.</p>
+<h3>Parameters</h3>
+<p><a name="forClass"></a>
+<code>forClass</code> - type of objects provided by the selected provider.</p>
+<h3>Exceptions</h3>
+<p><a name="InjectionException"></a>
+<code>InjectionException</code> - if no provider is registered for the selected type.</p>
+<p><strong>Return</strong><br/>
+provider instance bind to the selected class.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="provider.html">provider</a></p>
+<p><a href="inject.html">inject</a></p>
+</p>
+</BODY>
+</HTML>

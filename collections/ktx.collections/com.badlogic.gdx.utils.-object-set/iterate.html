@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>iterate - collections</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">collections</a>&nbsp;/&nbsp;<a href="../index.html">ktx.collections</a>&nbsp;/&nbsp;<a href="index.html">com.badlogic.gdx.utils.ObjectSet</a>&nbsp;/&nbsp;<a href="./iterate.html">iterate</a><br/>
+<br/>
+<h1>iterate</h1>
+<a name="ktx.collections$iterate(com.badlogic.gdx.utils.ObjectSet((ktx.collections.iterate.Type)), kotlin.Function2((ktx.collections.iterate.Type, kotlin.collections.MutableIterator(()), kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">iterate</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$iterate(com.badlogic.gdx.utils.ObjectSet((ktx.collections.iterate.Type)), kotlin.Function2((ktx.collections.iterate.Type, kotlin.collections.MutableIterator(()), kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">Type</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html"><span class="identifier">MutableIterator</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Allows to iterate over the array with access to <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html">MutableIterator</a>, which allows to remove elements from the collection
+during iteration.</p>
+<h3>Parameters</h3>
+<p><a name="action"></a>
+<code>action</code> - will be invoked for each set element. Allows to remove elements during iteration. The first function
+    argument is the element from the set, the second is the set iterator. The iterator is guaranteed to be the same
+    instance during one iteration.</p>
+</BODY>
+</HTML>

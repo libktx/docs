@@ -1,0 +1,5 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:ktx.app$prettyPrint(com.badlogic.gdx.utils.PerformanceCounter, kotlin.String)ktx.app/com.badlogic.gdx.utils.-performance-counter/pretty-print.html
+$dokka.location:ktx.app$profile(com.badlogic.gdx.utils.PerformanceCounter, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))ktx.app/com.badlogic.gdx.utils.-performance-counter/profile.html
+ktx.app

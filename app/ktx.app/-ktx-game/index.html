@@ -1,0 +1,191 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>KtxGame - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">ktx.app</a>&nbsp;/&nbsp;<a href="./index.html">KtxGame</a><br/>
+<br/>
+<h1>KtxGame</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">KtxGame</span><span class="symbol">&lt;</span><span class="identifier">ScreenType</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Screen</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-ktx-application-adapter/index.html"><span class="identifier">KtxApplicationAdapter</span></a></code>
+<p>An equivalent of <a href="#">com.badlogic.gdx.Game</a> delegating game events to a <a href="#">Screen</a>. On contrary to <code>Game</code>, <a href="./index.html">KtxGame</a>
+maintains a collection of screens mapped by their type and allows to change screens knowing only their type with
+<a href="set-screen.html">setScreen</a>. Thanks to this, its easier to cache screens without maintaining a singleton with all <a href="#">Screen</a> instances
+manually. <a href="index.html#ScreenType">ScreenType</a> generic type allows to users to use an extended specific base class (or interface) for all
+screens, without locking into <a href="#">Screen</a>.</p>
+<h3>Parameters</h3>
+<p><a name="firstScreen"></a>
+<code>firstScreen</code> - will be immediately used by the application. Note that it cannot use any resources initiated by
+the LibGDX (like the OpenGL context) in the constructor, as the screen will be created before the application is
+launched. Defaults to an empty, mock-up screen implementation that should be replaced with the first <a href="set-screen.html">setScreen</a>
+method call in <a href="create.html">create</a>. Note: <code>firstScreen</code> still has to be explicitly registered with <a href="add-screen.html">addScreen</a> if you want it to
+be accessible with <a href="get-screen.html">getScreen</a>.</p>
+<p><a name="clearScreen"></a>
+<code>clearScreen</code> - if true (the default), <a href="#">clearScreen</a> will be called before screen rendering.</p>
+<p><a name="ScreenType"></a>
+<code>ScreenType</code> - common base interface or class of all screens. Allows to use custom extended <a href="#">Screen</a> API.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-ktx-screen/index.html">KtxScreen</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>An equivalent of <a href="#">com.badlogic.gdx.Game</a> delegating game events to a <a href="#">Screen</a>. On contrary to <code>Game</code>, <a href="./index.html">KtxGame</a>
+maintains a collection of screens mapped by their type and allows to change screens knowing only their type with
+<a href="set-screen.html">setScreen</a>. Thanks to this, its easier to cache screens without maintaining a singleton with all <a href="#">Screen</a> instances
+manually. <a href="index.html#ScreenType">ScreenType</a> generic type allows to users to use an extended specific base class (or interface) for all
+screens, without locking into <a href="#">Screen</a>.</p>
+<code><span class="identifier">KtxGame</span><span class="symbol">(</span><span class="identifier" id="ktx.app.KtxGame$<init>(ktx.app.KtxGame.ScreenType, kotlin.Boolean)/firstScreen">firstScreen</span><span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ktx.app.KtxGame$<init>(ktx.app.KtxGame.ScreenType, kotlin.Boolean)/clearScreen">clearScreen</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="current-screen.html">currentScreen</a></h4>
+</td>
+<td>
+<p>Currently shown screen. Unless overridden with <a href="set-screen.html">setScreen</a>, uses an empty mock-up implementation to work around
+nullability and <code>lateinit</code> issues. <a href="shown-screen.html">shownScreen</a> is a public property exposing this value as <a href="index.html#ScreenType">ScreenType</a>.</p>
+<code><span class="keyword">var </span><span class="identifier">currentScreen</span><span class="symbol">: </span><span class="identifier">Screen</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="screens.html">screens</a></h4>
+</td>
+<td>
+<p>Holds references to all screens registered with <a href="add-screen.html">addScreen</a>. Allows to get a reference of the screen instance
+knowing only its type.</p>
+<code><span class="keyword">val </span><span class="identifier">screens</span><span class="symbol">: </span><span class="identifier">ObjectMap</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="shown-screen.html">shownScreen</a></h4>
+</td>
+<td>
+<p>Provides direct access to current <a href="#">Screen</a> instance handling game events.</p>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">shownScreen</span><span class="symbol">: </span><span class="identifier">ScreenType</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-screen.html">addScreen</a></h4>
+</td>
+<td>
+<p>Registers an instance of <a href="#">Screen</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span> <span class="identifier">addScreen</span><span class="symbol">(</span><span class="identifier" id="ktx.app.KtxGame$addScreen(ktx.app.KtxGame.addScreen.Type)/screen">screen</span><span class="symbol">:</span>&nbsp;<span class="identifier">Type</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Registers an instance of <a href="#">Screen</a>. Override this method to change the way screens are registered.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span> <span class="identifier">addScreen</span><span class="symbol">(</span><span class="identifier" id="ktx.app.KtxGame$addScreen(java.lang.Class((ktx.app.KtxGame.addScreen.Type)), ktx.app.KtxGame.addScreen.Type)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.app.KtxGame$addScreen(java.lang.Class((ktx.app.KtxGame.addScreen.Type)), ktx.app.KtxGame.addScreen.Type)/screen">screen</span><span class="symbol">:</span>&nbsp;<span class="identifier">Type</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="contains-screen.html">containsScreen</a></h4>
+</td>
+<td>
+<p>Checks if screen of the given type is registered.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span> <span class="identifier">containsScreen</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span> <span class="identifier">containsScreen</span><span class="symbol">(</span><span class="identifier" id="ktx.app.KtxGame$containsScreen(java.lang.Class((ktx.app.KtxGame.containsScreen.Type)))/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="create.html">create</a></h4>
+</td>
+<td>
+<p>By default, this method resizes (<a href="#">Screen.resize</a>) and shows (<a href="#">Screen.show</a>) initial view. You do not have to call
+super if you used <a href="set-screen.html">setScreen</a> in the overridden <a href="create.html">create</a> method or the selected first view does not need to be
+resized and showed before usage.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">create</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dispose.html">dispose</a></h4>
+</td>
+<td>
+<p>Disposes of all registered screens with <a href="#">Screen.dispose</a>. Catches thrown errors and logs them with LibGDX
+application API by default. Override <a href="on-screen-disposal-error.html">onScreenDisposalError</a> method to change error handling behavior. Should be
+called automatically by LibGDX application lifecycle handler.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">dispose</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-screen.html">getScreen</a></h4>
+</td>
+<td>
+<p>Returns cached instance of <a href="#">Screen</a> of the selected type.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span> <span class="identifier">getScreen</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Type</span></code>
+<p>Returns cached instance of <a href="get-screen.html#Type">Type</a> of the selected type.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span> <span class="identifier">getScreen</span><span class="symbol">(</span><span class="identifier" id="ktx.app.KtxGame$getScreen(java.lang.Class((ktx.app.KtxGame.getScreen.Type)))/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Type</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-screen-disposal-error.html">onScreenDisposalError</a></h4>
+</td>
+<td>
+<p>Invoked during screens disposal on <a href="dispose.html">dispose</a> if an error occurs.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onScreenDisposalError</span><span class="symbol">(</span><span class="identifier" id="ktx.app.KtxGame$onScreenDisposalError(ktx.app.KtxGame.ScreenType, kotlin.Throwable)/screen">screen</span><span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">, </span><span class="identifier" id="ktx.app.KtxGame$onScreenDisposalError(ktx.app.KtxGame.ScreenType, kotlin.Throwable)/exception">exception</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="pause.html">pause</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">pause</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-screen.html">removeScreen</a></h4>
+</td>
+<td>
+<p>Removes cached instance of <a href="#">Screen</a> of the selected type. Note that this method does not dispose of the screen and
+will not affect <a href="shown-screen.html">shownScreen</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span> <span class="identifier">removeScreen</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Type</span><span class="symbol">?</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span> <span class="identifier">removeScreen</span><span class="symbol">(</span><span class="identifier" id="ktx.app.KtxGame$removeScreen(java.lang.Class((ktx.app.KtxGame.removeScreen.Type)))/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Type</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="render.html">render</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">render</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="resize.html">resize</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">resize</span><span class="symbol">(</span><span class="identifier" id="ktx.app.KtxGame$resize(kotlin.Int, kotlin.Int)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ktx.app.KtxGame$resize(kotlin.Int, kotlin.Int)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="resume.html">resume</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">resume</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-screen.html">setScreen</a></h4>
+</td>
+<td>
+<p>Replaces current screen with the registered screen instance of the passed type.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span> <span class="identifier">setScreen</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Replaces current screen with the registered screen instance of the passed type. Calls <code>hide</code> method of the
+previous screen and <code>show</code> method of the current screen. Override this method to control screen transitions.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span> <span class="identifier">setScreen</span><span class="symbol">(</span><span class="identifier" id="ktx.app.KtxGame$setScreen(java.lang.Class((ktx.app.KtxGame.setScreen.Type)))/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AssetGroup.asset - assets</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets</a>&nbsp;/&nbsp;<a href="index.html">AssetGroup</a>&nbsp;/&nbsp;<a href="./asset.html">asset</a><br/>
+<br/>
+<h1>asset</h1>
+<a name="ktx.assets.AssetGroup$asset(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.AssetGroup.asset.T)))"></a>
+<code><span class="keyword">protected</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">asset</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.AssetGroup$asset(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.AssetGroup.asset.T)))/fileName">fileName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets.AssetGroup$asset(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.AssetGroup.asset.T)))/params">params</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="../-asset/index.html"><span class="identifier">Asset</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code>
+<p>Creates a delegate for an asset, queues it for loading, and registers it as a member of this group. Beware that
+calling <a href="load-all.html">loadAll</a> might increment the <a href="#">AssetManager</a>'s reference count for this asset an additional time.</p>
+<h3>Parameters</h3>
+<p><a name="fileName"></a>
+<code>fileName</code> - Name of the file used to reference this asset by the AssetManager. This value will be prefixed with
+<a href="file-prefix.html">filePrefix</a>.</p>
+<p><a name="params"></a>
+<code>params</code> - optional asset loading parameters which might affect how the assets are loaded. Can be null.</p>
+<p><strong>Return</strong><br/>
+an <a href="../-asset/index.html">Asset</a>, registered as a member of this AssetGroup.</p>
+</BODY>
+</HTML>

@@ -1,0 +1,44 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>rayCast - box2d</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">box2d</a>&nbsp;/&nbsp;<a href="../index.html">ktx.box2d</a>&nbsp;/&nbsp;<a href="index.html">com.badlogic.gdx.physics.box2d.World</a>&nbsp;/&nbsp;<a href="./ray-cast.html">rayCast</a><br/>
+<br/>
+<h1>rayCast</h1>
+<a name="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))"></a>
+<code><span class="keyword">fun </span><span class="identifier">World</span><span class="symbol">.</span><span class="identifier">rayCast</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))/start">start</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">, </span><span class="identifier" id="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))/end">end</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">, </span><span class="identifier" id="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="../-ktx-ray-cast-callback.html"><span class="identifier">KtxRayCastCallback</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Ray-cast the world for all fixtures in the path of the ray.</p>
+<p>The ray-cast ignores shapes that contain the starting point.</p>
+<h3>Parameters</h3>
+<p><a name="start"></a>
+<code>start</code> - the ray starting point.</p>
+<p><a name="end"></a>
+<code>end</code> - the ray ending point.</p>
+<p><a name="callback"></a>
+<code>callback</code> - a user implemented callback called on every fixture hit.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-ray-cast/index.html">RayCast</a></p>
+</p>
+<a name="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))"></a>
+<code><span class="keyword">fun </span><span class="identifier">World</span><span class="symbol">.</span><span class="identifier">rayCast</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))/startX">startX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))/startY">startY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))/endX">endX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))/endY">endY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="../-ktx-ray-cast-callback.html"><span class="identifier">KtxRayCastCallback</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Ray-cast the world for all fixtures in the path of the ray.</p>
+<p>The ray-cast ignores shapes that contain the starting point.</p>
+<h3>Parameters</h3>
+<p><a name="startX"></a>
+<code>startX</code> - the ray starting point X.</p>
+<p><a name="startY"></a>
+<code>startY</code> - the ray starting point Y.</p>
+<p><a name="endX"></a>
+<code>endX</code> - the ray ending point X.</p>
+<p><a name="endY"></a>
+<code>endY</code> - the ray ending point Y.</p>
+<p><a name="callback"></a>
+<code>callback</code> - a user implemented callback called on every fixture hit.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-ray-cast/index.html">RayCast</a></p>
+</p>
+</BODY>
+</HTML>

@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ktx.box2d.com.badlogic.gdx.physics.box2d.World - box2d</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">box2d</a>&nbsp;/&nbsp;<a href="../index.html">ktx.box2d</a>&nbsp;/&nbsp;<a href="./index.html">com.badlogic.gdx.physics.box2d.World</a><br/>
+<br/>
+<h3>Extensions for com.badlogic.gdx.physics.box2d.World</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="body.html">body</a></h4>
+</td>
+<td>
+<p>Type-safe <a href="#">Body</a> building DSL.</p>
+<code><span class="keyword">fun </span><span class="identifier">World</span><span class="symbol">.</span><span class="identifier">body</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d$body(com.badlogic.gdx.physics.box2d.World, com.badlogic.gdx.physics.box2d.BodyDef.BodyType, kotlin.Function1((ktx.box2d.BodyDefinition, kotlin.Unit)))/type">type</span><span class="symbol">:</span>&nbsp;<span class="identifier">BodyType</span>&nbsp;<span class="symbol">=</span>&nbsp;BodyType.StaticBody<span class="symbol">, </span><span class="identifier" id="ktx.box2d$body(com.badlogic.gdx.physics.box2d.World, com.badlogic.gdx.physics.box2d.BodyDef.BodyType, kotlin.Function1((ktx.box2d.BodyDefinition, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="../-body-definition/index.html"><span class="identifier">BodyDefinition</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Body</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="create.html">create</a></h4>
+</td>
+<td>
+<p>Handles additional building properties provided by <a href="../-body-definition/index.html">BodyDefinition</a> and <a href="../-fixture-definition/index.html">FixtureDefinition</a>. Prefer this method
+over <a href="#">World.createBody</a> when using <a href="../-body-definition/index.html">BodyDefinition</a> directly.</p>
+<code><span class="keyword">fun </span><span class="identifier">World</span><span class="symbol">.</span><span class="identifier">create</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d$create(com.badlogic.gdx.physics.box2d.World, ktx.box2d.BodyDefinition)/bodyDefinition">bodyDefinition</span><span class="symbol">:</span>&nbsp;<a href="../-body-definition/index.html"><span class="identifier">BodyDefinition</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Body</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="query.html">query</a></h4>
+</td>
+<td>
+<p>Query the world for all fixtures that potentially overlap the provided AABB (Axis-Aligned Bounding Box).</p>
+<code><span class="keyword">fun </span><span class="identifier">World</span><span class="symbol">.</span><span class="identifier">query</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d$query(com.badlogic.gdx.physics.box2d.World, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function1((com.badlogic.gdx.physics.box2d.Fixture, kotlin.Boolean)))/lowerX">lowerX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d$query(com.badlogic.gdx.physics.box2d.World, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function1((com.badlogic.gdx.physics.box2d.Fixture, kotlin.Boolean)))/lowerY">lowerY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d$query(com.badlogic.gdx.physics.box2d.World, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function1((com.badlogic.gdx.physics.box2d.Fixture, kotlin.Boolean)))/upperX">upperX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d$query(com.badlogic.gdx.physics.box2d.World, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function1((com.badlogic.gdx.physics.box2d.Fixture, kotlin.Boolean)))/upperY">upperY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d$query(com.badlogic.gdx.physics.box2d.World, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function1((com.badlogic.gdx.physics.box2d.Fixture, kotlin.Boolean)))/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="../-ktx-query-callback.html"><span class="identifier">KtxQueryCallback</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="ray-cast.html">rayCast</a></h4>
+</td>
+<td>
+<p>Ray-cast the world for all fixtures in the path of the ray.</p>
+<code><span class="keyword">fun </span><span class="identifier">World</span><span class="symbol">.</span><span class="identifier">rayCast</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))/start">start</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">, </span><span class="identifier" id="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))/end">end</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">, </span><span class="identifier" id="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="../-ktx-ray-cast-callback.html"><span class="identifier">KtxRayCastCallback</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">World</span><span class="symbol">.</span><span class="identifier">rayCast</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))/startX">startX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))/startY">startY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))/endX">endX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))/endY">endY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d$rayCast(com.badlogic.gdx.physics.box2d.World, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function4((com.badlogic.gdx.physics.box2d.Fixture, com.badlogic.gdx.math.Vector2, , kotlin.Float, )))/callback">callback</span><span class="symbol">:</span>&nbsp;<a href="../-ktx-ray-cast-callback.html"><span class="identifier">KtxRayCastCallback</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

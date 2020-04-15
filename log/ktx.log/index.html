@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ktx.log - log</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">log</a>&nbsp;/&nbsp;<a href="./index.html">ktx.log</a><br/>
+<br/>
+<h2>Package ktx.log</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-logger/index.html">Logger</a></h4>
+</td>
+<td>
+<p>A simple logging utility class which caches its tags.</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Logger</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="debug.html">debug</a></h4>
+</td>
+<td>
+<p>Logs a message on the debug level.</p>
+<code><span class="keyword">fun </span><span class="identifier">debug</span><span class="symbol">(</span><span class="identifier" id="ktx.log$debug(kotlin.String, kotlin.Function0((kotlin.String)))/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"[DEBUG]"<span class="symbol">, </span><span class="identifier" id="ktx.log$debug(kotlin.String, kotlin.Function0((kotlin.String)))/message">message</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">debug</span><span class="symbol">(</span><span class="identifier" id="ktx.log$debug(kotlin.Throwable, kotlin.String, kotlin.Function0((kotlin.String)))/cause">cause</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">, </span><span class="identifier" id="ktx.log$debug(kotlin.Throwable, kotlin.String, kotlin.Function0((kotlin.String)))/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"[DEBUG]"<span class="symbol">, </span><span class="identifier" id="ktx.log$debug(kotlin.Throwable, kotlin.String, kotlin.Function0((kotlin.String)))/message">message</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="error.html">error</a></h4>
+</td>
+<td>
+<p>Logs a message on the error level.</p>
+<code><span class="keyword">fun </span><span class="identifier">error</span><span class="symbol">(</span><span class="identifier" id="ktx.log$error(kotlin.String, kotlin.Function0((kotlin.String)))/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"[ERROR]"<span class="symbol">, </span><span class="identifier" id="ktx.log$error(kotlin.String, kotlin.Function0((kotlin.String)))/message">message</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">error</span><span class="symbol">(</span><span class="identifier" id="ktx.log$error(kotlin.Throwable, kotlin.String, kotlin.Function0((kotlin.String)))/cause">cause</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">, </span><span class="identifier" id="ktx.log$error(kotlin.Throwable, kotlin.String, kotlin.Function0((kotlin.String)))/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"[ERROR]"<span class="symbol">, </span><span class="identifier" id="ktx.log$error(kotlin.Throwable, kotlin.String, kotlin.Function0((kotlin.String)))/message">message</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="info.html">info</a></h4>
+</td>
+<td>
+<p>Logs a message on the info level.</p>
+<code><span class="keyword">fun </span><span class="identifier">info</span><span class="symbol">(</span><span class="identifier" id="ktx.log$info(kotlin.String, kotlin.Function0((kotlin.String)))/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"[INFO] "<span class="symbol">, </span><span class="identifier" id="ktx.log$info(kotlin.String, kotlin.Function0((kotlin.String)))/message">message</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">info</span><span class="symbol">(</span><span class="identifier" id="ktx.log$info(kotlin.Throwable, kotlin.String, kotlin.Function0((kotlin.String)))/cause">cause</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">, </span><span class="identifier" id="ktx.log$info(kotlin.Throwable, kotlin.String, kotlin.Function0((kotlin.String)))/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"[INFO] "<span class="symbol">, </span><span class="identifier" id="ktx.log$info(kotlin.Throwable, kotlin.String, kotlin.Function0((kotlin.String)))/message">message</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="logger.html">logger</a></h4>
+</td>
+<td>
+<p>Allows to create a <a href="-logger/index.html">Logger</a> instance for a specific class. Note that loggers are not cached - each time this method
+is called, a new instance of <a href="-logger/index.html">Logger</a> is created, so it is advised to use loggers in companion objects.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">logger</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-logger/index.html"><span class="identifier">Logger</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

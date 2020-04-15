@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>property - tiled</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">tiled</a>&nbsp;/&nbsp;<a href="../index.html">ktx.tiled</a>&nbsp;/&nbsp;<a href="index.html">com.badlogic.gdx.maps.tiled.TiledMapTile</a>&nbsp;/&nbsp;<a href="./property.html">property</a><br/>
+<br/>
+<h1>property</h1>
+<a name="ktx.tiled$property(com.badlogic.gdx.maps.tiled.TiledMapTile, kotlin.String)"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">TiledMapTile</span><span class="symbol">.</span><span class="identifier">property</span><span class="symbol">(</span><span class="identifier" id="ktx.tiled$property(com.badlogic.gdx.maps.tiled.TiledMapTile, kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Extension method to directly access the <a href="#">MapProperties</a> of a <a href="#">TiledMapTile</a>. If the property
+is not defined then this method throws a <a href="../-missing-property-exception/index.html">MissingPropertyException</a>.</p>
+<h3>Parameters</h3>
+<p><a name="key"></a>
+<code>key</code> - property name.</p>
+<h3>Exceptions</h3>
+<p><a name="MissingPropertyException"></a>
+<code>MissingPropertyException</code> - If the property is not defined.</p>
+<p><strong>Return</strong><br/>
+value of the property.</p>
+<a name="ktx.tiled$property(com.badlogic.gdx.maps.tiled.TiledMapTile, kotlin.String, ktx.tiled.property.T)"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">TiledMapTile</span><span class="symbol">.</span><span class="identifier">property</span><span class="symbol">(</span><span class="identifier" id="ktx.tiled$property(com.badlogic.gdx.maps.tiled.TiledMapTile, kotlin.String, ktx.tiled.property.T)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.tiled$property(com.badlogic.gdx.maps.tiled.TiledMapTile, kotlin.String, ktx.tiled.property.T)/defaultValue">defaultValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Extension method to directly access the <a href="#">MapProperties</a> of a <a href="#">TiledMapTile</a>. The type is automatically
+derived from the type of the given default value. If the property is not defined the <a href="property.html#ktx.tiled$property(com.badlogic.gdx.maps.tiled.TiledMapTile, kotlin.String, ktx.tiled.property.T)/defaultValue">defaultValue</a>
+will be returned.</p>
+<h3>Parameters</h3>
+<p><a name="key"></a>
+<code>key</code> - property name.</p>
+<p><a name="defaultValue"></a>
+<code>defaultValue</code> - default value in case the property is missing.</p>
+<p><strong>Return</strong><br/>
+value of the property or defaultValue if property is missing.</p>
+</BODY>
+</HTML>

@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ktx.graphics.com.badlogic.gdx.graphics.Camera - graphics</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">graphics</a>&nbsp;/&nbsp;<a href="../index.html">ktx.graphics</a>&nbsp;/&nbsp;<a href="./index.html">com.badlogic.gdx.graphics.Camera</a><br/>
+<br/>
+<h3>Extensions for com.badlogic.gdx.graphics.Camera</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="center.html">center</a></h4>
+</td>
+<td>
+<p>Centers this <a href="#">Camera</a> in the middle of the given rectangle. <a href="center.html#ktx.graphics$center(com.badlogic.gdx.graphics.Camera, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/width">width</a> and <a href="center.html#ktx.graphics$center(com.badlogic.gdx.graphics.Camera, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/height">height</a>
+represent the size of the rectangle in world (camera/viewport) units.
+<a href="center.html#ktx.graphics$center(com.badlogic.gdx.graphics.Camera, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/x">x</a> and <a href="center.html#ktx.graphics$center(com.badlogic.gdx.graphics.Camera, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/y">y</a> are optional offsets in world units that will modify camera position.</p>
+<code><span class="keyword">fun </span><span class="identifier">Camera</span><span class="symbol">.</span><span class="identifier">center</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$center(com.badlogic.gdx.graphics.Camera, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Gdx.graphics.width.toFloat()<span class="symbol">, </span><span class="identifier" id="ktx.graphics$center(com.badlogic.gdx.graphics.Camera, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Gdx.graphics.height.toFloat()<span class="symbol">, </span><span class="identifier" id="ktx.graphics$center(com.badlogic.gdx.graphics.Camera, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.graphics$center(com.badlogic.gdx.graphics.Camera, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="lerp-to.html">lerpTo</a></h4>
+</td>
+<td>
+<p>Will smoothly move the <a href="#">Camera</a> at the selected <a href="lerp-to.html#ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/target">target</a> coordinated.
+The <a href="#">Camera</a> will follow a <a href="lerp-to.html#ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/target">target</a> with a smooth linear interpolation, based on a <a href="lerp-to.html#ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/lerp">lerp</a> amount.
+<a href="lerp-to.html#ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/lerp">lerp</a> should be in range of 0 (slowest) to 1 (fastest).
+The lower that interpolation amount, the smoother - and thus slower - the following motion.</p>
+<code><span class="keyword">fun </span><span class="identifier">Camera</span><span class="symbol">.</span><span class="identifier">lerpTo</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/target">target</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">, </span><span class="identifier" id="ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/lerp">lerp</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="move-to.html">moveTo</a></h4>
+</td>
+<td>
+<p>Immediately moves <a href="#">Camera</a> to the selected <a href="move-to.html#ktx.graphics$moveTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float)/target">target</a> coordinates.
+Not suitable for all cases, as it may cause a very rough motion when used every frame.
+<a href="move-to.html#ktx.graphics$moveTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float)/x">x</a> and <a href="move-to.html#ktx.graphics$moveTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float)/y">y</a> are optional offsets in world units that will modify camera position.</p>
+<code><span class="keyword">fun </span><span class="identifier">Camera</span><span class="symbol">.</span><span class="identifier">moveTo</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$moveTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float)/target">target</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">, </span><span class="identifier" id="ktx.graphics$moveTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.graphics$moveTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="update.html">update</a></h4>
+</td>
+<td>
+<p>Inlines the <a href="update.html#ktx.graphics$update(com.badlogic.gdx.graphics.Camera, kotlin.Function1((com.badlogic.gdx.graphics.Camera, kotlin.Unit)))/operation">operation</a>, which can update the camera position.
+Automatically calls <a href="#">Camera.update</a> after the <a href="update.html#ktx.graphics$update(com.badlogic.gdx.graphics.Camera, kotlin.Function1((com.badlogic.gdx.graphics.Camera, kotlin.Unit)))/operation">operation</a> is finished.</p>
+<code><span class="keyword">fun </span><span class="identifier">Camera</span><span class="symbol">.</span><span class="identifier">update</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$update(com.badlogic.gdx.graphics.Camera, kotlin.Function1((com.badlogic.gdx.graphics.Camera, kotlin.Unit)))/operation">operation</span><span class="symbol">:</span>&nbsp;<span class="identifier">Camera</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

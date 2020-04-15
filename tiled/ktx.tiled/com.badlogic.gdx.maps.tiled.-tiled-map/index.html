@@ -1,0 +1,163 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ktx.tiled.com.badlogic.gdx.maps.tiled.TiledMap - tiled</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">tiled</a>&nbsp;/&nbsp;<a href="../index.html">ktx.tiled</a>&nbsp;/&nbsp;<a href="./index.html">com.badlogic.gdx.maps.tiled.TiledMap</a><br/>
+<br/>
+<h3>Extensions for com.badlogic.gdx.maps.tiled.TiledMap</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="background-color.html">backgroundColor</a></h4>
+</td>
+<td>
+<p>Extension property to retrieve the background color of the <a href="#">TiledMap</a>. Null if property was not set.</p>
+<code><span class="keyword">val </span><span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">backgroundColor</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="contains.html">contains</a></h4>
+</td>
+<td>
+<p>Extension operator to check if a certain <a href="#">MapLayer</a> is part of the <a href="#">TiledMap</a></p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier" id="ktx.tiled$contains(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String)/layerName">layerName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="contains-property.html">containsProperty</a></h4>
+</td>
+<td>
+<p>Extension method to directly access the <a href="#">MapProperties</a> of a <a href="#">TiledMap</a> and its
+<a href="#">containsKey</a> method.</p>
+<code><span class="keyword">fun </span><span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">containsProperty</span><span class="symbol">(</span><span class="identifier" id="ktx.tiled$containsProperty(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="for-each-map-object.html">forEachMapObject</a></h4>
+</td>
+<td>
+<p>Extension method to easily execute an action per <a href="#">MapObject</a> of a given <a href="#">MapLayer</a>.
+If the layer does not exist then nothing is happening.</p>
+<code><span class="keyword">fun </span><span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">forEachMapObject</span><span class="symbol">(</span><span class="identifier" id="ktx.tiled$forEachMapObject(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String, kotlin.Function1((com.badlogic.gdx.maps.MapObject, kotlin.Unit)))/layerName">layerName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.tiled$forEachMapObject(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String, kotlin.Function1((com.badlogic.gdx.maps.MapObject, kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">MapObject</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="height.html">height</a></h4>
+</td>
+<td>
+<p>Extension property to retrieve the height of the <a href="#">TiledMap</a>.</p>
+<code><span class="keyword">val </span><span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">height</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hex-side-length.html">hexSideLength</a></h4>
+</td>
+<td>
+<p>Extension property to retrieve the hex side length of a hexagonal <a href="#">TiledMap</a>.</p>
+<code><span class="keyword">val </span><span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">hexSideLength</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="layer.html">layer</a></h4>
+</td>
+<td>
+<p>Extension method to retrieve a <a href="#">MapLayer</a> of a <a href="#">TiledMap</a>. If the layer does
+not exist then this method is throwing a <a href="../-missing-layer-exception/index.html">MissingLayerException</a></p>
+<code><span class="keyword">fun </span><span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">layer</span><span class="symbol">(</span><span class="identifier" id="ktx.tiled$layer(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String)/layerName">layerName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MapLayer</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="orientation.html">orientation</a></h4>
+</td>
+<td>
+<p>Extension property to retrieve the orientation of the <a href="#">TiledMap</a>.</p>
+<code><span class="keyword">val </span><span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">orientation</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="property.html">property</a></h4>
+</td>
+<td>
+<p>Extension method to directly access the <a href="#">MapProperties</a> of a <a href="#">TiledMap</a>. If the property
+is not defined then this method throws a <a href="../-missing-property-exception/index.html">MissingPropertyException</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">property</span><span class="symbol">(</span><span class="identifier" id="ktx.tiled$property(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Extension method to directly access the <a href="#">MapProperties</a> of a <a href="#">TiledMap</a>. The type is automatically
+derived from the type of the given default value. If the property is not defined the <a href="property.html#ktx.tiled$property(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String, ktx.tiled.property.T)/defaultValue">defaultValue</a>
+will be returned.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">property</span><span class="symbol">(</span><span class="identifier" id="ktx.tiled$property(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String, ktx.tiled.property.T)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.tiled$property(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String, ktx.tiled.property.T)/defaultValue">defaultValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="property-or-null.html">propertyOrNull</a></h4>
+</td>
+<td>
+<p>Extension method to directly access the <a href="#">MapProperties</a> of a <a href="#">TiledMap</a>. If the property
+is not defined then this method returns null.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">propertyOrNull</span><span class="symbol">(</span><span class="identifier" id="ktx.tiled$propertyOrNull(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stagger-axis.html">staggerAxis</a></h4>
+</td>
+<td>
+<p>Extension property to retrieve the stagger axis of the <a href="#">TiledMap</a>.</p>
+<code><span class="keyword">val </span><span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">staggerAxis</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stagger-index.html">staggerIndex</a></h4>
+</td>
+<td>
+<p>Extension property to retrieve the stagger index of the <a href="#">TiledMap</a>.</p>
+<code><span class="keyword">val </span><span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">staggerIndex</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="tile-height.html">tileHeight</a></h4>
+</td>
+<td>
+<p>Extension property to retrieve the tile height of each tile of the <a href="#">TiledMap</a>.</p>
+<code><span class="keyword">val </span><span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">tileHeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="tile-width.html">tileWidth</a></h4>
+</td>
+<td>
+<p>Extension property to retrieve the tile width of each tile of the <a href="#">TiledMap</a>.</p>
+<code><span class="keyword">val </span><span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">tileWidth</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="total-height.html">totalHeight</a></h4>
+</td>
+<td>
+<p>Extension method to retrieve the total height of the <a href="#">TiledMap</a>. It is the result of the
+height multiplied by the tile height of the map.</p>
+<code><span class="keyword">fun </span><span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">totalHeight</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="total-width.html">totalWidth</a></h4>
+</td>
+<td>
+<p>Extension method to retrieve the total width of the <a href="#">TiledMap</a>. It is the result of the
+width multiplied by the tile width of the map.</p>
+<code><span class="keyword">fun </span><span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">totalWidth</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="width.html">width</a></h4>
+</td>
+<td>
+<p>Extension property to retrieve the width of the <a href="#">TiledMap</a>.</p>
+<code><span class="keyword">val </span><span class="identifier">TiledMap</span><span class="symbol">.</span><span class="identifier">width</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

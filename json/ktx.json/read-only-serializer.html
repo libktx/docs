@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>readOnlySerializer - json</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">json</a>&nbsp;/&nbsp;<a href="index.html">ktx.json</a>&nbsp;/&nbsp;<a href="./read-only-serializer.html">readOnlySerializer</a><br/>
+<br/>
+<h1>readOnlySerializer</h1>
+<a name="ktx.json$readOnlySerializer(kotlin.Function3((com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.JsonValue, java.lang.Class((kotlin.Any)), ktx.json.readOnlySerializer.T)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">readOnlySerializer</span><span class="symbol">(</span><span class="keyword">crossinline</span> <span class="identifier" id="ktx.json$readOnlySerializer(kotlin.Function3((com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.JsonValue, java.lang.Class((kotlin.Any)), ktx.json.readOnlySerializer.T)))/reader">reader</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">Json</span><span class="symbol">,</span>&nbsp;<span class="identifier">JsonValue</span><span class="symbol">,</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">T</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Serializer</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code>
+<p>Factory function to create a <a href="-read-only-json-serializer/index.html">ReadOnlyJsonSerializer</a> from lambda.</p>
+<a name="ktx.json$readOnlySerializer(kotlin.Function1((com.badlogic.gdx.utils.JsonValue, ktx.json.readOnlySerializer.T)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">readOnlySerializer</span><span class="symbol">(</span><span class="keyword">crossinline</span> <span class="identifier" id="ktx.json$readOnlySerializer(kotlin.Function1((com.badlogic.gdx.utils.JsonValue, ktx.json.readOnlySerializer.T)))/read">read</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">JsonValue</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">T</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Serializer</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code>
+<p>Factory function to create a simplified <a href="-read-only-json-serializer/index.html">ReadOnlyJsonSerializer</a>, which accepts only <a href="#">JsonValue</a>.</p>
+</BODY>
+</HTML>

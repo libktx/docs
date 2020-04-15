@@ -1,0 +1,127 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ktx.collections.com.badlogic.gdx.utils.ObjectSet - collections</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">collections</a>&nbsp;/&nbsp;<a href="../index.html">ktx.collections</a>&nbsp;/&nbsp;<a href="./index.html">com.badlogic.gdx.utils.ObjectSet</a><br/>
+<br/>
+<h3>Extensions for com.badlogic.gdx.utils.ObjectSet</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-all.html">addAll</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">addAll</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$addAll(com.badlogic.gdx.utils.ObjectSet((ktx.collections.addAll.Type)), kotlin.collections.Iterable((ktx.collections.addAll.Type)))/elements">elements</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="filter.html">filter</a></h4>
+</td>
+<td>
+<p>Returns a <a href="../-gdx-set.html">GdxSet</a> containing only elements matching the given <a href="filter.html#ktx.collections$filter(com.badlogic.gdx.utils.ObjectSet((ktx.collections.filter.Type)), kotlin.Function1((ktx.collections.filter.Type, kotlin.Boolean)))/predicate">predicate</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">filter</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$filter(com.badlogic.gdx.utils.ObjectSet((ktx.collections.filter.Type)), kotlin.Function1((ktx.collections.filter.Type, kotlin.Boolean)))/predicate">predicate</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">Type</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="flat-map.html">flatMap</a></h4>
+</td>
+<td>
+<p>Returns a single <a href="../-gdx-set.html">GdxSet</a> of all elements yielded from results of transform function being invoked
+on each element of original <a href="../-gdx-set.html">GdxSet</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">, </span><span class="identifier">R</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">flatMap</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$flatMap(com.badlogic.gdx.utils.ObjectSet((ktx.collections.flatMap.Type)), kotlin.Function1((ktx.collections.flatMap.Type, kotlin.collections.Iterable((ktx.collections.flatMap.R)))))/transform">transform</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">Type</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><span class="identifier">R</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">R</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="flatten.html">flatten</a></h4>
+</td>
+<td>
+<p>Returns a single <a href="../-gdx-set.html">GdxSet</a> of all elements from all collections in the given <a href="../-gdx-set.html">GdxSet</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">, </span><span class="identifier">C</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">C</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">flatten</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-empty.html">isEmpty</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">.</span><span class="identifier">isEmpty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-not-empty.html">isNotEmpty</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">.</span><span class="identifier">isNotEmpty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="iterate.html">iterate</a></h4>
+</td>
+<td>
+<p>Allows to iterate over the array with access to <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html">MutableIterator</a>, which allows to remove elements from the collection
+during iteration.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">iterate</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$iterate(com.badlogic.gdx.utils.ObjectSet((ktx.collections.iterate.Type)), kotlin.Function2((ktx.collections.iterate.Type, kotlin.collections.MutableIterator(()), kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">Type</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html"><span class="identifier">MutableIterator</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="map.html">map</a></h4>
+</td>
+<td>
+<p>Returns a <a href="../-gdx-set.html">GdxSet</a> containing the results of applying the given <a href="map.html#ktx.collections$map(com.badlogic.gdx.utils.ObjectSet((ktx.collections.map.Type)), kotlin.Function1((ktx.collections.map.Type, ktx.collections.map.R)))/transform">transform</a> function
+to each entry in the original <a href="../-gdx-set.html">GdxSet</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">, </span><span class="identifier">R</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">map</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$map(com.badlogic.gdx.utils.ObjectSet((ktx.collections.map.Type)), kotlin.Function1((ktx.collections.map.Type, ktx.collections.map.R)))/transform">transform</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">Type</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">R</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">R</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="minus.html">minus</a></h4>
+</td>
+<td>
+<p>Allows to remove elements from sets with pleasant, chainable <code>set - element0 - element1</code> syntax.</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">minus</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$minus(com.badlogic.gdx.utils.ObjectSet((ktx.collections.minus.Type)), ktx.collections.minus.Type)/element">element</span><span class="symbol">:</span>&nbsp;<span class="identifier">Type</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code>
+<p>Allows to quickly remove all elements of another iterable from this set with a pleasant, chainable operator syntax.</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">minus</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$minus(com.badlogic.gdx.utils.ObjectSet((ktx.collections.minus.Type)), kotlin.collections.Iterable((ktx.collections.minus.Type)))/elements">elements</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code>
+<p>Allows to quickly remove all elements of an array from this set with a pleasant, chainable operator syntax.</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">minus</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$minus(com.badlogic.gdx.utils.ObjectSet((ktx.collections.minus.Type)), kotlin.Array((ktx.collections.minus.Type)))/elements">elements</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="plus.html">plus</a></h4>
+</td>
+<td>
+<p>Allows to append elements to sets with pleasant, chainable <code>set + element0 + element1</code> syntax.</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">plus</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$plus(com.badlogic.gdx.utils.ObjectSet((ktx.collections.plus.Type)), ktx.collections.plus.Type)/element">element</span><span class="symbol">:</span>&nbsp;<span class="identifier">Type</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code>
+<p>Allows to quickly add all elements of another iterable to this set with a pleasant, chainable operator syntax.</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">plus</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$plus(com.badlogic.gdx.utils.ObjectSet((ktx.collections.plus.Type)), kotlin.collections.Iterable((ktx.collections.plus.Type)))/elements">elements</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code>
+<p>Allows to quickly add all elements of an array to this set with a pleasant, chainable operator syntax.</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">plus</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$plus(com.badlogic.gdx.utils.ObjectSet((ktx.collections.plus.Type)), kotlin.Array((ktx.collections.plus.Type)))/elements">elements</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-all.html">removeAll</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">removeAll</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$removeAll(com.badlogic.gdx.utils.ObjectSet((ktx.collections.removeAll.Type)), kotlin.collections.Iterable((ktx.collections.removeAll.Type)))/elements">elements</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">removeAll</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$removeAll(com.badlogic.gdx.utils.ObjectSet((ktx.collections.removeAll.Type)), kotlin.Array((ktx.collections.removeAll.Type)))/elements">elements</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="size.html">size</a></h4>
+</td>
+<td>
+<p>A method wrapper over <a href="size.html">ObjectSet.size</a> variable compatible with nullable types.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">.</span><span class="identifier">size</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-gdx-array.html">toGdxArray</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <a href="../-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">toGdxArray</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$toGdxArray(com.badlogic.gdx.utils.ObjectSet((ktx.collections.toGdxArray.Type)), kotlin.Boolean, kotlin.Int)/ordered">ordered</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ktx.collections$toGdxArray(com.badlogic.gdx.utils.ObjectSet((ktx.collections.toGdxArray.Type)), kotlin.Boolean, kotlin.Int)/initialCapacity">initialCapacity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.size<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Array</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

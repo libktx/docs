@@ -1,0 +1,159 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ktx.actors.com.badlogic.gdx.scenes.scene2d.Actor - actors</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">actors</a>&nbsp;/&nbsp;<a href="../index.html">ktx.actors</a>&nbsp;/&nbsp;<a href="./index.html">com.badlogic.gdx.scenes.scene2d.Actor</a><br/>
+<br/>
+<h3>Extensions for com.badlogic.gdx.scenes.scene2d.Actor</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="alpha.html">alpha</a></h4>
+</td>
+<td>
+<p>Links to this actor's <a href="#">Actor.color</a> instance. Allows to easily modify alpha color value.</p>
+<code><span class="keyword">var </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">alpha</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="center-position.html">centerPosition</a></h4>
+</td>
+<td>
+<p>Modifies this actor position to be centered within the passed bounds. Uses actor's size to calculate the offsets.</p>
+<code><span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">centerPosition</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$centerPosition(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Float, kotlin.Float, kotlin.Boolean)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.stage.width<span class="symbol">, </span><span class="identifier" id="ktx.actors$centerPosition(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Float, kotlin.Float, kotlin.Boolean)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.stage.height<span class="symbol">, </span><span class="identifier" id="ktx.actors$centerPosition(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Float, kotlin.Float, kotlin.Boolean)/normalize">normalize</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-shown.html">isShown</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">?</span><span class="symbol">.</span><span class="identifier">isShown</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="keep-within-parent.html">keepWithinParent</a></h4>
+</td>
+<td>
+<p>Checks this actor's position and size and makes sure that it is kept within its parent actor bounds (or <a href="#">Stage</a>).</p>
+<code><span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">keepWithinParent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="minus-assign.html">minusAssign</a></h4>
+</td>
+<td>
+<p>Alias for <a href="#">Actor.removeAction</a> method. Allows to remove actions from the actor with -= operator.</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">minusAssign</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$minusAssign(com.badlogic.gdx.scenes.scene2d.Actor, com.badlogic.gdx.scenes.scene2d.Action)/action">action</span><span class="symbol">:</span>&nbsp;<span class="identifier">Action</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-change.html">onChange</a></h4>
+</td>
+<td>
+<p>Attaches a <a href="#">ChangeListener</a> to this actor.</p>
+<code><span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">onChange</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$onChange(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Function0((kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ChangeListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-click.html">onClick</a></h4>
+</td>
+<td>
+<p>Attaches a <a href="#">ClickListener</a> to this actor.</p>
+<code><span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">onClick</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$onClick(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Function0((kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ClickListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-key.html">onKey</a></h4>
+</td>
+<td>
+<p>Attaches an <a href="#">EventListener</a> optimized to listen for key type events fired for this actor.</p>
+<code><span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">onKey</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$onKey(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Char, kotlin.Unit)))/catchEvent">catchEvent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="identifier" id="ktx.actors$onKey(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Char, kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">character</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html"><span class="identifier">Char</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EventListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-keyboard-focus.html">onKeyboardFocus</a></h4>
+</td>
+<td>
+<p>Attaches an <a href="#">EventListener</a> optimized to listen for keyboard focus events fired for this actor.</p>
+<code><span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">onKeyboardFocus</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$onKeyboardFocus(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Boolean, kotlin.Unit)))/catchEvent">catchEvent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="identifier" id="ktx.actors$onKeyboardFocus(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Boolean, kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">focused</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EventListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-key-down.html">onKeyDown</a></h4>
+</td>
+<td>
+<p>Attaches an <a href="#">EventListener</a> optimized to listen for keyDown type events fired for this actor.</p>
+<code><span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">onKeyDown</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$onKeyDown(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Int, kotlin.Unit)))/catchEvent">catchEvent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="identifier" id="ktx.actors$onKeyDown(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Int, kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">keyCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EventListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-key-up.html">onKeyUp</a></h4>
+</td>
+<td>
+<p>Attaches an <a href="#">EventListener</a> optimized to listen for keyUp type events fired for this actor.</p>
+<code><span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">onKeyUp</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$onKeyUp(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Int, kotlin.Unit)))/catchEvent">catchEvent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="identifier" id="ktx.actors$onKeyUp(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Int, kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">keyCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EventListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-scroll-focus.html">onScrollFocus</a></h4>
+</td>
+<td>
+<p>Attaches an <a href="#">EventListener</a> optimized to listen for scroll focus events fired for this actor.</p>
+<code><span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">onScrollFocus</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$onScrollFocus(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Boolean, kotlin.Unit)))/catchEvent">catchEvent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="identifier" id="ktx.actors$onScrollFocus(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Boolean, kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">focused</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EventListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-touch-down.html">onTouchDown</a></h4>
+</td>
+<td>
+<p>Attaches a <a href="#">ClickListener</a> to this actor.</p>
+<code><span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">onTouchDown</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$onTouchDown(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Function0((kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ClickListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-touch-up.html">onTouchUp</a></h4>
+</td>
+<td>
+<p>Attaches a <a href="#">ClickListener</a> to this actor.</p>
+<code><span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">onTouchUp</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$onTouchUp(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Function0((kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ClickListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="plus-assign.html">plusAssign</a></h4>
+</td>
+<td>
+<p>Alias for <a href="#">Actor.addAction</a> method. Allows to add actions to the actor with += operator.</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">plusAssign</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$plusAssign(com.badlogic.gdx.scenes.scene2d.Actor, com.badlogic.gdx.scenes.scene2d.Action)/action">action</span><span class="symbol">:</span>&nbsp;<span class="identifier">Action</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-keyboard-focus.html">setKeyboardFocus</a></h4>
+</td>
+<td>
+<p>Modifies current stage keyboard focus if this actor is currently shown.</p>
+<code><span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">setKeyboardFocus</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$setKeyboardFocus(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean)/focus">focus</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-position.html">setPosition</a></h4>
+</td>
+<td>
+<p>Utility method overload. Allows to set actor's position with ints rather than floats.</p>
+<code><span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">setPosition</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$setPosition(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Int, kotlin.Int)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ktx.actors$setPosition(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Int, kotlin.Int)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-scroll-focus.html">setScrollFocus</a></h4>
+</td>
+<td>
+<p>Modifies current stage scroll focus if this actor is currently shown.</p>
+<code><span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">setScrollFocus</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$setScrollFocus(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean)/focus">focus</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DisposableTimerTask - async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.async</a>&nbsp;/&nbsp;<a href="./index.html">DisposableTimerTask</a><br/>
+<br/>
+<h1>DisposableTimerTask</h1>
+<code><span class="keyword">class </span><span class="identifier">DisposableTimerTask</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">DisposableHandle</span><span class="symbol">, </span><span class="identifier">Disposable</span></code>
+<p>Wraps around LibGDX <a href="#">Timer.Task</a> to make it possible to cancel scheduled tasks. Holds a reference to the original
+scheduled <a href="task.html">task</a>.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Wraps around LibGDX <a href="#">Timer.Task</a> to make it possible to cancel scheduled tasks. Holds a reference to the original
+scheduled <a href="task.html">task</a>.</p>
+<code><span class="identifier">DisposableTimerTask</span><span class="symbol">(</span><span class="identifier" id="ktx.async.DisposableTimerTask$<init>(com.badlogic.gdx.utils.Timer.Task)/task">task</span><span class="symbol">:</span>&nbsp;<span class="identifier">Task</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="task.html">task</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">task</span><span class="symbol">: </span><span class="identifier">Task</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="dispose.html">dispose</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">dispose</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

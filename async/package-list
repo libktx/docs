@@ -1,0 +1,6 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:ktx.async$KTX#kotlinx.coroutines.Dispatchersktx.async/kotlinx.coroutines.-dispatchers/-k-t-x.html
+$dokka.location:ktx.async$isOnRenderingThread(kotlinx.coroutines.CoroutineScope)ktx.async/kotlinx.coroutines.-coroutine-scope/is-on-rendering-thread.html
+$dokka.location:ktx.async$toHttpRequestResult(com.badlogic.gdx.Net.HttpResponse, com.badlogic.gdx.Net.HttpRequest)ktx.async/com.badlogic.gdx.-net.-http-response/to-http-request-result.html
+ktx.async

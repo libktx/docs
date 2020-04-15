@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NodePool - collections</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">collections</a>&nbsp;/&nbsp;<a href="../index.html">ktx.collections</a>&nbsp;/&nbsp;<a href="./index.html">NodePool</a><br/>
+<br/>
+<h1>NodePool</h1>
+<code><span class="keyword">object </span><span class="identifier">NodePool</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Pool</span><span class="symbol">&lt;</span><span class="identifier">Node</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Default and main <a href="../-pooled-list/-node/index.html">PooledList</a> pool. Provides and manages node instances. Has no max value - will store nearly
+unlimited freed <a href="../-pooled-list/-node/index.html">Node</a> instances and should be cleared manually if necessary.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">clear</a></p>
+</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="new-object.html">newObject</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">newObject</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Node</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="pool.html">pool</a></h4>
+</td>
+<td>
+<p>Utility method that allows to use this pool for any kind of objects.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">pool</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Pool</span><span class="symbol">&lt;</span><span class="identifier">Node</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,85 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AssetStorage.load - assets-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets.async</a>&nbsp;/&nbsp;<a href="index.html">AssetStorage</a>&nbsp;/&nbsp;<a href="./load.html">load</a><br/>
+<br/>
+<h1>load</h1>
+<a name="ktx.assets.async.AssetStorage$load(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))"></a>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">load</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$load(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$load(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/parameters">parameters</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Schedules loading of an asset of <a href="load.html#T">T</a> type located at <a href="load.html#ktx.assets.async.AssetStorage$load(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/path">path</a>.
+Suspends the coroutine until an asset is loaded and returns a fully loaded instance of <a href="load.html#T">T</a>.</p>
+<p><a href="load.html#ktx.assets.async.AssetStorage$load(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/path">path</a> must be compatible with the <a href="file-resolver.html">fileResolver</a>.
+Loading <a href="load.html#ktx.assets.async.AssetStorage$load(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/parameters">parameters</a> are optional and can be used to configure the loaded asset.</p>
+<p>Might throw the following exceptions:</p>
+<ul><li><a href="../-unloaded-asset-exception/index.html">UnloadedAssetException</a> if the asset unloaded asynchronously by another coroutine.</li>
+<li><a href="../-missing-loader-exception/index.html">MissingLoaderException</a> if the <a href="#">AssetLoader</a> for asset of requested type is not registered.</li>
+<li><a href="../-invalid-loader-exception/index.html">InvalidLoaderException</a> if the <a href="#">AssetLoader</a> implementation of requested type is invalid.</li>
+<li><a href="../-asset-loading-exception/index.html">AssetLoadingException</a> if the <a href="#">AssetLoader</a> has thrown an exception during loading.</li>
+<li><a href="../-missing-dependency-exception/index.html">MissingDependencyException</a> is the <a href="#">AssetLoader</a> is unable to obtain an instance of asset's dependency.</li>
+<li><a href="../-unsupported-method-exception/index.html">UnsupportedMethodException</a> is the <a href="#">AssetLoader</a> uses unsupported operation on <a href="#">AssetManagerWrapper</a>.</li>
+</ul>
+<p>If the asset was already loaded, added or scheduled for loading, this method will not fail or throw
+an exception (unless the original loading fails). Instead, the coroutine will be suspended until
+the original loading is finished and then return the same result.</p>
+<p>Note that to unload an asset, <a href="unload.html">unload</a> method should be called the same amount of times as <a href="./load.html">load</a>.
+Asset dependencies should not be unloaded directly; instead, unload the asset that required them
+and caused them to load in the first place.</p>
+<p>If the <a href="load.html#ktx.assets.async.AssetStorage$load(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/parameters">parameters</a> define a <a href="#">AssetLoaderParameters.loadedCallback</a>, it will be invoked on the main
+rendering thread after the asset is loaded successfully with this <a href="index.html">AssetStorage</a> wrapped as an
+<a href="#">AssetManager</a> with <a href="#">AssetManagerWrapper</a>. Note that the wrapper supports a limited number of methods.
+It is encouraged not to rely on <a href="#">AssetLoaderParameters.LoadedCallback</a> and use coroutines instead.
+Exceptions thrown by callbacks will not be propagated, and will be logged with <a href="logger.html">logger</a> instead.</p>
+<a name="ktx.assets.async.AssetStorage$load(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.load.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))"></a>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">load</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$load(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.load.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$load(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.load.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/parameters">parameters</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Schedules loading of an asset with path and type specified by <a href="load.html#ktx.assets.async.AssetStorage$load(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.load.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/identifier">identifier</a>.
+Suspends the coroutine until an asset is loaded and returns a fully loaded instance of <a href="load.html#T">T</a>.</p>
+<p><a href="../-identifier/path.html">Identifier.path</a> must be compatible with the <a href="file-resolver.html">fileResolver</a>.
+Loading <a href="load.html#ktx.assets.async.AssetStorage$load(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.load.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/parameters">parameters</a> are optional and can be used to configure the loaded asset.</p>
+<p>Might throw the following exceptions:</p>
+<ul><li><a href="../-unloaded-asset-exception/index.html">UnloadedAssetException</a> if the asset unloaded asynchronously by another coroutine.</li>
+<li><a href="../-missing-loader-exception/index.html">MissingLoaderException</a> if the <a href="#">AssetLoader</a> for asset of requested type is not registered.</li>
+<li><a href="../-invalid-loader-exception/index.html">InvalidLoaderException</a> if the <a href="#">AssetLoader</a> implementation of requested type is invalid.</li>
+<li><a href="../-asset-loading-exception/index.html">AssetLoadingException</a> if the <a href="#">AssetLoader</a> has thrown an exception during loading.</li>
+<li><a href="../-missing-dependency-exception/index.html">MissingDependencyException</a> is the <a href="#">AssetLoader</a> is unable to obtain an instance of asset's dependency.</li>
+<li><a href="../-unsupported-method-exception/index.html">UnsupportedMethodException</a> is the <a href="#">AssetLoader</a> uses unsupported operation on <a href="#">AssetManagerWrapper</a>.</li>
+</ul>
+<p>If the asset was already loaded, added or scheduled for loading, this method will not fail or throw
+an exception (unless the original loading fails). Instead, the coroutine will be suspended until
+the original loading is finished and then return the same result.</p>
+<p>Note that to unload an asset, <a href="unload.html">unload</a> method should be called the same amount of times as <a href="./load.html">load</a>.
+Asset dependencies should not be unloaded directly; instead, unload the asset that required them
+and caused them to load in the first place.</p>
+<p>If the <a href="load.html#ktx.assets.async.AssetStorage$load(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.load.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/parameters">parameters</a> define a <a href="#">AssetLoaderParameters.loadedCallback</a>, it will be invoked on the main
+rendering thread after the asset is loaded successfully with this <a href="index.html">AssetStorage</a> wrapped as an
+<a href="#">AssetManager</a> with <a href="#">AssetManagerWrapper</a>. Note that the wrapper supports a limited number of methods.
+It is encouraged not to rely on <a href="#">AssetLoaderParameters.LoadedCallback</a> and use coroutines instead.
+Exceptions thrown by callbacks will not be propagated, and will be logged with <a href="logger.html">logger</a> instead.</p>
+<a name="ktx.assets.async.AssetStorage$load(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.load.T)))"></a>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">load</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$load(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.load.T)))/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Schedules loading of an asset of <a href="load.html#T">T</a> type described by the <a href="load.html#ktx.assets.async.AssetStorage$load(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.load.T)))/descriptor">descriptor</a>.
+Suspends the coroutine until an asset is loaded and returns a fully loaded instance of <a href="load.html#T">T</a>.</p>
+<p>Might throw the following exceptions:</p>
+<ul><li><a href="../-unloaded-asset-exception/index.html">UnloadedAssetException</a> if the asset unloaded asynchronously by another coroutine.</li>
+<li><a href="../-missing-loader-exception/index.html">MissingLoaderException</a> if the <a href="#">AssetLoader</a> for asset of requested type is not registered.</li>
+<li><a href="../-invalid-loader-exception/index.html">InvalidLoaderException</a> if the <a href="#">AssetLoader</a> implementation of requested type is invalid.</li>
+<li><a href="../-asset-loading-exception/index.html">AssetLoadingException</a> if the <a href="#">AssetLoader</a> has thrown an exception during loading.</li>
+<li><a href="../-missing-dependency-exception/index.html">MissingDependencyException</a> is the <a href="#">AssetLoader</a> is unable to obtain an instance of asset's dependency.</li>
+<li><a href="../-unsupported-method-exception/index.html">UnsupportedMethodException</a> is the <a href="#">AssetLoader</a> uses unsupported operation on <a href="#">AssetManagerWrapper</a>.</li>
+</ul>
+<p>If the asset was already loaded, added or scheduled for loading, this method will not fail or throw
+an exception (unless the original loading fails). Instead, the coroutine will be suspended until
+the original loading is finished and then return the same result.</p>
+<p>Note that to unload an asset, <a href="unload.html">unload</a> method should be called the same amount of times as <a href="./load.html">load</a>.
+Asset dependencies should not be unloaded directly; instead, unload the asset that required them
+and caused them to load in the first place.</p>
+<p>If the <a href="#">AssetDescriptor.params</a> define a <a href="#">AssetLoaderParameters.loadedCallback</a>, it will be invoked on
+the main rendering thread after the asset is loaded successfully with this <a href="index.html">AssetStorage</a> wrapped as an
+<a href="#">AssetManager</a> with <a href="#">AssetManagerWrapper</a>. Note that the wrapper supports a limited number of methods.
+It is encouraged not to rely on <a href="#">AssetLoaderParameters.LoadedCallback</a> and use coroutines instead.
+Exceptions thrown by callbacks will not be propagated, and will be logged with <a href="logger.html">logger</a> instead.</p>
+</BODY>
+</HTML>

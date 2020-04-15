@@ -1,0 +1,6 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:ktx.i18n$get(com.badlogic.gdx.utils.I18NBundle, kotlin.String, kotlin.Array((kotlin.Any)))ktx.i18n/com.badlogic.gdx.utils.-i18-n-bundle/get.html
+$dokka.location:ktx.i18n$get(com.badlogic.gdx.utils.I18NBundle, ktx.i18n.BundleLine)ktx.i18n/com.badlogic.gdx.utils.-i18-n-bundle/get.html
+$dokka.location:ktx.i18n$get(com.badlogic.gdx.utils.I18NBundle, ktx.i18n.BundleLine, kotlin.Array((kotlin.Any)))ktx.i18n/com.badlogic.gdx.utils.-i18-n-bundle/get.html
+ktx.i18n

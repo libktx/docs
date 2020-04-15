@@ -1,0 +1,102 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>alltypes - assets-async</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<h3>All Types</h3>
+<table>
+<tbody>
+<tr>
+<h5><a href="../ktx.assets.async/-already-loaded-asset-exception/index.html">ktx.assets.async.AlreadyLoadedAssetException</a></h5>
+<p>Thrown by <a href="../ktx.assets.async/-asset-storage/add.html">AssetStorage.add</a> when attempting to add an asset with <a href="../ktx.assets.async/-identifier/index.html">Identifier</a>
+that is already present in the <a href="../ktx.assets.async/-asset-storage/index.html">AssetStorage</a>.</p>
+</tr>
+<tr>
+ (extensions in package ktx.assets.async)
+<h5><a href="../ktx.assets.async/com.badlogic.gdx.assets.-asset-descriptor/index.html">com.badlogic.gdx.assets.AssetDescriptor</a></h5>
+</tr>
+<tr>
+ (extensions in package ktx.assets.async)
+<h5><a href="../ktx.assets.async/com.badlogic.gdx.assets.loaders.-asset-loader/index.html">com.badlogic.gdx.assets.loaders.AssetLoader</a></h5>
+</tr>
+<tr>
+<h5><a href="../ktx.assets.async/-asset-loading-exception/index.html">ktx.assets.async.AssetLoadingException</a></h5>
+<p>Thrown by <a href="../ktx.assets.async/-asset-storage/load.html">AssetStorage.load</a> or <a href="../ktx.assets.async/-asset-storage/get.html">AssetStorage.get</a> when the asset failed to load
+due to an unexpected loading exception, usually thrown by the associated <a href="#">AssetLoader</a>.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.assets.async/-asset-storage/index.html">ktx.assets.async.AssetStorage</a></h5>
+<p>Asynchronous asset loader based on coroutines API. An <a href="#">AssetManager</a> alternative.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.assets.async/-asset-storage-exception/index.html">ktx.assets.async.AssetStorageException</a></h5>
+<p>Thrown by <a href="../ktx.assets.async/-asset-storage/index.html">AssetStorage</a> and related services.
+<a href="#">message</a> describes the problem, while <a href="#">cause</a> is the optional cause of the exception.</p>
+</tr>
+<tr>
+ (extensions in package ktx.assets.async)
+<h5><a href="../ktx.assets.async/com.badlogic.gdx.assets.loaders.-asynchronous-asset-loader/index.html">com.badlogic.gdx.assets.loaders.AsynchronousAssetLoader</a></h5>
+</tr>
+<tr>
+<h5><a href="../ktx.assets.async/-asynchronous-loader.html">ktx.assets.async.AsynchronousLoader</a></h5>
+<p><a href="#">AsynchronousAssetLoader</a> with improved generics.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.assets.async/-identifier/index.html">ktx.assets.async.Identifier</a></h5>
+<p>Uniquely identifies a single asset stored in an <a href="../ktx.assets.async/-asset-storage/index.html">AssetStorage</a> by its <a href="../ktx.assets.async/-identifier/type.html">type</a> and <a href="../ktx.assets.async/-identifier/path.html">path</a>.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.assets.async/-invalid-loader-exception/index.html">ktx.assets.async.InvalidLoaderException</a></h5>
+<p>Thrown by <a href="../ktx.assets.async/-asset-storage/load.html">AssetStorage.load</a> or <a href="../ktx.assets.async/-asset-storage/get.html">AssetStorage.get</a> when the asset failed to load
+due to invalid loader implementation. Since loaders are pre-validated during
+registration, normally this exception is extremely rare and caused by invalid
+<a href="../ktx.assets.async/-asset-storage/set-loader.html">AssetStorage.setLoader</a> usage.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.assets.async/-loader.html">ktx.assets.async.Loader</a></h5>
+<p><a href="#">AssetLoader</a> with improved generics.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.assets.async/-loading-progress/index.html">ktx.assets.async.LoadingProgress</a></h5>
+<p>Tracks the loading progress of the <a href="../ktx.assets.async/-asset-storage/index.html">AssetStorage</a>.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.assets.async/-missing-asset-exception/index.html">ktx.assets.async.MissingAssetException</a></h5>
+<p>Thrown when the asset requested by an <a href="../ktx.assets.async/-asset-storage/get.html">AssetStorage.get</a> variant is not available
+in the <a href="../ktx.assets.async/-asset-storage/index.html">AssetStorage</a> at all or has not been loaded yet.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.assets.async/-missing-dependency-exception/index.html">ktx.assets.async.MissingDependencyException</a></h5>
+<p>This exception can be thrown by <a href="../ktx.assets.async/-asset-storage/load-sync.html">AssetStorage.loadSync</a> if dependencies of an asset were scheduled
+for asynchronous loading, but are not loaded yet. <a href="../ktx.assets.async/-asset-storage/load-sync.html">AssetStorage.loadSync</a> will not wait for the
+assets and instead will throw this exception.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.assets.async/-missing-loader-exception/index.html">ktx.assets.async.MissingLoaderException</a></h5>
+<p>Thrown by <a href="../ktx.assets.async/-asset-storage/load.html">AssetStorage.load</a> when the <a href="#">AssetLoader</a> for the requested asset type
+and path is unavailable. See <a href="../ktx.assets.async/-asset-storage/set-loader.html">AssetStorage.setLoader</a>.</p>
+</tr>
+<tr>
+ (extensions in package ktx.assets.async)
+<h5><a href="../ktx.assets.async/com.badlogic.gdx.assets.loaders.-synchronous-asset-loader/index.html">com.badlogic.gdx.assets.loaders.SynchronousAssetLoader</a></h5>
+</tr>
+<tr>
+<h5><a href="../ktx.assets.async/-synchronous-loader.html">ktx.assets.async.SynchronousLoader</a></h5>
+<p><a href="#">SynchronousAssetLoader</a> with improved generics.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.assets.async/-unloaded-asset-exception/index.html">ktx.assets.async.UnloadedAssetException</a></h5>
+<p>Thrown by <a href="../ktx.assets.async/-asset-storage/load.html">AssetStorage.load</a> or <a href="../ktx.assets.async/-asset-storage/get.html">AssetStorage.get</a> variant when the requested asset
+was unloaded asynchronously.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.assets.async/-unsupported-method-exception/index.html">ktx.assets.async.UnsupportedMethodException</a></h5>
+<p>Thrown when unsupported methods are called on the <a href="#">AssetManagerWrapper</a>.
+It is typically only caused by <a href="#">AssetLoader</a> instances or a <a href="#">AssetLoaderParameters.LoadedCallback</a>.</p>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

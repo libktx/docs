@@ -1,0 +1,187 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ktx.assets.async - assets-async</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">assets-async</a>&nbsp;/&nbsp;<a href="./index.html">ktx.assets.async</a><br/>
+<br/>
+<h2>Package ktx.assets.async</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-asset-storage/index.html">AssetStorage</a></h4>
+</td>
+<td>
+<p>Asynchronous asset loader based on coroutines API. An <a href="#">AssetManager</a> alternative.</p>
+<code><span class="keyword">class </span><span class="identifier">AssetStorage</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Disposable</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-asynchronous-loader.html">AsynchronousLoader</a></h4>
+</td>
+<td>
+<p><a href="#">AsynchronousAssetLoader</a> with improved generics.</p>
+<code><span class="keyword">typealias </span><span class="identifier">AsynchronousLoader</span><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="identifier">AsynchronousAssetLoader</span><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">,</span>&nbsp;<span class="keyword">out</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-identifier/index.html">Identifier</a></h4>
+</td>
+<td>
+<p>Uniquely identifies a single asset stored in an <a href="-asset-storage/index.html">AssetStorage</a> by its <a href="-identifier/type.html">type</a> and <a href="-identifier/path.html">path</a>.</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Identifier</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-loader.html">Loader</a></h4>
+</td>
+<td>
+<p><a href="#">AssetLoader</a> with improved generics.</p>
+<code><span class="keyword">typealias </span><span class="identifier">Loader</span><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="identifier">AssetLoader</span><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">,</span>&nbsp;<span class="keyword">out</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-loading-progress/index.html">LoadingProgress</a></h4>
+</td>
+<td>
+<p>Tracks the loading progress of the <a href="-asset-storage/index.html">AssetStorage</a>.</p>
+<code><span class="keyword">class </span><span class="identifier">LoadingProgress</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-synchronous-loader.html">SynchronousLoader</a></h4>
+</td>
+<td>
+<p><a href="#">SynchronousAssetLoader</a> with improved generics.</p>
+<code><span class="keyword">typealias </span><span class="identifier">SynchronousLoader</span><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="identifier">SynchronousAssetLoader</span><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">,</span>&nbsp;<span class="keyword">out</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Exceptions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-already-loaded-asset-exception/index.html">AlreadyLoadedAssetException</a></h4>
+</td>
+<td>
+<p>Thrown by <a href="-asset-storage/add.html">AssetStorage.add</a> when attempting to add an asset with <a href="-identifier/index.html">Identifier</a>
+that is already present in the <a href="-asset-storage/index.html">AssetStorage</a>.</p>
+<code><span class="keyword">class </span><span class="identifier">AlreadyLoadedAssetException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-asset-storage-exception/index.html"><span class="identifier">AssetStorageException</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-asset-loading-exception/index.html">AssetLoadingException</a></h4>
+</td>
+<td>
+<p>Thrown by <a href="-asset-storage/load.html">AssetStorage.load</a> or <a href="-asset-storage/get.html">AssetStorage.get</a> when the asset failed to load
+due to an unexpected loading exception, usually thrown by the associated <a href="#">AssetLoader</a>.</p>
+<code><span class="keyword">class </span><span class="identifier">AssetLoadingException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-asset-storage-exception/index.html"><span class="identifier">AssetStorageException</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-asset-storage-exception/index.html">AssetStorageException</a></h4>
+</td>
+<td>
+<p>Thrown by <a href="-asset-storage/index.html">AssetStorage</a> and related services.
+<a href="#">message</a> describes the problem, while <a href="#">cause</a> is the optional cause of the exception.</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">AssetStorageException</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">GdxRuntimeException</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-invalid-loader-exception/index.html">InvalidLoaderException</a></h4>
+</td>
+<td>
+<p>Thrown by <a href="-asset-storage/load.html">AssetStorage.load</a> or <a href="-asset-storage/get.html">AssetStorage.get</a> when the asset failed to load
+due to invalid loader implementation. Since loaders are pre-validated during
+registration, normally this exception is extremely rare and caused by invalid
+<a href="-asset-storage/set-loader.html">AssetStorage.setLoader</a> usage.</p>
+<code><span class="keyword">class </span><span class="identifier">InvalidLoaderException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-asset-storage-exception/index.html"><span class="identifier">AssetStorageException</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-missing-asset-exception/index.html">MissingAssetException</a></h4>
+</td>
+<td>
+<p>Thrown when the asset requested by an <a href="-asset-storage/get.html">AssetStorage.get</a> variant is not available
+in the <a href="-asset-storage/index.html">AssetStorage</a> at all or has not been loaded yet.</p>
+<code><span class="keyword">class </span><span class="identifier">MissingAssetException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-asset-storage-exception/index.html"><span class="identifier">AssetStorageException</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-missing-dependency-exception/index.html">MissingDependencyException</a></h4>
+</td>
+<td>
+<p>This exception can be thrown by <a href="-asset-storage/load-sync.html">AssetStorage.loadSync</a> if dependencies of an asset were scheduled
+for asynchronous loading, but are not loaded yet. <a href="-asset-storage/load-sync.html">AssetStorage.loadSync</a> will not wait for the
+assets and instead will throw this exception.</p>
+<code><span class="keyword">class </span><span class="identifier">MissingDependencyException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-asset-storage-exception/index.html"><span class="identifier">AssetStorageException</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-missing-loader-exception/index.html">MissingLoaderException</a></h4>
+</td>
+<td>
+<p>Thrown by <a href="-asset-storage/load.html">AssetStorage.load</a> when the <a href="#">AssetLoader</a> for the requested asset type
+and path is unavailable. See <a href="-asset-storage/set-loader.html">AssetStorage.setLoader</a>.</p>
+<code><span class="keyword">class </span><span class="identifier">MissingLoaderException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-asset-storage-exception/index.html"><span class="identifier">AssetStorageException</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-unloaded-asset-exception/index.html">UnloadedAssetException</a></h4>
+</td>
+<td>
+<p>Thrown by <a href="-asset-storage/load.html">AssetStorage.load</a> or <a href="-asset-storage/get.html">AssetStorage.get</a> variant when the requested asset
+was unloaded asynchronously.</p>
+<code><span class="keyword">class </span><span class="identifier">UnloadedAssetException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-asset-storage-exception/index.html"><span class="identifier">AssetStorageException</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-unsupported-method-exception/index.html">UnsupportedMethodException</a></h4>
+</td>
+<td>
+<p>Thrown when unsupported methods are called on the <a href="#">AssetManagerWrapper</a>.
+It is typically only caused by <a href="#">AssetLoader</a> instances or a <a href="#">AssetLoaderParameters.LoadedCallback</a>.</p>
+<code><span class="keyword">class </span><span class="identifier">UnsupportedMethodException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-asset-storage-exception/index.html"><span class="identifier">AssetStorageException</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extensions for External Classes</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.assets.-asset-descriptor/index.html">com.badlogic.gdx.assets.AssetDescriptor</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.assets.loaders.-asset-loader/index.html">com.badlogic.gdx.assets.loaders.AssetLoader</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.assets.loaders.-asynchronous-asset-loader/index.html">com.badlogic.gdx.assets.loaders.AsynchronousAssetLoader</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.assets.loaders.-synchronous-asset-loader/index.html">com.badlogic.gdx.assets.loaders.SynchronousAssetLoader</a></h4>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

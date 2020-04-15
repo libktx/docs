@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>onKeyEvent - actors</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">actors</a>&nbsp;/&nbsp;<a href="index.html">ktx.actors</a>&nbsp;/&nbsp;<a href="./on-key-event.html">onKeyEvent</a><br/>
+<br/>
+<h1>onKeyEvent</h1>
+<a name="ktx.actors$onKeyEvent(ktx.actors.onKeyEvent.Widget, kotlin.Boolean, kotlin.Function3((com.badlogic.gdx.scenes.scene2d.InputEvent, ktx.actors.onKeyEvent.Widget, kotlin.Char, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Widget</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Actor</span><span class="symbol">&gt;</span> <span class="identifier">Widget</span><span class="symbol">.</span><span class="identifier">onKeyEvent</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$onKeyEvent(ktx.actors.onKeyEvent.Widget, kotlin.Boolean, kotlin.Function3((com.badlogic.gdx.scenes.scene2d.InputEvent, ktx.actors.onKeyEvent.Widget, kotlin.Char, kotlin.Unit)))/catchEvent">catchEvent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="keyword">crossinline</span> <span class="identifier" id="ktx.actors$onKeyEvent(ktx.actors.onKeyEvent.Widget, kotlin.Boolean, kotlin.Function3((com.badlogic.gdx.scenes.scene2d.InputEvent, ktx.actors.onKeyEvent.Widget, kotlin.Char, kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">event</span><span class="symbol">:</span>&nbsp;<span class="identifier">InputEvent</span><span class="symbol">,</span>&nbsp;<span class="identifier">actor</span><span class="symbol">:</span>&nbsp;<span class="identifier">Widget</span><span class="symbol">,</span>&nbsp;<span class="identifier">character</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html"><span class="identifier">Char</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EventListener</span></code>
+<p>Attaches an <a href="#">EventListener</a> optimized to listen for key type events fired for this actor.</p>
+<h3>Parameters</h3>
+<p><a name="catchEvent"></a>
+<code>catchEvent</code> - if true, the event will not be passed further after it is handled by this listener. Defaults to false.</p>
+<p><a name="listener"></a>
+<code>listener</code> - invoked each time this actor is keyboard-focused and a key is typed. Consumes the triggered
+<a href="#">InputEvent</a>, the <a href="#">Actor</a> that the listener was originally attached to and the typed character.</p>
+<p><strong>Return</strong><br/>
+<a href="#">EventListener</a> instance.</p>
+</BODY>
+</HTML>

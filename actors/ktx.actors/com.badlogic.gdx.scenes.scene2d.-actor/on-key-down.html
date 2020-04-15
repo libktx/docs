@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>onKeyDown - actors</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">actors</a>&nbsp;/&nbsp;<a href="../index.html">ktx.actors</a>&nbsp;/&nbsp;<a href="index.html">com.badlogic.gdx.scenes.scene2d.Actor</a>&nbsp;/&nbsp;<a href="./on-key-down.html">onKeyDown</a><br/>
+<br/>
+<h1>onKeyDown</h1>
+<a name="ktx.actors$onKeyDown(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Int, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">onKeyDown</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$onKeyDown(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Int, kotlin.Unit)))/catchEvent">catchEvent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="keyword">crossinline</span> <span class="identifier" id="ktx.actors$onKeyDown(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Int, kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">keyCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EventListener</span></code>
+<p>Attaches an <a href="#">EventListener</a> optimized to listen for keyDown type events fired for this actor.</p>
+<h3>Parameters</h3>
+<p><a name="catchEvent"></a>
+<code>catchEvent</code> - if true, the event will not be passed further after it is handled by this listener. Defaults to false.</p>
+<p><a name="listener"></a>
+<code>listener</code> - invoked each time this actor is keyboard-focused and a key is pressed. Consumes the pressed key code.</p>
+<p><strong>Return</strong><br/>
+<a href="#">EventListener</a> instance.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">com.badlogic.gdx.Input.Keys</a></p>
+</p>
+</BODY>
+</HTML>

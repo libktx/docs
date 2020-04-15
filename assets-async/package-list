@@ -1,0 +1,8 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:ktx.assets.async$getDependencies(com.badlogic.gdx.assets.loaders.AssetLoader((kotlin.Any, com.badlogic.gdx.assets.AssetLoaderParameters(()))), com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))ktx.assets.async/com.badlogic.gdx.assets.loaders.-asset-loader/get-dependencies.html
+$dokka.location:ktx.assets.async$load(com.badlogic.gdx.assets.loaders.SynchronousAssetLoader((ktx.assets.async.load.Asset, com.badlogic.gdx.assets.AssetLoaderParameters(()))), com.badlogic.gdx.assets.AssetManager, com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.load.Asset)))ktx.assets.async/com.badlogic.gdx.assets.loaders.-synchronous-asset-loader/load.html
+$dokka.location:ktx.assets.async$loadAsync(com.badlogic.gdx.assets.loaders.AsynchronousAssetLoader((ktx.assets.async.loadAsync.Asset, com.badlogic.gdx.assets.AssetLoaderParameters(()))), com.badlogic.gdx.assets.AssetManager, com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.loadAsync.Asset)))ktx.assets.async/com.badlogic.gdx.assets.loaders.-asynchronous-asset-loader/load-async.html
+$dokka.location:ktx.assets.async$loadSync(com.badlogic.gdx.assets.loaders.AsynchronousAssetLoader((ktx.assets.async.loadSync.Asset, com.badlogic.gdx.assets.AssetLoaderParameters(()))), com.badlogic.gdx.assets.AssetManager, com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.loadSync.Asset)))ktx.assets.async/com.badlogic.gdx.assets.loaders.-asynchronous-asset-loader/load-sync.html
+$dokka.location:ktx.assets.async$toIdentifier(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.toIdentifier.T)))ktx.assets.async/com.badlogic.gdx.assets.-asset-descriptor/to-identifier.html
+ktx.assets.async

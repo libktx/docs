@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>use - graphics</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">graphics</a>&nbsp;/&nbsp;<a href="index.html">ktx.graphics</a>&nbsp;/&nbsp;<a href="./use.html">use</a><br/>
+<br/>
+<h1>use</h1>
+<a name="ktx.graphics$use(ktx.graphics.use.B, com.badlogic.gdx.math.Matrix4, kotlin.Function1((ktx.graphics.use.B, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">B</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Batch</span><span class="symbol">&gt;</span> <span class="identifier">B</span><span class="symbol">.</span><span class="identifier">use</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$use(ktx.graphics.use.B, com.badlogic.gdx.math.Matrix4, kotlin.Function1((ktx.graphics.use.B, kotlin.Unit)))/projectionMatrix">projectionMatrix</span><span class="symbol">:</span>&nbsp;<span class="identifier">Matrix4</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ktx.graphics$use(ktx.graphics.use.B, com.badlogic.gdx.math.Matrix4, kotlin.Function1((ktx.graphics.use.B, kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">B</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Automatically calls <a href="#">Batch.begin</a> and <a href="#">Batch.end</a>.</p>
+<h3>Parameters</h3>
+<p><a name="projectionMatrix"></a>
+<code>projectionMatrix</code> - A projection matrix to set on the batch before <a href="#">Batch.begin</a>. If null, the batch's matrix
+remains unchanged.</p>
+<p><a name="action"></a>
+<code>action</code> - inlined. Executed after <a href="#">Batch.begin</a> and before <a href="#">Batch.end</a>.</p>
+<a name="ktx.graphics$use(ktx.graphics.use.B, com.badlogic.gdx.graphics.Camera, kotlin.Function1((ktx.graphics.use.B, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">B</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Batch</span><span class="symbol">&gt;</span> <span class="identifier">B</span><span class="symbol">.</span><span class="identifier">use</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$use(ktx.graphics.use.B, com.badlogic.gdx.graphics.Camera, kotlin.Function1((ktx.graphics.use.B, kotlin.Unit)))/camera">camera</span><span class="symbol">:</span>&nbsp;<span class="identifier">Camera</span><span class="symbol">, </span><span class="identifier" id="ktx.graphics$use(ktx.graphics.use.B, com.badlogic.gdx.graphics.Camera, kotlin.Function1((ktx.graphics.use.B, kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">B</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Automatically calls <a href="#">Batch.begin</a> and <a href="#">Batch.end</a>.</p>
+<h3>Parameters</h3>
+<p><a name="camera"></a>
+<code>camera</code> - The camera's <a href="#">Camera.combined</a> matrix will be set to the batch's projection matrix before <a href="#">Batch.begin</a></p>
+<p><a name="action"></a>
+<code>action</code> - inlined. Executed after <a href="#">Batch.begin</a> and before <a href="#">Batch.end</a>.</p>
+<a name="ktx.graphics$use(ktx.graphics.use.S, kotlin.Function1((ktx.graphics.use.S, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ShaderProgram</span><span class="symbol">&gt;</span> <span class="identifier">S</span><span class="symbol">.</span><span class="identifier">use</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$use(ktx.graphics.use.S, kotlin.Function1((ktx.graphics.use.S, kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">S</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Automatically calls <a href="#">ShaderProgram.begin</a> and <a href="#">ShaderProgram.end</a>.</p>
+<h3>Parameters</h3>
+<p><a name="action"></a>
+<code>action</code> - inlined. Executed after <a href="#">ShaderProgram.begin</a> and before <a href="#">ShaderProgram.end</a>.</p>
+<a name="ktx.graphics$use(ktx.graphics.use.B, kotlin.Function1((ktx.graphics.use.B, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">B</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">GLFrameBuffer</span><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <span class="identifier">B</span><span class="symbol">.</span><span class="identifier">use</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$use(ktx.graphics.use.B, kotlin.Function1((ktx.graphics.use.B, kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">B</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Automatically calls <a href="#">GLFrameBuffer.begin</a> and <a href="#">GLFrameBuffer.end</a>.</p>
+<h3>Parameters</h3>
+<p><a name="action"></a>
+<code>action</code> - inlined. Executed after <a href="#">GLFrameBuffer.begin</a> and before <a href="#">GLFrameBuffer.end</a>.</p>
+<a name="ktx.graphics$use(ktx.graphics.use.SR, com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType, kotlin.Function1((ktx.graphics.use.SR, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">SR</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ShapeRenderer</span><span class="symbol">&gt;</span> <span class="identifier">SR</span><span class="symbol">.</span><span class="identifier">use</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$use(ktx.graphics.use.SR, com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType, kotlin.Function1((ktx.graphics.use.SR, kotlin.Unit)))/type">type</span><span class="symbol">:</span>&nbsp;<span class="identifier">ShapeType</span><span class="symbol">, </span><span class="identifier" id="ktx.graphics$use(ktx.graphics.use.SR, com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType, kotlin.Function1((ktx.graphics.use.SR, kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">SR</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Automatically calls <a href="#">ShapeRenderer.begin</a> and <a href="#">ShapeRenderer.end</a>.</p>
+<h3>Parameters</h3>
+<p><a name="type"></a>
+<code>type</code> - specified shape type used to draw the shapes in the <a href="use.html#ktx.graphics$use(ktx.graphics.use.SR, com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType, kotlin.Function1((ktx.graphics.use.SR, kotlin.Unit)))/action">action</a> block. Can be changed during the rendering
+with <a href="#">ShapeRenderer.set</a>.</p>
+<p><a name="action"></a>
+<code>action</code> - inlined. Executed after <a href="#">ShapeRenderer.begin</a> and before <a href="#">ShapeRenderer.end</a>.</p>
+</BODY>
+</HTML>

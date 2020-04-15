@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ktx.json.com.badlogic.gdx.utils.Json - json</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">json</a>&nbsp;/&nbsp;<a href="../index.html">ktx.json</a>&nbsp;/&nbsp;<a href="./index.html">com.badlogic.gdx.utils.Json</a><br/>
+<br/>
+<h3>Extensions for com.badlogic.gdx.utils.Json</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-class-tag.html">addClassTag</a></h4>
+</td>
+<td>
+<p>Sets a <a href="add-class-tag.html#ktx.json$addClassTag(com.badlogic.gdx.utils.Json, kotlin.String)/tag">tag</a> to use instead of the fully qualifier class name for type <a href="add-class-tag.html#T">T</a>.
+This can make the JSON easier to read.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">Json</span><span class="symbol">.</span><span class="identifier">addClassTag</span><span class="symbol">(</span><span class="identifier" id="ktx.json$addClassTag(com.badlogic.gdx.utils.Json, kotlin.String)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="from-json.html">fromJson</a></h4>
+</td>
+<td>
+<p>Parse an object of type <a href="from-json.html#T">T</a> from a <a href="from-json.html#ktx.json$fromJson(com.badlogic.gdx.utils.Json, com.badlogic.gdx.files.FileHandle)/file">file</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">Json</span><span class="symbol">.</span><span class="identifier">fromJson</span><span class="symbol">(</span><span class="identifier" id="ktx.json$fromJson(com.badlogic.gdx.utils.Json, com.badlogic.gdx.files.FileHandle)/file">file</span><span class="symbol">:</span>&nbsp;<span class="identifier">FileHandle</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Parse an object of type <a href="from-json.html#T">T</a> from a <a href="from-json.html#ktx.json$fromJson(com.badlogic.gdx.utils.Json, kotlin.String)/string">string</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">Json</span><span class="symbol">.</span><span class="identifier">fromJson</span><span class="symbol">(</span><span class="identifier" id="ktx.json$fromJson(com.badlogic.gdx.utils.Json, kotlin.String)/string">string</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-tag.html">getTag</a></h4>
+</td>
+<td>
+<p>Returns the tag for type <a href="get-tag.html#T">T</a>, or null if none was defined.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">Json</span><span class="symbol">.</span><span class="identifier">getTag</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read-array-value.html">readArrayValue</a></h4>
+</td>
+<td>
+<p>Read an iterable value of type <a href="read-array-value.html#T">T</a> with elements of type <a href="read-array-value.html#E">E</a> from a <a href="read-array-value.html#ktx.json$readArrayValue(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.JsonValue, kotlin.String)/jsonData">jsonData</a> attribute with a <a href="read-array-value.html#ktx.json$readArrayValue(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.JsonValue, kotlin.String)/name">name</a>.
+If <a href="read-array-value.html#ktx.json$readArrayValue(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.JsonValue, kotlin.String)/name">name</a> is <code>null</code>, this will directly read <a href="read-array-value.html#ktx.json$readArrayValue(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.JsonValue, kotlin.String)/jsonData">jsonData</a> as an iterable of type <a href="read-array-value.html#T">T</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">E</span><span class="symbol">&gt;</span> <span class="identifier">Json</span><span class="symbol">.</span><span class="identifier">readArrayValue</span><span class="symbol">(</span><span class="identifier" id="ktx.json$readArrayValue(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.JsonValue, kotlin.String)/jsonData">jsonData</span><span class="symbol">:</span>&nbsp;<span class="identifier">JsonValue</span><span class="symbol">, </span><span class="identifier" id="ktx.json$readArrayValue(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.JsonValue, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="read-value.html">readValue</a></h4>
+</td>
+<td>
+<p>Read a value of type <a href="read-value.html#T">T</a> from a <a href="read-value.html#ktx.json$readValue(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.JsonValue, kotlin.String)/jsonData">jsonData</a> attribute with a <a href="read-value.html#ktx.json$readValue(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.JsonValue, kotlin.String)/name">name</a>.
+If <a href="read-value.html#ktx.json$readValue(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.JsonValue, kotlin.String)/name">name</a> is <code>null</code>, this will directly read <a href="read-value.html#ktx.json$readValue(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.JsonValue, kotlin.String)/jsonData">jsonData</a> as an object of type <a href="read-value.html#T">T</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">Json</span><span class="symbol">.</span><span class="identifier">readValue</span><span class="symbol">(</span><span class="identifier" id="ktx.json$readValue(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.JsonValue, kotlin.String)/jsonData">jsonData</span><span class="symbol">:</span>&nbsp;<span class="identifier">JsonValue</span><span class="symbol">, </span><span class="identifier" id="ktx.json$readValue(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.JsonValue, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-element-type.html">setElementType</a></h4>
+</td>
+<td>
+<p>Sets the elements in a collection of type <a href="set-element-type.html#T">T</a> to type <a href="set-element-type.html#E">E</a>.
+When the element type is known, the class for each element in the collection
+does not need to be written unless different from the element type.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">, </span><span class="identifier">E</span><span class="symbol">&gt;</span> <span class="identifier">Json</span><span class="symbol">.</span><span class="identifier">setElementType</span><span class="symbol">(</span><span class="identifier" id="ktx.json$setElementType(com.badlogic.gdx.utils.Json, kotlin.String)/fieldName">fieldName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-serializer.html">setSerializer</a></h4>
+</td>
+<td>
+<p>Registers a <a href="set-serializer.html#ktx.json$setSerializer(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.Json.Serializer((ktx.json.setSerializer.T)))/serializer">serializer</a> to use for type <a href="set-serializer.html#T">T</a> instead of the default behavior of
+serializing all of an object fields.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">Json</span><span class="symbol">.</span><span class="identifier">setSerializer</span><span class="symbol">(</span><span class="identifier" id="ktx.json$setSerializer(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.Json.Serializer((ktx.json.setSerializer.T)))/serializer">serializer</span><span class="symbol">:</span>&nbsp;<span class="identifier">Serializer</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>iterate - collections</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">collections</a>&nbsp;/&nbsp;<a href="../index.html">ktx.collections</a>&nbsp;/&nbsp;<a href="index.html">com.badlogic.gdx.utils.ObjectMap</a>&nbsp;/&nbsp;<a href="./iterate.html">iterate</a><br/>
+<br/>
+<h1>iterate</h1>
+<a name="ktx.collections$iterate(com.badlogic.gdx.utils.ObjectMap((ktx.collections.iterate.Key, ktx.collections.iterate.Value)), kotlin.Function3((ktx.collections.iterate.Key, ktx.collections.iterate.Value, kotlin.collections.MutableIterator((com.badlogic.gdx.utils.ObjectMap.Entry((, )))), kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Key</span><span class="symbol">, </span><span class="identifier">Value</span><span class="symbol">&gt;</span> <a href="../-gdx-map.html"><span class="identifier">GdxMap</span></a><span class="symbol">&lt;</span><span class="identifier">Key</span><span class="symbol">,</span>&nbsp;<span class="identifier">Value</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">iterate</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$iterate(com.badlogic.gdx.utils.ObjectMap((ktx.collections.iterate.Key, ktx.collections.iterate.Value)), kotlin.Function3((ktx.collections.iterate.Key, ktx.collections.iterate.Value, kotlin.collections.MutableIterator((com.badlogic.gdx.utils.ObjectMap.Entry((, )))), kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">Key</span><span class="symbol">,</span>&nbsp;<span class="identifier">Value</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html"><span class="identifier">MutableIterator</span></a><span class="symbol">&lt;</span><span class="identifier">Entry</span><span class="symbol">&lt;</span><span class="identifier">Key</span><span class="symbol">,</span>&nbsp;<span class="identifier">Value</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Allows to iterate over the map with Kotlin lambda syntax and direct access to <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html">MutableIterator</a>, which can remove
+elements during iteration.</p>
+<h3>Parameters</h3>
+<p><a name="action"></a>
+<code>action</code> - will be invoked on each key and value pair. Passed iterator is ensured to be the same instance throughout
+    the iteration. It can be used to remove elements.</p>
+</BODY>
+</HTML>

@@ -1,0 +1,145 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:ktx.math$amid(kotlin.Float, kotlin.Float)ktx.math/kotlin.-float/amid.html
+$dokka.location:ktx.math$amid(kotlin.Int, kotlin.Int)ktx.math/kotlin.-int/amid.html
+$dokka.location:ktx.math$compareTo(com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/compare-to.html
+$dokka.location:ktx.math$compareTo(com.badlogic.gdx.math.Vector3, com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/compare-to.html
+$dokka.location:ktx.math$component1(com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/component1.html
+$dokka.location:ktx.math$component1(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/component1.html
+$dokka.location:ktx.math$component1(com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/component1.html
+$dokka.location:ktx.math$component1(com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/component1.html
+$dokka.location:ktx.math$component10(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/component10.html
+$dokka.location:ktx.math$component11(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/component11.html
+$dokka.location:ktx.math$component12(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/component12.html
+$dokka.location:ktx.math$component13(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/component13.html
+$dokka.location:ktx.math$component14(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/component14.html
+$dokka.location:ktx.math$component15(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/component15.html
+$dokka.location:ktx.math$component16(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/component16.html
+$dokka.location:ktx.math$component2(com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/component2.html
+$dokka.location:ktx.math$component2(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/component2.html
+$dokka.location:ktx.math$component2(com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/component2.html
+$dokka.location:ktx.math$component2(com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/component2.html
+$dokka.location:ktx.math$component3(com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/component3.html
+$dokka.location:ktx.math$component3(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/component3.html
+$dokka.location:ktx.math$component3(com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/component3.html
+$dokka.location:ktx.math$component4(com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/component4.html
+$dokka.location:ktx.math$component4(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/component4.html
+$dokka.location:ktx.math$component5(com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/component5.html
+$dokka.location:ktx.math$component5(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/component5.html
+$dokka.location:ktx.math$component6(com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/component6.html
+$dokka.location:ktx.math$component6(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/component6.html
+$dokka.location:ktx.math$component7(com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/component7.html
+$dokka.location:ktx.math$component7(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/component7.html
+$dokka.location:ktx.math$component8(com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/component8.html
+$dokka.location:ktx.math$component8(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/component8.html
+$dokka.location:ktx.math$component9(com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/component9.html
+$dokka.location:ktx.math$component9(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/component9.html
+$dokka.location:ktx.math$dec(com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/dec.html
+$dokka.location:ktx.math$dec(com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/dec.html
+$dokka.location:ktx.math$div(com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/div.html
+$dokka.location:ktx.math$div(com.badlogic.gdx.math.Vector2, kotlin.Float)ktx.math/com.badlogic.gdx.math.-vector2/div.html
+$dokka.location:ktx.math$div(com.badlogic.gdx.math.Vector2, kotlin.Int)ktx.math/com.badlogic.gdx.math.-vector2/div.html
+$dokka.location:ktx.math$div(com.badlogic.gdx.math.Vector3, com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/div.html
+$dokka.location:ktx.math$div(com.badlogic.gdx.math.Vector3, kotlin.Float)ktx.math/com.badlogic.gdx.math.-vector3/div.html
+$dokka.location:ktx.math$div(com.badlogic.gdx.math.Vector3, kotlin.Int)ktx.math/com.badlogic.gdx.math.-vector3/div.html
+$dokka.location:ktx.math$div(kotlin.ranges.ClosedRange((kotlin.Float)), kotlin.Float)ktx.math/kotlin.ranges.-closed-range/div.html
+$dokka.location:ktx.math$div(kotlin.ranges.IntRange, kotlin.Int)ktx.math/kotlin.ranges.-int-range/div.html
+$dokka.location:ktx.math$divAssign(com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/div-assign.html
+$dokka.location:ktx.math$divAssign(com.badlogic.gdx.math.Vector2, kotlin.Float)ktx.math/com.badlogic.gdx.math.-vector2/div-assign.html
+$dokka.location:ktx.math$divAssign(com.badlogic.gdx.math.Vector2, kotlin.Int)ktx.math/com.badlogic.gdx.math.-vector2/div-assign.html
+$dokka.location:ktx.math$divAssign(com.badlogic.gdx.math.Vector3, com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/div-assign.html
+$dokka.location:ktx.math$divAssign(com.badlogic.gdx.math.Vector3, kotlin.Float)ktx.math/com.badlogic.gdx.math.-vector3/div-assign.html
+$dokka.location:ktx.math$divAssign(com.badlogic.gdx.math.Vector3, kotlin.Int)ktx.math/com.badlogic.gdx.math.-vector3/div-assign.html
+$dokka.location:ktx.math$dot(com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/dot.html
+$dokka.location:ktx.math$dot(com.badlogic.gdx.math.Vector3, com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/dot.html
+$dokka.location:ktx.math$inc(com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/inc.html
+$dokka.location:ktx.math$inc(com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/inc.html
+$dokka.location:ktx.math$interpolate(kotlin.ranges.ClosedRange((kotlin.Float)), kotlin.Float, com.badlogic.gdx.math.Interpolation)ktx.math/kotlin.ranges.-closed-range/interpolate.html
+$dokka.location:ktx.math$lerp(kotlin.ranges.ClosedRange((kotlin.Float)), kotlin.Float)ktx.math/kotlin.ranges.-closed-range/lerp.html
+$dokka.location:ktx.math$minus(com.badlogic.gdx.math.Matrix3, com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/minus.html
+$dokka.location:ktx.math$minus(com.badlogic.gdx.math.Matrix4, com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/minus.html
+$dokka.location:ktx.math$minus(com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/minus.html
+$dokka.location:ktx.math$minus(com.badlogic.gdx.math.Vector2, kotlin.Float)ktx.math/com.badlogic.gdx.math.-vector2/minus.html
+$dokka.location:ktx.math$minus(com.badlogic.gdx.math.Vector2, kotlin.Int)ktx.math/com.badlogic.gdx.math.-vector2/minus.html
+$dokka.location:ktx.math$minus(com.badlogic.gdx.math.Vector3, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector3/minus.html
+$dokka.location:ktx.math$minus(com.badlogic.gdx.math.Vector3, com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/minus.html
+$dokka.location:ktx.math$minus(com.badlogic.gdx.math.Vector3, kotlin.Float)ktx.math/com.badlogic.gdx.math.-vector3/minus.html
+$dokka.location:ktx.math$minus(com.badlogic.gdx.math.Vector3, kotlin.Int)ktx.math/com.badlogic.gdx.math.-vector3/minus.html
+$dokka.location:ktx.math$minus(kotlin.ranges.ClosedRange((kotlin.Float)), kotlin.Float)ktx.math/kotlin.ranges.-closed-range/minus.html
+$dokka.location:ktx.math$minus(kotlin.ranges.IntRange, kotlin.Int)ktx.math/kotlin.ranges.-int-range/minus.html
+$dokka.location:ktx.math$minusAssign(com.badlogic.gdx.math.Matrix3, com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/minus-assign.html
+$dokka.location:ktx.math$minusAssign(com.badlogic.gdx.math.Matrix4, com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/minus-assign.html
+$dokka.location:ktx.math$minusAssign(com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/minus-assign.html
+$dokka.location:ktx.math$minusAssign(com.badlogic.gdx.math.Vector2, kotlin.Float)ktx.math/com.badlogic.gdx.math.-vector2/minus-assign.html
+$dokka.location:ktx.math$minusAssign(com.badlogic.gdx.math.Vector2, kotlin.Int)ktx.math/com.badlogic.gdx.math.-vector2/minus-assign.html
+$dokka.location:ktx.math$minusAssign(com.badlogic.gdx.math.Vector3, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector3/minus-assign.html
+$dokka.location:ktx.math$minusAssign(com.badlogic.gdx.math.Vector3, com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/minus-assign.html
+$dokka.location:ktx.math$minusAssign(com.badlogic.gdx.math.Vector3, kotlin.Float)ktx.math/com.badlogic.gdx.math.-vector3/minus-assign.html
+$dokka.location:ktx.math$minusAssign(com.badlogic.gdx.math.Vector3, kotlin.Int)ktx.math/com.badlogic.gdx.math.-vector3/minus-assign.html
+$dokka.location:ktx.math$not(com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/not.html
+$dokka.location:ktx.math$not(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/not.html
+$dokka.location:ktx.math$plus(com.badlogic.gdx.math.Matrix3, com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/plus.html
+$dokka.location:ktx.math$plus(com.badlogic.gdx.math.Matrix4, com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/plus.html
+$dokka.location:ktx.math$plus(com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/plus.html
+$dokka.location:ktx.math$plus(com.badlogic.gdx.math.Vector2, kotlin.Float)ktx.math/com.badlogic.gdx.math.-vector2/plus.html
+$dokka.location:ktx.math$plus(com.badlogic.gdx.math.Vector2, kotlin.Int)ktx.math/com.badlogic.gdx.math.-vector2/plus.html
+$dokka.location:ktx.math$plus(com.badlogic.gdx.math.Vector3, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector3/plus.html
+$dokka.location:ktx.math$plus(com.badlogic.gdx.math.Vector3, com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/plus.html
+$dokka.location:ktx.math$plus(com.badlogic.gdx.math.Vector3, kotlin.Float)ktx.math/com.badlogic.gdx.math.-vector3/plus.html
+$dokka.location:ktx.math$plus(com.badlogic.gdx.math.Vector3, kotlin.Int)ktx.math/com.badlogic.gdx.math.-vector3/plus.html
+$dokka.location:ktx.math$plus(kotlin.ranges.ClosedRange((kotlin.Float)), kotlin.Float)ktx.math/kotlin.ranges.-closed-range/plus.html
+$dokka.location:ktx.math$plus(kotlin.ranges.IntRange, kotlin.Int)ktx.math/kotlin.ranges.-int-range/plus.html
+$dokka.location:ktx.math$plusAssign(com.badlogic.gdx.math.Matrix3, com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/plus-assign.html
+$dokka.location:ktx.math$plusAssign(com.badlogic.gdx.math.Matrix4, com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/plus-assign.html
+$dokka.location:ktx.math$plusAssign(com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/plus-assign.html
+$dokka.location:ktx.math$plusAssign(com.badlogic.gdx.math.Vector2, kotlin.Float)ktx.math/com.badlogic.gdx.math.-vector2/plus-assign.html
+$dokka.location:ktx.math$plusAssign(com.badlogic.gdx.math.Vector2, kotlin.Int)ktx.math/com.badlogic.gdx.math.-vector2/plus-assign.html
+$dokka.location:ktx.math$plusAssign(com.badlogic.gdx.math.Vector3, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector3/plus-assign.html
+$dokka.location:ktx.math$plusAssign(com.badlogic.gdx.math.Vector3, com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/plus-assign.html
+$dokka.location:ktx.math$plusAssign(com.badlogic.gdx.math.Vector3, kotlin.Float)ktx.math/com.badlogic.gdx.math.-vector3/plus-assign.html
+$dokka.location:ktx.math$plusAssign(com.badlogic.gdx.math.Vector3, kotlin.Int)ktx.math/com.badlogic.gdx.math.-vector3/plus-assign.html
+$dokka.location:ktx.math$random(kotlin.ranges.ClosedRange((kotlin.Float)))ktx.math/kotlin.ranges.-closed-range/random.html
+$dokka.location:ktx.math$random(kotlin.ranges.IntRange, java.util.Random)ktx.math/kotlin.ranges.-int-range/random.html
+$dokka.location:ktx.math$randomGaussian(kotlin.ranges.ClosedRange((kotlin.Float)), kotlin.Boolean)ktx.math/kotlin.ranges.-closed-range/random-gaussian.html
+$dokka.location:ktx.math$randomTriangular(kotlin.ranges.ClosedRange((kotlin.Float)))ktx.math/kotlin.ranges.-closed-range/random-triangular.html
+$dokka.location:ktx.math$randomTriangular(kotlin.ranges.ClosedRange((kotlin.Float)), kotlin.Float)ktx.math/kotlin.ranges.-closed-range/random-triangular.html
+$dokka.location:ktx.math$times(com.badlogic.gdx.math.Matrix3, com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/times.html
+$dokka.location:ktx.math$times(com.badlogic.gdx.math.Matrix3, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-matrix3/times.html
+$dokka.location:ktx.math$times(com.badlogic.gdx.math.Matrix3, kotlin.Float)ktx.math/com.badlogic.gdx.math.-matrix3/times.html
+$dokka.location:ktx.math$times(com.badlogic.gdx.math.Matrix4, com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/times.html
+$dokka.location:ktx.math$times(com.badlogic.gdx.math.Matrix4, com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-matrix4/times.html
+$dokka.location:ktx.math$times(com.badlogic.gdx.math.Matrix4, kotlin.Float)ktx.math/com.badlogic.gdx.math.-matrix4/times.html
+$dokka.location:ktx.math$times(com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/times.html
+$dokka.location:ktx.math$times(com.badlogic.gdx.math.Vector2, kotlin.Float)ktx.math/com.badlogic.gdx.math.-vector2/times.html
+$dokka.location:ktx.math$times(com.badlogic.gdx.math.Vector2, kotlin.Int)ktx.math/com.badlogic.gdx.math.-vector2/times.html
+$dokka.location:ktx.math$times(com.badlogic.gdx.math.Vector3, com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/times.html
+$dokka.location:ktx.math$times(com.badlogic.gdx.math.Vector3, kotlin.Float)ktx.math/com.badlogic.gdx.math.-vector3/times.html
+$dokka.location:ktx.math$times(com.badlogic.gdx.math.Vector3, kotlin.Int)ktx.math/com.badlogic.gdx.math.-vector3/times.html
+$dokka.location:ktx.math$times(kotlin.Float, kotlin.ranges.ClosedRange((kotlin.Float)))ktx.math/kotlin.-float/times.html
+$dokka.location:ktx.math$times(kotlin.Int, kotlin.ranges.IntRange)ktx.math/kotlin.-int/times.html
+$dokka.location:ktx.math$times(kotlin.ranges.ClosedRange((kotlin.Float)), kotlin.Float)ktx.math/kotlin.ranges.-closed-range/times.html
+$dokka.location:ktx.math$times(kotlin.ranges.IntRange, kotlin.Int)ktx.math/kotlin.ranges.-int-range/times.html
+$dokka.location:ktx.math$timesAssign(com.badlogic.gdx.math.Matrix3, com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/times-assign.html
+$dokka.location:ktx.math$timesAssign(com.badlogic.gdx.math.Matrix3, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-matrix3/times-assign.html
+$dokka.location:ktx.math$timesAssign(com.badlogic.gdx.math.Matrix3, com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-matrix3/times-assign.html
+$dokka.location:ktx.math$timesAssign(com.badlogic.gdx.math.Matrix3, kotlin.Float)ktx.math/com.badlogic.gdx.math.-matrix3/times-assign.html
+$dokka.location:ktx.math$timesAssign(com.badlogic.gdx.math.Matrix4, com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/times-assign.html
+$dokka.location:ktx.math$timesAssign(com.badlogic.gdx.math.Matrix4, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-matrix4/times-assign.html
+$dokka.location:ktx.math$timesAssign(com.badlogic.gdx.math.Matrix4, com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-matrix4/times-assign.html
+$dokka.location:ktx.math$timesAssign(com.badlogic.gdx.math.Matrix4, kotlin.Float)ktx.math/com.badlogic.gdx.math.-matrix4/times-assign.html
+$dokka.location:ktx.math$timesAssign(com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-vector2/times-assign.html
+$dokka.location:ktx.math$timesAssign(com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/times-assign.html
+$dokka.location:ktx.math$timesAssign(com.badlogic.gdx.math.Vector2, kotlin.Float)ktx.math/com.badlogic.gdx.math.-vector2/times-assign.html
+$dokka.location:ktx.math$timesAssign(com.badlogic.gdx.math.Vector2, kotlin.Int)ktx.math/com.badlogic.gdx.math.-vector2/times-assign.html
+$dokka.location:ktx.math$timesAssign(com.badlogic.gdx.math.Vector3, com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-vector3/times-assign.html
+$dokka.location:ktx.math$timesAssign(com.badlogic.gdx.math.Vector3, com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/times-assign.html
+$dokka.location:ktx.math$timesAssign(com.badlogic.gdx.math.Vector3, kotlin.Float)ktx.math/com.badlogic.gdx.math.-vector3/times-assign.html
+$dokka.location:ktx.math$timesAssign(com.badlogic.gdx.math.Vector3, kotlin.Int)ktx.math/com.badlogic.gdx.math.-vector3/times-assign.html
+$dokka.location:ktx.math$toImmutable(com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/to-immutable.html
+$dokka.location:ktx.math$unaryMinus(com.badlogic.gdx.math.Matrix3)ktx.math/com.badlogic.gdx.math.-matrix3/unary-minus.html
+$dokka.location:ktx.math$unaryMinus(com.badlogic.gdx.math.Matrix4)ktx.math/com.badlogic.gdx.math.-matrix4/unary-minus.html
+$dokka.location:ktx.math$unaryMinus(com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/unary-minus.html
+$dokka.location:ktx.math$unaryMinus(com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/unary-minus.html
+$dokka.location:ktx.math$x(com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2)ktx.math/com.badlogic.gdx.math.-vector2/x.html
+$dokka.location:ktx.math$x(com.badlogic.gdx.math.Vector3, com.badlogic.gdx.math.Vector3)ktx.math/com.badlogic.gdx.math.-vector3/x.html
+ktx.math

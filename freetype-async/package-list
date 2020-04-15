@@ -1,0 +1,5 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:ktx.freetype.async$loadFreeTypeFont(ktx.assets.async.AssetStorage, kotlin.String, kotlin.Function1((com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter, kotlin.Unit)))ktx.freetype.async/ktx.assets.async.-asset-storage/load-free-type-font.html
+$dokka.location:ktx.freetype.async$registerFreeTypeFontLoaders(ktx.assets.async.AssetStorage, kotlin.Array((kotlin.String)), kotlin.Boolean)ktx.freetype.async/ktx.assets.async.-asset-storage/register-free-type-font-loaders.html
+ktx.freetype.async

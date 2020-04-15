@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>loadFreeTypeFont - freetype-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">freetype-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.freetype.async</a>&nbsp;/&nbsp;<a href="index.html">ktx.assets.async.AssetStorage</a>&nbsp;/&nbsp;<a href="./load-free-type-font.html">loadFreeTypeFont</a><br/>
+<br/>
+<h1>loadFreeTypeFont</h1>
+<a name="ktx.freetype.async$loadFreeTypeFont(ktx.assets.async.AssetStorage, kotlin.String, kotlin.Function1((com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter, kotlin.Unit)))"></a>
+<code><span class="keyword">suspend</span> <span class="keyword">inline</span> <span class="keyword">fun </span><span class="identifier">AssetStorage</span><span class="symbol">.</span><span class="identifier">loadFreeTypeFont</span><span class="symbol">(</span><span class="identifier" id="ktx.freetype.async$loadFreeTypeFont(ktx.assets.async.AssetStorage, kotlin.String, kotlin.Function1((com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter, kotlin.Unit)))/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.freetype.async$loadFreeTypeFont(ktx.assets.async.AssetStorage, kotlin.String, kotlin.Function1((com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter, kotlin.Unit)))/setup">setup</span><span class="symbol">:</span>&nbsp;<span class="identifier">FreeTypeFontParameter</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">BitmapFont</span></code>
+<p>Allows to customize parameters of a loaded FreeType font.</p>
+<p><a href="load-free-type-font.html#ktx.freetype.async$loadFreeTypeFont(ktx.assets.async.AssetStorage, kotlin.String, kotlin.Function1((com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter, kotlin.Unit)))/path">path</a> is the file path to the FreeType font file.
+Must be compatible with the <a href="#">AssetStorage.fileResolver</a>.</p>
+<p><a href="load-free-type-font.html#ktx.freetype.async$loadFreeTypeFont(ktx.assets.async.AssetStorage, kotlin.String, kotlin.Function1((com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter, kotlin.Unit)))/setup">setup</a> can be used to specify and customize the parameters of the loaded font.
+It will be inlined and invoked on a <a href="#">FreeTypeFontParameter</a>.</p>
+<p>Returns the result of font loading. See <a href="#">AssetStorage.load</a> for lists of possible outcomes.</p>
+<p>Note that you can also call <a href="#">AssetStorage.loadSync</a> or <a href="#">AssetStorage.loadAsync</a> directly if needed,
+but you must pass <a href="#">FreeTypeFontParameter</a>. See <a href="#">freeTypeFontParameters</a> utility.</p>
+</BODY>
+</HTML>

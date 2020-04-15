@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MainDispatcher - async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.async</a>&nbsp;/&nbsp;<a href="./index.html">MainDispatcher</a><br/>
+<br/>
+<h1>MainDispatcher</h1>
+<code><span class="keyword">object </span><span class="identifier">MainDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-rendering-thread-dispatcher/index.html"><span class="identifier">RenderingThreadDispatcher</span></a></code>
+<p>Executes tasks on the main rendering thread. See <a href="../-rendering-thread-dispatcher/index.html">RenderingThreadDispatcher</a>.</p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="immediate.html">immediate</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">immediate</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MainDispatcher</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="main-thread.html">mainThread</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">mainThread</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html"><span class="identifier">Thread</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="initiate.html">initiate</a></h4>
+</td>
+<td>
+<p>Must be called <strong>on the rendering thread</strong> before using KTX coroutines.</p>
+<code><span class="keyword">fun </span><span class="identifier">initiate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-dispatch-needed.html">isDispatchNeeded</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isDispatchNeeded</span><span class="symbol">(</span><span class="identifier" id="ktx.async.MainDispatcher$isDispatchNeeded(kotlin.coroutines.CoroutineContext)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

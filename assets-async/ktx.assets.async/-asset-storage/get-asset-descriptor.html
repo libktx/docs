@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AssetStorage.getAssetDescriptor - assets-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets.async</a>&nbsp;/&nbsp;<a href="index.html">AssetStorage</a>&nbsp;/&nbsp;<a href="./get-asset-descriptor.html">getAssetDescriptor</a><br/>
+<br/>
+<h1>getAssetDescriptor</h1>
+<a name="ktx.assets.async.AssetStorage$getAssetDescriptor(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.getAssetDescriptor.T)), com.badlogic.gdx.files.FileHandle)"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">getAssetDescriptor</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getAssetDescriptor(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.getAssetDescriptor.T)), com.badlogic.gdx.files.FileHandle)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$getAssetDescriptor(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.getAssetDescriptor.T)), com.badlogic.gdx.files.FileHandle)/parameters">parameters</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$getAssetDescriptor(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.getAssetDescriptor.T)), com.badlogic.gdx.files.FileHandle)/fileHandle">fileHandle</span><span class="symbol">:</span>&nbsp;<span class="identifier">FileHandle</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code>
+<p>Creates a new <a href="#">AssetDescriptor</a> for the selected asset.</p>
+<p><a href="get-asset-descriptor.html#T">T</a> is type of the loaded asset.
+<a href="get-asset-descriptor.html#ktx.assets.async.AssetStorage$getAssetDescriptor(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.getAssetDescriptor.T)), com.badlogic.gdx.files.FileHandle)/path">path</a> to the file should be consistent with <a href="file-resolver.html">fileResolver</a> asset type.
+Loading <a href="get-asset-descriptor.html#ktx.assets.async.AssetStorage$getAssetDescriptor(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.getAssetDescriptor.T)), com.badlogic.gdx.files.FileHandle)/parameters">parameters</a> are optional and passed to the associated <a href="#">AssetLoader</a>.
+Returns a new instance of <a href="#">AssetDescriptor</a> with a resolved <a href="#">FileHandle</a>.</p>
+<p>If the asset requires a <a href="#">FileHandle</a> incompatible with the storage <a href="file-resolver.html">fileResolver</a>,
+use the <a href="get-asset-descriptor.html#ktx.assets.async.AssetStorage$getAssetDescriptor(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.getAssetDescriptor.T)), com.badlogic.gdx.files.FileHandle)/fileHandle">fileHandle</a> parameter to set it.</p>
+</BODY>
+</HTML>

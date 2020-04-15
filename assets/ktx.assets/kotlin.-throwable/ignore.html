@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ignore - assets</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets</a>&nbsp;/&nbsp;<a href="index.html">kotlin.Throwable</a>&nbsp;/&nbsp;<a href="./ignore.html">ignore</a><br/>
+<br/>
+<h1>ignore</h1>
+<a name="ktx.assets$ignore(kotlin.Throwable)"></a>
+<code><span class="keyword">fun </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">?</span><span class="symbol">.</span><span class="identifier">ignore</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>This method does nothing. This is a null-safe call that allows to clearly mark an exception as ignored. This approach
+is preferred to an empty catch block, as at development time you can create custom ignore() methods for each specific
+<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html">Exception</a> types, import them and pass some debugging or logging code to each implementation. For example:</p>
+<p><code>fun IOException.ignore() { println("This actually happens! $this") }</code></p>
+<p>While other exceptions would still be silently ignored, by adding this method you can log all occurrences of ignored
+IOException instances. Temporarily changing imports to a custom Throwable.ignore() implementation might also work.</p>
+</BODY>
+</HTML>

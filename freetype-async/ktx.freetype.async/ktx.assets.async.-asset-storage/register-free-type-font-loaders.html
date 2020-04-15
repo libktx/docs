@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>registerFreeTypeFontLoaders - freetype-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">freetype-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.freetype.async</a>&nbsp;/&nbsp;<a href="index.html">ktx.assets.async.AssetStorage</a>&nbsp;/&nbsp;<a href="./register-free-type-font-loaders.html">registerFreeTypeFontLoaders</a><br/>
+<br/>
+<h1>registerFreeTypeFontLoaders</h1>
+<a name="ktx.freetype.async$registerFreeTypeFontLoaders(ktx.assets.async.AssetStorage, kotlin.Array((kotlin.String)), kotlin.Boolean)"></a>
+<code><span class="keyword">fun </span><span class="identifier">AssetStorage</span><span class="symbol">.</span><span class="identifier">registerFreeTypeFontLoaders</span><span class="symbol">(</span><span class="identifier" id="ktx.freetype.async$registerFreeTypeFontLoaders(ktx.assets.async.AssetStorage, kotlin.Array((kotlin.String)), kotlin.Boolean)/fileExtensions">fileExtensions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;arrayOf(".ttf", ".otf")<span class="symbol">, </span><span class="identifier" id="ktx.freetype.async$registerFreeTypeFontLoaders(ktx.assets.async.AssetStorage, kotlin.Array((kotlin.String)), kotlin.Boolean)/replaceDefaultBitmapFontLoader">replaceDefaultBitmapFontLoader</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Registers all loaders necessary to load <a href="#">BitmapFont</a> and <a href="#">FreeTypeFontGenerator</a>
+instances from TTF and OTF files.</p>
+<p><a href="register-free-type-font-loaders.html#ktx.freetype.async$registerFreeTypeFontLoaders(ktx.assets.async.AssetStorage, kotlin.Array((kotlin.String)), kotlin.Boolean)/fileExtensions">fileExtensions</a> is a collection of supported file extensions. If an empty array is passed,
+<a href="#">BitmapFont</a> loaders will not be registered. Defaults to ".ttf" and ".otf".</p>
+<p>If <a href="register-free-type-font-loaders.html#ktx.freetype.async$registerFreeTypeFontLoaders(ktx.assets.async.AssetStorage, kotlin.Array((kotlin.String)), kotlin.Boolean)/replaceDefaultBitmapFontLoader">replaceDefaultBitmapFontLoader</a> is true, default <a href="#">BitmapFont</a> loader will be replaced
+and any attempts to load <a href="#">BitmapFont</a> will result in the use of <a href="#">FreetypeFontLoader</a> instead.
+<a href="register-free-type-font-loaders.html#ktx.freetype.async$registerFreeTypeFontLoaders(ktx.assets.async.AssetStorage, kotlin.Array((kotlin.String)), kotlin.Boolean)/fileExtensions">fileExtensions</a> will be ignored and FreeType loader will be used by default for all font
+assets unless overridden.</p>
+</BODY>
+</HTML>

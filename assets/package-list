@@ -1,0 +1,31 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:ktx.assets$dispose(com.badlogic.gdx.utils.Disposable, kotlin.Function1((java.lang.Exception, kotlin.Unit)))ktx.assets/com.badlogic.gdx.utils.-disposable/dispose.html
+$dokka.location:ktx.assets$dispose(kotlin.Array((ktx.assets.dispose.Asset)))ktx.assets/kotlin.-array/dispose.html
+$dokka.location:ktx.assets$dispose(kotlin.Array((ktx.assets.dispose.Asset)), kotlin.Function1((java.lang.Exception, kotlin.Unit)))ktx.assets/kotlin.-array/dispose.html
+$dokka.location:ktx.assets$dispose(kotlin.collections.Iterable((ktx.assets.dispose.Asset)))ktx.assets/kotlin.collections.-iterable/dispose.html
+$dokka.location:ktx.assets$dispose(kotlin.collections.Iterable((ktx.assets.dispose.Asset)), kotlin.Function1((java.lang.Exception, kotlin.Unit)))ktx.assets/kotlin.collections.-iterable/dispose.html
+$dokka.location:ktx.assets$disposeSafely(com.badlogic.gdx.utils.Disposable)ktx.assets/com.badlogic.gdx.utils.-disposable/dispose-safely.html
+$dokka.location:ktx.assets$disposeSafely(kotlin.Array((ktx.assets.disposeSafely.Asset)))ktx.assets/kotlin.-array/dispose-safely.html
+$dokka.location:ktx.assets$disposeSafely(kotlin.collections.Iterable((ktx.assets.disposeSafely.Asset)))ktx.assets/kotlin.collections.-iterable/dispose-safely.html
+$dokka.location:ktx.assets$forResolutions(com.badlogic.gdx.assets.loaders.FileHandleResolver, kotlin.Array((com.badlogic.gdx.assets.loaders.resolvers.ResolutionFileResolver.Resolution)))ktx.assets/com.badlogic.gdx.assets.loaders.-file-handle-resolver/for-resolutions.html
+$dokka.location:ktx.assets$getAsset(com.badlogic.gdx.assets.AssetManager, kotlin.String)ktx.assets/com.badlogic.gdx.assets.-asset-manager/get-asset.html
+$dokka.location:ktx.assets$getLoader(com.badlogic.gdx.assets.AssetManager, kotlin.String)ktx.assets/com.badlogic.gdx.assets.-asset-manager/get-loader.html
+$dokka.location:ktx.assets$getResolver(com.badlogic.gdx.Files.FileType)ktx.assets/com.badlogic.gdx.-files.-file-type/get-resolver.html
+$dokka.location:ktx.assets$ignore(kotlin.Throwable)ktx.assets/kotlin.-throwable/ignore.html
+$dokka.location:ktx.assets$invoke(com.badlogic.gdx.utils.Pool((ktx.assets.invoke.Type)))ktx.assets/com.badlogic.gdx.utils.-pool/invoke.html
+$dokka.location:ktx.assets$invoke(com.badlogic.gdx.utils.Pool((ktx.assets.invoke.Type)), ktx.assets.invoke.Type)ktx.assets/com.badlogic.gdx.utils.-pool/invoke.html
+$dokka.location:ktx.assets$load(com.badlogic.gdx.assets.AssetManager, kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.load.Type)))ktx.assets/com.badlogic.gdx.assets.-asset-manager/load.html
+$dokka.location:ktx.assets$loadAsset(com.badlogic.gdx.assets.AssetManager, com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.loadAsset.Type)))ktx.assets/com.badlogic.gdx.assets.-asset-manager/load-asset.html
+$dokka.location:ktx.assets$loadOnDemand(com.badlogic.gdx.assets.AssetManager, com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.loadOnDemand.Type)))ktx.assets/com.badlogic.gdx.assets.-asset-manager/load-on-demand.html
+$dokka.location:ktx.assets$loadOnDemand(com.badlogic.gdx.assets.AssetManager, kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.loadOnDemand.Type)))ktx.assets/com.badlogic.gdx.assets.-asset-manager/load-on-demand.html
+$dokka.location:ktx.assets$setLoader(com.badlogic.gdx.assets.AssetManager, com.badlogic.gdx.assets.loaders.AssetLoader((ktx.assets.setLoader.Type, ktx.assets.setLoader.Parameters)), kotlin.String)ktx.assets/com.badlogic.gdx.assets.-asset-manager/set-loader.html
+$dokka.location:ktx.assets$toAbsoluteFile(kotlin.String)ktx.assets/kotlin.-string/to-absolute-file.html
+$dokka.location:ktx.assets$toClasspathFile(kotlin.String)ktx.assets/kotlin.-string/to-classpath-file.html
+$dokka.location:ktx.assets$toExternalFile(kotlin.String)ktx.assets/kotlin.-string/to-external-file.html
+$dokka.location:ktx.assets$toInternalFile(kotlin.String)ktx.assets/kotlin.-string/to-internal-file.html
+$dokka.location:ktx.assets$toLocalFile(kotlin.String)ktx.assets/kotlin.-string/to-local-file.html
+$dokka.location:ktx.assets$unload(com.badlogic.gdx.assets.AssetManager, kotlin.String, kotlin.Function1((java.lang.Exception, kotlin.Unit)))ktx.assets/com.badlogic.gdx.assets.-asset-manager/unload.html
+$dokka.location:ktx.assets$unloadSafely(com.badlogic.gdx.assets.AssetManager, kotlin.String)ktx.assets/com.badlogic.gdx.assets.-asset-manager/unload-safely.html
+$dokka.location:ktx.assets$withPrefix(com.badlogic.gdx.assets.loaders.FileHandleResolver, kotlin.String)ktx.assets/com.badlogic.gdx.assets.loaders.-file-handle-resolver/with-prefix.html
+ktx.assets

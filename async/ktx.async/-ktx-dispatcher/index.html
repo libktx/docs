@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>KtxDispatcher - async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.async</a>&nbsp;/&nbsp;<a href="./index.html">KtxDispatcher</a><br/>
+<br/>
+<h1>KtxDispatcher</h1>
+<code><span class="keyword">interface </span><span class="identifier">KtxDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a><span class="symbol">, </span><span class="identifier">Delay</span></code>
+<p>Base interface of <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a> for dispatchers using the LibGDX threading model.
+Uses LibGDX <a href="#">Timer</a> API to support <a href="#">delay</a>.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="execute.html">execute</a></h4>
+</td>
+<td>
+<p>Immediately executes or schedules execution of the passed <a href="execute.html#ktx.async.KtxDispatcher$execute(java.lang.Runnable)/block">block</a>.</p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">execute</span><span class="symbol">(</span><span class="identifier" id="ktx.async.KtxDispatcher$execute(java.lang.Runnable)/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">Runnable</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="invoke-on-timeout.html">invokeOnTimeout</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">invokeOnTimeout</span><span class="symbol">(</span><span class="identifier" id="ktx.async.KtxDispatcher$invokeOnTimeout(kotlin.Long, java.lang.Runnable)/timeMillis">timeMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.KtxDispatcher$invokeOnTimeout(kotlin.Long, java.lang.Runnable)/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">Runnable</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">DisposableHandle</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="schedule-resume-after-delay.html">scheduleResumeAfterDelay</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">scheduleResumeAfterDelay</span><span class="symbol">(</span><span class="identifier" id="ktx.async.KtxDispatcher$scheduleResumeAfterDelay(kotlin.Long, kotlinx.coroutines.CancellableContinuation((kotlin.Unit)))/timeMillis">timeMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.KtxDispatcher$scheduleResumeAfterDelay(kotlin.Long, kotlinx.coroutines.CancellableContinuation((kotlin.Unit)))/continuation">continuation</span><span class="symbol">:</span>&nbsp;<span class="identifier">CancellableContinuation</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../-abstract-ktx-dispatcher/index.html">AbstractKtxDispatcher</a></h4>
+</td>
+<td>
+<p>Base extension of <a href="#">CoroutineDispatcher</a> for dispatchers using the LibGDX threading model.
+Uses LibGDX <a href="#">Timer</a> API to support <a href="#">delay</a>.</p>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractKtxDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">CoroutineDispatcher</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">KtxDispatcher</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../-rendering-thread-dispatcher/index.html">RenderingThreadDispatcher</a></h4>
+</td>
+<td>
+<p>A <a href="#">CoroutineDispatcher</a> that wraps around LibGDX runnable execution API to execute tasks
+on the main rendering thread. Uses LibGDX <a href="#">Timer</a> API to support <a href="#">delay</a>.</p>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">RenderingThreadDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MainCoroutineDispatcher</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">KtxDispatcher</span></a><span class="symbol">, </span><span class="identifier">Delay</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

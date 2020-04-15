@@ -1,0 +1,19 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DelayedAsset.<init> - assets</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets</a>&nbsp;/&nbsp;<a href="index.html">DelayedAsset</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<a name="ktx.assets.DelayedAsset$&lt;init&gt;(com.badlogic.gdx.assets.AssetManager, com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.DelayedAsset.Type)))"></a>
+<code><span class="identifier">DelayedAsset</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.DelayedAsset$<init>(com.badlogic.gdx.assets.AssetManager, com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.DelayedAsset.Type)))/manager">manager</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetManager</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.DelayedAsset$<init>(com.badlogic.gdx.assets.AssetManager, com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.DelayedAsset.Type)))/assetDescriptor">assetDescriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span></code>
+<p>Represents an <a href="../-asset/index.html">Asset</a> wrapper of resource loaded at demand. The first asset getter call causes the asset to be
+scheduled for loading and loaded eagerly - the <a href="#">AssetManager</a> is updated until the asset is reported as loaded.
+Note that eager asset loading might cause other assets to be loaded synchronously rather than asynchronously,
+so it is advised to load eager assets with another <a href="#">AssetManager</a> instance or use them after all regular assets are
+already loaded.</p>
+</BODY>
+</HTML>

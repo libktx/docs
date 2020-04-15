@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>shape - tiled</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">tiled</a>&nbsp;/&nbsp;<a href="../index.html">ktx.tiled</a>&nbsp;/&nbsp;<a href="index.html">com.badlogic.gdx.maps.MapObject</a>&nbsp;/&nbsp;<a href="./shape.html">shape</a><br/>
+<br/>
+<h1>shape</h1>
+<a name="ktx.tiled$shape#com.badlogic.gdx.maps.MapObject"></a>
+<code><span class="keyword">val </span><span class="identifier">MapObject</span><span class="symbol">.</span><span class="identifier">shape</span><span class="symbol">: </span><span class="identifier">Shape2D</span></code>
+<p>Extension method to retrieve the <a href="#">Shape2D</a> instance of a <a href="#">MapObject</a>.
+Depending on the type of the object a different shape will be returned:</p>
+<ul><li><a href="#">CircleMapObject</a> -&gt; <a href="#">Circle</a></li>
+<li><a href="#">EllipseMapObject</a> -&gt; <a href="#">Ellipse</a></li>
+<li><a href="#">PolylineMapObject</a> -&gt; <a href="#">Polyline</a></li>
+<li><a href="#">PolygonMapObject</a> -&gt; <a href="#">Polygon</a></li>
+<li><a href="#">RectangleMapObject</a> -&gt; <a href="#">Rectangle</a></li>
+</ul>
+<p>Note that objects that do not have any shape like <a href="#">TextureMapObject</a> will throw a <a href="../-missing-shape-exception/index.html">MissingShapeException</a></p>
+<h3>Exceptions</h3>
+<p><a name="MissingShapeException"></a>
+<code>MissingShapeException</code> - If the object does not have any shape</p>
+</BODY>
+</HTML>

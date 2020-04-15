@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FixtureDefinition - box2d</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">box2d</a>&nbsp;/&nbsp;<a href="../index.html">ktx.box2d</a>&nbsp;/&nbsp;<a href="./index.html">FixtureDefinition</a><br/>
+<br/>
+<h1>FixtureDefinition</h1>
+<code><span class="keyword">class </span><span class="identifier">FixtureDefinition</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">FixtureDef</span></code>
+<p>Box2D building DSL utility class. <a href="#">FixtureDef</a> extension exposing new properties. Note that when using fixture
+builders from <a href="../-body-definition/index.html">BodyDefinition</a>, <a href="#">FixtureDefinition.shape</a> field should not be modified - fixture's shape of the
+chosen type will already be set in the <a href="./index.html">FixtureDefinition</a> instance.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-body-definition/index.html">BodyDefinition</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Box2D building DSL utility class. <a href="#">FixtureDef</a> extension exposing new properties. Note that when using fixture
+builders from <a href="../-body-definition/index.html">BodyDefinition</a>, <a href="#">FixtureDefinition.shape</a> field should not be modified - fixture's shape of the
+chosen type will already be set in the <a href="./index.html">FixtureDefinition</a> instance.</p>
+<code><span class="identifier">FixtureDefinition</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="creation-callback.html">creationCallback</a></h4>
+</td>
+<td>
+<p>Invoked after the <a href="#">Fixture</a> is fully constructed.</p>
+<code><span class="keyword">var </span><span class="identifier">creationCallback</span><span class="symbol">: </span><span class="symbol">(</span><span class="symbol">(</span><span class="identifier">Fixture</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dispose-of-shape.html">disposeOfShape</a></h4>
+</td>
+<td>
+<p>If true, will dispose of <a href="#">FixtureDef.shape</a> right after <a href="#">Fixture</a> construction.</p>
+<code><span class="keyword">var </span><span class="identifier">disposeOfShape</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="user-data.html">userData</a></h4>
+</td>
+<td>
+<p>Custom data object assigned to <a href="#">Fixture.getUserData</a>. Allows to store additional data about the <a href="#">Fixture</a> without
+having to override the class. Defaults to null.</p>
+<code><span class="keyword">var </span><span class="identifier">userData</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="on-create.html">onCreate</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d.FixtureDefinition$onCreate(kotlin.Function1((com.badlogic.gdx.physics.box2d.Fixture, kotlin.Unit)))/callback">callback</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">Fixture</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>moveTo - graphics</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">graphics</a>&nbsp;/&nbsp;<a href="../index.html">ktx.graphics</a>&nbsp;/&nbsp;<a href="index.html">com.badlogic.gdx.graphics.Camera</a>&nbsp;/&nbsp;<a href="./move-to.html">moveTo</a><br/>
+<br/>
+<h1>moveTo</h1>
+<a name="ktx.graphics$moveTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float)"></a>
+<code><span class="keyword">fun </span><span class="identifier">Camera</span><span class="symbol">.</span><span class="identifier">moveTo</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$moveTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float)/target">target</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">, </span><span class="identifier" id="ktx.graphics$moveTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.graphics$moveTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Immediately moves <a href="#">Camera</a> to the selected <a href="move-to.html#ktx.graphics$moveTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float)/target">target</a> coordinates.
+Not suitable for all cases, as it may cause a very rough motion when used every frame.
+<a href="move-to.html#ktx.graphics$moveTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float)/x">x</a> and <a href="move-to.html#ktx.graphics$moveTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float)/y">y</a> are optional offsets in world units that will modify camera position.</p>
+<p>Note that <a href="#">Camera.update</a> should be called in order to update to the new position.</p>
+</BODY>
+</HTML>

@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>profile - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">ktx.app</a>&nbsp;/&nbsp;<a href="index.html">com.badlogic.gdx.utils.PerformanceCounter</a>&nbsp;/&nbsp;<a href="./profile.html">profile</a><br/>
+<br/>
+<h1>profile</h1>
+<a name="ktx.app$profile(com.badlogic.gdx.utils.PerformanceCounter, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="identifier">PerformanceCounter</span><span class="symbol">.</span><span class="identifier">profile</span><span class="symbol">(</span><span class="identifier" id="ktx.app$profile(com.badlogic.gdx.utils.PerformanceCounter, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))/repeats">repeats</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;if(time.mean != null) time.mean.windowSize else 10<span class="symbol">, </span><span class="identifier" id="ktx.app$profile(com.badlogic.gdx.utils.PerformanceCounter, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))/printResults">printResults</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ktx.app$profile(com.badlogic.gdx.utils.PerformanceCounter, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))/operation">operation</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Profiles the given <a href="profile.html#ktx.app$profile(com.badlogic.gdx.utils.PerformanceCounter, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))/operation">operation</a> using this <a href="#">PerformanceCounter</a>.
+The operation will be repeated <a href="profile.html#ktx.app$profile(com.badlogic.gdx.utils.PerformanceCounter, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))/repeats">repeats</a> times to gather the performance data.
+<a href="#">PerformanceCounter.tick</a> will be called after each operation.
+By default, <a href="profile.html#ktx.app$profile(com.badlogic.gdx.utils.PerformanceCounter, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))/repeats">repeats</a> is set to the window size passed to the <a href="#">PerformanceCounter</a>
+constructor or 10 if the window size is set to 1.
+If <a href="profile.html#ktx.app$profile(com.badlogic.gdx.utils.PerformanceCounter, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))/printResults">printResults</a> is set to true, a short summary will be printed by the application.</p>
+<p>Note that to perform further profiling with this <a href="#">PerformanceCounter</a> of a different
+operation, <a href="#">PerformanceCounter.reset</a> should be called.</p>
+</BODY>
+</HTML>

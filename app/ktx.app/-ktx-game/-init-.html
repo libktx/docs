@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>KtxGame.<init> - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">ktx.app</a>&nbsp;/&nbsp;<a href="index.html">KtxGame</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<a name="ktx.app.KtxGame$&lt;init&gt;(ktx.app.KtxGame.ScreenType, kotlin.Boolean)"></a>
+<code><span class="identifier">KtxGame</span><span class="symbol">(</span><span class="identifier" id="ktx.app.KtxGame$<init>(ktx.app.KtxGame.ScreenType, kotlin.Boolean)/firstScreen">firstScreen</span><span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ktx.app.KtxGame$<init>(ktx.app.KtxGame.ScreenType, kotlin.Boolean)/clearScreen">clearScreen</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">)</span></code>
+<p>An equivalent of <a href="#">com.badlogic.gdx.Game</a> delegating game events to a <a href="#">Screen</a>. On contrary to <code>Game</code>, <a href="index.html">KtxGame</a>
+maintains a collection of screens mapped by their type and allows to change screens knowing only their type with
+<a href="set-screen.html">setScreen</a>. Thanks to this, its easier to cache screens without maintaining a singleton with all <a href="#">Screen</a> instances
+manually. <a href="index.html#ScreenType">ScreenType</a> generic type allows to users to use an extended specific base class (or interface) for all
+screens, without locking into <a href="#">Screen</a>.</p>
+<h3>Parameters</h3>
+<p><a name="firstScreen"></a>
+<code>firstScreen</code> - will be immediately used by the application. Note that it cannot use any resources initiated by
+the LibGDX (like the OpenGL context) in the constructor, as the screen will be created before the application is
+launched. Defaults to an empty, mock-up screen implementation that should be replaced with the first <a href="set-screen.html">setScreen</a>
+method call in <a href="create.html">create</a>. Note: <code>firstScreen</code> still has to be explicitly registered with <a href="add-screen.html">addScreen</a> if you want it to
+be accessible with <a href="get-screen.html">getScreen</a>.</p>
+<p><a name="clearScreen"></a>
+<code>clearScreen</code> - if true (the default), <a href="#">clearScreen</a> will be called before screen rendering.</p>
+<p><a name="ScreenType"></a>
+<code>ScreenType</code> - common base interface or class of all screens. Allows to use custom extended <a href="#">Screen</a> API.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-ktx-screen/index.html">KtxScreen</a></p>
+</p>
+</BODY>
+</HTML>

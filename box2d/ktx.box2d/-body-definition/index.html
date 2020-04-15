@@ -1,0 +1,149 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BodyDefinition - box2d</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">box2d</a>&nbsp;/&nbsp;<a href="../index.html">ktx.box2d</a>&nbsp;/&nbsp;<a href="./index.html">BodyDefinition</a><br/>
+<br/>
+<h1>BodyDefinition</h1>
+<code><span class="keyword">class </span><span class="identifier">BodyDefinition</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">BodyDef</span></code>
+<p>Box2D building DSL utility class. <a href="#">BodyDef</a> extension storing <a href="#">FixtureDef</a> instances in <a href="fixture-definitions.html">fixtureDefinitions</a>
+collection. Provides inlined building methods that construct fixture definitions.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../com.badlogic.gdx.physics.box2d.-world/body.html">body</a></p>
+<p><a href="../-fixture-definition/index.html">FixtureDefinition</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Box2D building DSL utility class. <a href="#">BodyDef</a> extension storing <a href="#">FixtureDef</a> instances in <a href="fixture-definitions.html">fixtureDefinitions</a>
+collection. Provides inlined building methods that construct fixture definitions.</p>
+<code><span class="identifier">BodyDefinition</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="creation-callback.html">creationCallback</a></h4>
+</td>
+<td>
+<p>Invoked after the <a href="#">Body</a> is fully constructed.</p>
+<code><span class="keyword">var </span><span class="identifier">creationCallback</span><span class="symbol">: </span><span class="symbol">(</span><span class="symbol">(</span><span class="identifier">Body</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="fixture-definitions.html">fixtureDefinitions</a></h4>
+</td>
+<td>
+<p>Stores <a href="../-fixture-definition/index.html">FixtureDefinition</a> instances of all currently defined fixtures of this body. Should not be modified
+manually - instead, use <a href="fixture.html">fixture</a> or one of building methods for fixtures of a specific shape.</p>
+<code><span class="keyword">val </span><span class="identifier">fixtureDefinitions</span><span class="symbol">: </span><span class="identifier">Array</span><span class="symbol">&lt;</span><a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="user-data.html">userData</a></h4>
+</td>
+<td>
+<p>Custom data object assigned to <a href="#">Body.getUserData</a>. Allows to store additional data about the <a href="#">Body</a> without having
+to override the class. Defaults to null.</p>
+<code><span class="keyword">var </span><span class="identifier">userData</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="box.html">box</a></h4>
+</td>
+<td>
+<p>Utility builder method for constructing fixtures with <a href="#">PolygonShape</a> set as box. Note that - contrary to
+<a href="#">PolygonShape.setAsBox</a> methods - this method consumes actual <em>not halved</em> box width and height sizes.</p>
+<code><span class="keyword">fun </span><span class="identifier">box</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d.BodyDefinition$box(kotlin.Float, kotlin.Float, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.PolygonShape, kotlin.Unit)))/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1f<span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$box(kotlin.Float, kotlin.Float, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.PolygonShape, kotlin.Unit)))/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1f<span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$box(kotlin.Float, kotlin.Float, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.PolygonShape, kotlin.Unit)))/position">position</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span>&nbsp;<span class="symbol">=</span>&nbsp;Vector2.Zero<span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$box(kotlin.Float, kotlin.Float, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.PolygonShape, kotlin.Unit)))/angle">angle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$box(kotlin.Float, kotlin.Float, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.PolygonShape, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">PolygonShape</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="chain.html">chain</a></h4>
+</td>
+<td>
+<p>Utility builder method for constructing fixtures with <a href="#">ChainShape</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">chain</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ktx.box2d.BodyDefinition$chain(kotlin.Array((com.badlogic.gdx.math.Vector2)), kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.ChainShape, kotlin.Unit)))/vertices">vertices</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$chain(kotlin.Array((com.badlogic.gdx.math.Vector2)), kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.ChainShape, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">ChainShape</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a></code>
+<p>Utility builder method for constructing fixtures with <a href="#">ChainShape</a>. Note that this method consumes a <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html">FloatArray</a>
+instead of array of <a href="#">Vector2</a> instances, which might be less readable, but creates slightly less garbage. This
+method is advised to be used instead of the <a href="#">Vector2</a>-consuming variant on mobile devices.</p>
+<code><span class="keyword">fun </span><span class="identifier">chain</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d.BodyDefinition$chain(kotlin.FloatArray, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.ChainShape, kotlin.Unit)))/vertices">vertices</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$chain(kotlin.FloatArray, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.ChainShape, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">ChainShape</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="circle.html">circle</a></h4>
+</td>
+<td>
+<p>Utility builder method for constructing fixtures with <a href="#">CircleShape</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">circle</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d.BodyDefinition$circle(kotlin.Float, com.badlogic.gdx.math.Vector2, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.CircleShape, kotlin.Unit)))/radius">radius</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1f<span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$circle(kotlin.Float, com.badlogic.gdx.math.Vector2, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.CircleShape, kotlin.Unit)))/position">position</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span>&nbsp;<span class="symbol">=</span>&nbsp;Vector2.Zero<span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$circle(kotlin.Float, com.badlogic.gdx.math.Vector2, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.CircleShape, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">CircleShape</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="edge.html">edge</a></h4>
+</td>
+<td>
+<p>Utility builder method for constructing fixtures with <a href="#">EdgeShape</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">edge</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d.BodyDefinition$edge(com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.EdgeShape, kotlin.Unit)))/from">from</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$edge(com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.EdgeShape, kotlin.Unit)))/to">to</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$edge(com.badlogic.gdx.math.Vector2, com.badlogic.gdx.math.Vector2, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.EdgeShape, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">EdgeShape</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a></code>
+<p>Utility builder method for constructing fixtures with <a href="#">EdgeShape</a>. Note that this method consumes floats instead of
+<a href="#">Vector2</a> instances, which might be less concise, but also creates slightly less garbage. This method is advised to
+be used instead of the <a href="#">Vector2</a>-consuming variant on mobile devices.</p>
+<code><span class="keyword">fun </span><span class="identifier">edge</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d.BodyDefinition$edge(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.EdgeShape, kotlin.Unit)))/fromX">fromX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$edge(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.EdgeShape, kotlin.Unit)))/fromY">fromY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$edge(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.EdgeShape, kotlin.Unit)))/toX">toX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$edge(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.EdgeShape, kotlin.Unit)))/toY">toY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$edge(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.EdgeShape, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">EdgeShape</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="fixture.html">fixture</a></h4>
+</td>
+<td>
+<p>Utility builder method for constructing fixtures of custom shape type.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">ShapeType</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Shape</span><span class="symbol">&gt;</span> <span class="identifier">fixture</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d.BodyDefinition$fixture(ktx.box2d.BodyDefinition.fixture.ShapeType, kotlin.Boolean, kotlin.Function2((ktx.box2d.FixtureDefinition, ktx.box2d.BodyDefinition.fixture.ShapeType, kotlin.Unit)))/shape">shape</span><span class="symbol">:</span>&nbsp;<span class="identifier">ShapeType</span><span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$fixture(ktx.box2d.BodyDefinition.fixture.ShapeType, kotlin.Boolean, kotlin.Function2((ktx.box2d.FixtureDefinition, ktx.box2d.BodyDefinition.fixture.ShapeType, kotlin.Unit)))/disposeOfShape">disposeOfShape</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$fixture(ktx.box2d.BodyDefinition.fixture.ShapeType, kotlin.Boolean, kotlin.Function2((ktx.box2d.FixtureDefinition, ktx.box2d.BodyDefinition.fixture.ShapeType, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">ShapeType</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="loop.html">loop</a></h4>
+</td>
+<td>
+<p>Utility builder method for constructing fixtures with looped <a href="#">ChainShape</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">loop</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ktx.box2d.BodyDefinition$loop(kotlin.Array((com.badlogic.gdx.math.Vector2)), kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.ChainShape, kotlin.Unit)))/vertices">vertices</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$loop(kotlin.Array((com.badlogic.gdx.math.Vector2)), kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.ChainShape, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">ChainShape</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a></code>
+<p>Utility builder method for constructing fixtures with looped <a href="#">ChainShape</a>. Note that this method consumes
+a <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html">FloatArray</a> instead of array of <a href="#">Vector2</a> instances, which might be less readable, but creates slightly less
+garbage. This method is advised to be used instead of the <a href="#">Vector2</a>-consuming variant on mobile devices.</p>
+<code><span class="keyword">fun </span><span class="identifier">loop</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d.BodyDefinition$loop(kotlin.FloatArray, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.ChainShape, kotlin.Unit)))/vertices">vertices</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$loop(kotlin.FloatArray, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.ChainShape, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">ChainShape</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-create.html">onCreate</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d.BodyDefinition$onCreate(kotlin.Function1((com.badlogic.gdx.physics.box2d.Body, kotlin.Unit)))/callback">callback</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">Body</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="polygon.html">polygon</a></h4>
+</td>
+<td>
+<p>Utility builder method for constructing fixtures with <a href="#">PolygonShape</a>. Note that this method consumes a <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html">FloatArray</a>
+instead of array of <a href="#">Vector2</a> instances, which might be less readable, but creates slightly less garbage. This
+method is advised to be used instead of the <a href="#">Vector2</a>-consuming variant on mobile devices.</p>
+<code><span class="keyword">fun </span><span class="identifier">polygon</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d.BodyDefinition$polygon(kotlin.FloatArray, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.PolygonShape, kotlin.Unit)))/vertices">vertices</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$polygon(kotlin.FloatArray, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.PolygonShape, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">PolygonShape</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a></code>
+<p>Utility builder method for constructing fixtures with <a href="#">PolygonShape</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">polygon</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ktx.box2d.BodyDefinition$polygon(kotlin.Array((com.badlogic.gdx.math.Vector2)), kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.PolygonShape, kotlin.Unit)))/vertices">vertices</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">, </span><span class="identifier" id="ktx.box2d.BodyDefinition$polygon(kotlin.Array((com.badlogic.gdx.math.Vector2)), kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.PolygonShape, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">PolygonShape</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><a href="../-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

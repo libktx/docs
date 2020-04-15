@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TextAssetLoader.<init> - assets</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets</a>&nbsp;/&nbsp;<a href="index.html">TextAssetLoader</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<a name="ktx.assets.TextAssetLoader$&lt;init&gt;(com.badlogic.gdx.assets.loaders.FileHandleResolver, kotlin.String)"></a>
+<code><span class="identifier">TextAssetLoader</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.TextAssetLoader$<init>(com.badlogic.gdx.assets.loaders.FileHandleResolver, kotlin.String)/fileResolver">fileResolver</span><span class="symbol">:</span>&nbsp;<span class="identifier">FileHandleResolver</span>&nbsp;<span class="symbol">=</span>&nbsp;InternalFileHandleResolver()<span class="symbol">, </span><span class="identifier" id="ktx.assets.TextAssetLoader$<init>(com.badlogic.gdx.assets.loaders.FileHandleResolver, kotlin.String)/charset">charset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"UTF-8"<span class="symbol">)</span></code>
+<p>Allows to read text files with an <a href="#">AssetManager</a>. Must be registered via <a href="../com.badlogic.gdx.assets.-asset-manager/set-loader.html">setLoader</a>.</p>
+<p>Note that <a href="load-async.html">loadAsync</a> <em>must</em> be called before <a href="load-sync.html">loadSync</a>, as usual in case of <a href="#">AsynchronousAssetLoader</a>
+implementations. Similarly to standard LibGDX loaders, this loader is not considered thread-safe and assumes that
+a single file is loaded at a time.</p>
+<h3>Parameters</h3>
+<p><a name="fileResolver"></a>
+<code>fileResolver</code> - not used, required by the superclass.</p>
+<p><a name="charset"></a>
+<code>charset</code> - name of the charset used to read text. Can be overridden with
+    <a href="-text-asset-loader-parameters/index.html">TextAssetLoader.TextAssetLoaderParameters</a>. Should match text files encoding. Defaults to UTF-8.</p>
+</BODY>
+</HTML>

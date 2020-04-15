@@ -1,0 +1,6 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:ktx.freetype$generateFont(com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator, kotlin.Function1((com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter, kotlin.Unit)))ktx.freetype/com.badlogic.gdx.graphics.g2d.freetype.-free-type-font-generator/generate-font.html
+$dokka.location:ktx.freetype$loadFreeTypeFont(com.badlogic.gdx.assets.AssetManager, kotlin.String, kotlin.Function1((com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter, kotlin.Unit)))ktx.freetype/com.badlogic.gdx.assets.-asset-manager/load-free-type-font.html
+$dokka.location:ktx.freetype$registerFreeTypeFontLoaders(com.badlogic.gdx.assets.AssetManager, kotlin.Array((kotlin.String)), kotlin.Boolean)ktx.freetype/com.badlogic.gdx.assets.-asset-manager/register-free-type-font-loaders.html
+ktx.freetype

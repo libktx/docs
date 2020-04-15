@@ -1,0 +1,141 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>HttpRequestResult - async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.async</a>&nbsp;/&nbsp;<a href="./index.html">HttpRequestResult</a><br/>
+<br/>
+<h1>HttpRequestResult</h1>
+<code><span class="keyword">class </span><span class="identifier">HttpRequestResult</span></code>
+<p>Stores result of a <a href="#">HttpRequest</a>. A safer alternative to <a href="#">HttpResponse</a>.</p>
+<h3>Parameters</h3>
+<p><a name="url"></a>
+<code>url</code> - URL of the queried resource.</p>
+<p><a name="method"></a>
+<code>method</code> - HTTP method of the request.</p>
+<p><a name="statusCode"></a>
+<code>statusCode</code> - HTTP status code of the response. Might be set to -1 by internal LibGDX implementation or if the
+    status could not be determined.</p>
+<p><a name="content"></a>
+<code>content</code> - response body stored as raw bytes.</p>
+<p><a name="headers"></a>
+<code>headers</code> - HTTP header values of the response. Might be empty.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Stores result of a <a href="#">HttpRequest</a>. A safer alternative to <a href="#">HttpResponse</a>.</p>
+<code><span class="identifier">HttpRequestResult</span><span class="symbol">(</span><span class="identifier" id="ktx.async.HttpRequestResult$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.ByteArray, kotlin.collections.Map((kotlin.String, kotlin.collections.List(()))))/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.HttpRequestResult$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.ByteArray, kotlin.collections.Map((kotlin.String, kotlin.collections.List(()))))/method">method</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.HttpRequestResult$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.ByteArray, kotlin.collections.Map((kotlin.String, kotlin.collections.List(()))))/statusCode">statusCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.HttpRequestResult$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.ByteArray, kotlin.collections.Map((kotlin.String, kotlin.collections.List(()))))/content">content</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.HttpRequestResult$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.ByteArray, kotlin.collections.Map((kotlin.String, kotlin.collections.List(()))))/headers">headers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="content.html">content</a></h4>
+</td>
+<td>
+<p>response body stored as raw bytes.</p>
+<code><span class="keyword">val </span><span class="identifier">content</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="content-as-stream.html">contentAsStream</a></h4>
+</td>
+<td>
+<p>Returns a new instance of <a href="https://docs.oracle.com/javase/6/docs/api/java/io/ByteArrayInputStream.html">ByteArrayInputStream</a> with raw response bytes each time the getter is invoked.</p>
+<code><span class="keyword">val </span><span class="identifier">contentAsStream</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/io/ByteArrayInputStream.html"><span class="identifier">ByteArrayInputStream</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="content-as-string.html">contentAsString</a></h4>
+</td>
+<td>
+<p>Returns cached representation of the response stored as a string with default encoding.</p>
+<code><span class="keyword">val </span><span class="identifier">contentAsString</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="headers.html">headers</a></h4>
+</td>
+<td>
+<p>HTTP header values of the response. Might be empty.</p>
+<code><span class="keyword">val </span><span class="identifier">headers</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="method.html">method</a></h4>
+</td>
+<td>
+<p>HTTP method of the request.</p>
+<code><span class="keyword">val </span><span class="identifier">method</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="status-code.html">statusCode</a></h4>
+</td>
+<td>
+<p>HTTP status code of the response. Might be set to -1 by internal LibGDX implementation or if the
+    status could not be determined.</p>
+<code><span class="keyword">val </span><span class="identifier">statusCode</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url.html">url</a></h4>
+</td>
+<td>
+<p>URL of the queried resource.</p>
+<code><span class="keyword">val </span><span class="identifier">url</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="equals.html">equals</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier" id="ktx.async.HttpRequestResult$equals(kotlin.Any)/other">other</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-content-as-string.html">getContentAsString</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getContentAsString</span><span class="symbol">(</span><span class="identifier" id="ktx.async.HttpRequestResult$getContentAsString(java.nio.charset.Charset)/charset">charset</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html"><span class="identifier">Charset</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Charsets.UTF_8<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-header.html">getHeader</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getHeader</span><span class="symbol">(</span><span class="identifier" id="ktx.async.HttpRequestResult$getHeader(kotlin.String)/header">header</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hash-code.html">hashCode</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-string.html">toString</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

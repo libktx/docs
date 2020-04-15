@@ -1,0 +1,15 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:ktx.ashley$add(com.badlogic.ashley.core.Engine, kotlin.Function1((com.badlogic.ashley.core.Engine, kotlin.Unit)))ktx.ashley/com.badlogic.ashley.core.-engine/add.html
+$dokka.location:ktx.ashley$allOf(com.badlogic.ashley.core.Family.Builder, kotlin.Array((kotlin.reflect.KClass((com.badlogic.ashley.core.Component)))))ktx.ashley/com.badlogic.ashley.core.-family.-builder/all-of.html
+$dokka.location:ktx.ashley$contains(com.badlogic.ashley.core.Entity, com.badlogic.ashley.core.ComponentMapper((ktx.ashley.contains.T)))ktx.ashley/com.badlogic.ashley.core.-entity/contains.html
+$dokka.location:ktx.ashley$create(com.badlogic.ashley.core.Engine, kotlin.Function1((ktx.ashley.create.T, kotlin.Unit)))ktx.ashley/com.badlogic.ashley.core.-engine/create.html
+$dokka.location:ktx.ashley$entity(com.badlogic.ashley.core.Engine, kotlin.Function1((ktx.ashley.EngineEntity, kotlin.Unit)))ktx.ashley/com.badlogic.ashley.core.-engine/entity.html
+$dokka.location:ktx.ashley$exclude(com.badlogic.ashley.core.Family.Builder, kotlin.Array((kotlin.reflect.KClass((com.badlogic.ashley.core.Component)))))ktx.ashley/com.badlogic.ashley.core.-family.-builder/exclude.html
+$dokka.location:ktx.ashley$get(com.badlogic.ashley.core.Entity)ktx.ashley/com.badlogic.ashley.core.-entity/get.html
+$dokka.location:ktx.ashley$get(com.badlogic.ashley.core.Entity, com.badlogic.ashley.core.ComponentMapper((ktx.ashley.get.T)))ktx.ashley/com.badlogic.ashley.core.-entity/get.html
+$dokka.location:ktx.ashley$has(com.badlogic.ashley.core.Entity, com.badlogic.ashley.core.ComponentMapper((ktx.ashley.has.T)))ktx.ashley/com.badlogic.ashley.core.-entity/has.html
+$dokka.location:ktx.ashley$hasNot(com.badlogic.ashley.core.Entity, com.badlogic.ashley.core.ComponentMapper((ktx.ashley.hasNot.T)))ktx.ashley/com.badlogic.ashley.core.-entity/has-not.html
+$dokka.location:ktx.ashley$oneOf(com.badlogic.ashley.core.Family.Builder, kotlin.Array((kotlin.reflect.KClass((com.badlogic.ashley.core.Component)))))ktx.ashley/com.badlogic.ashley.core.-family.-builder/one-of.html
+$dokka.location:ktx.ashley$remove(com.badlogic.ashley.core.Entity)ktx.ashley/com.badlogic.ashley.core.-entity/remove.html
+ktx.ashley

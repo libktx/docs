@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SingletonProvider - inject</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">inject</a>&nbsp;/&nbsp;<a href="../index.html">ktx.inject</a>&nbsp;/&nbsp;<a href="./index.html">SingletonProvider</a><br/>
+<br/>
+<h1>SingletonProvider</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SingletonProvider</span><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Disposable</span><span class="symbol">, </span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Type</span></code>
+<p>Wraps singletons registered in a <a href="../-context/index.html">Context</a>, allowing to dispose them.</p>
+<h3>Parameters</h3>
+<p><a name="singleton"></a>
+<code>singleton</code> - will be always provided by this provider.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">Disposable</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Wraps singletons registered in a <a href="../-context/index.html">Context</a>, allowing to dispose them.</p>
+<code><span class="identifier">SingletonProvider</span><span class="symbol">(</span><span class="identifier" id="ktx.inject.SingletonProvider$<init>(ktx.inject.SingletonProvider.Type)/singleton">singleton</span><span class="symbol">:</span>&nbsp;<span class="identifier">Type</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="singleton.html">singleton</a></h4>
+</td>
+<td>
+<p>will be always provided by this provider.</p>
+<code><span class="keyword">val </span><span class="identifier">singleton</span><span class="symbol">: </span><span class="identifier">Type</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="dispose.html">dispose</a></h4>
+</td>
+<td>
+<p>Disposes of the <a href="singleton.html">singleton</a> if it implements the <a href="#">Disposable</a> interface.</p>
+<code><span class="keyword">fun </span><span class="identifier">dispose</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="invoke.html">invoke</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">invoke</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Type</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

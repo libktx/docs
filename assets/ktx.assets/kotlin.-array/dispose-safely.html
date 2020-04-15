@@ -1,0 +1,17 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>disposeSafely - assets</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets</a>&nbsp;/&nbsp;<a href="index.html">kotlin.Array</a>&nbsp;/&nbsp;<a href="./dispose-safely.html">disposeSafely</a><br/>
+<br/>
+<h1>disposeSafely</h1>
+<a name="ktx.assets$disposeSafely(kotlin.Array((ktx.assets.disposeSafely.Asset)))"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Asset</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Disposable</span><span class="symbol">&gt;</span> <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">.</span><span class="identifier">disposeSafely</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">?</span></code>
+<p>Allows to dispose a collection of resources implementing <a href="#">Disposable</a> interface. Will silently ignore stored nulls
+and exceptions thrown during disposing (except for JVM internal <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-error/index.html">Error</a>s, which should not be caught anyway). This
+method does not affect the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a> structure in any way: no elements are removed from the array.</p>
+</BODY>
+</HTML>

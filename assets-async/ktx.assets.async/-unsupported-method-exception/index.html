@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>UnsupportedMethodException - assets-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets.async</a>&nbsp;/&nbsp;<a href="./index.html">UnsupportedMethodException</a><br/>
+<br/>
+<h1>UnsupportedMethodException</h1>
+<code><span class="keyword">class </span><span class="identifier">UnsupportedMethodException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-asset-storage-exception/index.html"><span class="identifier">AssetStorageException</span></a></code>
+<p>Thrown when unsupported methods are called on the <a href="#">AssetManagerWrapper</a>.
+It is typically only caused by <a href="#">AssetLoader</a> instances or a <a href="#">AssetLoaderParameters.LoadedCallback</a>.</p>
+<p><a href="../-asset-storage/index.html">AssetStorage</a> reuses official <a href="#">AssetLoader</a> implementations to load the assets.
+<a href="#">SynchronousAssetLoader</a> and <a href="#">AsynchronousAssetLoader</a> both expect an instance of <a href="#">AssetManager</a>
+to perform some basic operations on assets. To support the loaders API, <a href="../-asset-storage/index.html">AssetStorage</a> is wrapped
+with an <a href="#">AssetManagerWrapper</a> which delegates supported methods to <a href="../-asset-storage/index.html">AssetStorage</a> and throws
+this exception otherwise.</p>
+<p>Most official loaders only call <a href="#">AssetManager.get</a> to obtain asset dependencies, but custom loaders
+can perform operations that are unsupported by <a href="../-asset-storage/index.html">AssetStorage</a> due to its asynchronous nature
+and storing assets mapped by path and type rather than path alone. If this exception causes the loading
+to fail, <a href="#">AssetLoader</a> associated with the asset has to be refactored.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Thrown when unsupported methods are called on the <a href="#">AssetManagerWrapper</a>.
+It is typically only caused by <a href="#">AssetLoader</a> instances or a <a href="#">AssetLoaderParameters.LoadedCallback</a>.</p>
+<code><span class="identifier">UnsupportedMethodException</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.UnsupportedMethodException$<init>(kotlin.String)/method">method</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

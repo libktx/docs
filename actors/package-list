@@ -1,0 +1,43 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:ktx.actors$along(com.badlogic.gdx.scenes.scene2d.Action, com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.-action/along.html
+$dokka.location:ktx.actors$along(com.badlogic.gdx.scenes.scene2d.actions.ParallelAction, com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.actions.-parallel-action/along.html
+$dokka.location:ktx.actors$alpha#com.badlogic.gdx.scenes.scene2d.Actorktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/alpha.html
+$dokka.location:ktx.actors$alpha#com.badlogic.gdx.scenes.scene2d.Stagektx.actors/com.badlogic.gdx.scenes.scene2d.-stage/alpha.html
+$dokka.location:ktx.actors$centerPosition(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Float, kotlin.Float, kotlin.Boolean)ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/center-position.html
+$dokka.location:ktx.actors$contains(com.badlogic.gdx.scenes.scene2d.Group, com.badlogic.gdx.scenes.scene2d.Actor)ktx.actors/com.badlogic.gdx.scenes.scene2d.-group/contains.html
+$dokka.location:ktx.actors$contains(com.badlogic.gdx.scenes.scene2d.Stage, com.badlogic.gdx.scenes.scene2d.Actor)ktx.actors/com.badlogic.gdx.scenes.scene2d.-stage/contains.html
+$dokka.location:ktx.actors$div(com.badlogic.gdx.scenes.scene2d.Action, com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.-action/div.html
+$dokka.location:ktx.actors$isShown(com.badlogic.gdx.scenes.scene2d.Actor)ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/is-shown.html
+$dokka.location:ktx.actors$keepWithinParent(com.badlogic.gdx.scenes.scene2d.Actor)ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/keep-within-parent.html
+$dokka.location:ktx.actors$minusAssign(com.badlogic.gdx.scenes.scene2d.Actor, com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/minus-assign.html
+$dokka.location:ktx.actors$minusAssign(com.badlogic.gdx.scenes.scene2d.Group, com.badlogic.gdx.scenes.scene2d.Actor)ktx.actors/com.badlogic.gdx.scenes.scene2d.-group/minus-assign.html
+$dokka.location:ktx.actors$minusAssign(com.badlogic.gdx.scenes.scene2d.Stage, com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.-stage/minus-assign.html
+$dokka.location:ktx.actors$minusAssign(com.badlogic.gdx.scenes.scene2d.Stage, com.badlogic.gdx.scenes.scene2d.Actor)ktx.actors/com.badlogic.gdx.scenes.scene2d.-stage/minus-assign.html
+$dokka.location:ktx.actors$onChange(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Function0((kotlin.Unit)))ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/on-change.html
+$dokka.location:ktx.actors$onClick(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Function0((kotlin.Unit)))ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/on-click.html
+$dokka.location:ktx.actors$onKey(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Char, kotlin.Unit)))ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/on-key.html
+$dokka.location:ktx.actors$onKeyDown(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Int, kotlin.Unit)))ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/on-key-down.html
+$dokka.location:ktx.actors$onKeyUp(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Int, kotlin.Unit)))ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/on-key-up.html
+$dokka.location:ktx.actors$onKeyboardFocus(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Boolean, kotlin.Unit)))ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/on-keyboard-focus.html
+$dokka.location:ktx.actors$onScrollFocus(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Boolean, kotlin.Unit)))ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/on-scroll-focus.html
+$dokka.location:ktx.actors$onTouchDown(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Function0((kotlin.Unit)))ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/on-touch-down.html
+$dokka.location:ktx.actors$onTouchUp(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Function0((kotlin.Unit)))ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/on-touch-up.html
+$dokka.location:ktx.actors$parallelTo(com.badlogic.gdx.scenes.scene2d.Action, com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.-action/parallel-to.html
+$dokka.location:ktx.actors$parallelTo(com.badlogic.gdx.scenes.scene2d.actions.ParallelAction, com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.actions.-parallel-action/parallel-to.html
+$dokka.location:ktx.actors$plus(com.badlogic.gdx.scenes.scene2d.Action, com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.-action/plus.html
+$dokka.location:ktx.actors$plusAssign(com.badlogic.gdx.scenes.scene2d.Actor, com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/plus-assign.html
+$dokka.location:ktx.actors$plusAssign(com.badlogic.gdx.scenes.scene2d.Group, com.badlogic.gdx.scenes.scene2d.Actor)ktx.actors/com.badlogic.gdx.scenes.scene2d.-group/plus-assign.html
+$dokka.location:ktx.actors$plusAssign(com.badlogic.gdx.scenes.scene2d.Stage, com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.-stage/plus-assign.html
+$dokka.location:ktx.actors$plusAssign(com.badlogic.gdx.scenes.scene2d.Stage, com.badlogic.gdx.scenes.scene2d.Actor)ktx.actors/com.badlogic.gdx.scenes.scene2d.-stage/plus-assign.html
+$dokka.location:ktx.actors$plusAssign(com.badlogic.gdx.scenes.scene2d.actions.ParallelAction, com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.actions.-parallel-action/plus-assign.html
+$dokka.location:ktx.actors$plusAssign(com.badlogic.gdx.scenes.scene2d.actions.SequenceAction, com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.actions.-sequence-action/plus-assign.html
+$dokka.location:ktx.actors$repeatForever(com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.-action/repeat-forever.html
+$dokka.location:ktx.actors$setKeyboardFocus(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean)ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/set-keyboard-focus.html
+$dokka.location:ktx.actors$setPosition(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Int, kotlin.Int)ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/set-position.html
+$dokka.location:ktx.actors$setScrollFocus(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean)ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/set-scroll-focus.html
+$dokka.location:ktx.actors$then(com.badlogic.gdx.scenes.scene2d.Action, com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.-action/then.html
+$dokka.location:ktx.actors$then(com.badlogic.gdx.scenes.scene2d.actions.SequenceAction, com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.actions.-sequence-action/then.html
+$dokka.location:ktx.actors$txt#com.badlogic.gdx.scenes.scene2d.ui.Labelktx.actors/com.badlogic.gdx.scenes.scene2d.ui.-label/txt.html
+$dokka.location:ktx.actors$txt#com.badlogic.gdx.scenes.scene2d.ui.TextButtonktx.actors/com.badlogic.gdx.scenes.scene2d.ui.-text-button/txt.html
+ktx.actors

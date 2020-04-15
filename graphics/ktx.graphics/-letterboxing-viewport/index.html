@@ -1,0 +1,126 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>LetterboxingViewport - graphics</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">graphics</a>&nbsp;/&nbsp;<a href="../index.html">ktx.graphics</a>&nbsp;/&nbsp;<a href="./index.html">LetterboxingViewport</a><br/>
+<br/>
+<h1>LetterboxingViewport</h1>
+<code><span class="keyword">class </span><span class="identifier">LetterboxingViewport</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScalingViewport</span></code>
+<p>Combines <a href="#">screen</a> and
+<a href="#">fit</a> viewports. Similarly to ScreenViewport, world size is changed on
+each update (resize), so <a href="update.html">update</a> should be generally called with <code>true</code> parameter (camera should be centered).
+Tries to keep the passed aspect ratio by applying letterboxing - horizontal or vertical black bars.</p>
+<p>On contrary to regular ScreenViewport, this viewport analyzes screen density (pixel per inch ratio) to preserve
+correct look on every platform, including mobiles. This is very convenient for GUIs (especially when using fit
+viewport with the same aspect ratio for game logic rendering), as they will not be scaled when the screen is resized
+(comparably to using similarly to screen viewport), and yet should still look acceptable on mobile devices
+(comparably to using fit viewport with a fixed world size).</p>
+<p>It is advised to pair this viewport with FitViewport - LetterboxingViewport can be used for the GUI, while
+FitViewport is excellent for the actual (2D) game rendering.</p>
+<h3>Parameters</h3>
+<p><a name="targetPpiX"></a>
+<code>targetPpiX</code> - this is the targeted pixel per inch ratio on X axis, which allows to scale the viewport
+    correctly on different devices. Usually about 96 for desktop and WebGL platforms, 160 for mobiles.
+    Make sure to call <a href="update-scale.html">updateScale</a> after changing this variable.</p>
+<p><a name="targetPpiY"></a>
+<code>targetPpiY</code> - targeted pixel per inch ratio on Y axis. Usually about 96 for desktop and WebGL platforms, 160
+    for mobiles. Make sure to call <a href="update-scale.html">updateScale</a> after changing this variable.</p>
+<p><a name="aspectRatio"></a>
+<code>aspectRatio</code> - width divided by height. Will preserve this aspect ratio by applying letterboxing.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Combines <a href="#">screen</a> and
+<a href="#">fit</a> viewports. Similarly to ScreenViewport, world size is changed on
+each update (resize), so <a href="update.html">update</a> should be generally called with <code>true</code> parameter (camera should be centered).
+Tries to keep the passed aspect ratio by applying letterboxing - horizontal or vertical black bars.</p>
+<code><span class="identifier">LetterboxingViewport</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics.LetterboxingViewport$<init>(kotlin.Float, kotlin.Float, kotlin.Float)/targetPpiX">targetPpiX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultTargetPpi<span class="symbol">, </span><span class="identifier" id="ktx.graphics.LetterboxingViewport$<init>(kotlin.Float, kotlin.Float, kotlin.Float)/targetPpiY">targetPpiY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultTargetPpi<span class="symbol">, </span><span class="identifier" id="ktx.graphics.LetterboxingViewport$<init>(kotlin.Float, kotlin.Float, kotlin.Float)/aspectRatio">aspectRatio</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;4f / 3f<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="aspect-ratio.html">aspectRatio</a></h4>
+</td>
+<td>
+<p>width divided by height. Will preserve this aspect ratio by applying letterboxing.</p>
+<code><span class="keyword">var </span><span class="identifier">aspectRatio</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scale-x.html">scaleX</a></h4>
+</td>
+<td>
+<p>You can directly modify unit per pixel ratio (bypassing PPI check) by modifying this value.</p>
+<code><span class="keyword">var </span><span class="identifier">scaleX</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="scale-y.html">scaleY</a></h4>
+</td>
+<td>
+<p>You can directly modify unit per pixel ratio (bypassing PPI check) by modifying this value.</p>
+<code><span class="keyword">var </span><span class="identifier">scaleY</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="target-ppi-x.html">targetPpiX</a></h4>
+</td>
+<td>
+<p>this is the targeted pixel per inch ratio on X axis, which allows to scale the viewport
+    correctly on different devices. Usually about 96 for desktop and WebGL platforms, 160 for mobiles.
+    Make sure to call <a href="update-scale.html">updateScale</a> after changing this variable.</p>
+<code><span class="keyword">var </span><span class="identifier">targetPpiX</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="target-ppi-y.html">targetPpiY</a></h4>
+</td>
+<td>
+<p>targeted pixel per inch ratio on Y axis. Usually about 96 for desktop and WebGL platforms, 160
+    for mobiles. Make sure to call <a href="update-scale.html">updateScale</a> after changing this variable.</p>
+<code><span class="keyword">var </span><span class="identifier">targetPpiY</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="update.html">update</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">update</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics.LetterboxingViewport$update(kotlin.Int, kotlin.Int, kotlin.Boolean)/screenWidth">screenWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ktx.graphics.LetterboxingViewport$update(kotlin.Int, kotlin.Int, kotlin.Boolean)/screenHeight">screenHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ktx.graphics.LetterboxingViewport$update(kotlin.Int, kotlin.Int, kotlin.Boolean)/centerCamera">centerCamera</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="update-scale.html">updateScale</a></h4>
+</td>
+<td>
+<p>Forces update of current pixel per unit ratio according to screen density.</p>
+<code><span class="keyword">fun </span><span class="identifier">updateScale</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="update-world-size.html">updateWorldSize</a></h4>
+</td>
+<td>
+<p>Forces update of current world size according to window size. Will try to keep the set aspect ratio.</p>
+<code><span class="keyword">fun </span><span class="identifier">updateWorldSize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

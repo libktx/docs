@@ -1,0 +1,133 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ktx.box2d - box2d</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">box2d</a>&nbsp;/&nbsp;<a href="./index.html">ktx.box2d</a><br/>
+<br/>
+<h2>Package ktx.box2d</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-body-definition/index.html">BodyDefinition</a></h4>
+</td>
+<td>
+<p>Box2D building DSL utility class. <a href="#">BodyDef</a> extension storing <a href="#">FixtureDef</a> instances in <a href="-body-definition/fixture-definitions.html">fixtureDefinitions</a>
+collection. Provides inlined building methods that construct fixture definitions.</p>
+<code><span class="keyword">class </span><span class="identifier">BodyDefinition</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">BodyDef</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-fixture-definition/index.html">FixtureDefinition</a></h4>
+</td>
+<td>
+<p>Box2D building DSL utility class. <a href="#">FixtureDef</a> extension exposing new properties. Note that when using fixture
+builders from <a href="-body-definition/index.html">BodyDefinition</a>, <a href="#">FixtureDefinition.shape</a> field should not be modified - fixture's shape of the
+chosen type will already be set in the <a href="-fixture-definition/index.html">FixtureDefinition</a> instance.</p>
+<code><span class="keyword">class </span><span class="identifier">FixtureDefinition</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">FixtureDef</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-ktx-query-callback.html">KtxQueryCallback</a></h4>
+</td>
+<td>
+<p>Callback lambda for querying with an AABB.</p>
+<code><span class="keyword">typealias </span><span class="identifier">KtxQueryCallback</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="symbol">(</span><span class="identifier">fixture</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fixture</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-ktx-ray-cast-callback.html">KtxRayCastCallback</a></h4>
+</td>
+<td>
+<p>Callback lambda for ray-casts.</p>
+<code><span class="keyword">typealias </span><span class="identifier">KtxRayCastCallback</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="symbol">(</span><span class="identifier">fixture</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fixture</span><span class="symbol">,</span>&nbsp;<span class="identifier">point</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">,</span>&nbsp;<span class="identifier">normal</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">,</span>&nbsp;<span class="identifier">fraction</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-query/index.html">Query</a></h4>
+</td>
+<td>
+<p>Stores constants that can be returned by <a href="-ktx-query-callback.html">KtxQueryCallback</a> to control its behavior.</p>
+<code><span class="keyword">object </span><span class="identifier">Query</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-ray-cast/index.html">RayCast</a></h4>
+</td>
+<td>
+<p>Stores constants that can be returned by <a href="-ktx-ray-cast-callback.html">KtxRayCastCallback</a> to control its behavior.</p>
+<code><span class="keyword">object </span><span class="identifier">RayCast</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Annotations</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-box2-d-dsl/index.html">Box2DDsl</a></h4>
+</td>
+<td>
+<p>Marks KTX Box2D type-safe builders.</p>
+<code><span class="keyword">annotation</span> <span class="keyword">class </span><span class="identifier">Box2DDsl</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extensions for External Classes</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.physics.box2d.-body/index.html">com.badlogic.gdx.physics.box2d.Body</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.physics.box2d.-fixture-def/index.html">com.badlogic.gdx.physics.box2d.FixtureDef</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.physics.box2d.-world/index.html">com.badlogic.gdx.physics.box2d.World</a></h4>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="earth-gravity.html">earthGravity</a></h4>
+</td>
+<td>
+<p>Roughly matches Earth gravity of 9.80665 m/s^2. Moves bodies down on the Y axis.</p>
+<code><span class="keyword">val </span><span class="identifier">earthGravity</span><span class="symbol">: </span><span class="identifier">Vector2</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="create-world.html">createWorld</a></h4>
+</td>
+<td>
+<p><a href="#">World</a> factory function.</p>
+<code><span class="keyword">fun </span><span class="identifier">createWorld</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d$createWorld(com.badlogic.gdx.math.Vector2, kotlin.Boolean)/gravity">gravity</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span>&nbsp;<span class="symbol">=</span>&nbsp;Vector2.Zero<span class="symbol">, </span><span class="identifier" id="ktx.box2d$createWorld(com.badlogic.gdx.math.Vector2, kotlin.Boolean)/allowSleep">allowSleep</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">World</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

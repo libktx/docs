@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>invoke - assets</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets</a>&nbsp;/&nbsp;<a href="index.html">com.badlogic.gdx.utils.Pool</a>&nbsp;/&nbsp;<a href="./invoke.html">invoke</a><br/>
+<br/>
+<h1>invoke</h1>
+<a name="ktx.assets$invoke(com.badlogic.gdx.utils.Pool((ktx.assets.invoke.Type)))"></a>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <span class="identifier">Pool</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">invoke</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Type</span></code>
+<p>Allows to use a <a href="#">Pool</a> instance as a functional object. When invoked with no parameters, <a href="#">Pool</a> will provide an
+instance of the pooled object type.</p>
+<p><strong>Return</strong><br/>
+an instance of class obtained from the pool.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">Pool.obtain</a></p>
+</p>
+<a name="ktx.assets$invoke(com.badlogic.gdx.utils.Pool((ktx.assets.invoke.Type)), ktx.assets.invoke.Type)"></a>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <span class="identifier">Pool</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">invoke</span><span class="symbol">(</span><span class="identifier" id="ktx.assets$invoke(com.badlogic.gdx.utils.Pool((ktx.assets.invoke.Type)), ktx.assets.invoke.Type)/free">free</span><span class="symbol">:</span>&nbsp;<span class="identifier">Type</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Allows to use a <a href="#">Pool</a> instance as a functional object. When invoked with a parameter, <a href="#">Pool</a> will treat the passed
+parameter as an object freed to the pool.</p>
+<h3>Parameters</h3>
+<p><a name="free"></a>
+<code>free</code> - will be returned to the pool. Might be reset if it implements the Poolable interface.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">Pool.free</a></p>
+</p>
+</BODY>
+</HTML>

@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>randomTriangular - math</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">math</a>&nbsp;/&nbsp;<a href="../index.html">ktx.math</a>&nbsp;/&nbsp;<a href="index.html">kotlin.ranges.ClosedRange</a>&nbsp;/&nbsp;<a href="./random-triangular.html">randomTriangular</a><br/>
+<br/>
+<h1>randomTriangular</h1>
+<a name="ktx.math$randomTriangular(kotlin.ranges.ClosedRange((kotlin.Float)))"></a>
+<code><span class="keyword">fun </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.ranges/-closed-range/index.html"><span class="identifier">ClosedRange</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">randomTriangular</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>Returns a triangularly distributed random number in this range, with the <em>mode</em> centered in this range, giving a
+symmetric distribution.</p>
+<p>This function uses <a href="#">MathUtils.randomTriangular</a>. Note that <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.ranges/-closed-range/end-inclusive.html">endInclusive</a> is treated as
+exclusive as it is not practical to keep it inclusive. Results are undefined for an empty range, and there is no
+error checking.</p>
+<a name="ktx.math$randomTriangular(kotlin.ranges.ClosedRange((kotlin.Float)), kotlin.Float)"></a>
+<code><span class="keyword">fun </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.ranges/-closed-range/index.html"><span class="identifier">ClosedRange</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">randomTriangular</span><span class="symbol">(</span><span class="identifier" id="ktx.math$randomTriangular(kotlin.ranges.ClosedRange((kotlin.Float)), kotlin.Float)/normalizedMode">normalizedMode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>Returns a triangularly distributed random number in this range, where values around the <em>mode</em> are more likely.
+<a href="random-triangular.html#ktx.math$randomTriangular(kotlin.ranges.ClosedRange((kotlin.Float)), kotlin.Float)/normalizedMode">normalizedMode</a> must be a value in the range 0.0..1.0 and represents the fractional position of the mode across the
+range.</p>
+<p>This function uses <code>MathUtils.randomTriangular(min, max, mode)</code>. Note that <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.ranges/-closed-range/end-inclusive.html">endInclusive</a>
+is treated as exclusive as it is not practical to keep it inclusive. Results are undefined for an empty range, and
+there is no error checking.</p>
+</BODY>
+</HTML>

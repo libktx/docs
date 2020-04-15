@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>toGdxList - collections</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">collections</a>&nbsp;/&nbsp;<a href="../index.html">ktx.collections</a>&nbsp;/&nbsp;<a href="index.html">kotlin.collections.Iterable</a>&nbsp;/&nbsp;<a href="./to-gdx-list.html">toGdxList</a><br/>
+<br/>
+<h1>toGdxList</h1>
+<a name="ktx.collections$toGdxList(kotlin.collections.Iterable((ktx.collections.toGdxList.Type)), com.badlogic.gdx.utils.Pool((ktx.collections.PooledList.Node((ktx.collections.toGdxList.Type)))))"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">toGdxList</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$toGdxList(kotlin.collections.Iterable((ktx.collections.toGdxList.Type)), com.badlogic.gdx.utils.Pool((ktx.collections.PooledList.Node((ktx.collections.toGdxList.Type)))))/pool">pool</span><span class="symbol">:</span>&nbsp;<span class="identifier">Pool</span><span class="symbol">&lt;</span><span class="identifier">Node</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;NodePool.pool()<span class="symbol">)</span><span class="symbol">: </span><a href="../-pooled-list/index.html"><span class="identifier">PooledList</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code>
+<p>Allows to convert an <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a> into a <a href="../-pooled-list/index.html">PooledList</a> - KTX LinkedList equivalent that caches its nodes and iterator.</p>
+<h3>Parameters</h3>
+<p><a name="pool"></a>
+<code>pool</code> - provides and manages <a href="../-pooled-list/-node/index.html">Node</a> instances.</p>
+<p><strong>Return</strong><br/>
+a new instance of <a href="../-pooled-list/index.html">PooledList</a> storing the elements from the iterable.</p>
+</BODY>
+</HTML>

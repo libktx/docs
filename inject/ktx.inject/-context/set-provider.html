@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Context.setProvider - inject</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">inject</a>&nbsp;/&nbsp;<a href="../index.html">ktx.inject</a>&nbsp;/&nbsp;<a href="index.html">Context</a>&nbsp;/&nbsp;<a href="./set-provider.html">setProvider</a><br/>
+<br/>
+<h1>setProvider</h1>
+<a name="ktx.inject.Context$setProvider(java.lang.Class((kotlin.Any)), kotlin.Function0((kotlin.Any)))"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setProvider</span><span class="symbol">(</span><span class="identifier" id="ktx.inject.Context$setProvider(java.lang.Class((kotlin.Any)), kotlin.Function0((kotlin.Any)))/forClass">forClass</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.inject.Context$setProvider(java.lang.Class((kotlin.Any)), kotlin.Function0((kotlin.Any)))/provider">provider</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Adds the selected provider to the <a href="index.html">Context</a>. This method is internally used by inlined binding methods.</p>
+<h3>Parameters</h3>
+<p><a name="forClass"></a>
+<code>forClass</code> - type of objects provided by the registered provider.</p>
+<p><a name="provider"></a>
+<code>provider</code> - will be bind to the selected class.</p>
+<h3>Exceptions</h3>
+<p><a name="InjectionException"></a>
+<code>InjectionException</code> - if provider is already defined.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="bind.html">bind</a></p>
+<p><a href="bind-singleton.html">bindSingleton</a></p>
+</p>
+</BODY>
+</HTML>

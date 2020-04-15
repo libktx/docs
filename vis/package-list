@@ -1,0 +1,13 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:ktx.vis$addTabContentsTo(com.kotcrab.vis.ui.widget.tabbedpane.TabbedPane, com.badlogic.gdx.scenes.scene2d.ui.Container((com.badlogic.gdx.scenes.scene2d.Actor)))ktx.vis/com.kotcrab.vis.ui.widget.tabbedpane.-tabbed-pane/add-tab-contents-to.html
+$dokka.location:ktx.vis$addTabContentsTo(com.kotcrab.vis.ui.widget.tabbedpane.TabbedPane, com.badlogic.gdx.scenes.scene2d.ui.Table)ktx.vis/com.kotcrab.vis.ui.widget.tabbedpane.-tabbed-pane/add-tab-contents-to.html
+$dokka.location:ktx.vis$addTabContentsTo(com.kotcrab.vis.ui.widget.tabbedpane.TabbedPane, com.badlogic.gdx.scenes.scene2d.ui.WidgetGroup)ktx.vis/com.kotcrab.vis.ui.widget.tabbedpane.-tabbed-pane/add-tab-contents-to.html
+$dokka.location:ktx.vis$addTextTooltip(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.String, kotlin.Int, kotlin.String, kotlin.Function1((com.kotcrab.vis.ui.widget.Tooltip, kotlin.Unit)))ktx.vis/com.badlogic.gdx.scenes.scene2d.-actor/add-text-tooltip.html
+$dokka.location:ktx.vis$addTooltip(com.badlogic.gdx.scenes.scene2d.Actor, com.badlogic.gdx.scenes.scene2d.Actor, kotlin.String, kotlin.Function1((com.kotcrab.vis.ui.widget.Tooltip, kotlin.Unit)))ktx.vis/com.badlogic.gdx.scenes.scene2d.-actor/add-tooltip.html
+$dokka.location:ktx.vis$menu(com.kotcrab.vis.ui.widget.MenuBar, kotlin.String, kotlin.String, kotlin.Function1((com.kotcrab.vis.ui.widget.PopupMenu, kotlin.Unit)))ktx.vis/com.kotcrab.vis.ui.widget.-menu-bar/menu.html
+$dokka.location:ktx.vis$menuItem(com.kotcrab.vis.ui.widget.PopupMenu, kotlin.String, com.badlogic.gdx.scenes.scene2d.ui.Image, kotlin.String, kotlin.Function1((com.kotcrab.vis.ui.widget.MenuItem, kotlin.Unit)))ktx.vis/com.kotcrab.vis.ui.widget.-popup-menu/menu-item.html
+$dokka.location:ktx.vis$menuItem(com.kotcrab.vis.ui.widget.PopupMenu, kotlin.String, com.badlogic.gdx.scenes.scene2d.utils.Drawable, kotlin.String, kotlin.Function1((com.kotcrab.vis.ui.widget.MenuItem, kotlin.Unit)))ktx.vis/com.kotcrab.vis.ui.widget.-popup-menu/menu-item.html
+$dokka.location:ktx.vis$menuItem(com.kotcrab.vis.ui.widget.PopupMenu, kotlin.String, kotlin.String, kotlin.Function1((com.kotcrab.vis.ui.widget.MenuItem, kotlin.Unit)))ktx.vis/com.kotcrab.vis.ui.widget.-popup-menu/menu-item.html
+$dokka.location:ktx.vis$subMenu(com.kotcrab.vis.ui.widget.MenuItem, kotlin.String, kotlin.Function1((com.kotcrab.vis.ui.widget.PopupMenu, kotlin.Unit)))ktx.vis/com.kotcrab.vis.ui.widget.-menu-item/sub-menu.html
+ktx.vis

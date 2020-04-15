@@ -1,0 +1,47 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:ktx.tiled$backgroundColor#com.badlogic.gdx.maps.tiled.TiledMapktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/background-color.html
+$dokka.location:ktx.tiled$contains(com.badlogic.gdx.maps.MapProperties, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.-map-properties/contains.html
+$dokka.location:ktx.tiled$contains(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/contains.html
+$dokka.location:ktx.tiled$containsProperty(com.badlogic.gdx.maps.MapLayer, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.-map-layer/contains-property.html
+$dokka.location:ktx.tiled$containsProperty(com.badlogic.gdx.maps.MapObject, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.-map-object/contains-property.html
+$dokka.location:ktx.tiled$containsProperty(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/contains-property.html
+$dokka.location:ktx.tiled$containsProperty(com.badlogic.gdx.maps.tiled.TiledMapTile, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map-tile/contains-property.html
+$dokka.location:ktx.tiled$containsProperty(com.badlogic.gdx.maps.tiled.TiledMapTileSet, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map-tile-set/contains-property.html
+$dokka.location:ktx.tiled$forEachMapObject(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String, kotlin.Function1((com.badlogic.gdx.maps.MapObject, kotlin.Unit)))ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/for-each-map-object.html
+$dokka.location:ktx.tiled$height#com.badlogic.gdx.maps.MapObjectktx.tiled/com.badlogic.gdx.maps.-map-object/height.html
+$dokka.location:ktx.tiled$height#com.badlogic.gdx.maps.tiled.TiledMapktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/height.html
+$dokka.location:ktx.tiled$hexSideLength#com.badlogic.gdx.maps.tiled.TiledMapktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/hex-side-length.html
+$dokka.location:ktx.tiled$id#com.badlogic.gdx.maps.MapObjectktx.tiled/com.badlogic.gdx.maps.-map-object/id.html
+$dokka.location:ktx.tiled$layer(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/layer.html
+$dokka.location:ktx.tiled$orientation#com.badlogic.gdx.maps.tiled.TiledMapktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/orientation.html
+$dokka.location:ktx.tiled$property(com.badlogic.gdx.maps.MapLayer, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.-map-layer/property.html
+$dokka.location:ktx.tiled$property(com.badlogic.gdx.maps.MapLayer, kotlin.String, ktx.tiled.property.T)ktx.tiled/com.badlogic.gdx.maps.-map-layer/property.html
+$dokka.location:ktx.tiled$property(com.badlogic.gdx.maps.MapObject, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.-map-object/property.html
+$dokka.location:ktx.tiled$property(com.badlogic.gdx.maps.MapObject, kotlin.String, ktx.tiled.property.T)ktx.tiled/com.badlogic.gdx.maps.-map-object/property.html
+$dokka.location:ktx.tiled$property(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/property.html
+$dokka.location:ktx.tiled$property(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String, ktx.tiled.property.T)ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/property.html
+$dokka.location:ktx.tiled$property(com.badlogic.gdx.maps.tiled.TiledMapTile, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map-tile/property.html
+$dokka.location:ktx.tiled$property(com.badlogic.gdx.maps.tiled.TiledMapTile, kotlin.String, ktx.tiled.property.T)ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map-tile/property.html
+$dokka.location:ktx.tiled$property(com.badlogic.gdx.maps.tiled.TiledMapTileSet, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map-tile-set/property.html
+$dokka.location:ktx.tiled$property(com.badlogic.gdx.maps.tiled.TiledMapTileSet, kotlin.String, ktx.tiled.property.T)ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map-tile-set/property.html
+$dokka.location:ktx.tiled$propertyOrNull(com.badlogic.gdx.maps.MapLayer, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.-map-layer/property-or-null.html
+$dokka.location:ktx.tiled$propertyOrNull(com.badlogic.gdx.maps.MapObject, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.-map-object/property-or-null.html
+$dokka.location:ktx.tiled$propertyOrNull(com.badlogic.gdx.maps.tiled.TiledMap, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/property-or-null.html
+$dokka.location:ktx.tiled$propertyOrNull(com.badlogic.gdx.maps.tiled.TiledMapTile, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map-tile/property-or-null.html
+$dokka.location:ktx.tiled$propertyOrNull(com.badlogic.gdx.maps.tiled.TiledMapTileSet, kotlin.String)ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map-tile-set/property-or-null.html
+$dokka.location:ktx.tiled$rotation#com.badlogic.gdx.maps.MapObjectktx.tiled/com.badlogic.gdx.maps.-map-object/rotation.html
+$dokka.location:ktx.tiled$set(com.badlogic.gdx.maps.MapProperties, kotlin.String, kotlin.Any)ktx.tiled/com.badlogic.gdx.maps.-map-properties/set.html
+$dokka.location:ktx.tiled$shape#com.badlogic.gdx.maps.MapObjectktx.tiled/com.badlogic.gdx.maps.-map-object/shape.html
+$dokka.location:ktx.tiled$staggerAxis#com.badlogic.gdx.maps.tiled.TiledMapktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/stagger-axis.html
+$dokka.location:ktx.tiled$staggerIndex#com.badlogic.gdx.maps.tiled.TiledMapktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/stagger-index.html
+$dokka.location:ktx.tiled$tileHeight#com.badlogic.gdx.maps.tiled.TiledMapktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/tile-height.html
+$dokka.location:ktx.tiled$tileWidth#com.badlogic.gdx.maps.tiled.TiledMapktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/tile-width.html
+$dokka.location:ktx.tiled$totalHeight(com.badlogic.gdx.maps.tiled.TiledMap)ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/total-height.html
+$dokka.location:ktx.tiled$totalWidth(com.badlogic.gdx.maps.tiled.TiledMap)ktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/total-width.html
+$dokka.location:ktx.tiled$type#com.badlogic.gdx.maps.MapObjectktx.tiled/com.badlogic.gdx.maps.-map-object/type.html
+$dokka.location:ktx.tiled$width#com.badlogic.gdx.maps.MapObjectktx.tiled/com.badlogic.gdx.maps.-map-object/width.html
+$dokka.location:ktx.tiled$width#com.badlogic.gdx.maps.tiled.TiledMapktx.tiled/com.badlogic.gdx.maps.tiled.-tiled-map/width.html
+$dokka.location:ktx.tiled$x#com.badlogic.gdx.maps.MapObjectktx.tiled/com.badlogic.gdx.maps.-map-object/x.html
+$dokka.location:ktx.tiled$y#com.badlogic.gdx.maps.MapObjectktx.tiled/com.badlogic.gdx.maps.-map-object/y.html
+ktx.tiled

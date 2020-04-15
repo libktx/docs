@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>interval - async</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">async</a>&nbsp;/&nbsp;<a href="index.html">ktx.async</a>&nbsp;/&nbsp;<a href="./interval.html">interval</a><br/>
+<br/>
+<h1>interval</h1>
+<a name="ktx.async$interval(kotlin.Float, kotlin.Float, kotlin.Int, kotlin.Function0((kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="identifier">interval</span><span class="symbol">(</span><span class="identifier" id="ktx.async$interval(kotlin.Float, kotlin.Float, kotlin.Int, kotlin.Function0((kotlin.Unit)))/intervalSeconds">intervalSeconds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async$interval(kotlin.Float, kotlin.Float, kotlin.Int, kotlin.Function0((kotlin.Unit)))/delaySeconds">delaySeconds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.async$interval(kotlin.Float, kotlin.Float, kotlin.Int, kotlin.Function0((kotlin.Unit)))/repeatCount">repeatCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-2<span class="symbol">, </span><span class="keyword">crossinline</span> <span class="identifier" id="ktx.async$interval(kotlin.Float, kotlin.Float, kotlin.Int, kotlin.Function0((kotlin.Unit)))/task">task</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Task</span></code>
+<p>Simplifies <a href="#">Timer</a> API.</p>
+<h3>Parameters</h3>
+<p><a name="intervalSeconds"></a>
+<code>intervalSeconds</code> - time between each execution.</p>
+<p><a name="delaySeconds"></a>
+<code>delaySeconds</code> - the execution will begin after this delay. Defaults to 0.</p>
+<p><a name="repeatCount"></a>
+<code>repeatCount</code> - <strong>additional</strong> task executions amount. For example, repeat count of 2 causes the task to be
+executed 3 times. Optional. If not set, task will be repeated indefinitely.</p>
+<p><a name="task"></a>
+<code>task</code> - will be repeatedly executed on the rendering thread.</p>
+<p><strong>Return</strong><br/>
+callback to the task.</p>
+</BODY>
+</HTML>

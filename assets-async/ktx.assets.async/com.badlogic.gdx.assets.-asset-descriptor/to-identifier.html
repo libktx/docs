@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>toIdentifier - assets-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets.async</a>&nbsp;/&nbsp;<a href="index.html">com.badlogic.gdx.assets.AssetDescriptor</a>&nbsp;/&nbsp;<a href="./to-identifier.html">toIdentifier</a><br/>
+<br/>
+<h1>toIdentifier</h1>
+<a name="ktx.assets.async$toIdentifier(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.toIdentifier.T)))"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">toIdentifier</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code>
+<p>Converts this <a href="#">AssetDescriptor</a> to an <a href="../-identifier/index.html">AssetStorage</a>.
+Copies <a href="#">AssetDescriptor.type</a> to <a href="../-identifier/type.html">Identifier.type</a> and <a href="#">AssetDescriptor.fileName</a> to <a href="../-identifier/path.html">Identifier.path</a>.</p>
+<p>Note that loading parameters from <a href="#">AssetDescriptor.parameters</a> are ignored. If the returned <a href="../-identifier/index.html">Identifier</a>
+is used to load an asset, and the asset requires specific loading instructions, make sure to pass the
+loading parameters to the <a href="../-asset-storage/load.html">AssetStorage.load</a> method.</p>
+<p>Similarly, <a href="#">AssetDescriptor.file</a> is not used by the <a href="../-identifier/index.html">Identifier</a>. Instead, <a href="#">AssetDescriptor.fileName</a>
+will be used to resolve the file using <a href="../-asset-storage/file-resolver.html">AssetStorage.fileResolver</a>. If a <a href="#">FileHandle</a> of a different type
+is required, use <a href="#">AssetDescriptor</a> for loading instead.</p>
+</BODY>
+</HTML>

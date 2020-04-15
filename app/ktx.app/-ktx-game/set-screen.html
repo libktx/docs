@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>KtxGame.setScreen - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">ktx.app</a>&nbsp;/&nbsp;<a href="index.html">KtxGame</a>&nbsp;/&nbsp;<a href="./set-screen.html">setScreen</a><br/>
+<br/>
+<h1>setScreen</h1>
+<a name="ktx.app.KtxGame$setScreen()"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span> <span class="identifier">setScreen</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Replaces current screen with the registered screen instance of the passed type.</p>
+<h3>Parameters</h3>
+<p><a name="Type"></a>
+<code>Type</code> - concrete class of the screen implementation. The screen instance of this type must have been added
+with <a href="add-screen.html">addScreen</a> before calling this method.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="add-screen.html">addScreen</a></p>
+<p><a href="shown-screen.html">shownScreen</a></p>
+</p>
+<a name="ktx.app.KtxGame$setScreen(java.lang.Class((ktx.app.KtxGame.setScreen.Type)))"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span> <span class="identifier">setScreen</span><span class="symbol">(</span><span class="identifier" id="ktx.app.KtxGame$setScreen(java.lang.Class((ktx.app.KtxGame.setScreen.Type)))/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Replaces current screen with the registered screen instance of the passed type. Calls <code>hide</code> method of the
+previous screen and <code>show</code> method of the current screen. Override this method to control screen transitions.</p>
+<h3>Parameters</h3>
+<p><a name="type"></a>
+<code>type</code> - concrete class of the screen implementation. The screen instance of this type must have been added with
+<a href="add-screen.html">addScreen</a> before calling this method.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="add-screen.html">addScreen</a></p>
+<p><a href="shown-screen.html">shownScreen</a></p>
+</p>
+</BODY>
+</HTML>

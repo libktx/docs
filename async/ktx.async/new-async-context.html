@@ -1,0 +1,17 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>newAsyncContext - async</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">async</a>&nbsp;/&nbsp;<a href="index.html">ktx.async</a>&nbsp;/&nbsp;<a href="./new-async-context.html">newAsyncContext</a><br/>
+<br/>
+<h1>newAsyncContext</h1>
+<a name="ktx.async$newAsyncContext(kotlin.Int, kotlin.String)"></a>
+<code><span class="keyword">fun </span><span class="identifier">newAsyncContext</span><span class="symbol">(</span><span class="identifier" id="ktx.async$newAsyncContext(kotlin.Int, kotlin.String)/threads">threads</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async$newAsyncContext(kotlin.Int, kotlin.String)/threadName">threadName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"AsyncExecutor-Thread"<span class="symbol">)</span><span class="symbol">: </span><a href="-async-executor-dispatcher/index.html"><span class="identifier">AsyncExecutorDispatcher</span></a></code>
+<p>Creates a new <a href="-async-executor-dispatcher/index.html">AsyncExecutorDispatcher</a> wrapping around an <a href="#">AsyncExecutor</a> with the chosen amount of <a href="new-async-context.html#ktx.async$newAsyncContext(kotlin.Int, kotlin.String)/threads">threads</a>
+to execute tasks asynchronously outside of the main rendering thread.</p>
+<p><a href="#">AsyncExecutor</a> threads will be named according to the <a href="new-async-context.html#ktx.async$newAsyncContext(kotlin.Int, kotlin.String)/threadName">threadName</a> pattern.</p>
+</BODY>
+</HTML>

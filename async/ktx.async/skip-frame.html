@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>skipFrame - async</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">async</a>&nbsp;/&nbsp;<a href="index.html">ktx.async</a>&nbsp;/&nbsp;<a href="./skip-frame.html">skipFrame</a><br/>
+<br/>
+<h1>skipFrame</h1>
+<a name="ktx.async$skipFrame()"></a>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">skipFrame</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Attempts to skip the current frame. Resumes the execution using a task scheduled with <a href="#">Application.postRunnable</a>.</p>
+<p>Due to asynchronous nature of the execution, there is no guarantee that this method will always skip only a <em>single</em>
+frame before resuming, but it will always suspend the current coroutine until the <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Runnable.html">Runnable</a> instances scheduled
+with <a href="#">Application.postRunnable</a> are executed by the <a href="#">Application</a>.</p>
+</BODY>
+</HTML>

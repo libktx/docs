@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>KtxGame.addScreen - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">ktx.app</a>&nbsp;/&nbsp;<a href="index.html">KtxGame</a>&nbsp;/&nbsp;<a href="./add-screen.html">addScreen</a><br/>
+<br/>
+<h1>addScreen</h1>
+<a name="ktx.app.KtxGame$addScreen(ktx.app.KtxGame.addScreen.Type)"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span> <span class="identifier">addScreen</span><span class="symbol">(</span><span class="identifier" id="ktx.app.KtxGame$addScreen(ktx.app.KtxGame.addScreen.Type)/screen">screen</span><span class="symbol">:</span>&nbsp;<span class="identifier">Type</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Registers an instance of <a href="#">Screen</a>.</p>
+<h3>Parameters</h3>
+<p><a name="Type"></a>
+<code>Type</code> - concrete class of the <a href="#">Screen</a> instance. The implementation assumes that screens are singletons and
+only one implementation of each class will be registered.</p>
+<p><a name="screen"></a>
+<code>screen</code> - instance of <a href="add-screen.html#Type">Type</a>. After invocation of this method, <a href="set-screen.html">setScreen</a> can be used with the appropriate
+class to change current screen to this object.</p>
+<h3>Exceptions</h3>
+<p><a name="GdxRuntimeException"></a>
+<code>GdxRuntimeException</code> - if a screen of selected type is already registered. Use <a href="remove-screen.html">removeScreen</a> first to replace
+the screen.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="get-screen.html">getScreen</a></p>
+<p><a href="set-screen.html">setScreen</a></p>
+<p><a href="remove-screen.html">removeScreen</a></p>
+</p>
+<a name="ktx.app.KtxGame$addScreen(java.lang.Class((ktx.app.KtxGame.addScreen.Type)), ktx.app.KtxGame.addScreen.Type)"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span> <span class="identifier">addScreen</span><span class="symbol">(</span><span class="identifier" id="ktx.app.KtxGame$addScreen(java.lang.Class((ktx.app.KtxGame.addScreen.Type)), ktx.app.KtxGame.addScreen.Type)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.app.KtxGame$addScreen(java.lang.Class((ktx.app.KtxGame.addScreen.Type)), ktx.app.KtxGame.addScreen.Type)/screen">screen</span><span class="symbol">:</span>&nbsp;<span class="identifier">Type</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Registers an instance of <a href="#">Screen</a>. Override this method to change the way screens are registered.</p>
+<h3>Parameters</h3>
+<p><a name="type"></a>
+<code>type</code> - concrete class of the <a href="#">Screen</a> instance. The implementation assumes that screens are singletons and
+only one implementation of each class will be registered.</p>
+<p><a name="screen"></a>
+<code>screen</code> - instance of <a href="add-screen.html#Type">Type</a>. After invocation of this method, <a href="set-screen.html">setScreen</a> can be used with the appropriate
+class to change current screen to this object.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="get-screen.html">getScreen</a></p>
+<p><a href="set-screen.html">setScreen</a></p>
+<p><a href="remove-screen.html">removeScreen</a></p>
+</p>
+</BODY>
+</HTML>

@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AssetStorage.getReferenceCount - assets-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets.async</a>&nbsp;/&nbsp;<a href="index.html">AssetStorage</a>&nbsp;/&nbsp;<a href="./get-reference-count.html">getReferenceCount</a><br/>
+<br/>
+<h1>getReferenceCount</h1>
+<a name="ktx.assets.async.AssetStorage$getReferenceCount(kotlin.String)"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">getReferenceCount</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getReferenceCount(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Returns the amount of references to the asset under the given <a href="get-reference-count.html#ktx.assets.async.AssetStorage$getReferenceCount(kotlin.String)/path">path</a> of <a href="get-reference-count.html#T">T</a> type.</p>
+<p>References include manual registration of the asset with <a href="add.html">add</a>,
+scheduling the asset for loading with <a href="load.html">load</a>, <a href="load-async.html">loadAsync</a> or <a href="load-sync.html">loadSync</a>,
+and the amount of times the asset was referenced as a dependency of other assets.</p>
+<a name="ktx.assets.async.AssetStorage$getReferenceCount(com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))"></a>
+<code><span class="keyword">fun </span><span class="identifier">getReferenceCount</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getReferenceCount(com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Returns the amount of references to the asset described by <a href="get-reference-count.html#ktx.assets.async.AssetStorage$getReferenceCount(com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))/descriptor">descriptor</a>.</p>
+<p>References include manual registration of the asset with <a href="add.html">add</a>,
+scheduling the asset for loading with <a href="load.html">load</a>, <a href="load-async.html">loadAsync</a> or <a href="load-sync.html">loadSync</a>,
+and the amount of times the asset was referenced as a dependency of other assets.</p>
+<a name="ktx.assets.async.AssetStorage$getReferenceCount(ktx.assets.async.Identifier((kotlin.Any)))"></a>
+<code><span class="keyword">fun </span><span class="identifier">getReferenceCount</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getReferenceCount(ktx.assets.async.Identifier((kotlin.Any)))/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Returns the amount of references to the asset identified by <a href="get-reference-count.html#ktx.assets.async.AssetStorage$getReferenceCount(ktx.assets.async.Identifier((kotlin.Any)))/identifier">identifier</a>.</p>
+<p>References include manual registration of the asset with <a href="add.html">add</a>,
+scheduling the asset for loading with <a href="load.html">load</a>, <a href="load-async.html">loadAsync</a> or <a href="load-sync.html">loadSync</a>,
+and the amount of times the asset was referenced as a dependency of other assets.</p>
+</BODY>
+</HTML>

@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AssetStorage.loadSync - assets-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets.async</a>&nbsp;/&nbsp;<a href="index.html">AssetStorage</a>&nbsp;/&nbsp;<a href="./load-sync.html">loadSync</a><br/>
+<br/>
+<h1>loadSync</h1>
+<a name="ktx.assets.async.AssetStorage$loadSync(kotlin.String)"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">loadSync</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$loadSync(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Blocks the current thread until the asset with <a href="load-sync.html#T">T</a> type is loaded from the given <a href="load-sync.html#ktx.assets.async.AssetStorage$loadSync(kotlin.String)/path">path</a>.</p>
+<p>This method is safe to call from the main rendering thread, as well as other application threads.
+However, avoid loading the same asset or assets with the same dependencies with both synchronous
+<a href="./load-sync.html">loadSync</a> and asynchronous <a href="load.html">load</a> or <a href="load-async.html">loadAsync</a>, and avoid running this method from within
+coroutines.</p>
+<p>This method should be used only to load crucial assets that are needed to initiate the application,
+e.g. assets required to display the loading screen. Whenever possible, prefer <a href="load.html">load</a> and <a href="load-async.html">loadAsync</a>.</p>
+<p>Might throw the following exceptions:</p>
+<ul><li><a href="../-missing-asset-exception/index.html">MissingAssetException</a> when attempting to load an asset that was already scheduled for asynchronous loading.</li>
+<li><a href="../-unloaded-asset-exception/index.html">UnloadedAssetException</a> if the asset unloaded asynchronously by another coroutine.</li>
+<li><a href="../-missing-loader-exception/index.html">MissingLoaderException</a> if the <a href="#">AssetLoader</a> for asset of requested type is not registered.</li>
+<li><a href="../-invalid-loader-exception/index.html">InvalidLoaderException</a> if the <a href="#">AssetLoader</a> implementation of requested type is invalid.</li>
+<li><a href="../-asset-loading-exception/index.html">AssetLoadingException</a> if the <a href="#">AssetLoader</a> has thrown an exception during loading.</li>
+<li><a href="../-missing-dependency-exception/index.html">MissingDependencyException</a> is the <a href="#">AssetLoader</a> is unable to obtain an instance of asset's dependency.</li>
+<li><a href="../-unsupported-method-exception/index.html">UnsupportedMethodException</a> is the <a href="#">AssetLoader</a> uses unsupported operation on <a href="#">AssetManagerWrapper</a>.</li>
+</ul>
+<p>If the asset was already loaded, added or scheduled for loading, this method will either return the asset
+immediately if it is loaded, or throw <a href="../-missing-asset-exception/index.html">MissingAssetException</a> if it is unloaded. In either case, it will
+increase the reference count of the asset - see <a href="get-reference-count.html">getReferenceCount</a> and <a href="unload.html">unload</a> for details.</p>
+<a name="ktx.assets.async.AssetStorage$loadSync(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.loadSync.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.loadSync.T)))"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">loadSync</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$loadSync(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.loadSync.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.loadSync.T)))/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$loadSync(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.loadSync.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.loadSync.T)))/parameters">parameters</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Blocks the current thread until the asset with <a href="load-sync.html#T">T</a> type is loaded with data specified by the <a href="load-sync.html#ktx.assets.async.AssetStorage$loadSync(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.loadSync.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.loadSync.T)))/identifier">identifier</a>
+and optional loading <a href="load-sync.html#ktx.assets.async.AssetStorage$loadSync(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.loadSync.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.loadSync.T)))/parameters">parameters</a>.</p>
+<p>This method is safe to call from the main rendering thread, as well as other application threads.
+However, avoid loading the same asset or assets with the same dependencies with both synchronous
+<a href="./load-sync.html">loadSync</a> and asynchronous <a href="load.html">load</a> or <a href="load-async.html">loadAsync</a>, and avoid running this method from within
+coroutines.</p>
+<p>This method should be used only to load crucial assets that are needed to initiate the application,
+e.g. assets required to display the loading screen. Whenever possible, prefer <a href="load.html">load</a> and <a href="load-async.html">loadAsync</a>.</p>
+<p>Might throw the following exceptions:</p>
+<ul><li><a href="../-missing-asset-exception/index.html">MissingAssetException</a> when attempting to load an asset that was already scheduled for asynchronous loading.</li>
+<li><a href="../-unloaded-asset-exception/index.html">UnloadedAssetException</a> if the asset unloaded asynchronously by another coroutine.</li>
+<li><a href="../-missing-loader-exception/index.html">MissingLoaderException</a> if the <a href="#">AssetLoader</a> for asset of requested type is not registered.</li>
+<li><a href="../-invalid-loader-exception/index.html">InvalidLoaderException</a> if the <a href="#">AssetLoader</a> implementation of requested type is invalid.</li>
+<li><a href="../-asset-loading-exception/index.html">AssetLoadingException</a> if the <a href="#">AssetLoader</a> has thrown an exception during loading.</li>
+<li><a href="../-missing-dependency-exception/index.html">MissingDependencyException</a> is the <a href="#">AssetLoader</a> is unable to obtain an instance of asset's dependency.</li>
+<li><a href="../-unsupported-method-exception/index.html">UnsupportedMethodException</a> is the <a href="#">AssetLoader</a> uses unsupported operation on <a href="#">AssetManagerWrapper</a>.</li>
+</ul>
+<p>If the asset was already loaded, added or scheduled for loading, this method will either return the asset
+immediately if it is loaded, or throw <a href="../-missing-asset-exception/index.html">MissingAssetException</a> if it is unloaded. In either case, it will
+increase the reference count of the asset - see <a href="get-reference-count.html">getReferenceCount</a> and <a href="unload.html">unload</a> for details.</p>
+<a name="ktx.assets.async.AssetStorage$loadSync(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.loadSync.T)))"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">loadSync</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$loadSync(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.loadSync.T)))/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Blocks the current thread until the asset with <a href="load-sync.html#T">T</a> type is loaded using the asset <a href="load-sync.html#ktx.assets.async.AssetStorage$loadSync(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.loadSync.T)))/descriptor">descriptor</a>.</p>
+<p>This method is safe to call from the main rendering thread, as well as other application threads.
+However, avoid loading the same asset or assets with the same dependencies with both synchronous
+<a href="./load-sync.html">loadSync</a> and asynchronous <a href="load.html">load</a> or <a href="load-async.html">loadAsync</a>, and avoid running this method from within
+coroutines.</p>
+<p>This method should be used only to load crucial assets that are needed to initiate the application,
+e.g. assets required to display the loading screen. Whenever possible, prefer <a href="load.html">load</a> and <a href="load-async.html">loadAsync</a>.</p>
+<p>Might throw the following exceptions:</p>
+<ul><li><a href="../-missing-asset-exception/index.html">MissingAssetException</a> when attempting to load an asset that was already scheduled for asynchronous loading.</li>
+<li><a href="../-unloaded-asset-exception/index.html">UnloadedAssetException</a> if the asset unloaded asynchronously by another coroutine.</li>
+<li><a href="../-missing-loader-exception/index.html">MissingLoaderException</a> if the <a href="#">AssetLoader</a> for asset of requested type is not registered.</li>
+<li><a href="../-invalid-loader-exception/index.html">InvalidLoaderException</a> if the <a href="#">AssetLoader</a> implementation of requested type is invalid.</li>
+<li><a href="../-asset-loading-exception/index.html">AssetLoadingException</a> if the <a href="#">AssetLoader</a> has thrown an exception during loading.</li>
+<li><a href="../-missing-dependency-exception/index.html">MissingDependencyException</a> is the <a href="#">AssetLoader</a> is unable to obtain an instance of asset's dependency.</li>
+<li><a href="../-unsupported-method-exception/index.html">UnsupportedMethodException</a> is the <a href="#">AssetLoader</a> uses unsupported operation on <a href="#">AssetManagerWrapper</a>.</li>
+</ul>
+<p>If the asset was already loaded, added or scheduled for loading, this method will either return the asset
+immediately if it is loaded, or throw <a href="../-missing-asset-exception/index.html">MissingAssetException</a> if it is unloaded. In either case, it will
+increase the reference count of the asset - see <a href="get-reference-count.html">getReferenceCount</a> and <a href="unload.html">unload</a> for details.</p>
+</BODY>
+</HTML>

@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AssetStorage.unload - assets-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets.async</a>&nbsp;/&nbsp;<a href="index.html">AssetStorage</a>&nbsp;/&nbsp;<a href="./unload.html">unload</a><br/>
+<br/>
+<h1>unload</h1>
+<a name="ktx.assets.async.AssetStorage$unload(kotlin.String)"></a>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">unload</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$unload(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Removes asset loaded with the given <a href="unload.html#ktx.assets.async.AssetStorage$unload(kotlin.String)/path">path</a> and <a href="unload.html#T">T</a> type and all of its dependencies.
+Does nothing if asset was not loaded in the first place.
+Will not dispose of the asset if it still is referenced by any other assets.
+Any removed assets that implement <a href="#">Disposable</a> will be disposed.</p>
+<p>Note: only assets that were explicitly scheduled for loading with <a href="load.html">load</a>, <a href="load-async.html">loadAsync</a> or
+<a href="load-sync.html">loadSync</a>, or manually added to storage with <a href="add.html">add</a> should be unloaded.
+Dependencies of assets will be removed automatically along with the original assets
+that caused them to load in the first place.</p>
+<p>Assets scheduled for loading multiple times must be explicitly unloaded multiple times -
+until the asset is unloaded as many times as it was referenced, it is assumed that it is
+still used. Manually unloading dependencies of other assets (that were not scheduled
+for loading explicitly) might lead to unexpected runtime exceptions.</p>
+<p>Will log all exceptions related to unloading of the assets. Silence the <a href="logger.html">logger</a>
+to avoid exception logging.</p>
+<p>Returns <code>true</code> if the asset was present in the <a href="index.html">AssetStorage</a>. Note that if the asset
+is still referenced (i.e. <a href="load.html">load</a> was called multiple times or the asset is a dependency
+of an asset that is still loaded), the asset will not be disposed of and will remain
+in the storage even if <code>true</code> is returned.</p>
+<a name="ktx.assets.async.AssetStorage$unload(com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))"></a>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">unload</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$unload(com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Removes asset described by the <a href="unload.html#ktx.assets.async.AssetStorage$unload(com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))/descriptor">descriptor</a> and all of its dependencies.
+Does nothing if asset was not loaded in the first place.
+Will not dispose of the asset if it still is referenced by any other assets.
+Any removed assets that implement <a href="#">Disposable</a> will be disposed.</p>
+<p>Note: only assets that were explicitly scheduled for loading with <a href="load.html">load</a>, <a href="load-async.html">loadAsync</a> or
+<a href="load-sync.html">loadSync</a>, or manually added to storage with <a href="add.html">add</a> should be unloaded.
+Dependencies of assets will be removed automatically along with the original assets
+that caused them to load in the first place.</p>
+<p>Assets scheduled for loading multiple times must be explicitly unloaded multiple times -
+until the asset is unloaded as many times as it was referenced, it is assumed that it is
+still used. Manually unloading dependencies of other assets (that were not scheduled
+for loading explicitly) might lead to unexpected runtime exceptions.</p>
+<p>Will log all exceptions related to unloading of the assets. Silence the <a href="logger.html">logger</a>
+to avoid exception logging.</p>
+<p>Returns <code>true</code> if the asset was present in the <a href="index.html">AssetStorage</a>. Note that if the asset
+is still referenced (i.e. <a href="load.html">load</a> was called multiple times or the asset is a dependency
+of an asset that is still loaded), the asset will not be disposed of and will remain
+in the storage even if <code>true</code> is returned.</p>
+<a name="ktx.assets.async.AssetStorage$unload(ktx.assets.async.Identifier((kotlin.Any)))"></a>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">unload</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$unload(ktx.assets.async.Identifier((kotlin.Any)))/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Removes asset loaded with the given <a href="unload.html#ktx.assets.async.AssetStorage$unload(ktx.assets.async.Identifier((kotlin.Any)))/identifier">identifier</a> and all of its dependencies.
+Does nothing if asset was not loaded in the first place.
+Will not dispose of the asset if it still is referenced by any other assets.
+Any removed assets that implement <a href="#">Disposable</a> will be disposed.</p>
+<p>Note: only assets that were explicitly scheduled for loading with <a href="load.html">load</a>, <a href="load-async.html">loadAsync</a> or
+<a href="load-sync.html">loadSync</a>, or manually added to storage with <a href="add.html">add</a> should be unloaded.
+Dependencies of assets will be removed automatically along with the original assets
+that caused them to load in the first place.</p>
+<p>Assets scheduled for loading multiple times must be explicitly unloaded multiple times -
+until the asset is unloaded as many times as it was referenced, it is assumed that it is
+still used. Manually unloading dependencies of other assets (that were not scheduled
+for loading explicitly) might lead to unexpected runtime exceptions.</p>
+<p>Will log all exceptions related to unloading of the assets. Silence the <a href="logger.html">logger</a>
+to avoid exception logging.</p>
+<p>Returns <code>true</code> if the asset was present in the <a href="index.html">AssetStorage</a>. Note that if the asset
+is still referenced (i.e. <a href="load.html">load</a> was called multiple times or the asset is a dependency
+of an asset that is still loaded), the asset will not be disposed of and will remain
+in the storage even if <code>true</code> is returned.</p>
+</BODY>
+</HTML>

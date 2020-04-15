@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MissingDependencyException.<init> - assets-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets.async</a>&nbsp;/&nbsp;<a href="index.html">MissingDependencyException</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<a name="ktx.assets.async.MissingDependencyException$&lt;init&gt;(ktx.assets.async.Identifier((kotlin.Any)), kotlin.Throwable)"></a>
+<code><span class="identifier">MissingDependencyException</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.MissingDependencyException$<init>(ktx.assets.async.Identifier((kotlin.Any)), kotlin.Throwable)/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.MissingDependencyException$<init>(ktx.assets.async.Identifier((kotlin.Any)), kotlin.Throwable)/cause">cause</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code>
+<p>This exception can be thrown by <a href="../-asset-storage/load-sync.html">AssetStorage.loadSync</a> if dependencies of an asset were scheduled
+for asynchronous loading, but are not loaded yet. <a href="../-asset-storage/load-sync.html">AssetStorage.loadSync</a> will not wait for the
+assets and instead will throw this exception.</p>
+<p>If <a href="../-asset-storage/load-sync.html">AssetStorage.loadSync</a> was not used, this exception is only ever thrown when trying to access
+assets via <a href="#">AssetManagerWrapper</a>. It is then typically only caused by <a href="#">AssetLoader</a> instances or
+a <a href="#">AssetLoaderParameters.LoadedCallback</a>.</p>
+<p>If you did not use <a href="../-asset-storage/load-sync.html">AssetStorage.loadSync</a>, it usually means that <a href="#">AssetLoader</a> attempts to access
+an asset that either:</p>
+<ul><li>Is already unloaded.</li>
+<li>Failed to load with exception.</li>
+<li>Was not listed by <a href="#">AssetLoader.getDependencies</a>.</li>
+<li>Has not loaded yet, which should never happen if the dependency was listed correctly.</li>
+</ul>
+<p>It can also be caused by an <a href="#">AssetLoaderParameters.LoadedCallback</a> assigned to an asset when it tries
+to access unloaded assets with <a href="#">AssetManagerWrapper.get</a>.</p>
+<p>Normally this exception is only expected in case of concurrent loading and unloading of the same asset, or when
+mixing synchronous <a href="../-asset-storage/load-sync.html">AssetStorage.loadSync</a> with asynchronous <a href="../-asset-storage/load.html">AssetStorage.load</a> or <a href="../-asset-storage/load-async.html">AssetStorage.loadAsync</a>.
+If it occurs otherwise, the <a href="#">AssetLoader</a> associated with the asset might incorrectly list its dependencies.</p>
+</BODY>
+</HTML>

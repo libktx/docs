@@ -1,0 +1,79 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>alltypes - assets</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<h3>All Types</h3>
+<table>
+<tbody>
+<tr>
+ (extensions in package ktx.assets)
+<h5><a href="../ktx.assets/kotlin.-array/index.html">kotlin.Array</a></h5>
+</tr>
+<tr>
+<h5><a href="../ktx.assets/-asset/index.html">ktx.assets.Asset</a></h5>
+<p>Common interface for asset wrappers. Provides access to an asset instance which might or might not be loaded.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.assets/-asset-group/index.html">ktx.assets.AssetGroup</a></h5>
+<p>A class for managing a group of assets together, such that they can be loaded or unloaded en masse.
+<a href="../ktx.assets/-asset-group/index.html">AssetGroup</a> should be subclassed and the assets should be defined by properties in the subclass by using <a href="../ktx.assets/-asset-group/asset.html">asset</a> or,
+<a href="../ktx.assets/-asset-group/delayed-asset.html">delayedAsset</a>, which can be used as delegates. If not using delegates, it is possible to selectively load and
+unload them, in which case it is not advised to use <a href="../ktx.assets/-asset-group/load-all.html">loadAll</a> and <a href="../ktx.assets/-asset-group/unload-all.html">unloadAll</a>, because AssetManager's reference
+counts may be thrown off.</p>
+</tr>
+<tr>
+ (extensions in package ktx.assets)
+<h5><a href="../ktx.assets/com.badlogic.gdx.assets.-asset-manager/index.html">com.badlogic.gdx.assets.AssetManager</a></h5>
+</tr>
+<tr>
+<h5><a href="../ktx.assets/-delayed-asset/index.html">ktx.assets.DelayedAsset</a></h5>
+<p>Represents an <a href="../ktx.assets/-asset/index.html">Asset</a> wrapper of resource loaded at demand. The first asset getter call causes the asset to be
+scheduled for loading and loaded eagerly - the <a href="#">AssetManager</a> is updated until the asset is reported as loaded.
+Note that eager asset loading might cause other assets to be loaded synchronously rather than asynchronously,
+so it is advised to load eager assets with another <a href="#">AssetManager</a> instance or use them after all regular assets are
+already loaded.</p>
+</tr>
+<tr>
+ (extensions in package ktx.assets)
+<h5><a href="../ktx.assets/com.badlogic.gdx.utils.-disposable/index.html">com.badlogic.gdx.utils.Disposable</a></h5>
+</tr>
+<tr>
+ (extensions in package ktx.assets)
+<h5><a href="../ktx.assets/com.badlogic.gdx.assets.loaders.-file-handle-resolver/index.html">com.badlogic.gdx.assets.loaders.FileHandleResolver</a></h5>
+</tr>
+<tr>
+ (extensions in package ktx.assets)
+<h5><a href="../ktx.assets/com.badlogic.gdx.-files.-file-type/index.html">com.badlogic.gdx.Files.FileType</a></h5>
+</tr>
+<tr>
+ (extensions in package ktx.assets)
+<h5><a href="../ktx.assets/kotlin.collections.-iterable/index.html">kotlin.collections.Iterable</a></h5>
+</tr>
+<tr>
+<h5><a href="../ktx.assets/-managed-asset/index.html">ktx.assets.ManagedAsset</a></h5>
+<p>Default implementation of <a href="../ktx.assets/-asset/index.html">Asset</a>. Keeps asset data in an <a href="#">AssetDescriptor</a> and delegates asset loading to an
+<a href="#">AssetManager</a>. Assumes the asset was already scheduled for loading.</p>
+</tr>
+<tr>
+ (extensions in package ktx.assets)
+<h5><a href="../ktx.assets/com.badlogic.gdx.utils.-pool/index.html">com.badlogic.gdx.utils.Pool</a></h5>
+</tr>
+<tr>
+ (extensions in package ktx.assets)
+<h5><a href="../ktx.assets/kotlin.-string/index.html">kotlin.String</a></h5>
+</tr>
+<tr>
+<h5><a href="../ktx.assets/-text-asset-loader/index.html">ktx.assets.TextAssetLoader</a></h5>
+<p>Allows to read text files with an <a href="#">AssetManager</a>. Must be registered via <a href="../ktx.assets/com.badlogic.gdx.assets.-asset-manager/set-loader.html">setLoader</a>.</p>
+</tr>
+<tr>
+ (extensions in package ktx.assets)
+<h5><a href="../ktx.assets/kotlin.-throwable/index.html">kotlin.Throwable</a></h5>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

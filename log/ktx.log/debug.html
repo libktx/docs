@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>debug - log</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">log</a>&nbsp;/&nbsp;<a href="index.html">ktx.log</a>&nbsp;/&nbsp;<a href="./debug.html">debug</a><br/>
+<br/>
+<h1>debug</h1>
+<a name="ktx.log$debug(kotlin.String, kotlin.Function0((kotlin.String)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="identifier">debug</span><span class="symbol">(</span><span class="identifier" id="ktx.log$debug(kotlin.String, kotlin.Function0((kotlin.String)))/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"[DEBUG]"<span class="symbol">, </span><span class="identifier" id="ktx.log$debug(kotlin.String, kotlin.Function0((kotlin.String)))/message">message</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Logs a message on the debug level.</p>
+<h3>Parameters</h3>
+<p><a name="tag"></a>
+<code>tag</code> - will proceed the message. Defaults to "DEBUG" in square braces.</p>
+<p><a name="message"></a>
+<code>message</code> - inlined lambda which will be evaluated only if debug logs are currently on. The string result of this
+    function will be created ONLY when needed, reducing the impact of creating new strings at runtime.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">Application.LOG_DEBUG</a></p>
+<p><a href="#">Application.getLogLevel</a></p>
+</p>
+<a name="ktx.log$debug(kotlin.Throwable, kotlin.String, kotlin.Function0((kotlin.String)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="identifier">debug</span><span class="symbol">(</span><span class="identifier" id="ktx.log$debug(kotlin.Throwable, kotlin.String, kotlin.Function0((kotlin.String)))/cause">cause</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">, </span><span class="identifier" id="ktx.log$debug(kotlin.Throwable, kotlin.String, kotlin.Function0((kotlin.String)))/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"[DEBUG]"<span class="symbol">, </span><span class="identifier" id="ktx.log$debug(kotlin.Throwable, kotlin.String, kotlin.Function0((kotlin.String)))/message">message</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Logs a message on the debug level.</p>
+<h3>Parameters</h3>
+<p><a name="cause"></a>
+<code>cause</code> - its stack trace will be printed.</p>
+<p><a name="tag"></a>
+<code>tag</code> - will proceed the message. Defaults to "DEBUG" in square braces.</p>
+<p><a name="message"></a>
+<code>message</code> - inlined lambda which will be evaluated only if debug logs are currently on. The string result of this
+    function will be created ONLY when needed, reducing the impact of creating new strings at runtime.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">Application.LOG_DEBUG</a></p>
+<p><a href="#">Application.getLogLevel</a></p>
+</p>
+</BODY>
+</HTML>

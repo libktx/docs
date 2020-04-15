@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AssetStorage.<init> - assets-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets.async</a>&nbsp;/&nbsp;<a href="index.html">AssetStorage</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<a name="ktx.assets.async.AssetStorage$&lt;init&gt;(kotlin.coroutines.CoroutineContext, com.badlogic.gdx.assets.loaders.FileHandleResolver, kotlin.Boolean)"></a>
+<code><span class="identifier">AssetStorage</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$<init>(kotlin.coroutines.CoroutineContext, com.badlogic.gdx.assets.loaders.FileHandleResolver, kotlin.Boolean)/asyncContext">asyncContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;newSingleThreadAsyncContext(threadName = "AssetStorage-Thread")<span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$<init>(kotlin.coroutines.CoroutineContext, com.badlogic.gdx.assets.loaders.FileHandleResolver, kotlin.Boolean)/fileResolver">fileResolver</span><span class="symbol">:</span>&nbsp;<span class="identifier">FileHandleResolver</span>&nbsp;<span class="symbol">=</span>&nbsp;InternalFileHandleResolver()<span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$<init>(kotlin.coroutines.CoroutineContext, com.badlogic.gdx.assets.loaders.FileHandleResolver, kotlin.Boolean)/useDefaultLoaders">useDefaultLoaders</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">)</span></code>
+<p>Asynchronous asset loader based on coroutines API. An <a href="#">AssetManager</a> alternative.</p>
+<p>Note that <a href="#">KtxAsync.initiate</a> must be called on the rendering thread before creating an <a href="index.html">AssetStorage</a>.</p>
+<p><a href="async-context.html">asyncContext</a> is used to perform asynchronous file loading. Defaults to a single-threaded context using an
+<a href="#">AsyncExecutor</a>. See <a href="#">newSingleThreadAsyncContext</a> or <a href="#">ktx.async.newAsyncContext</a> functions to create a custom
+loading context. Multi-threaded contexts are fully supported and might boost loading performance if the assets
+are loaded asynchronously in parallel.</p>
+<p><a href="file-resolver.html">fileResolver</a> determines how file paths are interpreted. Defaults to <a href="#">InternalFileHandleResolver</a>, which loads
+internal files.</p>
+<p>If <code>useDefaultLoaders</code> is true (which is the default), all default LibGDX <a href="#">AssetLoader</a> implementations
+will be registered.</p>
+</BODY>
+</HTML>

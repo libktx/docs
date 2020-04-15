@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ktx.assets.kotlin.Array - assets</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets</a>&nbsp;/&nbsp;<a href="./index.html">kotlin.Array</a><br/>
+<br/>
+<h3>Extensions for kotlin.Array</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="dispose.html">dispose</a></h4>
+</td>
+<td>
+<p>Allows to dispose a collection of resources implementing <a href="#">Disposable</a> interface. Will silently ignore stored nulls.
+This method does not affect the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a> structure in any way: no elements are removed from the array.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Asset</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Disposable</span><span class="symbol">&gt;</span> <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">.</span><span class="identifier">dispose</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">?</span></code>
+<p>Allows to dispose a collection of resources implementing <a href="#">Disposable</a> interface. Will silently ignore stored nulls.
+Exceptions during asset disposing will be caught and passed to <a href="dispose.html#ktx.assets$dispose(kotlin.Array((ktx.assets.dispose.Asset)), kotlin.Function1((java.lang.Exception, kotlin.Unit)))/onError">onError</a> function. This method does not affect the
+<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a> structure in any way: no elements are removed from the array.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Asset</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Disposable</span><span class="symbol">&gt;</span> <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">.</span><span class="identifier">dispose</span><span class="symbol">(</span><span class="identifier" id="ktx.assets$dispose(kotlin.Array((ktx.assets.dispose.Asset)), kotlin.Function1((java.lang.Exception, kotlin.Unit)))/onError">onError</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html"><span class="identifier">Exception</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dispose-safely.html">disposeSafely</a></h4>
+</td>
+<td>
+<p>Allows to dispose a collection of resources implementing <a href="#">Disposable</a> interface. Will silently ignore stored nulls
+and exceptions thrown during disposing (except for JVM internal <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-error/index.html">Error</a>s, which should not be caught anyway). This
+method does not affect the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a> structure in any way: no elements are removed from the array.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Asset</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Disposable</span><span class="symbol">&gt;</span> <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">.</span><span class="identifier">disposeSafely</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

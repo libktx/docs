@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>alltypes - app</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<h3>All Types</h3>
+<table>
+<tbody>
+<tr>
+<h5><a href="../ktx.app/-ktx-application-adapter/index.html">ktx.app.KtxApplicationAdapter</a></h5>
+<p>Wrapping interface around <a href="#">com.badlogic.gdx.ApplicationListener</a>. Provides no-op implementations of all methods,
+making them optional to implement.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.app/-ktx-game/index.html">ktx.app.KtxGame</a></h5>
+<p>An equivalent of <a href="#">com.badlogic.gdx.Game</a> delegating game events to a <a href="#">Screen</a>. On contrary to <code>Game</code>, <a href="../ktx.app/-ktx-game/index.html">KtxGame</a>
+maintains a collection of screens mapped by their type and allows to change screens knowing only their type with
+<a href="../ktx.app/-ktx-game/set-screen.html">setScreen</a>. Thanks to this, its easier to cache screens without maintaining a singleton with all <a href="#">Screen</a> instances
+manually. <a href="../ktx.app/-ktx-game/index.html#ScreenType">ScreenType</a> generic type allows to users to use an extended specific base class (or interface) for all
+screens, without locking into <a href="#">Screen</a>.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.app/-ktx-input-adapter/index.html">ktx.app.KtxInputAdapter</a></h5>
+<p>Wrapping interface around <a href="#">com.badlogic.gdx.InputProcessor</a>. Provides empty implementations of all methods,
+making them optional to implement.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.app/-ktx-screen/index.html">ktx.app.KtxScreen</a></h5>
+<p>Provides empty implementations of all <a href="#">Screen</a> methods, making them optional to override.</p>
+</tr>
+<tr>
+ (extensions in package ktx.app)
+<h5><a href="../ktx.app/com.badlogic.gdx.utils.-performance-counter/index.html">com.badlogic.gdx.utils.PerformanceCounter</a></h5>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

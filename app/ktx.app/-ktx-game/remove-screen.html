@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>KtxGame.removeScreen - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">ktx.app</a>&nbsp;/&nbsp;<a href="index.html">KtxGame</a>&nbsp;/&nbsp;<a href="./remove-screen.html">removeScreen</a><br/>
+<br/>
+<h1>removeScreen</h1>
+<a name="ktx.app.KtxGame$removeScreen()"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span> <span class="identifier">removeScreen</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Type</span><span class="symbol">?</span></code>
+<p>Removes cached instance of <a href="#">Screen</a> of the selected type. Note that this method does not dispose of the screen and
+will not affect <a href="shown-screen.html">shownScreen</a>.</p>
+<h3>Parameters</h3>
+<p><a name="Type"></a>
+<code>Type</code> - concrete class of the screen implementation.</p>
+<p><strong>Return</strong><br/>
+removed instance of <a href="#">Screen</a> extending passed <a href="remove-screen.html#Type">Type</a> if was registered. <code>null</code> otherwise.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="add-screen.html">addScreen</a></p>
+</p>
+<a name="ktx.app.KtxGame$removeScreen(java.lang.Class((ktx.app.KtxGame.removeScreen.Type)))"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScreenType</span><span class="symbol">&gt;</span> <span class="identifier">removeScreen</span><span class="symbol">(</span><span class="identifier" id="ktx.app.KtxGame$removeScreen(java.lang.Class((ktx.app.KtxGame.removeScreen.Type)))/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Type</span><span class="symbol">?</span></code>
+<p>Removes cached instance of <a href="#">Screen</a> of the selected type. Note that this method does not dispose of the screen and
+will not affect <a href="shown-screen.html">shownScreen</a>.</p>
+<h3>Parameters</h3>
+<p><a name="type"></a>
+<code>type</code> - concrete class of the screen implementation.</p>
+<p><strong>Return</strong><br/>
+removed instance of <a href="#">Screen</a> extending passed <a href="remove-screen.html#ktx.app.KtxGame$removeScreen(java.lang.Class((ktx.app.KtxGame.removeScreen.Type)))/type">type</a> if was registered. <code>null</code> otherwise.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="add-screen.html">addScreen</a></p>
+</p>
+</BODY>
+</HTML>

@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>logger - log</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">log</a>&nbsp;/&nbsp;<a href="index.html">ktx.log</a>&nbsp;/&nbsp;<a href="./logger.html">logger</a><br/>
+<br/>
+<h1>logger</h1>
+<a name="ktx.log$logger()"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">logger</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-logger/index.html"><span class="identifier">Logger</span></a></code>
+<p>Allows to create a <a href="-logger/index.html">Logger</a> instance for a specific class. Note that loggers are not cached - each time this method
+is called, a new instance of <a href="-logger/index.html">Logger</a> is created, so it is advised to use loggers in companion objects.</p>
+<p><strong>Return</strong><br/>
+a new instance of <a href="-logger/index.html">Logger</a> which contains the passed class name in log tags.</p>
+</BODY>
+</HTML>

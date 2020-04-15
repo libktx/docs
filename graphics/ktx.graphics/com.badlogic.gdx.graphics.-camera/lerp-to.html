@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>lerpTo - graphics</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">graphics</a>&nbsp;/&nbsp;<a href="../index.html">ktx.graphics</a>&nbsp;/&nbsp;<a href="index.html">com.badlogic.gdx.graphics.Camera</a>&nbsp;/&nbsp;<a href="./lerp-to.html">lerpTo</a><br/>
+<br/>
+<h1>lerpTo</h1>
+<a name="ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)"></a>
+<code><span class="keyword">fun </span><span class="identifier">Camera</span><span class="symbol">.</span><span class="identifier">lerpTo</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/target">target</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">, </span><span class="identifier" id="ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/lerp">lerp</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Will smoothly move the <a href="#">Camera</a> at the selected <a href="lerp-to.html#ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/target">target</a> coordinated.
+The <a href="#">Camera</a> will follow a <a href="lerp-to.html#ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/target">target</a> with a smooth linear interpolation, based on a <a href="lerp-to.html#ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/lerp">lerp</a> amount.
+<a href="lerp-to.html#ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/lerp">lerp</a> should be in range of 0 (slowest) to 1 (fastest).
+The lower that interpolation amount, the smoother - and thus slower - the following motion.</p>
+<p><a href="lerp-to.html#ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/x">x</a> and <a href="lerp-to.html#ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/y">y</a> are optional offsets in world units that will modify the final camera position.
+Offsets are added as-is and are not interpolated.</p>
+<p>Note that <a href="#">Camera.update</a> should be called in order to update to the new position.
+<a href="move-to.html">moveTo</a> can be used to set the initial position while honoring the same <a href="lerp-to.html#ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/x">x</a> and <a href="lerp-to.html#ktx.graphics$lerpTo(com.badlogic.gdx.graphics.Camera, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Float, kotlin.Float)/y">y</a> offset.</p>
+</BODY>
+</HTML>

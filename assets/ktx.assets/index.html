@@ -1,0 +1,178 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ktx.assets - assets</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">assets</a>&nbsp;/&nbsp;<a href="./index.html">ktx.assets</a><br/>
+<br/>
+<h2>Package ktx.assets</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-asset/index.html">Asset</a></h4>
+</td>
+<td>
+<p>Common interface for asset wrappers. Provides access to an asset instance which might or might not be loaded.</p>
+<code><span class="keyword">interface </span><span class="identifier">Asset</span><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-asset-group/index.html">AssetGroup</a></h4>
+</td>
+<td>
+<p>A class for managing a group of assets together, such that they can be loaded or unloaded en masse.
+<a href="-asset-group/index.html">AssetGroup</a> should be subclassed and the assets should be defined by properties in the subclass by using <a href="-asset-group/asset.html">asset</a> or,
+<a href="-asset-group/delayed-asset.html">delayedAsset</a>, which can be used as delegates. If not using delegates, it is possible to selectively load and
+unload them, in which case it is not advised to use <a href="-asset-group/load-all.html">loadAll</a> and <a href="-asset-group/unload-all.html">unloadAll</a>, because AssetManager's reference
+counts may be thrown off.</p>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AssetGroup</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-delayed-asset/index.html">DelayedAsset</a></h4>
+</td>
+<td>
+<p>Represents an <a href="-asset/index.html">Asset</a> wrapper of resource loaded at demand. The first asset getter call causes the asset to be
+scheduled for loading and loaded eagerly - the <a href="#">AssetManager</a> is updated until the asset is reported as loaded.
+Note that eager asset loading might cause other assets to be loaded synchronously rather than asynchronously,
+so it is advised to load eager assets with another <a href="#">AssetManager</a> instance or use them after all regular assets are
+already loaded.</p>
+<code><span class="keyword">class </span><span class="identifier">DelayedAsset</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-asset/index.html"><span class="identifier">Asset</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-managed-asset/index.html">ManagedAsset</a></h4>
+</td>
+<td>
+<p>Default implementation of <a href="-asset/index.html">Asset</a>. Keeps asset data in an <a href="#">AssetDescriptor</a> and delegates asset loading to an
+<a href="#">AssetManager</a>. Assumes the asset was already scheduled for loading.</p>
+<code><span class="keyword">class </span><span class="identifier">ManagedAsset</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-asset/index.html"><span class="identifier">Asset</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-text-asset-loader/index.html">TextAssetLoader</a></h4>
+</td>
+<td>
+<p>Allows to read text files with an <a href="#">AssetManager</a>. Must be registered via <a href="com.badlogic.gdx.assets.-asset-manager/set-loader.html">setLoader</a>.</p>
+<code><span class="keyword">class </span><span class="identifier">TextAssetLoader</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AsynchronousAssetLoader</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">TextAssetLoaderParameters</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extensions for External Classes</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.assets.-asset-manager/index.html">com.badlogic.gdx.assets.AssetManager</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.assets.loaders.-file-handle-resolver/index.html">com.badlogic.gdx.assets.loaders.FileHandleResolver</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.-files.-file-type/index.html">com.badlogic.gdx.Files.FileType</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-disposable/index.html">com.badlogic.gdx.utils.Disposable</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-pool/index.html">com.badlogic.gdx.utils.Pool</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="kotlin.-array/index.html">kotlin.Array</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="kotlin.collections.-iterable/index.html">kotlin.collections.Iterable</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="kotlin.-string/index.html">kotlin.String</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="kotlin.-throwable/index.html">kotlin.Throwable</a></h4>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="asset-descriptor.html">assetDescriptor</a></h4>
+</td>
+<td>
+<p>Allows to quickly prepare a typed <a href="#">AssetDescriptor</a> instance with more Kotlin-friendly syntax.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">assetDescriptor</span><span class="symbol">(</span><span class="identifier" id="ktx.assets$assetDescriptor(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.assetDescriptor.Type)))/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets$assetDescriptor(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.assetDescriptor.Type)))/parameters">parameters</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">assetDescriptor</span><span class="symbol">(</span><span class="identifier" id="ktx.assets$assetDescriptor(com.badlogic.gdx.files.FileHandle, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.assetDescriptor.Type)))/file">file</span><span class="symbol">:</span>&nbsp;<span class="identifier">FileHandle</span><span class="symbol">, </span><span class="identifier" id="ktx.assets$assetDescriptor(com.badlogic.gdx.files.FileHandle, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.assetDescriptor.Type)))/parameters">parameters</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="file.html">file</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">file</span><span class="symbol">(</span><span class="identifier" id="ktx.assets$file(kotlin.String, com.badlogic.gdx.Files.FileType)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets$file(kotlin.String, com.badlogic.gdx.Files.FileType)/type">type</span><span class="symbol">:</span>&nbsp;<span class="identifier">FileType</span>&nbsp;<span class="symbol">=</span>&nbsp;Internal<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">FileHandle</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-value.html">getValue</a></h4>
+</td>
+<td>
+<p>Extension function that allows <a href="-asset/index.html">Asset</a> instances to be delegates using the "by" keyword.</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <a href="-asset/index.html"><span class="identifier">Asset</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">getValue</span><span class="symbol">(</span><span class="identifier" id="ktx.assets$getValue(ktx.assets.Asset((ktx.assets.getValue.Type)), kotlin.Any, kotlin.reflect.KProperty((kotlin.Any)))/receiver">receiver</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="ktx.assets$getValue(ktx.assets.Asset((ktx.assets.getValue.Type)), kotlin.Any, kotlin.reflect.KProperty((kotlin.Any)))/property">property</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-property/index.html"><span class="identifier">KProperty</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Type</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="pool.html">pool</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <span class="identifier">pool</span><span class="symbol">(</span><span class="identifier" id="ktx.assets$pool(kotlin.Int, kotlin.Int, kotlin.Function0((ktx.assets.pool.Type)))/initialCapacity">initialCapacity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;16<span class="symbol">, </span><span class="identifier" id="ktx.assets$pool(kotlin.Int, kotlin.Int, kotlin.Function0((ktx.assets.pool.Type)))/max">max</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Int.MAX_VALUE<span class="symbol">, </span><span class="identifier" id="ktx.assets$pool(kotlin.Int, kotlin.Int, kotlin.Function0((ktx.assets.pool.Type)))/provider">provider</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Type</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Pool</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="resolution.html">resolution</a></h4>
+</td>
+<td>
+<p>Factory method for <a href="#">ResolutionFileResolver.Resolution</a> that allows to used named parameters.</p>
+<code><span class="keyword">fun </span><span class="identifier">resolution</span><span class="symbol">(</span><span class="identifier" id="ktx.assets$resolution(kotlin.Int, kotlin.Int, kotlin.String)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets$resolution(kotlin.Int, kotlin.Int, kotlin.String)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets$resolution(kotlin.Int, kotlin.Int, kotlin.String)/folder">folder</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"${width}x${height}"<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Resolution</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

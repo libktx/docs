@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>weldJointWith - box2d</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">box2d</a>&nbsp;/&nbsp;<a href="../index.html">ktx.box2d</a>&nbsp;/&nbsp;<a href="index.html">com.badlogic.gdx.physics.box2d.Body</a>&nbsp;/&nbsp;<a href="./weld-joint-with.html">weldJointWith</a><br/>
+<br/>
+<h1>weldJointWith</h1>
+<a name="ktx.box2d$weldJointWith(com.badlogic.gdx.physics.box2d.Body, com.badlogic.gdx.physics.box2d.Body, kotlin.Function1((com.badlogic.gdx.physics.box2d.joints.WeldJointDef, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="identifier">Body</span><span class="symbol">.</span><span class="identifier">weldJointWith</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d$weldJointWith(com.badlogic.gdx.physics.box2d.Body, com.badlogic.gdx.physics.box2d.Body, kotlin.Function1((com.badlogic.gdx.physics.box2d.joints.WeldJointDef, kotlin.Unit)))/body">body</span><span class="symbol">:</span>&nbsp;<span class="identifier">Body</span><span class="symbol">, </span><span class="identifier" id="ktx.box2d$weldJointWith(com.badlogic.gdx.physics.box2d.Body, com.badlogic.gdx.physics.box2d.Body, kotlin.Function1((com.badlogic.gdx.physics.box2d.joints.WeldJointDef, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<span class="identifier">WeldJointDef</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">WeldJoint</span></code>
+<p>Allows to create a <a href="#">WeldJoint</a>. <code>this</code> <a href="#">Body</a> will be set as the <a href="#">JointDef.bodyA</a> and will be available
+through <a href="#">Joint.getBodyA</a>.</p>
+<h3>Parameters</h3>
+<p><a name="body"></a>
+<code>body</code> - will be set as <a href="#">JointDef.bodyB</a> and available through <a href="#">Joint.getBodyB</a>.</p>
+<p><a name="init"></a>
+<code>init</code> - inlined. <a href="#">JointDef.bodyA</a>, <a href="#">JointDef.bodyB</a> and <a href="#">JointDef.type</a> must not be changed. Invoked after joint
+    definition default values are preset.</p>
+<p><strong>Return</strong><br/>
+a new instance of <a href="#">WeldJoint</a> created with the customized <a href="#">WeldJointDef</a>.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">WeldJointDef</a></p>
+<p><a href="#">WeldJoint</a></p>
+</p>
+</BODY>
+</HTML>

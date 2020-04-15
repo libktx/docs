@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AssetStorage.getLoader - assets-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets.async</a>&nbsp;/&nbsp;<a href="index.html">AssetStorage</a>&nbsp;/&nbsp;<a href="./get-loader.html">getLoader</a><br/>
+<br/>
+<h1>getLoader</h1>
+<a name="ktx.assets.async.AssetStorage$getLoader(kotlin.String)"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">Asset</span><span class="symbol">&gt;</span> <span class="identifier">getLoader</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getLoader(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="../-loader.html"><span class="identifier">Loader</span></a><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Returns the <a href="#">AssetLoader</a> associated with the file. <a href="get-loader.html#Asset">Asset</a> is used to determine the type
+of the loaded file. <a href="get-loader.html#ktx.assets.async.AssetStorage$getLoader(kotlin.String)/path">path</a> might be necessary to choose the correct loader, as some loaders
+might be assigned to specific file  suffixes or extensions.</p>
+<a name="ktx.assets.async.AssetStorage$getLoader(java.lang.Class((ktx.assets.async.AssetStorage.getLoader.Asset)), kotlin.String)"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span> <span class="identifier">getLoader</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getLoader(java.lang.Class((ktx.assets.async.AssetStorage.getLoader.Asset)), kotlin.String)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$getLoader(java.lang.Class((ktx.assets.async.AssetStorage.getLoader.Asset)), kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-loader.html"><span class="identifier">Loader</span></a><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Internal API exposed for inlined method. See inlined <a href="./get-loader.html">getLoader</a> with generics.
+<a href="get-loader.html#ktx.assets.async.AssetStorage$getLoader(java.lang.Class((ktx.assets.async.AssetStorage.getLoader.Asset)), kotlin.String)/type">type</a> is the class of the loaded asset, while path is used to determine if
+a loader specifically assigned to a file suffix or extension is necessary.</p>
+</BODY>
+</HTML>

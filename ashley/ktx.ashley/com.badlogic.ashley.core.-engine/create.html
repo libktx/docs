@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>create - ashley</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">ashley</a>&nbsp;/&nbsp;<a href="../index.html">ktx.ashley</a>&nbsp;/&nbsp;<a href="index.html">com.badlogic.ashley.core.Engine</a>&nbsp;/&nbsp;<a href="./create.html">create</a><br/>
+<br/>
+<h1>create</h1>
+<a name="ktx.ashley$create(com.badlogic.ashley.core.Engine, kotlin.Function1((ktx.ashley.create.T, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Component</span><span class="symbol">&gt;</span> <span class="identifier">Engine</span><span class="symbol">.</span><span class="identifier">create</span><span class="symbol">(</span><span class="identifier" id="ktx.ashley$create(com.badlogic.ashley.core.Engine, kotlin.Function1((ktx.ashley.create.T, kotlin.Unit)))/configure">configure</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Get or create a <a href="#">Component</a> by calling <a href="#">Engine.createComponent</a>.</p>
+<p>The <a href="#">Component</a> must have a visible no-arg constructor.</p>
+<h3>Parameters</h3>
+<p><a name="T"></a>
+<code>T</code> - the type of <a href="#">Component</a> to get or create.</p>
+<p><a name="configure"></a>
+<code>configure</code> - inlined function with <a href="create.html#T">T</a> as the receiver to allow further configuration.</p>
+<h3>Exceptions</h3>
+<p><a name="CreateComponentException"></a>
+<code>CreateComponentException</code> - if the engine was unable to create the component</p>
+<p><strong>Return</strong><br/>
+an <a href="#">Component</a> instance of the selected type.</p>
+</BODY>
+</HTML>

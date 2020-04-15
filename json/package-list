@@ -1,0 +1,11 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:ktx.json$addClassTag(com.badlogic.gdx.utils.Json, kotlin.String)ktx.json/com.badlogic.gdx.utils.-json/add-class-tag.html
+$dokka.location:ktx.json$fromJson(com.badlogic.gdx.utils.Json, com.badlogic.gdx.files.FileHandle)ktx.json/com.badlogic.gdx.utils.-json/from-json.html
+$dokka.location:ktx.json$fromJson(com.badlogic.gdx.utils.Json, kotlin.String)ktx.json/com.badlogic.gdx.utils.-json/from-json.html
+$dokka.location:ktx.json$getTag(com.badlogic.gdx.utils.Json)ktx.json/com.badlogic.gdx.utils.-json/get-tag.html
+$dokka.location:ktx.json$readArrayValue(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.JsonValue, kotlin.String)ktx.json/com.badlogic.gdx.utils.-json/read-array-value.html
+$dokka.location:ktx.json$readValue(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.JsonValue, kotlin.String)ktx.json/com.badlogic.gdx.utils.-json/read-value.html
+$dokka.location:ktx.json$setElementType(com.badlogic.gdx.utils.Json, kotlin.String)ktx.json/com.badlogic.gdx.utils.-json/set-element-type.html
+$dokka.location:ktx.json$setSerializer(com.badlogic.gdx.utils.Json, com.badlogic.gdx.utils.Json.Serializer((ktx.json.setSerializer.T)))ktx.json/com.badlogic.gdx.utils.-json/set-serializer.html
+ktx.json

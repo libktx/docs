@@ -1,0 +1,329 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AssetStorage - assets-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets.async</a>&nbsp;/&nbsp;<a href="./index.html">AssetStorage</a><br/>
+<br/>
+<h1>AssetStorage</h1>
+<code><span class="keyword">class </span><span class="identifier">AssetStorage</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Disposable</span></code>
+<p>Asynchronous asset loader based on coroutines API. An <a href="#">AssetManager</a> alternative.</p>
+<p>Note that <a href="#">KtxAsync.initiate</a> must be called on the rendering thread before creating an <a href="./index.html">AssetStorage</a>.</p>
+<p><a href="async-context.html">asyncContext</a> is used to perform asynchronous file loading. Defaults to a single-threaded context using an
+<a href="#">AsyncExecutor</a>. See <a href="#">newSingleThreadAsyncContext</a> or <a href="#">ktx.async.newAsyncContext</a> functions to create a custom
+loading context. Multi-threaded contexts are fully supported and might boost loading performance if the assets
+are loaded asynchronously in parallel.</p>
+<p><a href="file-resolver.html">fileResolver</a> determines how file paths are interpreted. Defaults to <a href="#">InternalFileHandleResolver</a>, which loads
+internal files.</p>
+<p>If <code>useDefaultLoaders</code> is true (which is the default), all default LibGDX <a href="#">AssetLoader</a> implementations
+will be registered.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Asynchronous asset loader based on coroutines API. An <a href="#">AssetManager</a> alternative.</p>
+<code><span class="identifier">AssetStorage</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$<init>(kotlin.coroutines.CoroutineContext, com.badlogic.gdx.assets.loaders.FileHandleResolver, kotlin.Boolean)/asyncContext">asyncContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;newSingleThreadAsyncContext(threadName = "AssetStorage-Thread")<span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$<init>(kotlin.coroutines.CoroutineContext, com.badlogic.gdx.assets.loaders.FileHandleResolver, kotlin.Boolean)/fileResolver">fileResolver</span><span class="symbol">:</span>&nbsp;<span class="identifier">FileHandleResolver</span>&nbsp;<span class="symbol">=</span>&nbsp;InternalFileHandleResolver()<span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$<init>(kotlin.coroutines.CoroutineContext, com.badlogic.gdx.assets.loaders.FileHandleResolver, kotlin.Boolean)/useDefaultLoaders">useDefaultLoaders</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="async-context.html">asyncContext</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">asyncContext</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="file-resolver.html">fileResolver</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">fileResolver</span><span class="symbol">: </span><span class="identifier">FileHandleResolver</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="logger.html">logger</a></h4>
+</td>
+<td>
+<p>LibGDX <a href="#">Logger</a> used internally, usually to report issues.</p>
+<code><span class="keyword">var </span><span class="identifier">logger</span><span class="symbol">: </span><span class="identifier">Logger</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="progress.html">progress</a></h4>
+</td>
+<td>
+<p>Allows to track progress of the loaded assets.</p>
+<code><span class="keyword">val </span><span class="identifier">progress</span><span class="symbol">: </span><a href="../-loading-progress/index.html"><span class="identifier">LoadingProgress</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add.html">add</a></h4>
+</td>
+<td>
+<p>Adds a fully loaded <a href="add.html#ktx.assets.async.AssetStorage$add(kotlin.String, ktx.assets.async.AssetStorage.add.T)/asset">asset</a> to the storage. Allows to avoid loading the asset with the <a href="./index.html">AssetStorage</a>
+and to manually add it to storage context.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">add</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$add(kotlin.String, ktx.assets.async.AssetStorage.add.T)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$add(kotlin.String, ktx.assets.async.AssetStorage.add.T)/asset">asset</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">add</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$add(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.add.T)), ktx.assets.async.AssetStorage.add.T)/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$add(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.add.T)), ktx.assets.async.AssetStorage.add.T)/asset">asset</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">add</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$add(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.add.T)), ktx.assets.async.AssetStorage.add.T)/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$add(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.add.T)), ktx.assets.async.AssetStorage.add.T)/asset">asset</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="contains.html">contains</a></h4>
+</td>
+<td>
+<p>Checks whether an asset in the selected <a href="contains.html#ktx.assets.async.AssetStorage$contains(kotlin.String)/path">path</a> and <a href="contains.html#T">T</a> type is currently managed by the storage.
+This will return true for assets that are currently being loaded or</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">contains</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$contains(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Checks whether an asset described by <a href="contains.html#ktx.assets.async.AssetStorage$contains(com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))/descriptor">descriptor</a> is currently managed by the storage.
+This will return true for assets that are currently being loaded or</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$contains(com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Checks whether an asset identified by <a href="contains.html#ktx.assets.async.AssetStorage$contains(ktx.assets.async.Identifier((kotlin.Any)))/identifier">identifier</a> is currently managed by the storage.
+This will return true for assets that are currently being loaded or</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">contains</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$contains(ktx.assets.async.Identifier((kotlin.Any)))/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dispose.html">dispose</a></h4>
+</td>
+<td>
+<p>Unloads all assets. Blocks current thread until are assets are unloaded.
+Logs all disposing exceptions.</p>
+<code><span class="keyword">fun </span><span class="identifier">dispose</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Unloads all assets. Cancels loading of all scheduled assets.
+<a href="dispose.html#ktx.assets.async.AssetStorage$dispose(kotlin.Function2((ktx.assets.async.Identifier((kotlin.Any)), kotlin.Throwable, kotlin.Unit)))/onError">onError</a> will be invoked on every caught disposing exception.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">dispose</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$dispose(kotlin.Function2((ktx.assets.async.Identifier((kotlin.Any)), kotlin.Throwable, kotlin.Unit)))/onError">onError</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<span class="identifier">cause</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get.html">get</a></h4>
+</td>
+<td>
+<p>Returns a loaded asset of type <a href="get.html#T">T</a> loaded from selected <a href="get.html#ktx.assets.async.AssetStorage$get(kotlin.String)/path">path</a> or throws <a href="../-missing-asset-exception/index.html">MissingAssetException</a>
+if the asset is not loaded yet or was never scheduled for loading. Rethrows any exceptions
+encountered during asset loading.</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$get(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Returns a loaded asset of type <a href="get.html#T">T</a> described by <a href="get.html#ktx.assets.async.AssetStorage$get(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.get.T)))/descriptor">descriptor</a> or throws <a href="../-missing-asset-exception/index.html">MissingAssetException</a>
+if the asset is not loaded yet or was never scheduled for loading. Rethrows any exceptions
+encountered during asset loading.</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$get(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.get.T)))/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Returns a loaded asset of type <a href="get.html#T">T</a> identified by <a href="get.html#ktx.assets.async.AssetStorage$get(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.get.T)))/identifier">identifier</a> or throws <a href="../-missing-asset-exception/index.html">MissingAssetException</a>
+if the asset is not loaded yet or was never scheduled for loading. Rethrows any exceptions
+encountered during asset loading.</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$get(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.get.T)))/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-asset-descriptor.html">getAssetDescriptor</a></h4>
+</td>
+<td>
+<p>Creates a new <a href="#">AssetDescriptor</a> for the selected asset.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">getAssetDescriptor</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getAssetDescriptor(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.getAssetDescriptor.T)), com.badlogic.gdx.files.FileHandle)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$getAssetDescriptor(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.getAssetDescriptor.T)), com.badlogic.gdx.files.FileHandle)/parameters">parameters</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$getAssetDescriptor(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.getAssetDescriptor.T)), com.badlogic.gdx.files.FileHandle)/fileHandle">fileHandle</span><span class="symbol">:</span>&nbsp;<span class="identifier">FileHandle</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-async.html">getAsync</a></h4>
+</td>
+<td>
+<p>Returns the reference to the asset wrapped with <a href="#">Deferred</a>.
+Use <a href="#">Deferred.await</a> to obtain the instance.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">getAsync</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getAsync(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Deferred</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">getAsync</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getAsync(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.getAsync.T)))/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Deferred</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code>
+<p>Returns the reference to the asset wrapped with <a href="#">Deferred</a>. Use <a href="#">Deferred.await</a> to obtain the instance.
+Throws <a href="../-asset-storage-exception/index.html">AssetStorageException</a> if the asset was unloaded or never scheduled to begin with.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">getAsync</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getAsync(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.getAsync.T)))/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Deferred</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-dependencies.html">getDependencies</a></h4>
+</td>
+<td>
+<p>Returns a copy of the list of dependencies of the asset under <a href="get-dependencies.html#ktx.assets.async.AssetStorage$getDependencies(kotlin.String)/path">path</a> with <a href="get-dependencies.html#T">T</a> type.
+If the asset is not loaded or has no dependencies, an empty list is returned.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">getDependencies</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getDependencies(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Returns a copy of the list of dependencies of the asset described by <a href="get-dependencies.html#ktx.assets.async.AssetStorage$getDependencies(com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))/descriptor">descriptor</a>.
+If the asset is not loaded or has no dependencies, an empty list is returned.</p>
+<code><span class="keyword">fun </span><span class="identifier">getDependencies</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getDependencies(com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Returns a copy of the list of dependencies of the asset identified by <a href="get-dependencies.html#ktx.assets.async.AssetStorage$getDependencies(ktx.assets.async.Identifier((kotlin.Any)))/identifier">identifier</a>.
+If the asset is not loaded or has no dependencies, an empty list is returned.</p>
+<code><span class="keyword">fun </span><span class="identifier">getDependencies</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getDependencies(ktx.assets.async.Identifier((kotlin.Any)))/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-identifier.html">getIdentifier</a></h4>
+</td>
+<td>
+<p>Creates a new <a href="../-identifier/index.html">Identifier</a> that allows to uniquely describe an asset by <a href="get-identifier.html#ktx.assets.async.AssetStorage$getIdentifier(kotlin.String)/path">path</a> and class.
+Uses reified <a href="get-identifier.html#T">T</a> type to obtain the asset class.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">getIdentifier</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getIdentifier(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-loader.html">getLoader</a></h4>
+</td>
+<td>
+<p>Returns the <a href="#">AssetLoader</a> associated with the file. <a href="get-loader.html#Asset">Asset</a> is used to determine the type
+of the loaded file. <a href="get-loader.html#ktx.assets.async.AssetStorage$getLoader(kotlin.String)/path">path</a> might be necessary to choose the correct loader, as some loaders
+might be assigned to specific file  suffixes or extensions.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span> <span class="identifier">getLoader</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getLoader(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="../-loader.html"><span class="identifier">Loader</span></a><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Internal API exposed for inlined method. See inlined <a href="get-loader.html">getLoader</a> with generics.
+<a href="get-loader.html#ktx.assets.async.AssetStorage$getLoader(java.lang.Class((ktx.assets.async.AssetStorage.getLoader.Asset)), kotlin.String)/type">type</a> is the class of the loaded asset, while path is used to determine if
+a loader specifically assigned to a file suffix or extension is necessary.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span> <span class="identifier">getLoader</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getLoader(java.lang.Class((ktx.assets.async.AssetStorage.getLoader.Asset)), kotlin.String)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$getLoader(java.lang.Class((ktx.assets.async.AssetStorage.getLoader.Asset)), kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-loader.html"><span class="identifier">Loader</span></a><span class="symbol">&lt;</span><span class="identifier">Asset</span><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-or-null.html">getOrNull</a></h4>
+</td>
+<td>
+<p>Returns a loaded asset of type <a href="get-or-null.html#T">T</a> loaded from selected <a href="get-or-null.html#ktx.assets.async.AssetStorage$getOrNull(kotlin.String)/path">path</a> or <code>null</code>
+if the asset is not loaded yet or was never scheduled for loading.
+Rethrows any exceptions encountered during asset loading.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">getOrNull</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getOrNull(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span><span class="symbol">?</span></code>
+<p>Returns a loaded asset of type <a href="get-or-null.html#T">T</a> described by <a href="get-or-null.html#ktx.assets.async.AssetStorage$getOrNull(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.getOrNull.T)))/descriptor">descriptor</a> or <code>null</code>
+if the asset is not loaded yet or was never scheduled for loading.
+Rethrows any exceptions encountered during asset loading.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">getOrNull</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getOrNull(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.getOrNull.T)))/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span><span class="symbol">?</span></code>
+<p>Returns a loaded asset of type <a href="get-or-null.html#T">T</a> identified by <a href="get-or-null.html#ktx.assets.async.AssetStorage$getOrNull(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.getOrNull.T)))/identifier">identifier</a> or <code>null</code>
+if the asset is not loaded yet or was never scheduled for loading.
+Rethrows any exceptions encountered during asset loading.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">getOrNull</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getOrNull(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.getOrNull.T)))/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-reference-count.html">getReferenceCount</a></h4>
+</td>
+<td>
+<p>Returns the amount of references to the asset under the given <a href="get-reference-count.html#ktx.assets.async.AssetStorage$getReferenceCount(kotlin.String)/path">path</a> of <a href="get-reference-count.html#T">T</a> type.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">getReferenceCount</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getReferenceCount(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Returns the amount of references to the asset described by <a href="get-reference-count.html#ktx.assets.async.AssetStorage$getReferenceCount(com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))/descriptor">descriptor</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">getReferenceCount</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getReferenceCount(com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Returns the amount of references to the asset identified by <a href="get-reference-count.html#ktx.assets.async.AssetStorage$getReferenceCount(ktx.assets.async.Identifier((kotlin.Any)))/identifier">identifier</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">getReferenceCount</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$getReferenceCount(ktx.assets.async.Identifier((kotlin.Any)))/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-loaded.html">isLoaded</a></h4>
+</td>
+<td>
+<p>Checks whether an asset in the selected <a href="is-loaded.html#ktx.assets.async.AssetStorage$isLoaded(kotlin.String)/path">path</a> with <a href="is-loaded.html#T">T</a> type is already loaded.
+Returns false if the asset is not loaded yet, is unloaded or was never loaded to begin with.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">isLoaded</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$isLoaded(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Checks whether an asset described with <a href="is-loaded.html#ktx.assets.async.AssetStorage$isLoaded(com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))/descriptor">descriptor</a> is already loaded.
+Returns false if the asset is not loaded yet, is unloaded or was never loaded to begin with.</p>
+<code><span class="keyword">fun </span><span class="identifier">isLoaded</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$isLoaded(com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Checks whether an asset identified with <a href="is-loaded.html#ktx.assets.async.AssetStorage$isLoaded(ktx.assets.async.Identifier((kotlin.Any)))/identifier">identifier</a> is already loaded.
+Returns false if the asset is not loaded yet, is unloaded or was never loaded to begin with.</p>
+<code><span class="keyword">fun </span><span class="identifier">isLoaded</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$isLoaded(ktx.assets.async.Identifier((kotlin.Any)))/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="load.html">load</a></h4>
+</td>
+<td>
+<p>Schedules loading of an asset of <a href="load.html#T">T</a> type located at <a href="load.html#ktx.assets.async.AssetStorage$load(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/path">path</a>.
+Suspends the coroutine until an asset is loaded and returns a fully loaded instance of <a href="load.html#T">T</a>.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">load</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$load(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$load(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/parameters">parameters</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Schedules loading of an asset with path and type specified by <a href="load.html#ktx.assets.async.AssetStorage$load(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.load.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/identifier">identifier</a>.
+Suspends the coroutine until an asset is loaded and returns a fully loaded instance of <a href="load.html#T">T</a>.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">load</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$load(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.load.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$load(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.load.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.load.T)))/parameters">parameters</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Schedules loading of an asset of <a href="load.html#T">T</a> type described by the <a href="load.html#ktx.assets.async.AssetStorage$load(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.load.T)))/descriptor">descriptor</a>.
+Suspends the coroutine until an asset is loaded and returns a fully loaded instance of <a href="load.html#T">T</a>.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">load</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$load(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.load.T)))/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="load-async.html">loadAsync</a></h4>
+</td>
+<td>
+<p>Schedules asynchronous loading of an asset of <a href="load-async.html#T">T</a> type located at <a href="load-async.html#ktx.assets.async.AssetStorage$loadAsync(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.loadAsync.T)))/path">path</a>.
+Return a <a href="#">Deferred</a> reference which will eventually point to a fully loaded instance of <a href="load-async.html#T">T</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">loadAsync</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$loadAsync(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.loadAsync.T)))/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$loadAsync(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.loadAsync.T)))/parameters">parameters</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Deferred</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code>
+<p>Schedules loading of an asset with path and type specified by <a href="load-async.html#ktx.assets.async.AssetStorage$loadAsync(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.loadAsync.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.loadAsync.T)))/identifier">identifier</a>.
+Suspends the coroutine until an asset is loaded and returns a fully loaded instance of <a href="load-async.html#T">T</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">loadAsync</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$loadAsync(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.loadAsync.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.loadAsync.T)))/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$loadAsync(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.loadAsync.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.loadAsync.T)))/parameters">parameters</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Deferred</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code>
+<p>Schedules loading of an asset of <a href="load-async.html#T">T</a> type described by the <a href="load-async.html#ktx.assets.async.AssetStorage$loadAsync(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.loadAsync.T)))/descriptor">descriptor</a>.
+Suspends the coroutine until an asset is loaded and returns a fully loaded instance of <a href="load-async.html#T">T</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">loadAsync</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$loadAsync(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.loadAsync.T)))/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Deferred</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="load-sync.html">loadSync</a></h4>
+</td>
+<td>
+<p>Blocks the current thread until the asset with <a href="load-sync.html#T">T</a> type is loaded from the given <a href="load-sync.html#ktx.assets.async.AssetStorage$loadSync(kotlin.String)/path">path</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">loadSync</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$loadSync(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Blocks the current thread until the asset with <a href="load-sync.html#T">T</a> type is loaded with data specified by the <a href="load-sync.html#ktx.assets.async.AssetStorage$loadSync(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.loadSync.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.loadSync.T)))/identifier">identifier</a>
+and optional loading <a href="load-sync.html#ktx.assets.async.AssetStorage$loadSync(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.loadSync.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.loadSync.T)))/parameters">parameters</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">loadSync</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$loadSync(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.loadSync.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.loadSync.T)))/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$loadSync(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.loadSync.T)), com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.AssetStorage.loadSync.T)))/parameters">parameters</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Blocks the current thread until the asset with <a href="load-sync.html#T">T</a> type is loaded using the asset <a href="load-sync.html#ktx.assets.async.AssetStorage$loadSync(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.loadSync.T)))/descriptor">descriptor</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">loadSync</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$loadSync(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.loadSync.T)))/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="normalize-path.html">normalizePath</a></h4>
+</td>
+<td>
+<p>Matches <a href="#">AssetDescriptor</a> pre-processing. Return this <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> with normalized file separators.</p>
+<code><span class="keyword">fun </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">.</span><span class="identifier">normalizePath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-loader.html">setLoader</a></h4>
+</td>
+<td>
+<p>Associates the <a href="#">AssetLoader</a> with specific asset type determined by <a href="set-loader.html#T">T</a>.
+<a href="set-loader.html#ktx.assets.async.AssetStorage$setLoader(kotlin.String, kotlin.Function0((com.badlogic.gdx.assets.loaders.AssetLoader((ktx.assets.async.AssetStorage.setLoader.T, com.badlogic.gdx.assets.AssetLoaderParameters(()))))))/loaderProvider">loaderProvider</a> should create a new instance of loader of the selected types.
+Optional <a href="set-loader.html#ktx.assets.async.AssetStorage$setLoader(kotlin.String, kotlin.Function0((com.badlogic.gdx.assets.loaders.AssetLoader((ktx.assets.async.AssetStorage.setLoader.T, com.badlogic.gdx.assets.AssetLoaderParameters(()))))))/suffix">suffix</a> can be passed if the loader should handle only the files
+with a specific file name suffix or extension.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">setLoader</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$setLoader(kotlin.String, kotlin.Function0((com.badlogic.gdx.assets.loaders.AssetLoader((ktx.assets.async.AssetStorage.setLoader.T, com.badlogic.gdx.assets.AssetLoaderParameters(()))))))/suffix">suffix</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$setLoader(kotlin.String, kotlin.Function0((com.badlogic.gdx.assets.loaders.AssetLoader((ktx.assets.async.AssetStorage.setLoader.T, com.badlogic.gdx.assets.AssetLoaderParameters(()))))))/loaderProvider">loaderProvider</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../-loader.html"><span class="identifier">Loader</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Internal API exposed for inlined method. See inlined <a href="set-loader.html">setLoader</a> with reified generics.
+Associates the <a href="set-loader.html#ktx.assets.async.AssetStorage$setLoader(java.lang.Class((ktx.assets.async.AssetStorage.setLoader.T)), kotlin.String, kotlin.Function0((com.badlogic.gdx.assets.loaders.AssetLoader((ktx.assets.async.AssetStorage.setLoader.T, com.badlogic.gdx.assets.AssetLoaderParameters(()))))))/loaderProvider">AssetLoader</a> with <a href="set-loader.html#ktx.assets.async.AssetStorage$setLoader(java.lang.Class((ktx.assets.async.AssetStorage.setLoader.T)), kotlin.String, kotlin.Function0((com.badlogic.gdx.assets.loaders.AssetLoader((ktx.assets.async.AssetStorage.setLoader.T, com.badlogic.gdx.assets.AssetLoaderParameters(()))))))/type">type</a> under the specified optional <a href="set-loader.html#ktx.assets.async.AssetStorage$setLoader(java.lang.Class((ktx.assets.async.AssetStorage.setLoader.T)), kotlin.String, kotlin.Function0((com.badlogic.gdx.assets.loaders.AssetLoader((ktx.assets.async.AssetStorage.setLoader.T, com.badlogic.gdx.assets.AssetLoaderParameters(()))))))/suffix">suffix</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">setLoader</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$setLoader(java.lang.Class((ktx.assets.async.AssetStorage.setLoader.T)), kotlin.String, kotlin.Function0((com.badlogic.gdx.assets.loaders.AssetLoader((ktx.assets.async.AssetStorage.setLoader.T, com.badlogic.gdx.assets.AssetLoaderParameters(()))))))/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$setLoader(java.lang.Class((ktx.assets.async.AssetStorage.setLoader.T)), kotlin.String, kotlin.Function0((com.badlogic.gdx.assets.loaders.AssetLoader((ktx.assets.async.AssetStorage.setLoader.T, com.badlogic.gdx.assets.AssetLoaderParameters(()))))))/suffix">suffix</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorage$setLoader(java.lang.Class((ktx.assets.async.AssetStorage.setLoader.T)), kotlin.String, kotlin.Function0((com.badlogic.gdx.assets.loaders.AssetLoader((ktx.assets.async.AssetStorage.setLoader.T, com.badlogic.gdx.assets.AssetLoaderParameters(()))))))/loaderProvider">loaderProvider</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../-loader.html"><span class="identifier">Loader</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-string.html">toString</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="unload.html">unload</a></h4>
+</td>
+<td>
+<p>Removes asset loaded with the given <a href="unload.html#ktx.assets.async.AssetStorage$unload(kotlin.String)/path">path</a> and <a href="unload.html#T">T</a> type and all of its dependencies.
+Does nothing if asset was not loaded in the first place.
+Will not dispose of the asset if it still is referenced by any other assets.
+Any removed assets that implement <a href="#">Disposable</a> will be disposed.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">unload</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$unload(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Removes asset described by the <a href="unload.html#ktx.assets.async.AssetStorage$unload(com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))/descriptor">descriptor</a> and all of its dependencies.
+Does nothing if asset was not loaded in the first place.
+Will not dispose of the asset if it still is referenced by any other assets.
+Any removed assets that implement <a href="#">Disposable</a> will be disposed.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">unload</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$unload(com.badlogic.gdx.assets.AssetDescriptor((kotlin.Any)))/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Removes asset loaded with the given <a href="unload.html#ktx.assets.async.AssetStorage$unload(ktx.assets.async.Identifier((kotlin.Any)))/identifier">identifier</a> and all of its dependencies.
+Does nothing if asset was not loaded in the first place.
+Will not dispose of the asset if it still is referenced by any other assets.
+Any removed assets that implement <a href="#">Disposable</a> will be disposed.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">unload</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$unload(ktx.assets.async.Identifier((kotlin.Any)))/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

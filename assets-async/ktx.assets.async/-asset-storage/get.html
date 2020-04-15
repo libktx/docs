@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AssetStorage.get - assets-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets.async</a>&nbsp;/&nbsp;<a href="index.html">AssetStorage</a>&nbsp;/&nbsp;<a href="./get.html">get</a><br/>
+<br/>
+<h1>get</h1>
+<a name="ktx.assets.async.AssetStorage$get(kotlin.String)"></a>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$get(kotlin.String)/path">path</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Returns a loaded asset of type <a href="get.html#T">T</a> loaded from selected <a href="get.html#ktx.assets.async.AssetStorage$get(kotlin.String)/path">path</a> or throws <a href="../-missing-asset-exception/index.html">MissingAssetException</a>
+if the asset is not loaded yet or was never scheduled for loading. Rethrows any exceptions
+encountered during asset loading.</p>
+<p><a href="get.html#T">T</a> is the type of the asset. Must match the type requested during loading.
+<a href="get.html#ktx.assets.async.AssetStorage$get(kotlin.String)/path">path</a> must match the asset path passed during loading.</p>
+<p>This method might throw the following exceptions:</p>
+<ul><li><a href="../-missing-asset-exception/index.html">MissingAssetException</a> if the asset of <a href="get.html#T">T</a> type with the given <a href="get.html#ktx.assets.async.AssetStorage$get(kotlin.String)/path">path</a> was never added with <a href="load.html">load</a> or <a href="add.html">add</a>.</li>
+<li><a href="../-unloaded-asset-exception/index.html">UnloadedAssetException</a> if the asset was already unloaded asynchronously.</li>
+<li><a href="../-missing-loader-exception/index.html">MissingLoaderException</a> if the <a href="#">AssetLoader</a> for asset of requested type is not registered.</li>
+<li><a href="../-invalid-loader-exception/index.html">InvalidLoaderException</a> if the <a href="#">AssetLoader</a> implementation of requested type is invalid.</li>
+<li><a href="../-asset-loading-exception/index.html">AssetLoadingException</a> if the <a href="#">AssetLoader</a> has thrown an exception during loading.</li>
+<li><a href="../-missing-dependency-exception/index.html">MissingDependencyException</a> is the <a href="#">AssetLoader</a> is unable to obtain an instance of asset's dependency.</li>
+<li><a href="../-unsupported-method-exception/index.html">UnsupportedMethodException</a> is the <a href="#">AssetLoader</a> uses unsupported operation on <a href="#">AssetManagerWrapper</a>.</li>
+</ul>
+<p>See also <a href="get-or-null.html">getOrNull</a> and <a href="get-async.html">getAsync</a>.</p>
+<a name="ktx.assets.async.AssetStorage$get(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.get.T)))"></a>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$get(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.get.T)))/descriptor">descriptor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Returns a loaded asset of type <a href="get.html#T">T</a> described by <a href="get.html#ktx.assets.async.AssetStorage$get(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.get.T)))/descriptor">descriptor</a> or throws <a href="../-missing-asset-exception/index.html">MissingAssetException</a>
+if the asset is not loaded yet or was never scheduled for loading. Rethrows any exceptions
+encountered during asset loading.</p>
+<p><a href="get.html#T">T</a> is the type of the asset. Must match the type requested during loading.
+<a href="get.html#ktx.assets.async.AssetStorage$get(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.get.T)))/descriptor">descriptor</a> contains the asset data. See <a href="get-asset-descriptor.html">getAssetDescriptor</a>.</p>
+<p>This method might throw the following exceptions:</p>
+<ul><li><a href="../-missing-asset-exception/index.html">MissingAssetException</a> if the asset of <a href="get.html#T">T</a> type described by <a href="get.html#ktx.assets.async.AssetStorage$get(com.badlogic.gdx.assets.AssetDescriptor((ktx.assets.async.AssetStorage.get.T)))/descriptor">descriptor</a> was never added with <a href="load.html">load</a> or <a href="add.html">add</a>.</li>
+<li><a href="../-unloaded-asset-exception/index.html">UnloadedAssetException</a> if the asset was already unloaded asynchronously.</li>
+<li><a href="../-missing-loader-exception/index.html">MissingLoaderException</a> if the <a href="#">AssetLoader</a> for asset of requested type is not registered.</li>
+<li><a href="../-invalid-loader-exception/index.html">InvalidLoaderException</a> if the <a href="#">AssetLoader</a> implementation of requested type is invalid.</li>
+<li><a href="../-asset-loading-exception/index.html">AssetLoadingException</a> if the <a href="#">AssetLoader</a> has thrown an exception during loading.</li>
+<li><a href="../-missing-dependency-exception/index.html">MissingDependencyException</a> is the <a href="#">AssetLoader</a> is unable to obtain an instance of asset's dependency.</li>
+<li><a href="../-unsupported-method-exception/index.html">UnsupportedMethodException</a> is the <a href="#">AssetLoader</a> uses unsupported operation on <a href="#">AssetManagerWrapper</a>.</li>
+</ul>
+<p>See also <a href="get-or-null.html">getOrNull</a> and <a href="get-async.html">getAsync</a>.</p>
+<a name="ktx.assets.async.AssetStorage$get(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.get.T)))"></a>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$get(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.get.T)))/identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code>
+<p>Returns a loaded asset of type <a href="get.html#T">T</a> identified by <a href="get.html#ktx.assets.async.AssetStorage$get(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.get.T)))/identifier">identifier</a> or throws <a href="../-missing-asset-exception/index.html">MissingAssetException</a>
+if the asset is not loaded yet or was never scheduled for loading. Rethrows any exceptions
+encountered during asset loading.</p>
+<p><a href="get.html#T">T</a> is the type of the asset. Must match the type requested during loading.
+<a href="get.html#ktx.assets.async.AssetStorage$get(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.get.T)))/identifier">identifier</a> uniquely identifies a file by its path and type. See <a href="../-identifier/index.html">Identifier</a>.</p>
+<p>This method might throw the following exceptions:</p>
+<ul><li><a href="../-missing-asset-exception/index.html">MissingAssetException</a> if the asset of <a href="get.html#T">T</a> type identified by <a href="get.html#ktx.assets.async.AssetStorage$get(ktx.assets.async.Identifier((ktx.assets.async.AssetStorage.get.T)))/identifier">identifier</a> was never added with <a href="load.html">load</a> or <a href="add.html">add</a>.</li>
+<li><a href="../-unloaded-asset-exception/index.html">UnloadedAssetException</a> if the asset was already unloaded asynchronously.</li>
+<li><a href="../-missing-loader-exception/index.html">MissingLoaderException</a> if the <a href="#">AssetLoader</a> for asset of requested type is not registered.</li>
+<li><a href="../-invalid-loader-exception/index.html">InvalidLoaderException</a> if the <a href="#">AssetLoader</a> implementation of requested type is invalid.</li>
+<li><a href="../-asset-loading-exception/index.html">AssetLoadingException</a> if the <a href="#">AssetLoader</a> has thrown an exception during loading.</li>
+<li><a href="../-missing-dependency-exception/index.html">MissingDependencyException</a> is the <a href="#">AssetLoader</a> is unable to obtain an instance of asset's dependency.</li>
+<li><a href="../-unsupported-method-exception/index.html">UnsupportedMethodException</a> is the <a href="#">AssetLoader</a> uses unsupported operation on <a href="#">AssetManagerWrapper</a>.</li>
+</ul>
+<p>See also <a href="get-or-null.html">getOrNull</a> and <a href="get-async.html">getAsync</a>.</p>
+</BODY>
+</HTML>

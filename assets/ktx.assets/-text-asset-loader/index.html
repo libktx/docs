@@ -1,0 +1,87 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TextAssetLoader - assets</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets</a>&nbsp;/&nbsp;<a href="./index.html">TextAssetLoader</a><br/>
+<br/>
+<h1>TextAssetLoader</h1>
+<code><span class="keyword">class </span><span class="identifier">TextAssetLoader</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AsynchronousAssetLoader</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">TextAssetLoaderParameters</span><span class="symbol">&gt;</span></code>
+<p>Allows to read text files with an <a href="#">AssetManager</a>. Must be registered via <a href="../com.badlogic.gdx.assets.-asset-manager/set-loader.html">setLoader</a>.</p>
+<p>Note that <a href="load-async.html">loadAsync</a> <em>must</em> be called before <a href="load-sync.html">loadSync</a>, as usual in case of <a href="#">AsynchronousAssetLoader</a>
+implementations. Similarly to standard LibGDX loaders, this loader is not considered thread-safe and assumes that
+a single file is loaded at a time.</p>
+<h3>Parameters</h3>
+<p><a name="fileResolver"></a>
+<code>fileResolver</code> - not used, required by the superclass.</p>
+<p><a name="charset"></a>
+<code>charset</code> - name of the charset used to read text. Can be overridden with
+    <a href="-text-asset-loader-parameters/index.html">TextAssetLoader.TextAssetLoaderParameters</a>. Should match text files encoding. Defaults to UTF-8.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-text-asset-loader-parameters/index.html">TextAssetLoaderParameters</a></h4>
+</td>
+<td>
+<p>Optional parameters used to load text files.</p>
+<code><span class="keyword">class </span><span class="identifier">TextAssetLoaderParameters</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Allows to read text files with an <a href="#">AssetManager</a>. Must be registered via <a href="../com.badlogic.gdx.assets.-asset-manager/set-loader.html">setLoader</a>.</p>
+<code><span class="identifier">TextAssetLoader</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.TextAssetLoader$<init>(com.badlogic.gdx.assets.loaders.FileHandleResolver, kotlin.String)/fileResolver">fileResolver</span><span class="symbol">:</span>&nbsp;<span class="identifier">FileHandleResolver</span>&nbsp;<span class="symbol">=</span>&nbsp;InternalFileHandleResolver()<span class="symbol">, </span><span class="identifier" id="ktx.assets.TextAssetLoader$<init>(com.badlogic.gdx.assets.loaders.FileHandleResolver, kotlin.String)/charset">charset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"UTF-8"<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="file-content.html">fileContent</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">fileContent</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get-dependencies.html">getDependencies</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDependencies</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.TextAssetLoader$getDependencies(kotlin.String, com.badlogic.gdx.files.FileHandle, ktx.assets.TextAssetLoader.TextAssetLoaderParameters)/fileName">fileName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.TextAssetLoader$getDependencies(kotlin.String, com.badlogic.gdx.files.FileHandle, ktx.assets.TextAssetLoader.TextAssetLoaderParameters)/file">file</span><span class="symbol">:</span>&nbsp;<span class="identifier">FileHandle</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.TextAssetLoader$getDependencies(kotlin.String, com.badlogic.gdx.files.FileHandle, ktx.assets.TextAssetLoader.TextAssetLoaderParameters)/parameter">parameter</span><span class="symbol">:</span>&nbsp;<span class="identifier">TextAssetLoaderParameters</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Array</span><span class="symbol">&lt;</span><span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="load-async.html">loadAsync</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">loadAsync</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.TextAssetLoader$loadAsync(com.badlogic.gdx.assets.AssetManager, kotlin.String, com.badlogic.gdx.files.FileHandle, ktx.assets.TextAssetLoader.TextAssetLoaderParameters)/assetManager">assetManager</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetManager</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.TextAssetLoader$loadAsync(com.badlogic.gdx.assets.AssetManager, kotlin.String, com.badlogic.gdx.files.FileHandle, ktx.assets.TextAssetLoader.TextAssetLoaderParameters)/fileName">fileName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.TextAssetLoader$loadAsync(com.badlogic.gdx.assets.AssetManager, kotlin.String, com.badlogic.gdx.files.FileHandle, ktx.assets.TextAssetLoader.TextAssetLoaderParameters)/file">file</span><span class="symbol">:</span>&nbsp;<span class="identifier">FileHandle</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.TextAssetLoader$loadAsync(com.badlogic.gdx.assets.AssetManager, kotlin.String, com.badlogic.gdx.files.FileHandle, ktx.assets.TextAssetLoader.TextAssetLoaderParameters)/parameter">parameter</span><span class="symbol">:</span>&nbsp;<span class="identifier">TextAssetLoaderParameters</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="load-sync.html">loadSync</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">loadSync</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.TextAssetLoader$loadSync(com.badlogic.gdx.assets.AssetManager, kotlin.String, com.badlogic.gdx.files.FileHandle, ktx.assets.TextAssetLoader.TextAssetLoaderParameters)/assetManager">assetManager</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetManager</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.TextAssetLoader$loadSync(com.badlogic.gdx.assets.AssetManager, kotlin.String, com.badlogic.gdx.files.FileHandle, ktx.assets.TextAssetLoader.TextAssetLoaderParameters)/fileName">fileName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.TextAssetLoader$loadSync(com.badlogic.gdx.assets.AssetManager, kotlin.String, com.badlogic.gdx.files.FileHandle, ktx.assets.TextAssetLoader.TextAssetLoaderParameters)/file">file</span><span class="symbol">:</span>&nbsp;<span class="identifier">FileHandle</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.TextAssetLoader$loadSync(com.badlogic.gdx.assets.AssetManager, kotlin.String, com.badlogic.gdx.files.FileHandle, ktx.assets.TextAssetLoader.TextAssetLoaderParameters)/parameter">parameter</span><span class="symbol">:</span>&nbsp;<span class="identifier">TextAssetLoaderParameters</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

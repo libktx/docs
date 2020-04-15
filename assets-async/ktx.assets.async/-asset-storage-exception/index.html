@@ -1,0 +1,112 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AssetStorageException - assets-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets.async</a>&nbsp;/&nbsp;<a href="./index.html">AssetStorageException</a><br/>
+<br/>
+<h1>AssetStorageException</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">AssetStorageException</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">GdxRuntimeException</span></code>
+<p>Thrown by <a href="../-asset-storage/index.html">AssetStorage</a> and related services.
+<a href="#">message</a> describes the problem, while <a href="#">cause</a> is the optional cause of the exception.</p>
+<p>Note that <a href="../-asset-storage/index.html">AssetStorage</a> usually throws subclasses of this exception, rather than
+instances of this exception directly. This class acts as the common superclass
+with which all <a href="../-asset-storage/index.html">AssetStorage</a>-related exceptions can be caught and handled.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Thrown by <a href="../-asset-storage/index.html">AssetStorage</a> and related services.
+<a href="#">message</a> describes the problem, while <a href="#">cause</a> is the optional cause of the exception.</p>
+<code><span class="identifier">AssetStorageException</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorageException$<init>(kotlin.String, kotlin.Throwable)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets.async.AssetStorageException$<init>(kotlin.String, kotlin.Throwable)/cause">cause</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../-already-loaded-asset-exception/index.html">AlreadyLoadedAssetException</a></h4>
+</td>
+<td>
+<p>Thrown by <a href="../-asset-storage/add.html">AssetStorage.add</a> when attempting to add an asset with <a href="../-identifier/index.html">Identifier</a>
+that is already present in the <a href="../-asset-storage/index.html">AssetStorage</a>.</p>
+<code><span class="keyword">class </span><span class="identifier">AlreadyLoadedAssetException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AssetStorageException</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../-asset-loading-exception/index.html">AssetLoadingException</a></h4>
+</td>
+<td>
+<p>Thrown by <a href="../-asset-storage/load.html">AssetStorage.load</a> or <a href="../-asset-storage/get.html">AssetStorage.get</a> when the asset failed to load
+due to an unexpected loading exception, usually thrown by the associated <a href="#">AssetLoader</a>.</p>
+<code><span class="keyword">class </span><span class="identifier">AssetLoadingException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AssetStorageException</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../-invalid-loader-exception/index.html">InvalidLoaderException</a></h4>
+</td>
+<td>
+<p>Thrown by <a href="../-asset-storage/load.html">AssetStorage.load</a> or <a href="../-asset-storage/get.html">AssetStorage.get</a> when the asset failed to load
+due to invalid loader implementation. Since loaders are pre-validated during
+registration, normally this exception is extremely rare and caused by invalid
+<a href="../-asset-storage/set-loader.html">AssetStorage.setLoader</a> usage.</p>
+<code><span class="keyword">class </span><span class="identifier">InvalidLoaderException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AssetStorageException</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../-missing-asset-exception/index.html">MissingAssetException</a></h4>
+</td>
+<td>
+<p>Thrown when the asset requested by an <a href="../-asset-storage/get.html">AssetStorage.get</a> variant is not available
+in the <a href="../-asset-storage/index.html">AssetStorage</a> at all or has not been loaded yet.</p>
+<code><span class="keyword">class </span><span class="identifier">MissingAssetException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AssetStorageException</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../-missing-dependency-exception/index.html">MissingDependencyException</a></h4>
+</td>
+<td>
+<p>This exception can be thrown by <a href="../-asset-storage/load-sync.html">AssetStorage.loadSync</a> if dependencies of an asset were scheduled
+for asynchronous loading, but are not loaded yet. <a href="../-asset-storage/load-sync.html">AssetStorage.loadSync</a> will not wait for the
+assets and instead will throw this exception.</p>
+<code><span class="keyword">class </span><span class="identifier">MissingDependencyException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AssetStorageException</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../-missing-loader-exception/index.html">MissingLoaderException</a></h4>
+</td>
+<td>
+<p>Thrown by <a href="../-asset-storage/load.html">AssetStorage.load</a> when the <a href="#">AssetLoader</a> for the requested asset type
+and path is unavailable. See <a href="../-asset-storage/set-loader.html">AssetStorage.setLoader</a>.</p>
+<code><span class="keyword">class </span><span class="identifier">MissingLoaderException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AssetStorageException</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../-unloaded-asset-exception/index.html">UnloadedAssetException</a></h4>
+</td>
+<td>
+<p>Thrown by <a href="../-asset-storage/load.html">AssetStorage.load</a> or <a href="../-asset-storage/get.html">AssetStorage.get</a> variant when the requested asset
+was unloaded asynchronously.</p>
+<code><span class="keyword">class </span><span class="identifier">UnloadedAssetException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AssetStorageException</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../-unsupported-method-exception/index.html">UnsupportedMethodException</a></h4>
+</td>
+<td>
+<p>Thrown when unsupported methods are called on the <a href="#">AssetManagerWrapper</a>.
+It is typically only caused by <a href="#">AssetLoader</a> instances or a <a href="#">AssetLoaderParameters.LoadedCallback</a>.</p>
+<code><span class="keyword">class </span><span class="identifier">UnsupportedMethodException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">AssetStorageException</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

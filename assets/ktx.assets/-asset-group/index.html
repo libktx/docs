@@ -1,0 +1,157 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AssetGroup - assets</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets</a>&nbsp;/&nbsp;<a href="./index.html">AssetGroup</a><br/>
+<br/>
+<h1>AssetGroup</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AssetGroup</span></code>
+<p>A class for managing a group of assets together, such that they can be loaded or unloaded en masse.
+<a href="./index.html">AssetGroup</a> should be subclassed and the assets should be defined by properties in the subclass by using <a href="asset.html">asset</a> or,
+<a href="delayed-asset.html">delayedAsset</a>, which can be used as delegates. If not using delegates, it is possible to selectively load and
+unload them, in which case it is not advised to use <a href="load-all.html">loadAll</a> and <a href="unload-all.html">unloadAll</a>, because AssetManager's reference
+counts may be thrown off.</p>
+<p>If fine control over individual assets of this group is not needed, a strategy to avoid the complexity of
+AssetManager's reference counting is to:</p>
+<ul><li>Use <a href="asset.html">asset</a>/<a href="delayed-asset.html">delayedAsset</a> exclusively as delegates.</li>
+<li>Do not mix and match use of <a href="asset.html">asset</a> and <a href="delayed-asset.html">delayedAsset</a>.</li>
+<li>Never access any of the asset properties until the group is finished loading.</li>
+<li>Do not initially call <a href="load-all.html">loadAll</a> if using <a href="asset.html">asset</a> (as opposed to <a href="delayed-asset.html">delayedAsset</a>).</li>
+</ul>
+<h3>Parameters</h3>
+<p><a name="manager"></a>
+<code>manager</code> - The <a href="#">AssetManager</a> that will handle loading and unloading of this group.</p>
+<p><a name="filePrefix"></a>
+<code>filePrefix</code> - A string that will be prefixed to any file path parameter passed to <a href="asset.html">asset</a> or <a href="delayed-asset.html">delayedAsset</a>.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>A class for managing a group of assets together, such that they can be loaded or unloaded en masse.
+<a href="./index.html">AssetGroup</a> should be subclassed and the assets should be defined by properties in the subclass by using <a href="asset.html">asset</a> or,
+<a href="delayed-asset.html">delayedAsset</a>, which can be used as delegates. If not using delegates, it is possible to selectively load and
+unload them, in which case it is not advised to use <a href="load-all.html">loadAll</a> and <a href="unload-all.html">unloadAll</a>, because AssetManager's reference
+counts may be thrown off.</p>
+<code><span class="identifier">AssetGroup</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.AssetGroup$<init>(com.badlogic.gdx.assets.AssetManager, kotlin.String)/manager">manager</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetManager</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.AssetGroup$<init>(com.badlogic.gdx.assets.AssetManager, kotlin.String)/filePrefix">filePrefix</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="file-prefix.html">filePrefix</a></h4>
+</td>
+<td>
+<p>A string that will be prefixed to any file path parameter passed to <a href="asset.html">asset</a> or <a href="delayed-asset.html">delayedAsset</a>.</p>
+<code><span class="keyword">val </span><span class="identifier">filePrefix</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="manager.html">manager</a></h4>
+</td>
+<td>
+<p>The <a href="#">AssetManager</a> that will handle loading and unloading of this group.</p>
+<code><span class="keyword">val </span><span class="identifier">manager</span><span class="symbol">: </span><span class="identifier">AssetManager</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="members.html">members</a></h4>
+</td>
+<td>
+<p>The backing set containing the assets of this group. There is no need to manually add assets to this set if using
+<a href="asset.html">asset</a> or <a href="delayed-asset.html">delayedAsset</a>.</p>
+<code><span class="keyword">val </span><span class="identifier">members</span><span class="symbol">: </span><span class="identifier">ObjectSet</span><span class="symbol">&lt;</span><a href="../-asset/index.html"><span class="identifier">Asset</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="asset.html">asset</a></h4>
+</td>
+<td>
+<p>Creates a delegate for an asset, queues it for loading, and registers it as a member of this group. Beware that
+calling <a href="load-all.html">loadAll</a> might increment the <a href="#">AssetManager</a>'s reference count for this asset an additional time.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">asset</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.AssetGroup$asset(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.AssetGroup.asset.T)))/fileName">fileName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets.AssetGroup$asset(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.AssetGroup.asset.T)))/params">params</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="../-asset/index.html"><span class="identifier">Asset</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="delayed-asset.html">delayedAsset</a></h4>
+</td>
+<td>
+<p>Creates a delegate for an asset and registers it as a member of this group. It is not queued for loading. Beware
+that if the asset property (or delegated property) of the returned <a href="../-asset/index.html">Asset</a> is accessed before it is queued for
+loading, it will eagerly be loaded by the <a href="#">AssetManager</a>. This may cause <a href="load-all.html">loadAll</a> to throw off AssetManager's
+reference counts.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">delayedAsset</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.AssetGroup$delayedAsset(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.AssetGroup.delayedAsset.T)))/fileName">fileName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets.AssetGroup$delayedAsset(kotlin.String, com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.AssetGroup.delayedAsset.T)))/params">params</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="../-asset/index.html"><span class="identifier">Asset</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="finish-loading.html">finishLoading</a></h4>
+</td>
+<td>
+<p>Blocks until all members of this group are loaded. This does not prioritize this group's members, so assets from
+outside this group may be loaded as well.</p>
+<code><span class="keyword">fun </span><span class="identifier">finishLoading</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-loaded.html">isLoaded</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isLoaded</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="load-all.html">loadAll</a></h4>
+</td>
+<td>
+<p>Queues all assets of this group for loading by the associated <a href="#">AssetManager</a>.
+If any assets of this group are already loaded, their load counts in the AssetManager will still be incremented.</p>
+<code><span class="keyword">fun </span><span class="identifier">loadAll</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="unload-all.html">unloadAll</a></h4>
+</td>
+<td>
+<p>Unloads all of the assets in this group. If any of the assets are dependencies of assets outside this group, or if
+they were loaded more than once, their load counts will only be decremented by one and the associated <a href="#">AssetManager</a>
+will retain them.</p>
+<code><span class="keyword">fun </span><span class="identifier">unloadAll</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="unload-all-safely.html">unloadAllSafely</a></h4>
+</td>
+<td>
+<p>Unloads all of the assets in this group, catching any exceptions. If any of the assets are dependencies of
+assets outside this group, or if they were loaded more than once, their load counts will only be decremented by one
+and the associated <a href="#">AssetManager</a> will retain them.</p>
+<code><span class="keyword">fun </span><span class="identifier">unloadAllSafely</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.AssetGroup$unloadAllSafely(kotlin.Function2((ktx.assets.Asset((kotlin.Any)), java.lang.Exception, kotlin.Unit)))/onError">onError</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../-asset/index.html"><span class="identifier">Asset</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html"><span class="identifier">Exception</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{ _, exception -&gt; exception.ignore() }<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="update.html">update</a></h4>
+</td>
+<td>
+<p>Updates the associated <a href="#">AssetManager</a> if the members of this group are not finished loading. This does not
+prioritize this group's assets, but it might provide early feedback that the members of this specific group are
+ready.</p>
+<code><span class="keyword">fun </span><span class="identifier">update</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

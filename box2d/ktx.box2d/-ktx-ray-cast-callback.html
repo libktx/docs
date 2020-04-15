@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>KtxRayCastCallback - box2d</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">box2d</a>&nbsp;/&nbsp;<a href="index.html">ktx.box2d</a>&nbsp;/&nbsp;<a href="./-ktx-ray-cast-callback.html">KtxRayCastCallback</a><br/>
+<br/>
+<h1>KtxRayCastCallback</h1>
+<code><span class="keyword">typealias </span><span class="identifier">KtxRayCastCallback</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="symbol">(</span><span class="identifier">fixture</span><span class="symbol">:</span>&nbsp;<span class="identifier">Fixture</span><span class="symbol">,</span>&nbsp;<span class="identifier">point</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">,</span>&nbsp;<span class="identifier">normal</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">,</span>&nbsp;<span class="identifier">fraction</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>Callback lambda for ray-casts.</p>
+<p>This lambda is called for each fixture the ray-cast hits.</p>
+<p>There is no guarantee on the order of the callback is called, e.g. the first call to the lambda
+is not necessarily the nearest to the start point of the ray.</p>
+<p>The lambda accepts these parameters:</p>
+<ul><li><a href="#">Fixture</a>, the fixture hit by the ray.</li>
+<li><a href="#">Vector2</a>, the point of initial intersection.</li>
+<li><a href="#">Vector2</a>, the normal vector at the point of intersection.</li>
+<li><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>, the fraction of the distance from <code>start</code> to <code>end</code> that the intersection point is at.</li>
+</ul>
+<p>The lambda returns the new length of the ray as a fraction of the distance between the start and
+end or the ray. Common values are:</p>
+<ul><li><code>-1f</code>, ignore this fixture and continue.</li>
+<li><code>0f</code>, terminate the ray cast.</li>
+<li>A fraction, clip the length of the ray to this point.</li>
+<li><code>1f</code>, don't clip the ray and continue.</li>
+</ul>
+<p>Can be used in place of <a href="#">com.badlogic.gdx.physics.box2d.RayCastCallback</a> via Kotlin SAM conversion.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="-ray-cast/index.html">RayCast</a></p>
+<p><a href="com.badlogic.gdx.physics.box2d.-world/ray-cast.html">rayCast</a></p>
+</p>
+</BODY>
+</HTML>

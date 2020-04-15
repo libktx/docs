@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AssetGroup.unloadAllSafely - assets</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets</a>&nbsp;/&nbsp;<a href="index.html">AssetGroup</a>&nbsp;/&nbsp;<a href="./unload-all-safely.html">unloadAllSafely</a><br/>
+<br/>
+<h1>unloadAllSafely</h1>
+<a name="ktx.assets.AssetGroup$unloadAllSafely(kotlin.Function2((ktx.assets.Asset((kotlin.Any)), java.lang.Exception, kotlin.Unit)))"></a>
+<code><span class="keyword">fun </span><span class="identifier">unloadAllSafely</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.AssetGroup$unloadAllSafely(kotlin.Function2((ktx.assets.Asset((kotlin.Any)), java.lang.Exception, kotlin.Unit)))/onError">onError</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../-asset/index.html"><span class="identifier">Asset</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html"><span class="identifier">Exception</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{ _, exception -&gt; exception.ignore() }<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Unloads all of the assets in this group, catching any exceptions. If any of the assets are dependencies of
+assets outside this group, or if they were loaded more than once, their load counts will only be decremented by one
+and the associated <a href="#">AssetManager</a> will retain them.</p>
+<h3>Parameters</h3>
+<p><a name="onError"></a>
+<code>onError</code> - Called in response to each caught exception. By default, the exceptions are ignored.</p>
+</BODY>
+</HTML>

@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Logger.invoke - log</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">log</a>&nbsp;/&nbsp;<a href="../index.html">ktx.log</a>&nbsp;/&nbsp;<a href="index.html">Logger</a>&nbsp;/&nbsp;<a href="./invoke.html">invoke</a><br/>
+<br/>
+<h1>invoke</h1>
+<a name="ktx.log.Logger$invoke(kotlin.Function0((kotlin.String)))"></a>
+<code><span class="keyword">operator</span> <span class="keyword">inline</span> <span class="keyword">fun </span><span class="identifier">invoke</span><span class="symbol">(</span><span class="identifier" id="ktx.log.Logger$invoke(kotlin.Function0((kotlin.String)))/message">message</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Logs a message on the info level.</p>
+<h3>Parameters</h3>
+<p><a name="message"></a>
+<code>message</code> - inlined lambda which will be evaluated only if info logs are currently on. The string result of this
+    function will be created ONLY when needed, reducing the impact of creating new strings at runtime.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">Application.LOG_INFO</a></p>
+<p><a href="#">Application.getLogLevel</a></p>
+</p>
+<a name="ktx.log.Logger$invoke(kotlin.Throwable, kotlin.Function0((kotlin.String)))"></a>
+<code><span class="keyword">operator</span> <span class="keyword">inline</span> <span class="keyword">fun </span><span class="identifier">invoke</span><span class="symbol">(</span><span class="identifier" id="ktx.log.Logger$invoke(kotlin.Throwable, kotlin.Function0((kotlin.String)))/cause">cause</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">, </span><span class="identifier" id="ktx.log.Logger$invoke(kotlin.Throwable, kotlin.Function0((kotlin.String)))/message">message</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Logs a message on the info level.</p>
+<h3>Parameters</h3>
+<p><a name="cause"></a>
+<code>cause</code> - its stack trace will be printed.</p>
+<p><a name="message"></a>
+<code>message</code> - inlined lambda which will be evaluated only if info logs are currently on. The string result of this
+    function will be created ONLY when needed, reducing the impact of creating new strings at runtime.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">Application.LOG_INFO</a></p>
+<p><a href="#">Application.getLogLevel</a></p>
+</p>
+</BODY>
+</HTML>

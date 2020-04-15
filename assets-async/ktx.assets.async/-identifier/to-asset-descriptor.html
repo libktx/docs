@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Identifier.toAssetDescriptor - assets-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets.async</a>&nbsp;/&nbsp;<a href="index.html">Identifier</a>&nbsp;/&nbsp;<a href="./to-asset-descriptor.html">toAssetDescriptor</a><br/>
+<br/>
+<h1>toAssetDescriptor</h1>
+<a name="ktx.assets.async.Identifier$toAssetDescriptor(com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.Identifier.T)), com.badlogic.gdx.files.FileHandle)"></a>
+<code><span class="keyword">fun </span><span class="identifier">toAssetDescriptor</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.Identifier$toAssetDescriptor(com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.Identifier.T)), com.badlogic.gdx.files.FileHandle)/parameters">parameters</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetLoaderParameters</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ktx.assets.async.Identifier$toAssetDescriptor(com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.Identifier.T)), com.badlogic.gdx.files.FileHandle)/fileHandle">fileHandle</span><span class="symbol">:</span>&nbsp;<span class="identifier">FileHandle</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">AssetDescriptor</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code>
+<p>Converts this <a href="index.html">Identifier</a> to an <a href="#">AssetDescriptor</a> that describes the asset and its loading data.</p>
+<p>If the returned <a href="#">AssetDescriptor</a> is used to load an asset, and the asset requires specific loading
+instructions, make sure to pass the loading <a href="to-asset-descriptor.html#ktx.assets.async.Identifier$toAssetDescriptor(com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.Identifier.T)), com.badlogic.gdx.files.FileHandle)/parameters">parameters</a> to set <a href="#">AssetDescriptor.parameters</a>. Similarly,
+if the asset requires a custom <a href="#">FileHandle</a> incompatible with <a href="../-asset-storage/file-resolver.html">AssetStorage.fileResolver</a>, pass the
+<a href="to-asset-descriptor.html#ktx.assets.async.Identifier$toAssetDescriptor(com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.Identifier.T)), com.badlogic.gdx.files.FileHandle)/fileHandle">fileHandle</a> parameter to set it as <a href="#">AssetDescriptor.file</a>.</p>
+<p>If the <a href="#">AssetDescriptor</a> is used to simply identify an asset similarly to an <a href="index.html">Identifier</a>,
+<a href="to-asset-descriptor.html#ktx.assets.async.Identifier$toAssetDescriptor(com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.Identifier.T)), com.badlogic.gdx.files.FileHandle)/parameters">parameters</a> and <a href="to-asset-descriptor.html#ktx.assets.async.Identifier$toAssetDescriptor(com.badlogic.gdx.assets.AssetLoaderParameters((ktx.assets.async.Identifier.T)), com.badlogic.gdx.files.FileHandle)/fileHandle">fileHandle</a> are not required. You can retrieve a loaded asset from the
+<a href="../-asset-storage/index.html">AssetStorage</a> with either its <a href="index.html">Identifier</a> or an <a href="#">AssetDescriptor</a> without loading data -
+the parameters and file are only used when calling <a href="../-asset-storage/load.html">AssetStorage.load</a>.</p>
+</BODY>
+</HTML>

@@ -1,0 +1,87 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AsyncExecutorDispatcher - async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.async</a>&nbsp;/&nbsp;<a href="./index.html">AsyncExecutorDispatcher</a><br/>
+<br/>
+<h1>AsyncExecutorDispatcher</h1>
+<code><span class="keyword">class </span><span class="identifier">AsyncExecutorDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-abstract-ktx-dispatcher/index.html"><span class="identifier">AbstractKtxDispatcher</span></a><span class="symbol">, </span><a href="https://docs.oracle.com/javase/6/docs/api/java/io/Closeable.html"><span class="identifier">Closeable</span></a><span class="symbol">, </span><span class="identifier">Disposable</span></code>
+<p>A <a href="#">CoroutineDispatcher</a> that wraps around LibGDX <a href="#">AsyncExecutor</a> instance (available via <a href="executor.html">executor</a> property)
+to execute tasks asynchronously. <a href="threads.html">threads</a> property is purely informational and cannot be verified, since
+<a href="#">AsyncExecutor</a> does not expose the amount of threads it uses internally; provide a valid <a href="threads.html">threads</a> amount during
+initiation or use the official factory methods to prevent from mismatches with the actual max threads amount.</p>
+<p>Uses LibGDX <a href="#">Timer</a> API to support <a href="#">delay</a>.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>A <a href="#">CoroutineDispatcher</a> that wraps around LibGDX <a href="#">AsyncExecutor</a> instance (available via <a href="executor.html">executor</a> property)
+to execute tasks asynchronously. <a href="threads.html">threads</a> property is purely informational and cannot be verified, since
+<a href="#">AsyncExecutor</a> does not expose the amount of threads it uses internally; provide a valid <a href="threads.html">threads</a> amount during
+initiation or use the official factory methods to prevent from mismatches with the actual max threads amount.</p>
+<code><span class="identifier">AsyncExecutorDispatcher</span><span class="symbol">(</span><span class="identifier" id="ktx.async.AsyncExecutorDispatcher$<init>(com.badlogic.gdx.utils.async.AsyncExecutor, kotlin.Int)/executor">executor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AsyncExecutor</span><span class="symbol">, </span><span class="identifier" id="ktx.async.AsyncExecutorDispatcher$<init>(com.badlogic.gdx.utils.async.AsyncExecutor, kotlin.Int)/threads">threads</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="executor.html">executor</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">executor</span><span class="symbol">: </span><span class="identifier">AsyncExecutor</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="threads.html">threads</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">threads</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="close.html">close</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">close</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dispose.html">dispose</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">dispose</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="execute.html">execute</a></h4>
+</td>
+<td>
+<p>Immediately executes or schedules execution of the passed <a href="../-ktx-dispatcher/execute.html#ktx.async.KtxDispatcher$execute(java.lang.Runnable)/block">block</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">execute</span><span class="symbol">(</span><span class="identifier" id="ktx.async.AsyncExecutorDispatcher$execute(java.lang.Runnable)/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">Runnable</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-string.html">toString</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

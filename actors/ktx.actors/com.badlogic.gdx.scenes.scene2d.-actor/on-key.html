@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>onKey - actors</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">actors</a>&nbsp;/&nbsp;<a href="../index.html">ktx.actors</a>&nbsp;/&nbsp;<a href="index.html">com.badlogic.gdx.scenes.scene2d.Actor</a>&nbsp;/&nbsp;<a href="./on-key.html">onKey</a><br/>
+<br/>
+<h1>onKey</h1>
+<a name="ktx.actors$onKey(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Char, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">onKey</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$onKey(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Char, kotlin.Unit)))/catchEvent">catchEvent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="keyword">crossinline</span> <span class="identifier" id="ktx.actors$onKey(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean, kotlin.Function1((kotlin.Char, kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">character</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html"><span class="identifier">Char</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EventListener</span></code>
+<p>Attaches an <a href="#">EventListener</a> optimized to listen for key type events fired for this actor.</p>
+<h3>Parameters</h3>
+<p><a name="catchEvent"></a>
+<code>catchEvent</code> - if true, the event will not be passed further after it is handled by this listener. Defaults to false.</p>
+<p><a name="listener"></a>
+<code>listener</code> - invoked each time this actor is keyboard-focused and a key is typed. Consumes the typed character.</p>
+<p><strong>Return</strong><br/>
+<a href="#">EventListener</a> instance.</p>
+</BODY>
+</HTML>

@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>alltypes - async</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<h3>All Types</h3>
+<table>
+<tbody>
+<tr>
+<h5><a href="../ktx.async/-abstract-ktx-dispatcher/index.html">ktx.async.AbstractKtxDispatcher</a></h5>
+<p>Base extension of <a href="#">CoroutineDispatcher</a> for dispatchers using the LibGDX threading model.
+Uses LibGDX <a href="#">Timer</a> API to support <a href="#">delay</a>.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.async/-async-executor-dispatcher/index.html">ktx.async.AsyncExecutorDispatcher</a></h5>
+<p>A <a href="#">CoroutineDispatcher</a> that wraps around LibGDX <a href="#">AsyncExecutor</a> instance (available via <a href="../ktx.async/-async-executor-dispatcher/executor.html">executor</a> property)
+to execute tasks asynchronously. <a href="../ktx.async/-async-executor-dispatcher/threads.html">threads</a> property is purely informational and cannot be verified, since
+<a href="#">AsyncExecutor</a> does not expose the amount of threads it uses internally; provide a valid <a href="../ktx.async/-async-executor-dispatcher/threads.html">threads</a> amount during
+initiation or use the official factory methods to prevent from mismatches with the actual max threads amount.</p>
+</tr>
+<tr>
+ (extensions in package ktx.async)
+<h5><a href="../ktx.async/kotlinx.coroutines.-coroutine-scope/index.html">kotlinx.coroutines.CoroutineScope</a></h5>
+</tr>
+<tr>
+ (extensions in package ktx.async)
+<h5><a href="../ktx.async/kotlinx.coroutines.-dispatchers/index.html">kotlinx.coroutines.Dispatchers</a></h5>
+</tr>
+<tr>
+<h5><a href="../ktx.async/-disposable-timer-task/index.html">ktx.async.DisposableTimerTask</a></h5>
+<p>Wraps around LibGDX <a href="#">Timer.Task</a> to make it possible to cancel scheduled tasks. Holds a reference to the original
+scheduled <a href="../ktx.async/-disposable-timer-task/task.html">task</a>.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.async/-http-request-result/index.html">ktx.async.HttpRequestResult</a></h5>
+<p>Stores result of a <a href="#">HttpRequest</a>. A safer alternative to <a href="#">HttpResponse</a>.</p>
+</tr>
+<tr>
+ (extensions in package ktx.async)
+<h5><a href="../ktx.async/com.badlogic.gdx.-net.-http-response/index.html">com.badlogic.gdx.Net.HttpResponse</a></h5>
+</tr>
+<tr>
+<h5><a href="../ktx.async/-ktx-async/index.html">ktx.async.KtxAsync</a></h5>
+<p>Main KTX coroutine scope. Executes tasks on the main rendering thread. See <a href="../ktx.async/-main-dispatcher/index.html">MainDispatcher</a>.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.async/-ktx-dispatcher/index.html">ktx.async.KtxDispatcher</a></h5>
+<p>Base interface of <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a> for dispatchers using the LibGDX threading model.
+Uses LibGDX <a href="#">Timer</a> API to support <a href="#">delay</a>.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.async/-main-dispatcher/index.html">ktx.async.MainDispatcher</a></h5>
+<p>Executes tasks on the main rendering thread. See <a href="../ktx.async/-rendering-thread-dispatcher/index.html">RenderingThreadDispatcher</a>.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.async/-rendering-thread-dispatcher/index.html">ktx.async.RenderingThreadDispatcher</a></h5>
+<p>A <a href="#">CoroutineDispatcher</a> that wraps around LibGDX runnable execution API to execute tasks
+on the main rendering thread. Uses LibGDX <a href="#">Timer</a> API to support <a href="#">delay</a>.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.async/-rendering-thread-dispatcher-factory/index.html">ktx.async.RenderingThreadDispatcherFactory</a></h5>
+<p>Implements <a href="#">MainDispatcherFactory</a> to provide references to the <a href="../ktx.async/-main-dispatcher/index.html">MainDispatcher</a>.</p>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

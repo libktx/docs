@@ -1,0 +1,14 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:ktx.preferences$flush(com.badlogic.gdx.Preferences, kotlin.Function1((com.badlogic.gdx.Preferences, kotlin.Unit)))ktx.preferences/com.badlogic.gdx.-preferences/flush.html
+$dokka.location:ktx.preferences$get(com.badlogic.gdx.Preferences, kotlin.String)ktx.preferences/com.badlogic.gdx.-preferences/get.html
+$dokka.location:ktx.preferences$get(com.badlogic.gdx.Preferences, kotlin.String, ktx.preferences.get.T)ktx.preferences/com.badlogic.gdx.-preferences/get.html
+$dokka.location:ktx.preferences$set(com.badlogic.gdx.Preferences, kotlin.Pair((kotlin.String, kotlin.Any)))ktx.preferences/com.badlogic.gdx.-preferences/set.html
+$dokka.location:ktx.preferences$set(com.badlogic.gdx.Preferences, kotlin.String, kotlin.Any)ktx.preferences/com.badlogic.gdx.-preferences/set.html
+$dokka.location:ktx.preferences$set(com.badlogic.gdx.Preferences, kotlin.String, kotlin.Boolean)ktx.preferences/com.badlogic.gdx.-preferences/set.html
+$dokka.location:ktx.preferences$set(com.badlogic.gdx.Preferences, kotlin.String, kotlin.Double)ktx.preferences/com.badlogic.gdx.-preferences/set.html
+$dokka.location:ktx.preferences$set(com.badlogic.gdx.Preferences, kotlin.String, kotlin.Float)ktx.preferences/com.badlogic.gdx.-preferences/set.html
+$dokka.location:ktx.preferences$set(com.badlogic.gdx.Preferences, kotlin.String, kotlin.Int)ktx.preferences/com.badlogic.gdx.-preferences/set.html
+$dokka.location:ktx.preferences$set(com.badlogic.gdx.Preferences, kotlin.String, kotlin.Long)ktx.preferences/com.badlogic.gdx.-preferences/set.html
+$dokka.location:ktx.preferences$set(com.badlogic.gdx.Preferences, kotlin.String, kotlin.String)ktx.preferences/com.badlogic.gdx.-preferences/set.html
+ktx.preferences

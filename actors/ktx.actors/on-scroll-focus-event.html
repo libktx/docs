@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>onScrollFocusEvent - actors</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">actors</a>&nbsp;/&nbsp;<a href="index.html">ktx.actors</a>&nbsp;/&nbsp;<a href="./on-scroll-focus-event.html">onScrollFocusEvent</a><br/>
+<br/>
+<h1>onScrollFocusEvent</h1>
+<a name="ktx.actors$onScrollFocusEvent(ktx.actors.onScrollFocusEvent.Widget, kotlin.Boolean, kotlin.Function2((com.badlogic.gdx.scenes.scene2d.utils.FocusListener.FocusEvent, ktx.actors.onScrollFocusEvent.Widget, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Widget</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Actor</span><span class="symbol">&gt;</span> <span class="identifier">Widget</span><span class="symbol">.</span><span class="identifier">onScrollFocusEvent</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$onScrollFocusEvent(ktx.actors.onScrollFocusEvent.Widget, kotlin.Boolean, kotlin.Function2((com.badlogic.gdx.scenes.scene2d.utils.FocusListener.FocusEvent, ktx.actors.onScrollFocusEvent.Widget, kotlin.Unit)))/catchEvent">catchEvent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="keyword">crossinline</span> <span class="identifier" id="ktx.actors$onScrollFocusEvent(ktx.actors.onScrollFocusEvent.Widget, kotlin.Boolean, kotlin.Function2((com.badlogic.gdx.scenes.scene2d.utils.FocusListener.FocusEvent, ktx.actors.onScrollFocusEvent.Widget, kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">event</span><span class="symbol">:</span>&nbsp;<span class="identifier">FocusEvent</span><span class="symbol">,</span>&nbsp;<span class="identifier">actor</span><span class="symbol">:</span>&nbsp;<span class="identifier">Widget</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">EventListener</span></code>
+<p>Attaches an <a href="#">EventListener</a> optimized to listen for scroll focus events fired for this actor.</p>
+<h3>Parameters</h3>
+<p><a name="catchEvent"></a>
+<code>catchEvent</code> - if true, the event will not be passed further after it is handled by this listener. Defaults to false.</p>
+<p><a name="listener"></a>
+<code>listener</code> - will be invoked each time scroll focus status changes on this actor. <a href="#">FocusEvent.isFocused</a> can be used
+to determine current status. Consumes the triggered <a href="#">FocusEvent</a> and the <a href="#">Actor</a> that the listener was originally
+attached to.</p>
+<p><strong>Return</strong><br/>
+<a href="#">EventListener</a> instance.</p>
+</BODY>
+</HTML>

@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AssetGroup.<init> - assets</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets</a>&nbsp;/&nbsp;<a href="index.html">AssetGroup</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<a name="ktx.assets.AssetGroup$&lt;init&gt;(com.badlogic.gdx.assets.AssetManager, kotlin.String)"></a>
+<code><span class="identifier">AssetGroup</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.AssetGroup$<init>(com.badlogic.gdx.assets.AssetManager, kotlin.String)/manager">manager</span><span class="symbol">:</span>&nbsp;<span class="identifier">AssetManager</span><span class="symbol">, </span><span class="identifier" id="ktx.assets.AssetGroup$<init>(com.badlogic.gdx.assets.AssetManager, kotlin.String)/filePrefix">filePrefix</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">)</span></code>
+<p>A class for managing a group of assets together, such that they can be loaded or unloaded en masse.
+<a href="index.html">AssetGroup</a> should be subclassed and the assets should be defined by properties in the subclass by using <a href="asset.html">asset</a> or,
+<a href="delayed-asset.html">delayedAsset</a>, which can be used as delegates. If not using delegates, it is possible to selectively load and
+unload them, in which case it is not advised to use <a href="load-all.html">loadAll</a> and <a href="unload-all.html">unloadAll</a>, because AssetManager's reference
+counts may be thrown off.</p>
+<p>If fine control over individual assets of this group is not needed, a strategy to avoid the complexity of
+AssetManager's reference counting is to:</p>
+<ul><li>Use <a href="asset.html">asset</a>/<a href="delayed-asset.html">delayedAsset</a> exclusively as delegates.</li>
+<li>Do not mix and match use of <a href="asset.html">asset</a> and <a href="delayed-asset.html">delayedAsset</a>.</li>
+<li>Never access any of the asset properties until the group is finished loading.</li>
+<li>Do not initially call <a href="load-all.html">loadAll</a> if using <a href="asset.html">asset</a> (as opposed to <a href="delayed-asset.html">delayedAsset</a>).</li>
+</ul>
+<h3>Parameters</h3>
+<p><a name="manager"></a>
+<code>manager</code> - The <a href="#">AssetManager</a> that will handle loading and unloading of this group.</p>
+<p><a name="filePrefix"></a>
+<code>filePrefix</code> - A string that will be prefixed to any file path parameter passed to <a href="asset.html">asset</a> or <a href="delayed-asset.html">delayedAsset</a>.</p>
+</BODY>
+</HTML>

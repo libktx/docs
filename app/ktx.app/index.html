@@ -1,0 +1,100 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ktx.app - app</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">app</a>&nbsp;/&nbsp;<a href="./index.html">ktx.app</a><br/>
+<br/>
+<h2>Package ktx.app</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-ktx-application-adapter/index.html">KtxApplicationAdapter</a></h4>
+</td>
+<td>
+<p>Wrapping interface around <a href="#">com.badlogic.gdx.ApplicationListener</a>. Provides no-op implementations of all methods,
+making them optional to implement.</p>
+<code><span class="keyword">interface </span><span class="identifier">KtxApplicationAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ApplicationListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-ktx-game/index.html">KtxGame</a></h4>
+</td>
+<td>
+<p>An equivalent of <a href="#">com.badlogic.gdx.Game</a> delegating game events to a <a href="#">Screen</a>. On contrary to <code>Game</code>, <a href="-ktx-game/index.html">KtxGame</a>
+maintains a collection of screens mapped by their type and allows to change screens knowing only their type with
+<a href="-ktx-game/set-screen.html">setScreen</a>. Thanks to this, its easier to cache screens without maintaining a singleton with all <a href="#">Screen</a> instances
+manually. <a href="-ktx-game/index.html#ScreenType">ScreenType</a> generic type allows to users to use an extended specific base class (or interface) for all
+screens, without locking into <a href="#">Screen</a>.</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">KtxGame</span><span class="symbol">&lt;</span><span class="identifier">ScreenType</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Screen</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-ktx-application-adapter/index.html"><span class="identifier">KtxApplicationAdapter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-ktx-input-adapter/index.html">KtxInputAdapter</a></h4>
+</td>
+<td>
+<p>Wrapping interface around <a href="#">com.badlogic.gdx.InputProcessor</a>. Provides empty implementations of all methods,
+making them optional to implement.</p>
+<code><span class="keyword">interface </span><span class="identifier">KtxInputAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">InputProcessor</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-ktx-screen/index.html">KtxScreen</a></h4>
+</td>
+<td>
+<p>Provides empty implementations of all <a href="#">Screen</a> methods, making them optional to override.</p>
+<code><span class="keyword">interface </span><span class="identifier">KtxScreen</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Screen</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extensions for External Classes</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-performance-counter/index.html">com.badlogic.gdx.utils.PerformanceCounter</a></h4>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="clear-screen.html">clearScreen</a></h4>
+</td>
+<td>
+<p>Clears current screen with the selected color. Inlined to lower the total method count. Assumes alpha is 1f.</p>
+<code><span class="keyword">fun </span><span class="identifier">clearScreen</span><span class="symbol">(</span><span class="identifier" id="ktx.app$clearScreen(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/red">red</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.app$clearScreen(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/green">green</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.app$clearScreen(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/blue">blue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.app$clearScreen(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/alpha">alpha</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1f<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="empty-screen.html">emptyScreen</a></h4>
+</td>
+<td>
+<p>Provides a no-op implementation of <a href="#">Screen</a>. A workaround of <a href="#">Screen</a> nullability issues.</p>
+<code><span class="keyword">fun </span><span class="identifier">emptyScreen</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Screen</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="profile.html">profile</a></h4>
+</td>
+<td>
+<p>Profiles the given <a href="profile.html#ktx.app$profile(kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))/operation">operation</a> using a <a href="#">PerformanceCounter</a>.
+The operation will be repeated <a href="profile.html#ktx.app$profile(kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))/repeats">repeats</a> times to gather the performance data.
+<a href="#">PerformanceCounter.tick</a> will be called after each operation.
+<a href="profile.html#ktx.app$profile(kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))/repeats">repeats</a> will be used to set the window size of the <a href="#">PerformanceCounter</a>.
+If <a href="profile.html#ktx.app$profile(kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))/printResults">printResults</a> is set to true, a short summary will be printed by the application.</p>
+<code><span class="keyword">fun </span><span class="identifier">profile</span><span class="symbol">(</span><span class="identifier" id="ktx.app$profile(kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"Profiler"<span class="symbol">, </span><span class="identifier" id="ktx.app$profile(kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))/repeats">repeats</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;10<span class="symbol">, </span><span class="identifier" id="ktx.app$profile(kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))/printResults">printResults</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ktx.app$profile(kotlin.String, kotlin.Int, kotlin.Boolean, kotlin.Function0((kotlin.Unit)))/operation">operation</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">PerformanceCounter</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

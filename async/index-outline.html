@@ -1,0 +1,427 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="./index"><span class="identifier">async</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="alltypes/index.html"><span class="identifier">alltypes</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-abstract-ktx-dispatcher/index.html"><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractKtxDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">CoroutineDispatcher</span><span class="symbol">, </span><a href="ktx.async/-ktx-dispatcher/index.html"><span class="identifier">KtxDispatcher</span></a></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-abstract-ktx-dispatcher/-init-.html"><span class="identifier">AbstractKtxDispatcher</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-abstract-ktx-dispatcher/dispatch.html"><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">dispatch</span><span class="symbol">(</span><span class="identifier" id="ktx.async.AbstractKtxDispatcher$dispatch(kotlin.coroutines.CoroutineContext, java.lang.Runnable)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.AbstractKtxDispatcher$dispatch(kotlin.coroutines.CoroutineContext, java.lang.Runnable)/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">Runnable</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-async-executor-dispatcher/index.html"><span class="keyword">class </span><span class="identifier">AsyncExecutorDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="ktx.async/-abstract-ktx-dispatcher/index.html"><span class="identifier">AbstractKtxDispatcher</span></a><span class="symbol">, </span><a href="https://docs.oracle.com/javase/6/docs/api/java/io/Closeable.html"><span class="identifier">Closeable</span></a><span class="symbol">, </span><span class="identifier">Disposable</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-async-executor-dispatcher/-init-.html"><span class="identifier">AsyncExecutorDispatcher</span><span class="symbol">(</span><span class="identifier" id="ktx.async.AsyncExecutorDispatcher$<init>(com.badlogic.gdx.utils.async.AsyncExecutor, kotlin.Int)/executor">executor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AsyncExecutor</span><span class="symbol">, </span><span class="identifier" id="ktx.async.AsyncExecutorDispatcher$<init>(com.badlogic.gdx.utils.async.AsyncExecutor, kotlin.Int)/threads">threads</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">)</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-async-executor-dispatcher/close.html"><span class="keyword">fun </span><span class="identifier">close</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-async-executor-dispatcher/dispose.html"><span class="keyword">fun </span><span class="identifier">dispose</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-async-executor-dispatcher/execute.html"><span class="keyword">fun </span><span class="identifier">execute</span><span class="symbol">(</span><span class="identifier" id="ktx.async.AsyncExecutorDispatcher$execute(java.lang.Runnable)/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">Runnable</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-async-executor-dispatcher/executor.html"><span class="keyword">val </span><span class="identifier">executor</span><span class="symbol">: </span><span class="identifier">AsyncExecutor</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-async-executor-dispatcher/threads.html"><span class="keyword">val </span><span class="identifier">threads</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-async-executor-dispatcher/to-string.html"><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/com.badlogic.gdx.-net.-http-response/index.html"><span class="identifier">com.badlogic.gdx.Net.HttpResponse</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/com.badlogic.gdx.-net.-http-response/to-http-request-result.html"><span class="keyword">fun </span><span class="identifier">HttpResponse</span><span class="symbol">.</span><span class="identifier">toHttpRequestResult</span><span class="symbol">(</span><span class="identifier" id="ktx.async$toHttpRequestResult(com.badlogic.gdx.Net.HttpResponse, com.badlogic.gdx.Net.HttpRequest)/requestData">requestData</span><span class="symbol">:</span>&nbsp;<span class="identifier">HttpRequest</span><span class="symbol">)</span><span class="symbol">: </span><a href="ktx.async/-http-request-result/index.html"><span class="identifier">HttpRequestResult</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-disposable-timer-task/index.html"><span class="keyword">class </span><span class="identifier">DisposableTimerTask</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">DisposableHandle</span><span class="symbol">, </span><span class="identifier">Disposable</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-disposable-timer-task/-init-.html"><span class="identifier">DisposableTimerTask</span><span class="symbol">(</span><span class="identifier" id="ktx.async.DisposableTimerTask$<init>(com.badlogic.gdx.utils.Timer.Task)/task">task</span><span class="symbol">:</span>&nbsp;<span class="identifier">Task</span><span class="symbol">)</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-disposable-timer-task/dispose.html"><span class="keyword">fun </span><span class="identifier">dispose</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-disposable-timer-task/task.html"><span class="keyword">val </span><span class="identifier">task</span><span class="symbol">: </span><span class="identifier">Task</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/index.html"><span class="keyword">class </span><span class="identifier">HttpRequestResult</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/-init-.html"><span class="identifier">HttpRequestResult</span><span class="symbol">(</span><span class="identifier" id="ktx.async.HttpRequestResult$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.ByteArray, kotlin.collections.Map((kotlin.String, kotlin.collections.List(()))))/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.HttpRequestResult$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.ByteArray, kotlin.collections.Map((kotlin.String, kotlin.collections.List(()))))/method">method</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.HttpRequestResult$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.ByteArray, kotlin.collections.Map((kotlin.String, kotlin.collections.List(()))))/statusCode">statusCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.HttpRequestResult$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.ByteArray, kotlin.collections.Map((kotlin.String, kotlin.collections.List(()))))/content">content</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.HttpRequestResult$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.ByteArray, kotlin.collections.Map((kotlin.String, kotlin.collections.List(()))))/headers">headers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">)</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/content.html"><span class="keyword">val </span><span class="identifier">content</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/content-as-stream.html"><span class="keyword">val </span><span class="identifier">contentAsStream</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/io/ByteArrayInputStream.html"><span class="identifier">ByteArrayInputStream</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/content-as-string.html"><span class="keyword">val </span><span class="identifier">contentAsString</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/equals.html"><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier" id="ktx.async.HttpRequestResult$equals(kotlin.Any)/other">other</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/get-content-as-string.html"><span class="keyword">fun </span><span class="identifier">getContentAsString</span><span class="symbol">(</span><span class="identifier" id="ktx.async.HttpRequestResult$getContentAsString(java.nio.charset.Charset)/charset">charset</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html"><span class="identifier">Charset</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Charsets.UTF_8<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/get-header.html"><span class="keyword">fun </span><span class="identifier">getHeader</span><span class="symbol">(</span><span class="identifier" id="ktx.async.HttpRequestResult$getHeader(kotlin.String)/header">header</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/hash-code.html"><span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/headers.html"><span class="keyword">val </span><span class="identifier">headers</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/method.html"><span class="keyword">val </span><span class="identifier">method</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/status-code.html"><span class="keyword">val </span><span class="identifier">statusCode</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/to-string.html"><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/url.html"><span class="keyword">val </span><span class="identifier">url</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/kotlinx.coroutines.-coroutine-scope/index.html"><span class="identifier">kotlinx.coroutines.CoroutineScope</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/kotlinx.coroutines.-coroutine-scope/is-on-rendering-thread.html"><span class="keyword">fun </span><span class="identifier">CoroutineScope</span><span class="symbol">.</span><span class="identifier">isOnRenderingThread</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/kotlinx.coroutines.-dispatchers/index.html"><span class="identifier">kotlinx.coroutines.Dispatchers</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/kotlinx.coroutines.-dispatchers/-k-t-x.html"><span class="keyword">val </span><span class="identifier">Dispatchers</span><span class="symbol">.</span><span class="identifier">KTX</span><span class="symbol">: </span><a href="ktx.async/-main-dispatcher/index.html"><span class="identifier">MainDispatcher</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-ktx-async/index.html"><span class="keyword">object </span><span class="identifier">KtxAsync</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">CoroutineScope</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-ktx-async/coroutine-context.html"><span class="keyword">val </span><span class="identifier">coroutineContext</span><span class="symbol">: </span><a href="ktx.async/-main-dispatcher/index.html"><span class="identifier">MainDispatcher</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-ktx-async/initiate.html"><span class="keyword">fun </span><span class="identifier">initiate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-ktx-dispatcher/index.html"><span class="keyword">interface </span><span class="identifier">KtxDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a><span class="symbol">, </span><span class="identifier">Delay</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-ktx-dispatcher/execute.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">execute</span><span class="symbol">(</span><span class="identifier" id="ktx.async.KtxDispatcher$execute(java.lang.Runnable)/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">Runnable</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-ktx-dispatcher/invoke-on-timeout.html"><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">invokeOnTimeout</span><span class="symbol">(</span><span class="identifier" id="ktx.async.KtxDispatcher$invokeOnTimeout(kotlin.Long, java.lang.Runnable)/timeMillis">timeMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.KtxDispatcher$invokeOnTimeout(kotlin.Long, java.lang.Runnable)/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">Runnable</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">DisposableHandle</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-ktx-dispatcher/schedule-resume-after-delay.html"><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">scheduleResumeAfterDelay</span><span class="symbol">(</span><span class="identifier" id="ktx.async.KtxDispatcher$scheduleResumeAfterDelay(kotlin.Long, kotlinx.coroutines.CancellableContinuation((kotlin.Unit)))/timeMillis">timeMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.KtxDispatcher$scheduleResumeAfterDelay(kotlin.Long, kotlinx.coroutines.CancellableContinuation((kotlin.Unit)))/continuation">continuation</span><span class="symbol">:</span>&nbsp;<span class="identifier">CancellableContinuation</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-main-dispatcher/index.html"><span class="keyword">object </span><span class="identifier">MainDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="ktx.async/-rendering-thread-dispatcher/index.html"><span class="identifier">RenderingThreadDispatcher</span></a></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-main-dispatcher/immediate.html"><span class="identifier">@ExperimentalCoroutinesApi</span> <span class="keyword">val </span><span class="identifier">immediate</span><span class="symbol">: </span><a href="ktx.async/-main-dispatcher/index.html"><span class="identifier">MainDispatcher</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-main-dispatcher/initiate.html"><span class="keyword">fun </span><span class="identifier">initiate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-main-dispatcher/is-dispatch-needed.html"><span class="keyword">fun </span><span class="identifier">isDispatchNeeded</span><span class="symbol">(</span><span class="identifier" id="ktx.async.MainDispatcher$isDispatchNeeded(kotlin.coroutines.CoroutineContext)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-main-dispatcher/main-thread.html"><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">mainThread</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html"><span class="identifier">Thread</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-thread-dispatcher/index.html"><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">RenderingThreadDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MainCoroutineDispatcher</span><span class="symbol">, </span><a href="ktx.async/-ktx-dispatcher/index.html"><span class="identifier">KtxDispatcher</span></a><span class="symbol">, </span><span class="identifier">Delay</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-thread-dispatcher/dispatch.html"><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">dispatch</span><span class="symbol">(</span><span class="identifier" id="ktx.async.RenderingThreadDispatcher$dispatch(kotlin.coroutines.CoroutineContext, java.lang.Runnable)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.RenderingThreadDispatcher$dispatch(kotlin.coroutines.CoroutineContext, java.lang.Runnable)/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">Runnable</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-thread-dispatcher/execute.html"><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">execute</span><span class="symbol">(</span><span class="identifier" id="ktx.async.RenderingThreadDispatcher$execute(java.lang.Runnable)/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">Runnable</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-thread-dispatcher/to-string.html"><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-thread-dispatcher-factory/index.html"><span class="keyword">class </span><span class="identifier">RenderingThreadDispatcherFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MainDispatcherFactory</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-thread-dispatcher-factory/-init-.html"><span class="identifier">RenderingThreadDispatcherFactory</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-thread-dispatcher-factory/create-dispatcher.html"><span class="keyword">fun </span><span class="identifier">createDispatcher</span><span class="symbol">(</span><span class="identifier" id="ktx.async.RenderingThreadDispatcherFactory$createDispatcher(kotlin.collections.List((kotlinx.coroutines.internal.MainDispatcherFactory)))/allFactories">allFactories</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><span class="identifier">MainDispatcherFactory</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MainCoroutineDispatcher</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-thread-dispatcher-factory/load-priority.html"><span class="keyword">val </span><span class="identifier">loadPriority</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/index.html"><span class="keyword">package</span>&nbsp;<span class="identifier">ktx.async</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-abstract-ktx-dispatcher/index.html"><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractKtxDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">CoroutineDispatcher</span><span class="symbol">, </span><a href="ktx.async/-ktx-dispatcher/index.html"><span class="identifier">KtxDispatcher</span></a></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-abstract-ktx-dispatcher/-init-.html"><span class="identifier">AbstractKtxDispatcher</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-abstract-ktx-dispatcher/dispatch.html"><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">dispatch</span><span class="symbol">(</span><span class="identifier" id="ktx.async.AbstractKtxDispatcher$dispatch(kotlin.coroutines.CoroutineContext, java.lang.Runnable)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.AbstractKtxDispatcher$dispatch(kotlin.coroutines.CoroutineContext, java.lang.Runnable)/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">Runnable</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-async-executor-dispatcher/index.html"><span class="keyword">class </span><span class="identifier">AsyncExecutorDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="ktx.async/-abstract-ktx-dispatcher/index.html"><span class="identifier">AbstractKtxDispatcher</span></a><span class="symbol">, </span><a href="https://docs.oracle.com/javase/6/docs/api/java/io/Closeable.html"><span class="identifier">Closeable</span></a><span class="symbol">, </span><span class="identifier">Disposable</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-async-executor-dispatcher/-init-.html"><span class="identifier">AsyncExecutorDispatcher</span><span class="symbol">(</span><span class="identifier" id="ktx.async.AsyncExecutorDispatcher$<init>(com.badlogic.gdx.utils.async.AsyncExecutor, kotlin.Int)/executor">executor</span><span class="symbol">:</span>&nbsp;<span class="identifier">AsyncExecutor</span><span class="symbol">, </span><span class="identifier" id="ktx.async.AsyncExecutorDispatcher$<init>(com.badlogic.gdx.utils.async.AsyncExecutor, kotlin.Int)/threads">threads</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">)</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-async-executor-dispatcher/close.html"><span class="keyword">fun </span><span class="identifier">close</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-async-executor-dispatcher/dispose.html"><span class="keyword">fun </span><span class="identifier">dispose</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-async-executor-dispatcher/execute.html"><span class="keyword">fun </span><span class="identifier">execute</span><span class="symbol">(</span><span class="identifier" id="ktx.async.AsyncExecutorDispatcher$execute(java.lang.Runnable)/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">Runnable</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-async-executor-dispatcher/executor.html"><span class="keyword">val </span><span class="identifier">executor</span><span class="symbol">: </span><span class="identifier">AsyncExecutor</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-async-executor-dispatcher/threads.html"><span class="keyword">val </span><span class="identifier">threads</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-async-executor-dispatcher/to-string.html"><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/com.badlogic.gdx.-net.-http-response/index.html"><span class="identifier">com.badlogic.gdx.Net.HttpResponse</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/com.badlogic.gdx.-net.-http-response/to-http-request-result.html"><span class="keyword">fun </span><span class="identifier">HttpResponse</span><span class="symbol">.</span><span class="identifier">toHttpRequestResult</span><span class="symbol">(</span><span class="identifier" id="ktx.async$toHttpRequestResult(com.badlogic.gdx.Net.HttpResponse, com.badlogic.gdx.Net.HttpRequest)/requestData">requestData</span><span class="symbol">:</span>&nbsp;<span class="identifier">HttpRequest</span><span class="symbol">)</span><span class="symbol">: </span><a href="ktx.async/-http-request-result/index.html"><span class="identifier">HttpRequestResult</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-disposable-timer-task/index.html"><span class="keyword">class </span><span class="identifier">DisposableTimerTask</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">DisposableHandle</span><span class="symbol">, </span><span class="identifier">Disposable</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-disposable-timer-task/-init-.html"><span class="identifier">DisposableTimerTask</span><span class="symbol">(</span><span class="identifier" id="ktx.async.DisposableTimerTask$<init>(com.badlogic.gdx.utils.Timer.Task)/task">task</span><span class="symbol">:</span>&nbsp;<span class="identifier">Task</span><span class="symbol">)</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-disposable-timer-task/dispose.html"><span class="keyword">fun </span><span class="identifier">dispose</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-disposable-timer-task/task.html"><span class="keyword">val </span><span class="identifier">task</span><span class="symbol">: </span><span class="identifier">Task</span></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/http-request.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">httpRequest</span><span class="symbol">(</span><span class="identifier" id="ktx.async$httpRequest(kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, )), kotlin.Int, kotlin.String, kotlin.Pair((java.io.InputStream, kotlin.Long)), kotlin.Boolean, kotlin.Boolean, kotlin.Function1((com.badlogic.gdx.Net.HttpRequest, kotlin.Unit)))/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async$httpRequest(kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, )), kotlin.Int, kotlin.String, kotlin.Pair((java.io.InputStream, kotlin.Long)), kotlin.Boolean, kotlin.Boolean, kotlin.Function1((com.badlogic.gdx.Net.HttpRequest, kotlin.Unit)))/method">method</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"GET"<span class="symbol">, </span><span class="identifier" id="ktx.async$httpRequest(kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, )), kotlin.Int, kotlin.String, kotlin.Pair((java.io.InputStream, kotlin.Long)), kotlin.Boolean, kotlin.Boolean, kotlin.Function1((com.badlogic.gdx.Net.HttpRequest, kotlin.Unit)))/headers">headers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;emptyMap()<span class="symbol">, </span><span class="identifier" id="ktx.async$httpRequest(kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, )), kotlin.Int, kotlin.String, kotlin.Pair((java.io.InputStream, kotlin.Long)), kotlin.Boolean, kotlin.Boolean, kotlin.Function1((com.badlogic.gdx.Net.HttpRequest, kotlin.Unit)))/timeout">timeout</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="ktx.async$httpRequest(kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, )), kotlin.Int, kotlin.String, kotlin.Pair((java.io.InputStream, kotlin.Long)), kotlin.Boolean, kotlin.Boolean, kotlin.Function1((com.badlogic.gdx.Net.HttpRequest, kotlin.Unit)))/content">content</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ktx.async$httpRequest(kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, )), kotlin.Int, kotlin.String, kotlin.Pair((java.io.InputStream, kotlin.Long)), kotlin.Boolean, kotlin.Boolean, kotlin.Function1((com.badlogic.gdx.Net.HttpRequest, kotlin.Unit)))/contentStream">contentStream</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ktx.async$httpRequest(kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, )), kotlin.Int, kotlin.String, kotlin.Pair((java.io.InputStream, kotlin.Long)), kotlin.Boolean, kotlin.Boolean, kotlin.Function1((com.badlogic.gdx.Net.HttpRequest, kotlin.Unit)))/followRedirects">followRedirects</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ktx.async$httpRequest(kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, )), kotlin.Int, kotlin.String, kotlin.Pair((java.io.InputStream, kotlin.Long)), kotlin.Boolean, kotlin.Boolean, kotlin.Function1((com.badlogic.gdx.Net.HttpRequest, kotlin.Unit)))/includeCredentials">includeCredentials</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="identifier" id="ktx.async$httpRequest(kotlin.String, kotlin.String, kotlin.collections.Map((kotlin.String, )), kotlin.Int, kotlin.String, kotlin.Pair((java.io.InputStream, kotlin.Long)), kotlin.Boolean, kotlin.Boolean, kotlin.Function1((com.badlogic.gdx.Net.HttpRequest, kotlin.Unit)))/onCancel">onCancel</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">(</span><span class="identifier">HttpRequest</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="ktx.async/-http-request-result/index.html"><span class="identifier">HttpRequestResult</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/index.html"><span class="keyword">class </span><span class="identifier">HttpRequestResult</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/-init-.html"><span class="identifier">HttpRequestResult</span><span class="symbol">(</span><span class="identifier" id="ktx.async.HttpRequestResult$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.ByteArray, kotlin.collections.Map((kotlin.String, kotlin.collections.List(()))))/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.HttpRequestResult$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.ByteArray, kotlin.collections.Map((kotlin.String, kotlin.collections.List(()))))/method">method</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.HttpRequestResult$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.ByteArray, kotlin.collections.Map((kotlin.String, kotlin.collections.List(()))))/statusCode">statusCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.HttpRequestResult$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.ByteArray, kotlin.collections.Map((kotlin.String, kotlin.collections.List(()))))/content">content</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.HttpRequestResult$<init>(kotlin.String, kotlin.String, kotlin.Int, kotlin.ByteArray, kotlin.collections.Map((kotlin.String, kotlin.collections.List(()))))/headers">headers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">)</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/content.html"><span class="keyword">val </span><span class="identifier">content</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/content-as-stream.html"><span class="keyword">val </span><span class="identifier">contentAsStream</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/io/ByteArrayInputStream.html"><span class="identifier">ByteArrayInputStream</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/content-as-string.html"><span class="keyword">val </span><span class="identifier">contentAsString</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/equals.html"><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier" id="ktx.async.HttpRequestResult$equals(kotlin.Any)/other">other</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/get-content-as-string.html"><span class="keyword">fun </span><span class="identifier">getContentAsString</span><span class="symbol">(</span><span class="identifier" id="ktx.async.HttpRequestResult$getContentAsString(java.nio.charset.Charset)/charset">charset</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html"><span class="identifier">Charset</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Charsets.UTF_8<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/get-header.html"><span class="keyword">fun </span><span class="identifier">getHeader</span><span class="symbol">(</span><span class="identifier" id="ktx.async.HttpRequestResult$getHeader(kotlin.String)/header">header</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/hash-code.html"><span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/headers.html"><span class="keyword">val </span><span class="identifier">headers</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/method.html"><span class="keyword">val </span><span class="identifier">method</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/status-code.html"><span class="keyword">val </span><span class="identifier">statusCode</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/to-string.html"><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-http-request-result/url.html"><span class="keyword">val </span><span class="identifier">url</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/interval.html"><span class="keyword">inline</span> <span class="keyword">fun </span><span class="identifier">interval</span><span class="symbol">(</span><span class="identifier" id="ktx.async$interval(kotlin.Float, kotlin.Float, kotlin.Int, kotlin.Function0((kotlin.Unit)))/intervalSeconds">intervalSeconds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async$interval(kotlin.Float, kotlin.Float, kotlin.Int, kotlin.Function0((kotlin.Unit)))/delaySeconds">delaySeconds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.async$interval(kotlin.Float, kotlin.Float, kotlin.Int, kotlin.Function0((kotlin.Unit)))/repeatCount">repeatCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-2<span class="symbol">, </span><span class="keyword">crossinline</span> <span class="identifier" id="ktx.async$interval(kotlin.Float, kotlin.Float, kotlin.Int, kotlin.Function0((kotlin.Unit)))/task">task</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Task</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/kotlinx.coroutines.-coroutine-scope/index.html"><span class="identifier">kotlinx.coroutines.CoroutineScope</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/kotlinx.coroutines.-coroutine-scope/is-on-rendering-thread.html"><span class="keyword">fun </span><span class="identifier">CoroutineScope</span><span class="symbol">.</span><span class="identifier">isOnRenderingThread</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/kotlinx.coroutines.-dispatchers/index.html"><span class="identifier">kotlinx.coroutines.Dispatchers</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/kotlinx.coroutines.-dispatchers/-k-t-x.html"><span class="keyword">val </span><span class="identifier">Dispatchers</span><span class="symbol">.</span><span class="identifier">KTX</span><span class="symbol">: </span><a href="ktx.async/-main-dispatcher/index.html"><span class="identifier">MainDispatcher</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-ktx-async/index.html"><span class="keyword">object </span><span class="identifier">KtxAsync</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">CoroutineScope</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-ktx-async/coroutine-context.html"><span class="keyword">val </span><span class="identifier">coroutineContext</span><span class="symbol">: </span><a href="ktx.async/-main-dispatcher/index.html"><span class="identifier">MainDispatcher</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-ktx-async/initiate.html"><span class="keyword">fun </span><span class="identifier">initiate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-ktx-dispatcher/index.html"><span class="keyword">interface </span><span class="identifier">KtxDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a><span class="symbol">, </span><span class="identifier">Delay</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-ktx-dispatcher/execute.html"><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">execute</span><span class="symbol">(</span><span class="identifier" id="ktx.async.KtxDispatcher$execute(java.lang.Runnable)/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">Runnable</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-ktx-dispatcher/invoke-on-timeout.html"><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">invokeOnTimeout</span><span class="symbol">(</span><span class="identifier" id="ktx.async.KtxDispatcher$invokeOnTimeout(kotlin.Long, java.lang.Runnable)/timeMillis">timeMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.KtxDispatcher$invokeOnTimeout(kotlin.Long, java.lang.Runnable)/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">Runnable</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">DisposableHandle</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-ktx-dispatcher/schedule-resume-after-delay.html"><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">scheduleResumeAfterDelay</span><span class="symbol">(</span><span class="identifier" id="ktx.async.KtxDispatcher$scheduleResumeAfterDelay(kotlin.Long, kotlinx.coroutines.CancellableContinuation((kotlin.Unit)))/timeMillis">timeMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.KtxDispatcher$scheduleResumeAfterDelay(kotlin.Long, kotlinx.coroutines.CancellableContinuation((kotlin.Unit)))/continuation">continuation</span><span class="symbol">:</span>&nbsp;<span class="identifier">CancellableContinuation</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-main-dispatcher/index.html"><span class="keyword">object </span><span class="identifier">MainDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="ktx.async/-rendering-thread-dispatcher/index.html"><span class="identifier">RenderingThreadDispatcher</span></a></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-main-dispatcher/immediate.html"><span class="identifier">@ExperimentalCoroutinesApi</span> <span class="keyword">val </span><span class="identifier">immediate</span><span class="symbol">: </span><a href="ktx.async/-main-dispatcher/index.html"><span class="identifier">MainDispatcher</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-main-dispatcher/initiate.html"><span class="keyword">fun </span><span class="identifier">initiate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-main-dispatcher/is-dispatch-needed.html"><span class="keyword">fun </span><span class="identifier">isDispatchNeeded</span><span class="symbol">(</span><span class="identifier" id="ktx.async.MainDispatcher$isDispatchNeeded(kotlin.coroutines.CoroutineContext)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-main-dispatcher/main-thread.html"><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">mainThread</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html"><span class="identifier">Thread</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/new-async-context.html"><span class="keyword">fun </span><span class="identifier">newAsyncContext</span><span class="symbol">(</span><span class="identifier" id="ktx.async$newAsyncContext(kotlin.Int, kotlin.String)/threads">threads</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async$newAsyncContext(kotlin.Int, kotlin.String)/threadName">threadName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"AsyncExecutor-Thread"<span class="symbol">)</span><span class="symbol">: </span><a href="ktx.async/-async-executor-dispatcher/index.html"><span class="identifier">AsyncExecutorDispatcher</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/new-single-thread-async-context.html"><span class="keyword">fun </span><span class="identifier">newSingleThreadAsyncContext</span><span class="symbol">(</span><span class="identifier" id="ktx.async$newSingleThreadAsyncContext(kotlin.String)/threadName">threadName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"AsyncExecutor-Thread"<span class="symbol">)</span><span class="symbol">: </span><a href="ktx.async/-async-executor-dispatcher/index.html"><span class="identifier">AsyncExecutorDispatcher</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/on-rendering-thread.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">onRenderingThread</span><span class="symbol">(</span><span class="identifier" id="ktx.async$onRenderingThread(kotlin.coroutines.SuspendFunction1((kotlinx.coroutines.CoroutineScope, ktx.async.onRenderingThread.T)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">CoroutineScope</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">T</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-scope.html"><span class="keyword">fun </span><span class="identifier">RenderingScope</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">CoroutineScope</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-thread-dispatcher/index.html"><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">RenderingThreadDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MainCoroutineDispatcher</span><span class="symbol">, </span><a href="ktx.async/-ktx-dispatcher/index.html"><span class="identifier">KtxDispatcher</span></a><span class="symbol">, </span><span class="identifier">Delay</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-thread-dispatcher/dispatch.html"><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">dispatch</span><span class="symbol">(</span><span class="identifier" id="ktx.async.RenderingThreadDispatcher$dispatch(kotlin.coroutines.CoroutineContext, java.lang.Runnable)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a><span class="symbol">, </span><span class="identifier" id="ktx.async.RenderingThreadDispatcher$dispatch(kotlin.coroutines.CoroutineContext, java.lang.Runnable)/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">Runnable</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-thread-dispatcher/execute.html"><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">execute</span><span class="symbol">(</span><span class="identifier" id="ktx.async.RenderingThreadDispatcher$execute(java.lang.Runnable)/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">Runnable</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-thread-dispatcher/to-string.html"><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-thread-dispatcher-factory/index.html"><span class="keyword">class </span><span class="identifier">RenderingThreadDispatcherFactory</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MainDispatcherFactory</span></a></a><br/>
+<ul>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Module Contents</title>
+<link rel="stylesheet" href="../style.css">
+</HEAD>
+<BODY>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-thread-dispatcher-factory/-init-.html"><span class="identifier">RenderingThreadDispatcherFactory</span><span class="symbol">(</span><span class="symbol">)</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-thread-dispatcher-factory/create-dispatcher.html"><span class="keyword">fun </span><span class="identifier">createDispatcher</span><span class="symbol">(</span><span class="identifier" id="ktx.async.RenderingThreadDispatcherFactory$createDispatcher(kotlin.collections.List((kotlinx.coroutines.internal.MainDispatcherFactory)))/allFactories">allFactories</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><span class="identifier">MainDispatcherFactory</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MainCoroutineDispatcher</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/-rendering-thread-dispatcher-factory/load-priority.html"><span class="keyword">val </span><span class="identifier">loadPriority</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/schedule.html"><span class="keyword">inline</span> <span class="keyword">fun </span><span class="identifier">schedule</span><span class="symbol">(</span><span class="identifier" id="ktx.async$schedule(kotlin.Float, kotlin.Function0((kotlin.Unit)))/delaySeconds">delaySeconds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="keyword">crossinline</span> <span class="identifier" id="ktx.async$schedule(kotlin.Float, kotlin.Function0((kotlin.Unit)))/task">task</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Task</span></a></a><br/>
+<a href="/home/runner/work/ktx/ktx/async/build/dokka/async/index"><a href="ktx.async/skip-frame.html"><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">skipFrame</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></a></a><br/>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>
+</ul>
+</BODY>
+</HTML>

@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AssetStorage.dispose - assets-async</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets-async</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets.async</a>&nbsp;/&nbsp;<a href="index.html">AssetStorage</a>&nbsp;/&nbsp;<a href="./dispose.html">dispose</a><br/>
+<br/>
+<h1>dispose</h1>
+<a name="ktx.assets.async.AssetStorage$dispose()"></a>
+<code><span class="keyword">fun </span><span class="identifier">dispose</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Unloads all assets. Blocks current thread until are assets are unloaded.
+Logs all disposing exceptions.</p>
+<p>Prefer suspending <a href="#">dispose</a> method that takes an error handler as parameter.</p>
+<p>Calling <a href="#">dispose</a> is not guaranteed to keep the eventual consistency of <a href="progress.html">progress</a>
+if <a href="#">dispose</a> is called during asynchronous asset loading.
+If exact loading progress is crucial, prefer creating another instance of <a href="index.html">AssetStorage</a>
+than reusing existing one that has been disposed.</p>
+<a name="ktx.assets.async.AssetStorage$dispose(kotlin.Function2((ktx.assets.async.Identifier((kotlin.Any)), kotlin.Throwable, kotlin.Unit)))"></a>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">dispose</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.async.AssetStorage$dispose(kotlin.Function2((ktx.assets.async.Identifier((kotlin.Any)), kotlin.Throwable, kotlin.Unit)))/onError">onError</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">identifier</span><span class="symbol">:</span>&nbsp;<a href="../-identifier/index.html"><span class="identifier">Identifier</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<span class="identifier">cause</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Unloads all assets. Cancels loading of all scheduled assets.
+<a href="dispose.html#ktx.assets.async.AssetStorage$dispose(kotlin.Function2((ktx.assets.async.Identifier((kotlin.Any)), kotlin.Throwable, kotlin.Unit)))/onError">onError</a> will be invoked on every caught disposing exception.</p>
+<p>Calling <a href="#">dispose</a> is not guaranteed to keep the eventual consistency of <a href="progress.html">progress</a>
+if <a href="#">dispose</a> is called during asynchronous asset loading.
+If exact loading progress is crucial, prefer creating another instance of <a href="index.html">AssetStorage</a>
+than reusing existing one that has been disposed.</p>
+</BODY>
+</HTML>

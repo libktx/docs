@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Context.<init> - inject</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">inject</a>&nbsp;/&nbsp;<a href="../index.html">ktx.inject</a>&nbsp;/&nbsp;<a href="index.html">Context</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<a name="ktx.inject.Context$&lt;init&gt;()"></a>
+<code><span class="identifier">Context</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Handles dependency injection mechanism. Allows to bind selected classes with their providers.</p>
+<p>Note that <a href="index.html">Context</a> instances are not considered fully thread-safe - while it is <em>usually</em> safe to access a fully
+built context from within multiple threads, you should override <a href="create-providers-map.html">createProvidersMap</a> method and return a thread-safe
+<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a> implementation to avoid concurrency bugs.</p>
+</BODY>
+</HTML>

@@ -1,0 +1,239 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ktx.math - math</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">math</a>&nbsp;/&nbsp;<a href="./index.html">ktx.math</a><br/>
+<br/>
+<h2>Package ktx.math</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-immutable-vector/index.html">ImmutableVector</a></h4>
+</td>
+<td>
+<p>Represent an immutable vector.</p>
+<code><span class="keyword">interface </span><span class="identifier">ImmutableVector</span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-immutable-vector/index.html"><span class="identifier">ImmutableVector</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-comparable/index.html"><span class="identifier">Comparable</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-immutable-vector2/index.html">ImmutableVector2</a></h4>
+</td>
+<td>
+<p>Represent an immutable vector 2D</p>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ImmutableVector2</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-immutable-vector/index.html"><span class="identifier">ImmutableVector</span></a><span class="symbol">&lt;</span><a href="-immutable-vector2/index.html"><span class="identifier">ImmutableVector2</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extensions for External Classes</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.math.-matrix3/index.html">com.badlogic.gdx.math.Matrix3</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.math.-matrix4/index.html">com.badlogic.gdx.math.Matrix4</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.math.-vector2/index.html">com.badlogic.gdx.math.Vector2</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.math.-vector3/index.html">com.badlogic.gdx.math.Vector3</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="kotlin.-float/index.html">kotlin.Float</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="kotlin.-int/index.html">kotlin.Int</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="kotlin.ranges.-closed-range/index.html">kotlin.ranges.ClosedRange</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="kotlin.ranges.-int-range/index.html">kotlin.ranges.IntRange</a></h4>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="angle-deg.html">angleDeg</a></h4>
+</td>
+<td>
+<p>Returns the angle in degrees of this vector relative to the <a href="angle-deg.html#ktx.math$angleDeg(ktx.math.ImmutableVector2, ktx.math.ImmutableVector2)/reference">reference</a>. Angles are towards the positive y-axis (typically counter-clockwise.) between -180 and +180</p>
+<code><span class="keyword">fun </span><a href="-immutable-vector2/index.html"><span class="identifier">ImmutableVector2</span></a><span class="symbol">.</span><span class="identifier">angleDeg</span><span class="symbol">(</span><span class="identifier" id="ktx.math$angleDeg(ktx.math.ImmutableVector2, ktx.math.ImmutableVector2)/reference">reference</span><span class="symbol">:</span>&nbsp;<a href="-immutable-vector2/index.html"><span class="identifier">ImmutableVector2</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ImmutableVector2.X<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code>
+<p>Returns the angle in degrees of this vector relative to the reference vector described by <a href="angle-deg.html#ktx.math$angleDeg(ktx.math.ImmutableVector2, kotlin.Float, kotlin.Float)/referenceX">referenceX</a> and <a href="angle-deg.html#ktx.math$angleDeg(ktx.math.ImmutableVector2, kotlin.Float, kotlin.Float)/referenceY">referenceY</a>.</p>
+<code><span class="keyword">fun </span><a href="-immutable-vector2/index.html"><span class="identifier">ImmutableVector2</span></a><span class="symbol">.</span><span class="identifier">angleDeg</span><span class="symbol">(</span><span class="identifier" id="ktx.math$angleDeg(ktx.math.ImmutableVector2, kotlin.Float, kotlin.Float)/referenceX">referenceX</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.math$angleDeg(ktx.math.ImmutableVector2, kotlin.Float, kotlin.Float)/referenceY">referenceY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="crs.html">crs</a></h4>
+</td>
+<td>
+<p>Calculates the 2D cross product between this and the <a href="crs.html#ktx.math$crs(ktx.math.ImmutableVector2, ktx.math.ImmutableVector2)/other">other</a> vector</p>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><a href="-immutable-vector2/index.html"><span class="identifier">ImmutableVector2</span></a><span class="symbol">.</span><span class="identifier">crs</span><span class="symbol">(</span><span class="identifier" id="ktx.math$crs(ktx.math.ImmutableVector2, ktx.math.ImmutableVector2)/other">other</span><span class="symbol">:</span>&nbsp;<a href="-immutable-vector2/index.html"><span class="identifier">ImmutableVector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="div.html">div</a></h4>
+</td>
+<td>
+<p>Returns this vector scaled by (1 / <a href="div.html#ktx.math$div(ktx.math.div.T, kotlin.Float)/scalar">scalar</a>)</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-immutable-vector/index.html"><span class="identifier">ImmutableVector</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <span class="identifier">T</span><span class="symbol">.</span><span class="identifier">div</span><span class="symbol">(</span><span class="identifier" id="ktx.math$div(ktx.math.div.T, kotlin.Float)/scalar">scalar</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dst.html">dst</a></h4>
+</td>
+<td>
+<p>Returns the distance between this and the <a href="dst.html#ktx.math$dst(ktx.math.dst.T, ktx.math.dst.T)/other">other</a> vector</p>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-immutable-vector/index.html"><span class="identifier">ImmutableVector</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <span class="identifier">T</span><span class="symbol">.</span><span class="identifier">dst</span><span class="symbol">(</span><span class="identifier" id="ktx.math$dst(ktx.math.dst.T, ktx.math.dst.T)/other">other</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-opposite-direction.html">hasOppositeDirection</a></h4>
+</td>
+<td>
+<p>Returns whether this vector has opposite direction compared to the <a href="has-opposite-direction.html#ktx.math$hasOppositeDirection(ktx.math.hasOppositeDirection.T, ktx.math.hasOppositeDirection.T)/other">other</a> vector.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-immutable-vector/index.html"><span class="identifier">ImmutableVector</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <span class="identifier">T</span><span class="symbol">.</span><span class="identifier">hasOppositeDirection</span><span class="symbol">(</span><span class="identifier" id="ktx.math$hasOppositeDirection(ktx.math.hasOppositeDirection.T, ktx.math.hasOppositeDirection.T)/other">other</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-same-direction.html">hasSameDirection</a></h4>
+</td>
+<td>
+<p>Returns whether this vector has similar direction compared to the <a href="has-same-direction.html#ktx.math$hasSameDirection(ktx.math.hasSameDirection.T, ktx.math.hasSameDirection.T)/other">other</a> vector.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-immutable-vector/index.html"><span class="identifier">ImmutableVector</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <span class="identifier">T</span><span class="symbol">.</span><span class="identifier">hasSameDirection</span><span class="symbol">(</span><span class="identifier" id="ktx.math$hasSameDirection(ktx.math.hasSameDirection.T, ktx.math.hasSameDirection.T)/other">other</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-collinear.html">isCollinear</a></h4>
+</td>
+<td>
+<p>Returns true if this vector is collinear with the <a href="is-collinear.html#ktx.math$isCollinear(ktx.math.isCollinear.T, ktx.math.isCollinear.T, kotlin.Float)/other">other</a> vector</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-immutable-vector/index.html"><span class="identifier">ImmutableVector</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <span class="identifier">T</span><span class="symbol">.</span><span class="identifier">isCollinear</span><span class="symbol">(</span><span class="identifier" id="ktx.math$isCollinear(ktx.math.isCollinear.T, ktx.math.isCollinear.T, kotlin.Float)/other">other</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">, </span><span class="identifier" id="ktx.math$isCollinear(ktx.math.isCollinear.T, ktx.math.isCollinear.T, kotlin.Float)/epsilon">epsilon</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;MathUtils.FLOAT_ROUNDING_ERROR<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-collinear-opposite.html">isCollinearOpposite</a></h4>
+</td>
+<td>
+<p>Returns true if this vector is opposite collinear with the <a href="is-collinear-opposite.html#ktx.math$isCollinearOpposite(ktx.math.isCollinearOpposite.T, ktx.math.isCollinearOpposite.T, kotlin.Float)/other">other</a> vector</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-immutable-vector/index.html"><span class="identifier">ImmutableVector</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <span class="identifier">T</span><span class="symbol">.</span><span class="identifier">isCollinearOpposite</span><span class="symbol">(</span><span class="identifier" id="ktx.math$isCollinearOpposite(ktx.math.isCollinearOpposite.T, ktx.math.isCollinearOpposite.T, kotlin.Float)/other">other</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">, </span><span class="identifier" id="ktx.math$isCollinearOpposite(ktx.math.isCollinearOpposite.T, ktx.math.isCollinearOpposite.T, kotlin.Float)/epsilon">epsilon</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;MathUtils.FLOAT_ROUNDING_ERROR<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-perpendicular.html">isPerpendicular</a></h4>
+</td>
+<td>
+<p>Returns true if this vector is opposite perpendicular with the <a href="is-perpendicular.html#ktx.math$isPerpendicular(ktx.math.isPerpendicular.T, ktx.math.isPerpendicular.T, kotlin.Float)/other">other</a> vector</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-immutable-vector/index.html"><span class="identifier">ImmutableVector</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <span class="identifier">T</span><span class="symbol">.</span><span class="identifier">isPerpendicular</span><span class="symbol">(</span><span class="identifier" id="ktx.math$isPerpendicular(ktx.math.isPerpendicular.T, ktx.math.isPerpendicular.T, kotlin.Float)/other">other</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">, </span><span class="identifier" id="ktx.math$isPerpendicular(ktx.math.isPerpendicular.T, ktx.math.isPerpendicular.T, kotlin.Float)/epsilon">epsilon</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;MathUtils.FLOAT_ROUNDING_ERROR<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="mat3.html">mat3</a></h4>
+</td>
+<td>
+<p>A utility factory function that allows to create <a href="#">Matrix3</a> instances with named parameters.</p>
+<code><span class="keyword">fun </span><span class="identifier">mat3</span><span class="symbol">(</span><span class="identifier" id="ktx.math$mat3(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m00">m00</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat3(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m01">m01</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat3(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m02">m02</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat3(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m10">m10</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat3(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m11">m11</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat3(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m12">m12</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat3(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m20">m20</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat3(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m21">m21</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat3(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m22">m22</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Matrix3</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="mat4.html">mat4</a></h4>
+</td>
+<td>
+<p>A utility factory function that allows to create <a href="#">Matrix4</a> instances with named parameters.</p>
+<code><span class="keyword">fun </span><span class="identifier">mat4</span><span class="symbol">(</span><span class="identifier" id="ktx.math$mat4(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m00">m00</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat4(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m01">m01</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat4(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m02">m02</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat4(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m03">m03</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat4(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m10">m10</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat4(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m11">m11</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat4(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m12">m12</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat4(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m13">m13</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat4(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m20">m20</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat4(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m21">m21</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat4(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m22">m22</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat4(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m23">m23</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat4(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m30">m30</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat4(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m31">m31</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat4(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m32">m32</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$mat4(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/m33">m33</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Matrix4</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-mutable.html">toMutable</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="-immutable-vector2/index.html"><span class="identifier">ImmutableVector2</span></a><span class="symbol">.</span><span class="identifier">toMutable</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Vector2</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="vec2.html">vec2</a></h4>
+</td>
+<td>
+<p>Constructs a new <a href="#">Vector2</a> instance. An equivalent of <a href="#">Vector2</a> constructor that supports Kotlin syntax features:
+named parameters with default values.</p>
+<code><span class="keyword">fun </span><span class="identifier">vec2</span><span class="symbol">(</span><span class="identifier" id="ktx.math$vec2(kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$vec2(kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Vector2</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="vec3.html">vec3</a></h4>
+</td>
+<td>
+<p>Constructs a new <a href="#">Vector3</a> instance. An equivalent of <a href="#">Vector3</a> constructor that supports Kotlin syntax features:
+named parameters with default values.</p>
+<code><span class="keyword">fun </span><span class="identifier">vec3</span><span class="symbol">(</span><span class="identifier" id="ktx.math$vec3(kotlin.Float, kotlin.Float, kotlin.Float)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$vec3(kotlin.Float, kotlin.Float, kotlin.Float)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.math$vec3(kotlin.Float, kotlin.Float, kotlin.Float)/z">z</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Vector3</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">vec3</span><span class="symbol">(</span><span class="identifier" id="ktx.math$vec3(com.badlogic.gdx.math.Vector2, kotlin.Float)/vector2">vector2</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">, </span><span class="identifier" id="ktx.math$vec3(com.badlogic.gdx.math.Vector2, kotlin.Float)/z">z</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Vector3</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="with-angle-deg.html">withAngleDeg</a></h4>
+</td>
+<td>
+<p>Returns a vector of same length with the given <a href="with-angle-deg.html#ktx.math$withAngleDeg(ktx.math.ImmutableVector2, kotlin.Float)/angle">angle</a> in degree</p>
+<code><span class="keyword">fun </span><a href="-immutable-vector2/index.html"><span class="identifier">ImmutableVector2</span></a><span class="symbol">.</span><span class="identifier">withAngleDeg</span><span class="symbol">(</span><span class="identifier" id="ktx.math$withAngleDeg(ktx.math.ImmutableVector2, kotlin.Float)/angle">angle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-immutable-vector2/index.html"><span class="identifier">ImmutableVector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="with-rotation-deg.html">withRotationDeg</a></h4>
+</td>
+<td>
+<p>Returns a vector of same length rotated by the given <a href="with-rotation-deg.html#ktx.math$withRotationDeg(ktx.math.ImmutableVector2, kotlin.Float)/angle">angle</a> in degree</p>
+<code><span class="keyword">fun </span><a href="-immutable-vector2/index.html"><span class="identifier">ImmutableVector2</span></a><span class="symbol">.</span><span class="identifier">withRotationDeg</span><span class="symbol">(</span><span class="identifier" id="ktx.math$withRotationDeg(ktx.math.ImmutableVector2, kotlin.Float)/angle">angle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-immutable-vector2/index.html"><span class="identifier">ImmutableVector2</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="x.html">x</a></h4>
+</td>
+<td>
+<p>Calculates the 2D cross product between this and the <a href="x.html#ktx.math$x(ktx.math.ImmutableVector2, ktx.math.ImmutableVector2)/other">other</a> vector</p>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><a href="-immutable-vector2/index.html"><span class="identifier">ImmutableVector2</span></a><span class="symbol">.</span><span class="identifier">x</span><span class="symbol">(</span><span class="identifier" id="ktx.math$x(ktx.math.ImmutableVector2, ktx.math.ImmutableVector2)/other">other</span><span class="symbol">:</span>&nbsp;<a href="-immutable-vector2/index.html"><span class="identifier">ImmutableVector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

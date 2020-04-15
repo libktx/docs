@@ -1,0 +1,381 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ktx.collections - collections</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">collections</a>&nbsp;/&nbsp;<a href="./index.html">ktx.collections</a><br/>
+<br/>
+<h2>Package ktx.collections</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-gdx-array.html">GdxArray</a></h4>
+</td>
+<td>
+<p>Alias for <a href="#">com.badlogic.gdx.utils.Array</a> avoiding name collision with the standard library.</p>
+<code><span class="keyword">typealias </span><span class="identifier">GdxArray</span><span class="symbol">&lt;</span><span class="identifier">Element</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="identifier">Array</span><span class="symbol">&lt;</span><span class="identifier">Element</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-gdx-boolean-array.html">GdxBooleanArray</a></h4>
+</td>
+<td>
+<p>Alias for <a href="#">com.badlogic.gdx.utils.BooleanArray</a> avoiding name collision with the standard library.</p>
+<code><span class="keyword">typealias </span><span class="identifier">GdxBooleanArray</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="identifier">BooleanArray</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-gdx-char-array.html">GdxCharArray</a></h4>
+</td>
+<td>
+<p>Alias for <a href="#">com.badlogic.gdx.utils.CharArray</a> avoiding name collision with the standard library.</p>
+<code><span class="keyword">typealias </span><span class="identifier">GdxCharArray</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="identifier">CharArray</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-gdx-float-array.html">GdxFloatArray</a></h4>
+</td>
+<td>
+<p>Alias for <a href="#">com.badlogic.gdx.utils.FloatArray</a> avoiding name collision with the standard library.</p>
+<code><span class="keyword">typealias </span><span class="identifier">GdxFloatArray</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="identifier">FloatArray</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-gdx-int-array.html">GdxIntArray</a></h4>
+</td>
+<td>
+<p>Alias for <a href="#">com.badlogic.gdx.utils.IntArray</a> avoiding name collision with the standard library.</p>
+<code><span class="keyword">typealias </span><span class="identifier">GdxIntArray</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="identifier">IntArray</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-gdx-list.html">GdxList</a></h4>
+</td>
+<td>
+<p>Alias for <a href="-pooled-list/index.html">ktx.collections.PooledList</a>. Added for consistency with other collections and factory methods.</p>
+<code><span class="keyword">typealias </span><span class="identifier">GdxList</span><span class="symbol">&lt;</span><span class="identifier">Element</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="-pooled-list/index.html"><span class="identifier">PooledList</span></a><span class="symbol">&lt;</span><span class="identifier">Element</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-gdx-long-array.html">GdxLongArray</a></h4>
+</td>
+<td>
+<p>Alias for <a href="#">com.badlogic.gdx.utils.LongArray</a> avoiding name collision with the standard library.</p>
+<code><span class="keyword">typealias </span><span class="identifier">GdxLongArray</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="identifier">LongArray</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-gdx-map.html">GdxMap</a></h4>
+</td>
+<td>
+<p>Alias for <a href="#">com.badlogic.gdx.utils.ObjectMap</a>. Added for consistency with other collections and factory methods.</p>
+<code><span class="keyword">typealias </span><span class="identifier">GdxMap</span><span class="symbol">&lt;</span><span class="identifier">Key</span><span class="symbol">, </span><span class="identifier">Value</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="identifier">ObjectMap</span><span class="symbol">&lt;</span><span class="identifier">Key</span><span class="symbol">,</span>&nbsp;<span class="identifier">Value</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-gdx-set.html">GdxSet</a></h4>
+</td>
+<td>
+<p>Alias for <a href="#">com.badlogic.gdx.utils.ObjectSet</a>. Added for consistency with other collections and factory methods.</p>
+<code><span class="keyword">typealias </span><span class="identifier">GdxSet</span><span class="symbol">&lt;</span><span class="identifier">Element</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="identifier">ObjectSet</span><span class="symbol">&lt;</span><span class="identifier">Element</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-gdx-short-array.html">GdxShortArray</a></h4>
+</td>
+<td>
+<p>Alias for <a href="#">com.badlogic.gdx.utils.ShortArray</a> avoiding name collision with the standard library.</p>
+<code><span class="keyword">typealias </span><span class="identifier">GdxShortArray</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="identifier">ShortArray</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-node-pool/index.html">NodePool</a></h4>
+</td>
+<td>
+<p>Default and main <a href="-pooled-list/-node/index.html">PooledList</a> pool. Provides and manages node instances. Has no max value - will store nearly
+unlimited freed <a href="-pooled-list/-node/index.html">Node</a> instances and should be cleared manually if necessary.</p>
+<code><span class="keyword">object </span><span class="identifier">NodePool</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Pool</span><span class="symbol">&lt;</span><span class="identifier">Node</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-pooled-list/index.html">PooledList</a></h4>
+</td>
+<td>
+<p>LinkedList equivalent for LibGDX applications that caches its nodes and iterator to generate as little garbage as
+possible. As opposed to LibGDX PooledLinkedList, this list implements <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a> and has more Kotlin-friendly syntax
+for extra utility. This class does not offer operations that usually should not be performed on linked lists - like
+removal by element - but it contains some extra methods that can be used during iteration like <a href="-pooled-list/insert-after.html">insertAfter</a>, <a href="-pooled-list/remove.html">remove</a>
+or <a href="-pooled-list/insert-before.html">insertBefore</a>.</p>
+<code><span class="keyword">class </span><span class="identifier">PooledList</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html"><span class="identifier">MutableIterable</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extensions for External Classes</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-array/index.html">com.badlogic.gdx.utils.Array</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-boolean-array/index.html">com.badlogic.gdx.utils.BooleanArray</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-float-array/index.html">com.badlogic.gdx.utils.FloatArray</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-identity-map/index.html">com.badlogic.gdx.utils.IdentityMap</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-int-array/index.html">com.badlogic.gdx.utils.IntArray</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-int-float-map/index.html">com.badlogic.gdx.utils.IntFloatMap</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-int-float-map.-entry/index.html">com.badlogic.gdx.utils.IntFloatMap.Entry</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-int-int-map/index.html">com.badlogic.gdx.utils.IntIntMap</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-int-int-map.-entry/index.html">com.badlogic.gdx.utils.IntIntMap.Entry</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-int-map/index.html">com.badlogic.gdx.utils.IntMap</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-int-map.-entry/index.html">com.badlogic.gdx.utils.IntMap.Entry</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-long-map.-entry/index.html">com.badlogic.gdx.utils.LongMap.Entry</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-object-int-map.-entry/index.html">com.badlogic.gdx.utils.ObjectIntMap.Entry</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-object-map/index.html">com.badlogic.gdx.utils.ObjectMap</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-object-map.-entry/index.html">com.badlogic.gdx.utils.ObjectMap.Entry</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.utils.-object-set/index.html">com.badlogic.gdx.utils.ObjectSet</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="kotlin.-array/index.html">kotlin.Array</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="kotlin.-boolean-array/index.html">kotlin.BooleanArray</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="kotlin.collections.-iterable/index.html">kotlin.collections.Iterable</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="kotlin.-float-array/index.html">kotlin.FloatArray</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="kotlin.-int-array/index.html">kotlin.IntArray</a></h4>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="default-array-size.html">defaultArraySize</a></h4>
+</td>
+<td>
+<p>Default LibGDX array size used by most constructors.</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">defaultArraySize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="default-load-factor.html">defaultLoadFactor</a></h4>
+</td>
+<td>
+<p>Default LibGDX map and set load factor used by most constructors.</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">defaultLoadFactor</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="default-map-size.html">defaultMapSize</a></h4>
+</td>
+<td>
+<p>Default LibGDX map size used by most constructors.</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">defaultMapSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="default-set-size.html">defaultSetSize</a></h4>
+</td>
+<td>
+<p>Default LibGDX set size used by most constructors.</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">defaultSetSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="flatten.html">flatten</a></h4>
+</td>
+<td>
+<p>Returns a single <a href="-gdx-list.html">GdxList</a> of all elements from all collections in the given <a href="-gdx-list.html">GdxList</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">, </span><span class="identifier">C</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <a href="-gdx-list.html"><span class="identifier">GdxList</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">C</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">flatten</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-gdx-list.html"><span class="identifier">GdxList</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="gdx-array-of.html">gdxArrayOf</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">gdxArrayOf</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$gdxArrayOf(kotlin.Boolean, kotlin.Int)/ordered">ordered</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="ktx.collections$gdxArrayOf(kotlin.Boolean, kotlin.Int)/initialCapacity">initialCapacity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultArraySize<span class="symbol">)</span><span class="symbol">: </span><a href="-gdx-array.html"><span class="identifier">GdxArray</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">gdxArrayOf</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ktx.collections$gdxArrayOf(kotlin.Array((ktx.collections.gdxArrayOf.Type)))/elements">elements</span><span class="symbol">:</span>&nbsp;<span class="identifier">Type</span><span class="symbol">)</span><span class="symbol">: </span><a href="-gdx-array.html"><span class="identifier">GdxArray</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="gdx-identity-map-of.html">gdxIdentityMapOf</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Key</span><span class="symbol">, </span><span class="identifier">Value</span><span class="symbol">&gt;</span> <span class="identifier">gdxIdentityMapOf</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$gdxIdentityMapOf(kotlin.Int, kotlin.Float)/initialCapacity">initialCapacity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultMapSize<span class="symbol">, </span><span class="identifier" id="ktx.collections$gdxIdentityMapOf(kotlin.Int, kotlin.Float)/loadFactor">loadFactor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultLoadFactor<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">IdentityMap</span><span class="symbol">&lt;</span><span class="identifier">Key</span><span class="symbol">,</span>&nbsp;<span class="identifier">Value</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Key</span><span class="symbol">, </span><span class="identifier">Value</span><span class="symbol">&gt;</span> <span class="identifier">gdxIdentityMapOf</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ktx.collections$gdxIdentityMapOf(kotlin.Array((kotlin.Pair((ktx.collections.gdxIdentityMapOf.Key, ktx.collections.gdxIdentityMapOf.Value)))), kotlin.Int, kotlin.Float)/keysToValues">keysToValues</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><span class="identifier">Key</span><span class="symbol">,</span>&nbsp;<span class="identifier">Value</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.collections$gdxIdentityMapOf(kotlin.Array((kotlin.Pair((ktx.collections.gdxIdentityMapOf.Key, ktx.collections.gdxIdentityMapOf.Value)))), kotlin.Int, kotlin.Float)/initialCapacity">initialCapacity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultMapSize<span class="symbol">, </span><span class="identifier" id="ktx.collections$gdxIdentityMapOf(kotlin.Array((kotlin.Pair((ktx.collections.gdxIdentityMapOf.Key, ktx.collections.gdxIdentityMapOf.Value)))), kotlin.Int, kotlin.Float)/loadFactor">loadFactor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultLoadFactor<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">IdentityMap</span><span class="symbol">&lt;</span><span class="identifier">Key</span><span class="symbol">,</span>&nbsp;<span class="identifier">Value</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="gdx-int-float-map.html">gdxIntFloatMap</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">gdxIntFloatMap</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$gdxIntFloatMap(kotlin.Int, kotlin.Float)/initialCapacity">initialCapacity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultMapSize<span class="symbol">, </span><span class="identifier" id="ktx.collections$gdxIntFloatMap(kotlin.Int, kotlin.Float)/loadFactor">loadFactor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultLoadFactor<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">IntFloatMap</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="gdx-int-int-map.html">gdxIntIntMap</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">gdxIntIntMap</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$gdxIntIntMap(kotlin.Int, kotlin.Float)/initialCapacity">initialCapacity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultMapSize<span class="symbol">, </span><span class="identifier" id="ktx.collections$gdxIntIntMap(kotlin.Int, kotlin.Float)/loadFactor">loadFactor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultLoadFactor<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">IntIntMap</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="gdx-int-map.html">gdxIntMap</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Value</span><span class="symbol">&gt;</span> <span class="identifier">gdxIntMap</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$gdxIntMap(kotlin.Int, kotlin.Float)/initialCapacity">initialCapacity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultMapSize<span class="symbol">, </span><span class="identifier" id="ktx.collections$gdxIntMap(kotlin.Int, kotlin.Float)/loadFactor">loadFactor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultLoadFactor<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">IntMap</span><span class="symbol">&lt;</span><span class="identifier">Value</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="gdx-list-of.html">gdxListOf</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <span class="identifier">gdxListOf</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$gdxListOf(com.badlogic.gdx.utils.Pool((ktx.collections.PooledList.Node((ktx.collections.gdxListOf.Type)))))/pool">pool</span><span class="symbol">:</span>&nbsp;<span class="identifier">Pool</span><span class="symbol">&lt;</span><span class="identifier">Node</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;NodePool.pool()<span class="symbol">)</span><span class="symbol">: </span><a href="-pooled-list/index.html"><span class="identifier">PooledList</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <span class="identifier">gdxListOf</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ktx.collections$gdxListOf(kotlin.Array((ktx.collections.gdxListOf.Type)), com.badlogic.gdx.utils.Pool((ktx.collections.PooledList.Node((ktx.collections.gdxListOf.Type)))))/elements">elements</span><span class="symbol">:</span>&nbsp;<span class="identifier">Type</span><span class="symbol">, </span><span class="identifier" id="ktx.collections$gdxListOf(kotlin.Array((ktx.collections.gdxListOf.Type)), com.badlogic.gdx.utils.Pool((ktx.collections.PooledList.Node((ktx.collections.gdxListOf.Type)))))/pool">pool</span><span class="symbol">:</span>&nbsp;<span class="identifier">Pool</span><span class="symbol">&lt;</span><span class="identifier">Node</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;NodePool.pool()<span class="symbol">)</span><span class="symbol">: </span><a href="-pooled-list/index.html"><span class="identifier">PooledList</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="gdx-map-of.html">gdxMapOf</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Key</span><span class="symbol">, </span><span class="identifier">Value</span><span class="symbol">&gt;</span> <span class="identifier">gdxMapOf</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$gdxMapOf(kotlin.Int, kotlin.Float)/initialCapacity">initialCapacity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultMapSize<span class="symbol">, </span><span class="identifier" id="ktx.collections$gdxMapOf(kotlin.Int, kotlin.Float)/loadFactor">loadFactor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultLoadFactor<span class="symbol">)</span><span class="symbol">: </span><a href="-gdx-map.html"><span class="identifier">GdxMap</span></a><span class="symbol">&lt;</span><span class="identifier">Key</span><span class="symbol">,</span>&nbsp;<span class="identifier">Value</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Key</span><span class="symbol">, </span><span class="identifier">Value</span><span class="symbol">&gt;</span> <span class="identifier">gdxMapOf</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ktx.collections$gdxMapOf(kotlin.Array((kotlin.Pair((ktx.collections.gdxMapOf.Key, ktx.collections.gdxMapOf.Value)))), kotlin.Int, kotlin.Float)/keysToValues">keysToValues</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><span class="identifier">Key</span><span class="symbol">,</span>&nbsp;<span class="identifier">Value</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="ktx.collections$gdxMapOf(kotlin.Array((kotlin.Pair((ktx.collections.gdxMapOf.Key, ktx.collections.gdxMapOf.Value)))), kotlin.Int, kotlin.Float)/initialCapacity">initialCapacity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultMapSize<span class="symbol">, </span><span class="identifier" id="ktx.collections$gdxMapOf(kotlin.Array((kotlin.Pair((ktx.collections.gdxMapOf.Key, ktx.collections.gdxMapOf.Value)))), kotlin.Int, kotlin.Float)/loadFactor">loadFactor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultLoadFactor<span class="symbol">)</span><span class="symbol">: </span><a href="-gdx-map.html"><span class="identifier">GdxMap</span></a><span class="symbol">&lt;</span><span class="identifier">Key</span><span class="symbol">,</span>&nbsp;<span class="identifier">Value</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="gdx-set-of.html">gdxSetOf</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <span class="identifier">gdxSetOf</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$gdxSetOf(kotlin.Int, kotlin.Float)/initialCapacity">initialCapacity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultSetSize<span class="symbol">, </span><span class="identifier" id="ktx.collections$gdxSetOf(kotlin.Int, kotlin.Float)/loadFactor">loadFactor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultLoadFactor<span class="symbol">)</span><span class="symbol">: </span><a href="-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <span class="identifier">gdxSetOf</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ktx.collections$gdxSetOf(kotlin.Array((ktx.collections.gdxSetOf.Type)), kotlin.Int, kotlin.Float)/elements">elements</span><span class="symbol">:</span>&nbsp;<span class="identifier">Type</span><span class="symbol">, </span><span class="identifier" id="ktx.collections$gdxSetOf(kotlin.Array((ktx.collections.gdxSetOf.Type)), kotlin.Int, kotlin.Float)/initialCapacity">initialCapacity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultSetSize<span class="symbol">, </span><span class="identifier" id="ktx.collections$gdxSetOf(kotlin.Array((ktx.collections.gdxSetOf.Type)), kotlin.Int, kotlin.Float)/loadFactor">loadFactor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultLoadFactor<span class="symbol">)</span><span class="symbol">: </span><a href="-gdx-set.html"><span class="identifier">GdxSet</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>pool - assets</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">assets</a>&nbsp;/&nbsp;<a href="index.html">ktx.assets</a>&nbsp;/&nbsp;<a href="./pool.html">pool</a><br/>
+<br/>
+<h1>pool</h1>
+<a name="ktx.assets$pool(kotlin.Int, kotlin.Int, kotlin.Function0((ktx.assets.pool.Type)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <span class="identifier">pool</span><span class="symbol">(</span><span class="identifier" id="ktx.assets$pool(kotlin.Int, kotlin.Int, kotlin.Function0((ktx.assets.pool.Type)))/initialCapacity">initialCapacity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;16<span class="symbol">, </span><span class="identifier" id="ktx.assets$pool(kotlin.Int, kotlin.Int, kotlin.Function0((ktx.assets.pool.Type)))/max">max</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Int.MAX_VALUE<span class="symbol">, </span><span class="keyword">crossinline</span> <span class="identifier" id="ktx.assets$pool(kotlin.Int, kotlin.Int, kotlin.Function0((ktx.assets.pool.Type)))/provider">provider</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Type</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Pool</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code>
+<h3>Parameters</h3>
+<p><a name="initialCapacity"></a>
+<code>initialCapacity</code> - initial size of the backing collection.</p>
+<p><a name="max"></a>
+<code>max</code> - max amount stored in the pool. When exceeded, freed objects are no longer accepted.</p>
+<p><a name="provider"></a>
+<code>provider</code> - creates instances of the requested objects.</p>
+<p><strong>Return</strong><br/>
+a new <a href="#">Pool</a> instance, creating the object with the passed provider.</p>
+</BODY>
+</HTML>

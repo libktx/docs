@@ -1,0 +1,107 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ktx.graphics - graphics</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">graphics</a>&nbsp;/&nbsp;<a href="./index.html">ktx.graphics</a><br/>
+<br/>
+<h2>Package ktx.graphics</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-letterboxing-viewport/index.html">LetterboxingViewport</a></h4>
+</td>
+<td>
+<p>Combines <a href="#">screen</a> and
+<a href="#">fit</a> viewports. Similarly to ScreenViewport, world size is changed on
+each update (resize), so <a href="-letterboxing-viewport/update.html">update</a> should be generally called with <code>true</code> parameter (camera should be centered).
+Tries to keep the passed aspect ratio by applying letterboxing - horizontal or vertical black bars.</p>
+<code><span class="keyword">class </span><span class="identifier">LetterboxingViewport</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ScalingViewport</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extensions for External Classes</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.graphics.-camera/index.html">com.badlogic.gdx.graphics.Camera</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.graphics.-color/index.html">com.badlogic.gdx.graphics.Color</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.graphics.g2d.-bitmap-font/index.html">com.badlogic.gdx.graphics.g2d.BitmapFont</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="com.badlogic.gdx.graphics.glutils.-shape-renderer/index.html">com.badlogic.gdx.graphics.glutils.ShapeRenderer</a></h4>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="begin.html">begin</a></h4>
+</td>
+<td>
+<p>Automatically calls <a href="#">Batch.begin</a> with the provided matrix</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">B</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Batch</span><span class="symbol">&gt;</span> <span class="identifier">B</span><span class="symbol">.</span><span class="identifier">begin</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$begin(ktx.graphics.begin.B, com.badlogic.gdx.math.Matrix4)/projectionMatrix">projectionMatrix</span><span class="symbol">:</span>&nbsp;<span class="identifier">Matrix4</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Sets the batch's projection matrix to the camera's <a href="#">Camera.combined</a> matrix and calls <a href="#">Batch.begin</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">B</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Batch</span><span class="symbol">&gt;</span> <span class="identifier">B</span><span class="symbol">.</span><span class="identifier">begin</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$begin(ktx.graphics.begin.B, com.badlogic.gdx.graphics.Camera)/camera">camera</span><span class="symbol">:</span>&nbsp;<span class="identifier">Camera</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="color.html">color</a></h4>
+</td>
+<td>
+<p>Factory methods for LibGDX <a href="#">Color</a> class. Allows to use named parameters.</p>
+<code><span class="keyword">fun </span><span class="identifier">color</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$color(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/red">red</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.graphics$color(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/green">green</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.graphics$color(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/blue">blue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">, </span><span class="identifier" id="ktx.graphics$color(kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)/alpha">alpha</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1f<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Color</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="take-screenshot.html">takeScreenshot</a></h4>
+</td>
+<td>
+<p>Takes a screenshot of the entire screen and saves the image using the given <a href="take-screenshot.html#ktx.graphics$takeScreenshot(com.badlogic.gdx.files.FileHandle)/fileHandle">fileHandle</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">takeScreenshot</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$takeScreenshot(com.badlogic.gdx.files.FileHandle)/fileHandle">fileHandle</span><span class="symbol">:</span>&nbsp;<span class="identifier">FileHandle</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="use.html">use</a></h4>
+</td>
+<td>
+<p>Automatically calls <a href="#">Batch.begin</a> and <a href="#">Batch.end</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">B</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Batch</span><span class="symbol">&gt;</span> <span class="identifier">B</span><span class="symbol">.</span><span class="identifier">use</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$use(ktx.graphics.use.B, com.badlogic.gdx.math.Matrix4, kotlin.Function1((ktx.graphics.use.B, kotlin.Unit)))/projectionMatrix">projectionMatrix</span><span class="symbol">:</span>&nbsp;<span class="identifier">Matrix4</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ktx.graphics$use(ktx.graphics.use.B, com.badlogic.gdx.math.Matrix4, kotlin.Function1((ktx.graphics.use.B, kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">B</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">B</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Batch</span><span class="symbol">&gt;</span> <span class="identifier">B</span><span class="symbol">.</span><span class="identifier">use</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$use(ktx.graphics.use.B, com.badlogic.gdx.graphics.Camera, kotlin.Function1((ktx.graphics.use.B, kotlin.Unit)))/camera">camera</span><span class="symbol">:</span>&nbsp;<span class="identifier">Camera</span><span class="symbol">, </span><span class="identifier" id="ktx.graphics$use(ktx.graphics.use.B, com.badlogic.gdx.graphics.Camera, kotlin.Function1((ktx.graphics.use.B, kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">B</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Automatically calls <a href="#">ShaderProgram.begin</a> and <a href="#">ShaderProgram.end</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">S</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ShaderProgram</span><span class="symbol">&gt;</span> <span class="identifier">S</span><span class="symbol">.</span><span class="identifier">use</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$use(ktx.graphics.use.S, kotlin.Function1((ktx.graphics.use.S, kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">S</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Automatically calls <a href="#">GLFrameBuffer.begin</a> and <a href="#">GLFrameBuffer.end</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">B</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">GLFrameBuffer</span><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <span class="identifier">B</span><span class="symbol">.</span><span class="identifier">use</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$use(ktx.graphics.use.B, kotlin.Function1((ktx.graphics.use.B, kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">B</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Automatically calls <a href="#">ShapeRenderer.begin</a> and <a href="#">ShapeRenderer.end</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">SR</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ShapeRenderer</span><span class="symbol">&gt;</span> <span class="identifier">SR</span><span class="symbol">.</span><span class="identifier">use</span><span class="symbol">(</span><span class="identifier" id="ktx.graphics$use(ktx.graphics.use.SR, com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType, kotlin.Function1((ktx.graphics.use.SR, kotlin.Unit)))/type">type</span><span class="symbol">:</span>&nbsp;<span class="identifier">ShapeType</span><span class="symbol">, </span><span class="identifier" id="ktx.graphics$use(ktx.graphics.use.SR, com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType, kotlin.Function1((ktx.graphics.use.SR, kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">SR</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

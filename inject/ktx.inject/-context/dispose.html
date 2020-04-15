@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Context.dispose - inject</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">inject</a>&nbsp;/&nbsp;<a href="../index.html">ktx.inject</a>&nbsp;/&nbsp;<a href="index.html">Context</a>&nbsp;/&nbsp;<a href="./dispose.html">dispose</a><br/>
+<br/>
+<h1>dispose</h1>
+<a name="ktx.inject.Context$dispose()"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">dispose</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Disposes of all <a href="#">Disposable</a> singletons and providers registered in the context and removes them. Note that if
+registered provider <em>provides</em> <a href="#">Disposable</a> instances, but it does not track the resources and does not implement
+<a href="#">Disposable</a> itself, the provided assets will not be disposed by this method. <a href="index.html">Context</a> does not track all injected
+assets: only directly registered objects are disposed. <a href="clear.html">clear</a> is called after all assets are disposed. Errors are
+caught and logged.</p>
+<pre><code>    bindSingleton(SpriteBatch()) // SpriteBatch would be disposed.
+    bind { BitmapFont() }        // Each provided BitmapFont would have to be disposed manually.</code></pre>
+<p><strong>See Also</strong><br/>
+<p><a href="clear.html">clear</a></p>
+</p>
+</BODY>
+</HTML>
