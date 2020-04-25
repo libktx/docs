@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>visProgressBar - vis</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">vis</a>&nbsp;/&nbsp;<a href="../index.html">ktx.scene2d.vis</a>&nbsp;/&nbsp;<a href="index.html">ktx.scene2d.KWidget</a>&nbsp;/&nbsp;<a href="./vis-progress-bar.html">visProgressBar</a><br/>
+<br/>
+<h1>visProgressBar</h1>
+<a name="ktx.scene2d.vis$visProgressBar(ktx.scene2d.KWidget((ktx.scene2d.vis.visProgressBar.S)), kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Boolean, kotlin.String, kotlin.Function2((com.kotcrab.vis.ui.widget.VisProgressBar, ktx.scene2d.vis.visProgressBar.S, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">S</span><span class="symbol">&gt;</span> <span class="identifier">KWidget</span><span class="symbol">&lt;</span><span class="identifier">S</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">visProgressBar</span><span class="symbol">(</span><span class="identifier" id="ktx.scene2d.vis$visProgressBar(ktx.scene2d.KWidget((ktx.scene2d.vis.visProgressBar.S)), kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Boolean, kotlin.String, kotlin.Function2((com.kotcrab.vis.ui.widget.VisProgressBar, ktx.scene2d.vis.visProgressBar.S, kotlin.Unit)))/min">min</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.scene2d.vis$visProgressBar(ktx.scene2d.KWidget((ktx.scene2d.vis.visProgressBar.S)), kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Boolean, kotlin.String, kotlin.Function2((com.kotcrab.vis.ui.widget.VisProgressBar, ktx.scene2d.vis.visProgressBar.S, kotlin.Unit)))/max">max</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;100f<span class="symbol">, </span><span class="identifier" id="ktx.scene2d.vis$visProgressBar(ktx.scene2d.KWidget((ktx.scene2d.vis.visProgressBar.S)), kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Boolean, kotlin.String, kotlin.Function2((com.kotcrab.vis.ui.widget.VisProgressBar, ktx.scene2d.vis.visProgressBar.S, kotlin.Unit)))/step">step</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1f<span class="symbol">, </span><span class="identifier" id="ktx.scene2d.vis$visProgressBar(ktx.scene2d.KWidget((ktx.scene2d.vis.visProgressBar.S)), kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Boolean, kotlin.String, kotlin.Function2((com.kotcrab.vis.ui.widget.VisProgressBar, ktx.scene2d.vis.visProgressBar.S, kotlin.Unit)))/vertical">vertical</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="identifier" id="ktx.scene2d.vis$visProgressBar(ktx.scene2d.KWidget((ktx.scene2d.vis.visProgressBar.S)), kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Boolean, kotlin.String, kotlin.Function2((com.kotcrab.vis.ui.widget.VisProgressBar, ktx.scene2d.vis.visProgressBar.S, kotlin.Unit)))/style">style</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;if (vertical) defaultVerticalStyle else defaultHorizontalStyle<span class="symbol">, </span><span class="identifier" id="ktx.scene2d.vis$visProgressBar(ktx.scene2d.KWidget((ktx.scene2d.vis.visProgressBar.S)), kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Boolean, kotlin.String, kotlin.Function2((com.kotcrab.vis.ui.widget.VisProgressBar, ktx.scene2d.vis.visProgressBar.S, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<span class="identifier">VisProgressBar</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">S</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">VisProgressBar</span></code>
+<h3>Parameters</h3>
+<p><a name="min"></a>
+<code>min</code> - minimum value displayed by the bar. Defaults to 0.</p>
+<p><a name="min"></a>
+<code>min</code> - maximum value displayed by the bar. Defaults to 1.</p>
+<p><a name="step"></a>
+<code>step</code> - the size of a single step between two values. Defaults to 0.01.</p>
+<p><a name="vertical"></a>
+<code>vertical</code> - true if the widget is vertical, false if horizontal.</p>
+<p><a name="style"></a>
+<code>style</code> - name of the widget style. Defaults to <a href="#">defaultVerticalStyle</a> if the widget is vertical or
+<a href="#">defaultHorizontalStyle</a> if the widget is horizontal.</p>
+<p><a name="init"></a>
+<code>init</code> - will be invoked with the widget as "this". Consumes actor container (usually a <a href="#">Cell</a> or <a href="#">Node</a>) that
+contains the widget. Might consume the actor itself if this group does not keep actors in dedicated containers.
+Inlined.</p>
+<p><strong>Return</strong><br/>
+a <a href="#">VisProgressBar</a> instance added to this group.</p>
+</BODY>
+</HTML>

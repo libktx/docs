@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>tooltip - scene2d</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">scene2d</a>&nbsp;/&nbsp;<a href="../index.html">ktx.scene2d</a>&nbsp;/&nbsp;<a href="index.html">com.badlogic.gdx.scenes.scene2d.Actor</a>&nbsp;/&nbsp;<a href="./tooltip.html">tooltip</a><br/>
+<br/>
+<h1>tooltip</h1>
+<a name="ktx.scene2d$tooltip(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.String, com.badlogic.gdx.scenes.scene2d.ui.Skin, com.badlogic.gdx.scenes.scene2d.ui.TooltipManager, kotlin.Function2((ktx.scene2d.KTableWidget, com.badlogic.gdx.scenes.scene2d.ui.Tooltip(()), kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="identifier">Actor</span><span class="symbol">.</span><span class="identifier">tooltip</span><span class="symbol">(</span><span class="identifier" id="ktx.scene2d$tooltip(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.String, com.badlogic.gdx.scenes.scene2d.ui.Skin, com.badlogic.gdx.scenes.scene2d.ui.TooltipManager, kotlin.Function2((ktx.scene2d.KTableWidget, com.badlogic.gdx.scenes.scene2d.ui.Tooltip(()), kotlin.Unit)))/background">background</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="ktx.scene2d$tooltip(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.String, com.badlogic.gdx.scenes.scene2d.ui.Skin, com.badlogic.gdx.scenes.scene2d.ui.TooltipManager, kotlin.Function2((ktx.scene2d.KTableWidget, com.badlogic.gdx.scenes.scene2d.ui.Tooltip(()), kotlin.Unit)))/skin">skin</span><span class="symbol">:</span>&nbsp;<span class="identifier">Skin</span>&nbsp;<span class="symbol">=</span>&nbsp;Scene2DSkin.defaultSkin<span class="symbol">, </span><span class="identifier" id="ktx.scene2d$tooltip(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.String, com.badlogic.gdx.scenes.scene2d.ui.Skin, com.badlogic.gdx.scenes.scene2d.ui.TooltipManager, kotlin.Function2((ktx.scene2d.KTableWidget, com.badlogic.gdx.scenes.scene2d.ui.Tooltip(()), kotlin.Unit)))/tooltipManager">tooltipManager</span><span class="symbol">:</span>&nbsp;<span class="identifier">TooltipManager</span>&nbsp;<span class="symbol">=</span>&nbsp;TooltipManager.getInstance()<span class="symbol">, </span><span class="identifier" id="ktx.scene2d$tooltip(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.String, com.badlogic.gdx.scenes.scene2d.ui.Skin, com.badlogic.gdx.scenes.scene2d.ui.TooltipManager, kotlin.Function2((ktx.scene2d.KTableWidget, com.badlogic.gdx.scenes.scene2d.ui.Tooltip(()), kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="../-k-table-widget/index.html"><span class="identifier">KTableWidget</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">Tooltip</span><span class="symbol">&lt;</span><a href="../-k-table-widget/index.html"><span class="identifier">KTableWidget</span></a><span class="symbol">&gt;</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Tooltip</span><span class="symbol">&lt;</span><a href="../-k-table-widget/index.html"><span class="identifier">KTableWidget</span></a><span class="symbol">&gt;</span></code>
+<p>Adds a new <a href="#">Tooltip</a> to this actor, storing a flexible <a href="#">Table</a> widget.</p>
+<h3>Parameters</h3>
+<p><a name="background"></a>
+<code>background</code> - optional name of a drawable which will be extracted from the <a href="#">Skin</a> and set as the main table's
+background. Defaults to null.</p>
+<p><a name="skin"></a>
+<code>skin</code> - <a href="#">Skin</a> instance which contains the background. Will be passed to the <a href="#">Table</a>.</p>
+<p><a name="tooltipManager"></a>
+<code>tooltipManager</code> - manages tooltips and their settings. Defaults to the global manager obtained with
+<a href="#">TooltipManager.getInstance</a>.</p>
+<p><a name="init"></a>
+<code>init</code> - inlined building block, which allows to manage main <a href="#">Table</a> content and fill it with children. Takes the
+<a href="#">Tooltip</a> as its parameter, so it can be modified with the <em>it</em> reference. See usage examples.</p>
+<p><strong>Return</strong><br/>
+a new <a href="#">Tooltip</a> instance added to this actor.</p>
+</BODY>
+</HTML>

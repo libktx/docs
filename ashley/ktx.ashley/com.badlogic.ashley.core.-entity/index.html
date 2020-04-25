@@ -12,6 +12,14 @@
 <tbody>
 <tr>
 <td>
+<h4><a href="add-component.html">addComponent</a></h4>
+</td>
+<td>
+<p>Adds a <a href="#">Component</a> to this <a href="#">Entity</a>. If a <a href="#">Component</a> of the same type already exists, it will be replaced.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Component</span><span class="symbol">&gt;</span> <span class="identifier">Entity</span><span class="symbol">.</span><span class="identifier">addComponent</span><span class="symbol">(</span><span class="identifier" id="ktx.ashley$addComponent(com.badlogic.ashley.core.Entity, com.badlogic.ashley.core.Engine, kotlin.Function1((ktx.ashley.addComponent.T, kotlin.Unit)))/engine">engine</span><span class="symbol">:</span>&nbsp;<span class="identifier">Engine</span><span class="symbol">, </span><span class="identifier" id="ktx.ashley$addComponent(com.badlogic.ashley.core.Entity, com.badlogic.ashley.core.Engine, kotlin.Function1((ktx.ashley.addComponent.T, kotlin.Unit)))/configure">configure</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
 <h4><a href="contains.html">contains</a></h4>
 </td>
 <td>
@@ -43,6 +51,14 @@
 <td>
 <p>Checks whether the <a href="#">Entity</a> does not have the specified <a href="#">Component</a>.</p>
 <code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Component</span><span class="symbol">&gt;</span> <span class="identifier">Entity</span><span class="symbol">.</span><span class="identifier">hasNot</span><span class="symbol">(</span><span class="identifier" id="ktx.ashley$hasNot(com.badlogic.ashley.core.Entity, com.badlogic.ashley.core.ComponentMapper((ktx.ashley.hasNot.T)))/mapper">mapper</span><span class="symbol">:</span>&nbsp;<span class="identifier">ComponentMapper</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="plus-assign.html">plusAssign</a></h4>
+</td>
+<td>
+<p>Adds a constructed <a href="#">Component</a> to this <a href="#">Entity</a>. If a <a href="#">Component</a> of the same type exists, it will be replaced.</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">Entity</span><span class="symbol">.</span><span class="identifier">plusAssign</span><span class="symbol">(</span><span class="identifier" id="ktx.ashley$plusAssign(com.badlogic.ashley.core.Entity, com.badlogic.ashley.core.Component)/component">component</span><span class="symbol">:</span>&nbsp;<span class="identifier">Component</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>

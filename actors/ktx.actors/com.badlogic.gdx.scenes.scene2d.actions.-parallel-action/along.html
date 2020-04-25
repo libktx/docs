@@ -11,11 +11,14 @@
 <a name="ktx.actors$along(com.badlogic.gdx.scenes.scene2d.actions.ParallelAction, com.badlogic.gdx.scenes.scene2d.Action)"></a>
 <code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="identifier">ParallelAction</span><span class="symbol">.</span><span class="identifier">along</span><span class="symbol">(</span><span class="identifier" id="ktx.actors$along(com.badlogic.gdx.scenes.scene2d.actions.ParallelAction, com.badlogic.gdx.scenes.scene2d.Action)/action">action</span><span class="symbol">:</span>&nbsp;<span class="identifier">Action</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ParallelAction</span></code>
 <p>Adds <a href="along.html#ktx.actors$along(com.badlogic.gdx.scenes.scene2d.actions.ParallelAction, com.badlogic.gdx.scenes.scene2d.Action)/action">action</a> to this <a href="#">ParallelAction</a>, so long as this isn't a <a href="#">SequenceAction</a>. If it is a <a href="#">SequenceAction</a>,
-<a href="../com.badlogic.gdx.scenes.scene2d.-action/along.html">@see Action.along</a>.</p>
+it creates a new <a href="#">ParallelAction</a> executing both actions in parallel.</p>
 <h3>Parameters</h3>
 <p><a name="action"></a>
 <code>action</code> - will be added to this <a href="#">ParallelAction</a>.</p>
 <p><strong>Return</strong><br/>
-<a href="#">ParallelAction</a> this <a href="#">ParallelAction</a>, now containing <a href="along.html#ktx.actors$along(com.badlogic.gdx.scenes.scene2d.actions.ParallelAction, com.badlogic.gdx.scenes.scene2d.Action)/action">action</a>]</p>
+this <a href="#">ParallelAction</a>, now containing <a href="along.html#ktx.actors$along(com.badlogic.gdx.scenes.scene2d.actions.ParallelAction, com.badlogic.gdx.scenes.scene2d.Action)/action">action</a>, or a new <a href="#">ParallelAction</a> if this is a <a href="#">SequenceAction</a>.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../com.badlogic.gdx.scenes.scene2d.-action/div.html">div</a></p>
+</p>
 </BODY>
 </HTML>

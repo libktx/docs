@@ -32,6 +32,7 @@ $dokka.location:ktx.actors$plusAssign(com.badlogic.gdx.scenes.scene2d.Stage, com
 $dokka.location:ktx.actors$plusAssign(com.badlogic.gdx.scenes.scene2d.Stage, com.badlogic.gdx.scenes.scene2d.Actor)ktx.actors/com.badlogic.gdx.scenes.scene2d.-stage/plus-assign.html
 $dokka.location:ktx.actors$plusAssign(com.badlogic.gdx.scenes.scene2d.actions.ParallelAction, com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.actions.-parallel-action/plus-assign.html
 $dokka.location:ktx.actors$plusAssign(com.badlogic.gdx.scenes.scene2d.actions.SequenceAction, com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.actions.-sequence-action/plus-assign.html
+$dokka.location:ktx.actors$repeat(com.badlogic.gdx.scenes.scene2d.Action, kotlin.Int)ktx.actors/com.badlogic.gdx.scenes.scene2d.-action/repeat.html
 $dokka.location:ktx.actors$repeatForever(com.badlogic.gdx.scenes.scene2d.Action)ktx.actors/com.badlogic.gdx.scenes.scene2d.-action/repeat-forever.html
 $dokka.location:ktx.actors$setKeyboardFocus(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Boolean)ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/set-keyboard-focus.html
 $dokka.location:ktx.actors$setPosition(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.Int, kotlin.Int)ktx.actors/com.badlogic.gdx.scenes.scene2d.-actor/set-position.html

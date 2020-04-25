@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>box - box2d</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">box2d</a>&nbsp;/&nbsp;<a href="index.html">ktx.box2d</a>&nbsp;/&nbsp;<a href="./box.html">box</a><br/>
+<br/>
+<h1>box</h1>
+<a name="ktx.box2d$box(ktx.box2d.BodyDefinition, kotlin.Float, kotlin.Float, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.PolygonShape, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><a href="-body-definition/index.html"><span class="identifier">BodyDefinition</span></a><span class="symbol">.</span><span class="identifier">box</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d$box(ktx.box2d.BodyDefinition, kotlin.Float, kotlin.Float, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.PolygonShape, kotlin.Unit)))/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1f<span class="symbol">, </span><span class="identifier" id="ktx.box2d$box(ktx.box2d.BodyDefinition, kotlin.Float, kotlin.Float, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.PolygonShape, kotlin.Unit)))/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1f<span class="symbol">, </span><span class="identifier" id="ktx.box2d$box(ktx.box2d.BodyDefinition, kotlin.Float, kotlin.Float, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.PolygonShape, kotlin.Unit)))/position">position</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span>&nbsp;<span class="symbol">=</span>&nbsp;Vector2.Zero<span class="symbol">, </span><span class="identifier" id="ktx.box2d$box(ktx.box2d.BodyDefinition, kotlin.Float, kotlin.Float, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.PolygonShape, kotlin.Unit)))/angle">angle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0f<span class="symbol">, </span><span class="identifier" id="ktx.box2d$box(ktx.box2d.BodyDefinition, kotlin.Float, kotlin.Float, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.PolygonShape, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">PolygonShape</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><a href="-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a></code>
+<p>Utility builder method for constructing fixtures with <a href="#">PolygonShape</a> set as box. Note that - contrary to
+<a href="#">PolygonShape.setAsBox</a> methods - this method consumes actual <em>not halved</em> box width and height sizes.</p>
+<h3>Parameters</h3>
+<p><a name="width"></a>
+<code>width</code> - width of the box shape. Defaults to 1f.</p>
+<p><a name="height"></a>
+<code>height</code> - height of the box shape. Defaults to 1f</p>
+<p><a name="position"></a>
+<code>position</code> - offset of the box position in relation to body center. Defaults to (0f, 0f).</p>
+<p><a name="angle"></a>
+<code>angle</code> - angle of the box in radians. Defaults to 0f.</p>
+<p><a name="init"></a>
+<code>init</code> - inlined. Allows to modify <a href="#">FixtureDef</a> properties. Receives <a href="#">PolygonShape</a> as first (<code>it</code>) argument.</p>
+<p><strong>Return</strong><br/>
+<a href="-fixture-definition/index.html">FixtureDefinition</a> with <a href="#">Fixture</a> properties.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">PolygonShape.setAsBox</a></p>
+</p>
+</BODY>
+</HTML>

@@ -53,14 +53,6 @@
 </tr>
 <tr>
 <td>
-<h4><a href="-gdx-list.html">GdxList</a></h4>
-</td>
-<td>
-<p>Alias for <a href="-pooled-list/index.html">ktx.collections.PooledList</a>. Added for consistency with other collections and factory methods.</p>
-<code><span class="keyword">typealias </span><span class="identifier">GdxList</span><span class="symbol">&lt;</span><span class="identifier">Element</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="-pooled-list/index.html"><span class="identifier">PooledList</span></a><span class="symbol">&lt;</span><span class="identifier">Element</span><span class="symbol">&gt;</span></code></td>
-</tr>
-<tr>
-<td>
 <h4><a href="-gdx-long-array.html">GdxLongArray</a></h4>
 </td>
 <td>
@@ -90,27 +82,6 @@
 <td>
 <p>Alias for <a href="#">com.badlogic.gdx.utils.ShortArray</a> avoiding name collision with the standard library.</p>
 <code><span class="keyword">typealias </span><span class="identifier">GdxShortArray</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="identifier">ShortArray</span></code></td>
-</tr>
-<tr>
-<td>
-<h4><a href="-node-pool/index.html">NodePool</a></h4>
-</td>
-<td>
-<p>Default and main <a href="-pooled-list/-node/index.html">PooledList</a> pool. Provides and manages node instances. Has no max value - will store nearly
-unlimited freed <a href="-pooled-list/-node/index.html">Node</a> instances and should be cleared manually if necessary.</p>
-<code><span class="keyword">object </span><span class="identifier">NodePool</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Pool</span><span class="symbol">&lt;</span><span class="identifier">Node</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
-</tr>
-<tr>
-<td>
-<h4><a href="-pooled-list/index.html">PooledList</a></h4>
-</td>
-<td>
-<p>LinkedList equivalent for LibGDX applications that caches its nodes and iterator to generate as little garbage as
-possible. As opposed to LibGDX PooledLinkedList, this list implements <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a> and has more Kotlin-friendly syntax
-for extra utility. This class does not offer operations that usually should not be performed on linked lists - like
-removal by element - but it contains some extra methods that can be used during iteration like <a href="-pooled-list/insert-after.html">insertAfter</a>, <a href="-pooled-list/remove.html">remove</a>
-or <a href="-pooled-list/insert-before.html">insertBefore</a>.</p>
-<code><span class="keyword">class </span><span class="identifier">PooledList</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html"><span class="identifier">MutableIterable</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -308,14 +279,6 @@ or <a href="-pooled-list/insert-before.html">insertBefore</a>.</p>
 <tbody>
 <tr>
 <td>
-<h4><a href="flatten.html">flatten</a></h4>
-</td>
-<td>
-<p>Returns a single <a href="-gdx-list.html">GdxList</a> of all elements from all collections in the given <a href="-gdx-list.html">GdxList</a>.</p>
-<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">, </span><span class="identifier">C</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span> <a href="-gdx-list.html"><span class="identifier">GdxList</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">C</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">flatten</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-gdx-list.html"><span class="identifier">GdxList</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
-</tr>
-<tr>
-<td>
 <h4><a href="gdx-array-of.html">gdxArrayOf</a></h4>
 </td>
 <td>
@@ -350,14 +313,6 @@ or <a href="-pooled-list/insert-before.html">insertBefore</a>.</p>
 </td>
 <td>
 <code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Value</span><span class="symbol">&gt;</span> <span class="identifier">gdxIntMap</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$gdxIntMap(kotlin.Int, kotlin.Float)/initialCapacity">initialCapacity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultMapSize<span class="symbol">, </span><span class="identifier" id="ktx.collections$gdxIntMap(kotlin.Int, kotlin.Float)/loadFactor">loadFactor</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultLoadFactor<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">IntMap</span><span class="symbol">&lt;</span><span class="identifier">Value</span><span class="symbol">&gt;</span></code></td>
-</tr>
-<tr>
-<td>
-<h4><a href="gdx-list-of.html">gdxListOf</a></h4>
-</td>
-<td>
-<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <span class="identifier">gdxListOf</span><span class="symbol">(</span><span class="identifier" id="ktx.collections$gdxListOf(com.badlogic.gdx.utils.Pool((ktx.collections.PooledList.Node((ktx.collections.gdxListOf.Type)))))/pool">pool</span><span class="symbol">:</span>&nbsp;<span class="identifier">Pool</span><span class="symbol">&lt;</span><span class="identifier">Node</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;NodePool.pool()<span class="symbol">)</span><span class="symbol">: </span><a href="-pooled-list/index.html"><span class="identifier">PooledList</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code><br/>
-<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span> <span class="identifier">gdxListOf</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ktx.collections$gdxListOf(kotlin.Array((ktx.collections.gdxListOf.Type)), com.badlogic.gdx.utils.Pool((ktx.collections.PooledList.Node((ktx.collections.gdxListOf.Type)))))/elements">elements</span><span class="symbol">:</span>&nbsp;<span class="identifier">Type</span><span class="symbol">, </span><span class="identifier" id="ktx.collections$gdxListOf(kotlin.Array((ktx.collections.gdxListOf.Type)), com.badlogic.gdx.utils.Pool((ktx.collections.PooledList.Node((ktx.collections.gdxListOf.Type)))))/pool">pool</span><span class="symbol">:</span>&nbsp;<span class="identifier">Pool</span><span class="symbol">&lt;</span><span class="identifier">Node</span><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;NodePool.pool()<span class="symbol">)</span><span class="symbol">: </span><a href="-pooled-list/index.html"><span class="identifier">PooledList</span></a><span class="symbol">&lt;</span><span class="identifier">Type</span><span class="symbol">&gt;</span></code></td>
 </tr>
 <tr>
 <td>

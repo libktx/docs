@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>visList - vis</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">vis</a>&nbsp;/&nbsp;<a href="../index.html">ktx.scene2d.vis</a>&nbsp;/&nbsp;<a href="index.html">ktx.scene2d.KWidget</a>&nbsp;/&nbsp;<a href="./vis-list.html">visList</a><br/>
+<br/>
+<h1>visList</h1>
+<a name="ktx.scene2d.vis$visList(ktx.scene2d.KWidget((kotlin.Any)), kotlin.String, kotlin.Function1((ktx.scene2d.vis.KVisList((ktx.scene2d.vis.visList.I)), kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">I</span><span class="symbol">&gt;</span> <span class="identifier">KWidget</span><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">visList</span><span class="symbol">(</span><span class="identifier" id="ktx.scene2d.vis$visList(ktx.scene2d.KWidget((kotlin.Any)), kotlin.String, kotlin.Function1((ktx.scene2d.vis.KVisList((ktx.scene2d.vis.visList.I)), kotlin.Unit)))/style">style</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultStyle<span class="symbol">, </span><span class="identifier" id="ktx.scene2d.vis$visList(ktx.scene2d.KWidget((kotlin.Any)), kotlin.String, kotlin.Function1((ktx.scene2d.vis.KVisList((ktx.scene2d.vis.visList.I)), kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="../-k-vis-list/index.html"><span class="identifier">KVisList</span></a><span class="symbol">&lt;</span><span class="identifier">I</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><a href="../-k-vis-list/index.html"><span class="identifier">KVisList</span></a><span class="symbol">&lt;</span><span class="identifier">I</span><span class="symbol">&gt;</span></code>
+<h3>Parameters</h3>
+<p><a name="style"></a>
+<code>style</code> - name of the widget style. Defaults to <a href="#">defaultStyle</a>.</p>
+<p><a name="init"></a>
+<code>init</code> - will be invoked with the widget as "this". Note that in contrary to other widgets, this <a href="vis-list.html#ktx.scene2d.vis$visList(ktx.scene2d.KWidget((kotlin.Any)), kotlin.String, kotlin.Function1((ktx.scene2d.vis.KVisList((ktx.scene2d.vis.visList.I)), kotlin.Unit)))/init">init</a> function
+has no parameters. If you need to access <a href="#">Cell</a> or <a href="#">Node</a> that this list is in, use <a href="#">KTable.cell</a>, <a href="#">KTable.inCell</a>,
+<a href="#">KTree.node</a> or <a href="#">KTree.inNode</a>. Allows to fill list items.</p>
+<p><a name="I"></a>
+<code>I</code> - type of items stored by this widget. Usually items are converted to string and displayed.</p>
+<p><strong>Return</strong><br/>
+a <a href="#">VisList</a> widget instance added to this group.</p>
+</BODY>
+</HTML>

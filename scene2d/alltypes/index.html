@@ -36,7 +36,7 @@ included in an internal <a href="#">ButtonGroup</a>.</p>
 <tr>
 <h5><a href="../ktx.scene2d/-k-group/index.html">ktx.scene2d.KGroup</a></h5>
 <p>Common interface applied to widgets that extend <a href="#">WidgetGroup</a> or <a href="#">Group</a> and keep their children in an internal
-collection.</p>
+collection with no specialized containers such as <a href="#">Cell</a> or <a href="#">Node</a>.</p>
 </tr>
 <tr>
 <h5><a href="../ktx.scene2d/-k-horizontal-group/index.html">ktx.scene2d.KHorizontalGroup</a></h5>
@@ -68,7 +68,7 @@ collection.</p>
 </tr>
 <tr>
 <h5><a href="../ktx.scene2d/-k-split-pane/index.html">ktx.scene2d.KSplitPane</a></h5>
-<p>Extends <a href="#">ScrollPane</a> API with type-safe widget builders. Note that this widget may store only a single child.
+<p>Extends <a href="#">SplitPane</a> API with type-safe widget builders. Note that this widget may store only two children.
 It is advised to use the inlined extension factory methods added by <a href="../ktx.scene2d/-k-group/index.html">KGroup</a> rather than set its widgets directly
 with <a href="#">setFirstWidget</a> or <a href="#">setSecondWidget</a>.</p>
 </tr>
@@ -109,6 +109,14 @@ with <a href="#">setFirstWidget</a> or <a href="#">setSecondWidget</a>.</p>
 <p>Extends <a href="#">Window</a> API with type-safe widget builders.</p>
 </tr>
 <tr>
+<h5><a href="../ktx.scene2d/-root-widget/index.html">ktx.scene2d.RootWidget</a></h5>
+<p>A specialized interface for widgets that can create top-level root actors.</p>
+</tr>
+<tr>
+<h5><a href="../ktx.scene2d/scene2d/index.html">ktx.scene2d.scene2d</a></h5>
+<p>Root of the Scene2D DSL. Use this object to create new Scene2D actors and widgets without parents.</p>
+</tr>
+<tr>
 <h5><a href="../ktx.scene2d/-scene2d-dsl/index.html">ktx.scene2d.Scene2dDsl</a></h5>
 <p>Should annotate builders of Scene2D widgets.</p>
 </tr>
@@ -116,6 +124,14 @@ with <a href="#">setFirstWidget</a> or <a href="#">setSecondWidget</a>.</p>
 <h5><a href="../ktx.scene2d/-scene2-d-skin/index.html">ktx.scene2d.Scene2DSkin</a></h5>
 <p>Utility storage for global <a href="#">Skin</a> object. The skin will be used by the widget factory methods by default if no custom
 alternative skin instance is passed as an alternative.</p>
+</tr>
+<tr>
+ (extensions in package ktx.scene2d)
+<h5><a href="../ktx.scene2d/com.badlogic.gdx.scenes.scene2d.-stage/index.html">com.badlogic.gdx.scenes.scene2d.Stage</a></h5>
+</tr>
+<tr>
+<h5><a href="../ktx.scene2d/-stage-widget/index.html">ktx.scene2d.StageWidget</a></h5>
+<p>A dummy widget that allows to add actors directly to the <a href="../ktx.scene2d/-stage-widget/stage.html">stage</a> with Scene2D DSL.</p>
 </tr>
 </tbody>
 </table>

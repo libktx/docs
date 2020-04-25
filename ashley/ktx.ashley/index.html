@@ -45,6 +45,14 @@
 <p>Thrown when unable to create a component of given type.</p>
 <code><span class="keyword">class </span><span class="identifier">CreateComponentException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-runtime-exception/index.html"><span class="identifier">RuntimeException</span></a></code></td>
 </tr>
+<tr>
+<td>
+<h4><a href="-missing-entity-system-exception/index.html">MissingEntitySystemException</a></h4>
+</td>
+<td>
+<p>Thrown when accessing an <a href="#">EntitySystem</a> via <a href="com.badlogic.ashley.core.-engine/get-system.html">getSystem</a> that does not exist in the <a href="#">Engine</a>.</p>
+<code><span class="keyword">class </span><span class="identifier">MissingEntitySystemException</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">GdxRuntimeException</span></code></td>
+</tr>
 </tbody>
 </table>
 <h3>Extensions for External Classes</h3>
@@ -104,6 +112,14 @@
 </td>
 <td>
 <code><span class="keyword">fun </span><span class="identifier">oneOf</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ktx.ashley$oneOf(kotlin.Array((kotlin.reflect.KClass((com.badlogic.ashley.core.Component)))))/components">components</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html"><span class="identifier">KClass</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Component</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="with.html">with</a></h4>
+</td>
+<td>
+<p>Get or creates an instance of the component <a href="with.html#T">T</a> and adds it to this <a href="-engine-entity/index.html">entity</a>.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Component</span><span class="symbol">&gt;</span> <a href="-engine-entity/index.html"><span class="identifier">EngineEntity</span></a><span class="symbol">.</span><span class="identifier">with</span><span class="symbol">(</span><span class="identifier" id="ktx.ashley$with(ktx.ashley.EngineEntity, kotlin.Function1((ktx.ashley.with.T, kotlin.Unit)))/configure">configure</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
 </tr>
 </tbody>
 </table>

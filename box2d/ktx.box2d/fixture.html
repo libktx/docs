@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>fixture - box2d</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">box2d</a>&nbsp;/&nbsp;<a href="index.html">ktx.box2d</a>&nbsp;/&nbsp;<a href="./fixture.html">fixture</a><br/>
+<br/>
+<h1>fixture</h1>
+<a name="ktx.box2d$fixture(ktx.box2d.BodyDefinition, ktx.box2d.fixture.ShapeType, kotlin.Boolean, kotlin.Function2((ktx.box2d.FixtureDefinition, ktx.box2d.fixture.ShapeType, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">ShapeType</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Shape</span><span class="symbol">&gt;</span> <a href="-body-definition/index.html"><span class="identifier">BodyDefinition</span></a><span class="symbol">.</span><span class="identifier">fixture</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d$fixture(ktx.box2d.BodyDefinition, ktx.box2d.fixture.ShapeType, kotlin.Boolean, kotlin.Function2((ktx.box2d.FixtureDefinition, ktx.box2d.fixture.ShapeType, kotlin.Unit)))/shape">shape</span><span class="symbol">:</span>&nbsp;<span class="identifier">ShapeType</span><span class="symbol">, </span><span class="identifier" id="ktx.box2d$fixture(ktx.box2d.BodyDefinition, ktx.box2d.fixture.ShapeType, kotlin.Boolean, kotlin.Function2((ktx.box2d.FixtureDefinition, ktx.box2d.fixture.ShapeType, kotlin.Unit)))/disposeOfShape">disposeOfShape</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="identifier" id="ktx.box2d$fixture(ktx.box2d.BodyDefinition, ktx.box2d.fixture.ShapeType, kotlin.Boolean, kotlin.Function2((ktx.box2d.FixtureDefinition, ktx.box2d.fixture.ShapeType, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">ShapeType</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><a href="-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a></code>
+<p>Utility builder method for constructing fixtures of custom shape type.</p>
+<h3>Parameters</h3>
+<p><a name="shape"></a>
+<code>shape</code> - will be set as <a href="#">FixtureDef</a> shape type.</p>
+<p><a name="disposeOfShape"></a>
+<code>disposeOfShape</code> - whether to call <a href="#">Shape.dispose</a> immediately after fixture creation. <code>false</code> by default.</p>
+<p><a name="init"></a>
+<code>init</code> - inlined. Allows to modify <a href="#">FixtureDef</a> properties. Receives <a href="fixture.html#ktx.box2d$fixture(ktx.box2d.BodyDefinition, ktx.box2d.fixture.ShapeType, kotlin.Boolean, kotlin.Function2((ktx.box2d.FixtureDefinition, ktx.box2d.fixture.ShapeType, kotlin.Unit)))/shape">shape</a> as first (<code>it</code>) argument.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="circle.html">circle</a></p>
+<p><a href="box.html">box</a></p>
+<p><a href="chain.html">chain</a></p>
+<p><a href="loop.html">loop</a></p>
+<p><a href="edge.html">edge</a></p>
+</p>
+</BODY>
+</HTML>

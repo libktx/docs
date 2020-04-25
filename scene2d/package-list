@@ -1,5 +1,8 @@
 $dokka.format:html
 $dokka.linkExtension:html
+$dokka.location:ktx.scene2d$actors(com.badlogic.gdx.scenes.scene2d.Stage, kotlin.Function1((ktx.scene2d.StageWidget, kotlin.Unit)))ktx.scene2d/com.badlogic.gdx.scenes.scene2d.-stage/actors.html
 $dokka.location:ktx.scene2d$addTextTooltip(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.String, kotlin.String, com.badlogic.gdx.scenes.scene2d.ui.Skin, com.badlogic.gdx.scenes.scene2d.ui.TooltipManager, kotlin.Function2((com.badlogic.gdx.scenes.scene2d.ui.Label, com.badlogic.gdx.scenes.scene2d.ui.TextTooltip, kotlin.Unit)))ktx.scene2d/com.badlogic.gdx.scenes.scene2d.-actor/add-text-tooltip.html
 $dokka.location:ktx.scene2d$addTooltip(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.String, com.badlogic.gdx.scenes.scene2d.ui.Skin, com.badlogic.gdx.scenes.scene2d.ui.TooltipManager, kotlin.Function2((ktx.scene2d.KTableWidget, com.badlogic.gdx.scenes.scene2d.ui.Tooltip(()), kotlin.Unit)))ktx.scene2d/com.badlogic.gdx.scenes.scene2d.-actor/add-tooltip.html
+$dokka.location:ktx.scene2d$textTooltip(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.String, kotlin.String, com.badlogic.gdx.scenes.scene2d.ui.Skin, com.badlogic.gdx.scenes.scene2d.ui.TooltipManager, kotlin.Function2((com.badlogic.gdx.scenes.scene2d.ui.Label, com.badlogic.gdx.scenes.scene2d.ui.TextTooltip, kotlin.Unit)))ktx.scene2d/com.badlogic.gdx.scenes.scene2d.-actor/text-tooltip.html
+$dokka.location:ktx.scene2d$tooltip(com.badlogic.gdx.scenes.scene2d.Actor, kotlin.String, com.badlogic.gdx.scenes.scene2d.ui.Skin, com.badlogic.gdx.scenes.scene2d.ui.TooltipManager, kotlin.Function2((ktx.scene2d.KTableWidget, com.badlogic.gdx.scenes.scene2d.ui.Tooltip(()), kotlin.Unit)))ktx.scene2d/com.badlogic.gdx.scenes.scene2d.-actor/tooltip.html
 ktx.scene2d

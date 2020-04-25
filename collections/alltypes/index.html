@@ -77,10 +77,6 @@
 <p>Alias for <a href="#">com.badlogic.gdx.utils.IntArray</a> avoiding name collision with the standard library.</p>
 </tr>
 <tr>
-<h5><a href="../ktx.collections/-gdx-list.html">ktx.collections.GdxList</a></h5>
-<p>Alias for <a href="../ktx.collections/-pooled-list/index.html">ktx.collections.PooledList</a>. Added for consistency with other collections and factory methods.</p>
-</tr>
-<tr>
 <h5><a href="../ktx.collections/-gdx-long-array.html">ktx.collections.GdxLongArray</a></h5>
 <p>Alias for <a href="#">com.badlogic.gdx.utils.LongArray</a> avoiding name collision with the standard library.</p>
 </tr>
@@ -125,25 +121,12 @@
 <h5><a href="../ktx.collections/kotlin.collections.-iterable/index.html">kotlin.collections.Iterable</a></h5>
 </tr>
 <tr>
-<h5><a href="../ktx.collections/-node-pool/index.html">ktx.collections.NodePool</a></h5>
-<p>Default and main <a href="../ktx.collections/-pooled-list/-node/index.html">PooledList</a> pool. Provides and manages node instances. Has no max value - will store nearly
-unlimited freed <a href="../ktx.collections/-pooled-list/-node/index.html">Node</a> instances and should be cleared manually if necessary.</p>
-</tr>
-<tr>
  (extensions in package ktx.collections)
 <h5><a href="../ktx.collections/com.badlogic.gdx.utils.-object-map/index.html">com.badlogic.gdx.utils.ObjectMap</a></h5>
 </tr>
 <tr>
  (extensions in package ktx.collections)
 <h5><a href="../ktx.collections/com.badlogic.gdx.utils.-object-set/index.html">com.badlogic.gdx.utils.ObjectSet</a></h5>
-</tr>
-<tr>
-<h5><a href="../ktx.collections/-pooled-list/index.html">ktx.collections.PooledList</a></h5>
-<p>LinkedList equivalent for LibGDX applications that caches its nodes and iterator to generate as little garbage as
-possible. As opposed to LibGDX PooledLinkedList, this list implements <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html">Iterable</a> and has more Kotlin-friendly syntax
-for extra utility. This class does not offer operations that usually should not be performed on linked lists - like
-removal by element - but it contains some extra methods that can be used during iteration like <a href="../ktx.collections/-pooled-list/insert-after.html">insertAfter</a>, <a href="../ktx.collections/-pooled-list/remove.html">remove</a>
-or <a href="../ktx.collections/-pooled-list/insert-before.html">insertBefore</a>.</p>
 </tr>
 </tbody>
 </table>

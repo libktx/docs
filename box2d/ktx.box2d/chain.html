@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>chain - box2d</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">box2d</a>&nbsp;/&nbsp;<a href="index.html">ktx.box2d</a>&nbsp;/&nbsp;<a href="./chain.html">chain</a><br/>
+<br/>
+<h1>chain</h1>
+<a name="ktx.box2d$chain(ktx.box2d.BodyDefinition, kotlin.Array((com.badlogic.gdx.math.Vector2)), kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.ChainShape, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><a href="-body-definition/index.html"><span class="identifier">BodyDefinition</span></a><span class="symbol">.</span><span class="identifier">chain</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="ktx.box2d$chain(ktx.box2d.BodyDefinition, kotlin.Array((com.badlogic.gdx.math.Vector2)), kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.ChainShape, kotlin.Unit)))/vertices">vertices</span><span class="symbol">:</span>&nbsp;<span class="identifier">Vector2</span><span class="symbol">, </span><span class="identifier" id="ktx.box2d$chain(ktx.box2d.BodyDefinition, kotlin.Array((com.badlogic.gdx.math.Vector2)), kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.ChainShape, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">ChainShape</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><a href="-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a></code>
+<p>Utility builder method for constructing fixtures with <a href="#">ChainShape</a>.</p>
+<h3>Parameters</h3>
+<p><a name="vertices"></a>
+<code>vertices</code> - will be converted to <a href="#">ChainShape</a> points.</p>
+<p><a name="init"></a>
+<code>init</code> - inlined. Allows to modify <a href="#">FixtureDef</a> properties. Receives <a href="#">ChainShape</a> as first (<code>it</code>) argument.</p>
+<p><strong>Return</strong><br/>
+<a href="-fixture-definition/index.html">FixtureDefinition</a> with <a href="#">Fixture</a> properties.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">ChainShape.createChain</a></p>
+</p>
+<a name="ktx.box2d$chain(ktx.box2d.BodyDefinition, kotlin.FloatArray, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.ChainShape, kotlin.Unit)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><a href="-body-definition/index.html"><span class="identifier">BodyDefinition</span></a><span class="symbol">.</span><span class="identifier">chain</span><span class="symbol">(</span><span class="identifier" id="ktx.box2d$chain(ktx.box2d.BodyDefinition, kotlin.FloatArray, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.ChainShape, kotlin.Unit)))/vertices">vertices</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html"><span class="identifier">FloatArray</span></a><span class="symbol">, </span><span class="identifier" id="ktx.box2d$chain(ktx.box2d.BodyDefinition, kotlin.FloatArray, kotlin.Function2((ktx.box2d.FixtureDefinition, com.badlogic.gdx.physics.box2d.ChainShape, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">ChainShape</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{}<span class="symbol">)</span><span class="symbol">: </span><a href="-fixture-definition/index.html"><span class="identifier">FixtureDefinition</span></a></code>
+<p>Utility builder method for constructing fixtures with <a href="#">ChainShape</a>. Note that this method consumes a <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html">FloatArray</a>
+instead of array of <a href="#">Vector2</a> instances, which might be less readable, but creates slightly less garbage. This
+method is advised to be used instead of the <a href="#">Vector2</a>-consuming variant on mobile devices.</p>
+<h3>Parameters</h3>
+<p><a name="vertices"></a>
+<code>vertices</code> - will be converted to <a href="#">ChainShape</a> points. Each two adjacent numbers represent a point's X and Y.</p>
+<p><a name="init"></a>
+<code>init</code> - inlined. Allows to modify <a href="#">FixtureDef</a> properties. Receives <a href="#">ChainShape</a> as first (<code>it</code>) argument.</p>
+<p><strong>Return</strong><br/>
+<a href="-fixture-definition/index.html">FixtureDefinition</a> with <a href="#">Fixture</a> properties.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">ChainShape.createChain</a></p>
+</p>
+</BODY>
+</HTML>
