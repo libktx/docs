@@ -1,0 +1,103 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DisposableRegistry - assets</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">assets</a>&nbsp;/&nbsp;<a href="../index.html">ktx.assets</a>&nbsp;/&nbsp;<a href="./index.html">DisposableRegistry</a><br/>
+<br/>
+<h1>DisposableRegistry</h1>
+<code><span class="keyword">interface </span><span class="identifier">DisposableRegistry</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Disposable</span></code>
+<p>Interface describing a container for <a href="#">Disposable</a>s that provides functions for disposing all
+its registered items. An implementing class's Disposable declarations can be tagged with
+<a href="also-register.html">.alsoRegister()</a> to conveniently register them as they are instantiated and assigned.</p>
+<p>Calling <a href="dispose.html">dispose</a> on the registry will call <a href="#">Disposable.dispose</a> on all its registered members.</p>
+<p>The existing implementation <a href="../-disposable-container/index.html">DisposableContainer</a> can be extended or used as a delegate to implement
+this interface.</p>
+<p>Note that since <a href="./index.html">DisposableRegistry</a> implements <a href="#">Disposable</a>, registries can be stacked within each other -
+a registry might contain other registries, keeping track of nested assets.</p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="registered-disposables.html">registeredDisposables</a></h4>
+</td>
+<td>
+<p>A copy of the registered Disposables. The order does not necessarily represent the registration order.</p>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">registeredDisposables</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><span class="identifier">Disposable</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="also-deregister.html">alsoDeregister</a></h4>
+</td>
+<td>
+<p>Remove this <a href="#">Disposable</a> from the <a href="./index.html">DisposableRegistry</a> if it is already registered.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Disposable</span><span class="symbol">&gt;</span> <span class="identifier">T</span><span class="symbol">.</span><span class="identifier">alsoDeregister</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="also-register.html">alsoRegister</a></h4>
+</td>
+<td>
+<p>Register this <a href="#">Disposable</a> with the <a href="./index.html">DisposableRegistry</a>.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Disposable</span><span class="symbol">&gt;</span> <span class="identifier">T</span><span class="symbol">.</span><span class="identifier">alsoRegister</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="deregister.html">deregister</a></h4>
+</td>
+<td>
+<p>Removes <a href="deregister.html#ktx.assets.DisposableRegistry$deregister(com.badlogic.gdx.utils.Disposable)/disposable">disposable</a> from this registry.</p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">deregister</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.DisposableRegistry$deregister(com.badlogic.gdx.utils.Disposable)/disposable">disposable</span><span class="symbol">:</span>&nbsp;<span class="identifier">Disposable</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="deregister-all.html">deregisterAll</a></h4>
+</td>
+<td>
+<p>Removes all disposables from the registry without disposing them.</p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">deregisterAll</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="dispose.html">dispose</a></h4>
+</td>
+<td>
+<p>Calls <a href="#">dispose</a> on each registered <a href="#">Disposable</a>.
+Might throw an exception if the assets were already disposed. To prevent that and clear the registry,
+use <a href="deregister-all.html">deregisterAll</a>.</p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">dispose</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="register.html">register</a></h4>
+</td>
+<td>
+<p>Registers <a href="register.html#ktx.assets.DisposableRegistry$register(com.badlogic.gdx.utils.Disposable)/disposable">disposable</a> with this registry.</p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">register</span><span class="symbol">(</span><span class="identifier" id="ktx.assets.DisposableRegistry$register(com.badlogic.gdx.utils.Disposable)/disposable">disposable</span><span class="symbol">:</span>&nbsp;<span class="identifier">Disposable</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../-disposable-container/index.html">DisposableContainer</a></h4>
+</td>
+<td>
+<p>An implementation of <a href="./index.html">DisposableRegistry</a> that can be subclassed or used as a delegate.
+Allows to store and dispose of multiple <a href="#">Disposable</a> instances.</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">DisposableContainer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DisposableRegistry</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

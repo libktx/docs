@@ -7,6 +7,10 @@ $dokka.location:ktx.graphics$center(com.badlogic.gdx.graphics.Camera, kotlin.Flo
 $dokka.location:ktx.graphics$center(com.badlogic.gdx.graphics.g2d.BitmapFont, kotlin.String, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)ktx.graphics/com.badlogic.gdx.graphics.g2d.-bitmap-font/center.html
 $dokka.location:ktx.graphics$circle(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector2, kotlin.Float)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/circle.html
 $dokka.location:ktx.graphics$circle(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector2, kotlin.Float, kotlin.Int)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/circle.html
+$dokka.location:ktx.graphics$component1(com.badlogic.gdx.graphics.Color)ktx.graphics/com.badlogic.gdx.graphics.-color/component1.html
+$dokka.location:ktx.graphics$component2(com.badlogic.gdx.graphics.Color)ktx.graphics/com.badlogic.gdx.graphics.-color/component2.html
+$dokka.location:ktx.graphics$component3(com.badlogic.gdx.graphics.Color)ktx.graphics/com.badlogic.gdx.graphics.-color/component3.html
+$dokka.location:ktx.graphics$component4(com.badlogic.gdx.graphics.Color)ktx.graphics/com.badlogic.gdx.graphics.-color/component4.html
 $dokka.location:ktx.graphics$cone(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector3, kotlin.Float, kotlin.Float)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/cone.html
 $dokka.location:ktx.graphics$cone(com.badlogic.gdx.graphics.glutils.ShapeRenderer, com.badlogic.gdx.math.Vector3, kotlin.Float, kotlin.Float, kotlin.Int)ktx.graphics/com.badlogic.gdx.graphics.glutils.-shape-renderer/cone.html
 $dokka.location:ktx.graphics$copy(com.badlogic.gdx.graphics.Color, kotlin.Float, kotlin.Float, kotlin.Float, kotlin.Float)ktx.graphics/com.badlogic.gdx.graphics.-color/copy.html

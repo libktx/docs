@@ -18,7 +18,7 @@
 <td>
 <p>Wrapping interface around <a href="#">com.badlogic.gdx.ApplicationListener</a>. Provides no-op implementations of all methods,
 making them optional to implement.</p>
-<code><span class="keyword">interface </span><span class="identifier">KtxApplicationAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ApplicationListener</span></code></td>
+<code><span class="keyword">interface </span><span class="identifier">KtxApplicationAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ApplicationListener</span><span class="symbol">, </span><span class="identifier">Disposable</span></code></td>
 </tr>
 <tr>
 <td>
@@ -47,7 +47,7 @@ making them optional to implement.</p>
 </td>
 <td>
 <p>Provides empty implementations of all <a href="#">Screen</a> methods, making them optional to override.</p>
-<code><span class="keyword">interface </span><span class="identifier">KtxScreen</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Screen</span></code></td>
+<code><span class="keyword">interface </span><span class="identifier">KtxScreen</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Screen</span><span class="symbol">, </span><span class="identifier">Disposable</span></code></td>
 </tr>
 </tbody>
 </table>

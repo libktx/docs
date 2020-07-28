@@ -45,6 +45,25 @@ already loaded.</p>
 </tr>
 <tr>
 <td>
+<h4><a href="-disposable-container/index.html">DisposableContainer</a></h4>
+</td>
+<td>
+<p>An implementation of <a href="-disposable-registry/index.html">DisposableRegistry</a> that can be subclassed or used as a delegate.
+Allows to store and dispose of multiple <a href="#">Disposable</a> instances.</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">DisposableContainer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-disposable-registry/index.html"><span class="identifier">DisposableRegistry</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-disposable-registry/index.html">DisposableRegistry</a></h4>
+</td>
+<td>
+<p>Interface describing a container for <a href="#">Disposable</a>s that provides functions for disposing all
+its registered items. An implementing class's Disposable declarations can be tagged with
+<a href="-disposable-registry/also-register.html">.alsoRegister()</a> to conveniently register them as they are instantiated and assigned.</p>
+<code><span class="keyword">interface </span><span class="identifier">DisposableRegistry</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Disposable</span></code></td>
+</tr>
+<tr>
+<td>
 <h4><a href="-managed-asset/index.html">ManagedAsset</a></h4>
 </td>
 <td>
@@ -170,7 +189,7 @@ already loaded.</p>
 </td>
 <td>
 <p>Factory method for <a href="#">ResolutionFileResolver.Resolution</a> that allows to used named parameters.</p>
-<code><span class="keyword">fun </span><span class="identifier">resolution</span><span class="symbol">(</span><span class="identifier" id="ktx.assets$resolution(kotlin.Int, kotlin.Int, kotlin.String)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets$resolution(kotlin.Int, kotlin.Int, kotlin.String)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets$resolution(kotlin.Int, kotlin.Int, kotlin.String)/folder">folder</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"${width}x${height}"<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Resolution</span></code></td>
+<code><span class="keyword">fun </span><span class="identifier">resolution</span><span class="symbol">(</span><span class="identifier" id="ktx.assets$resolution(kotlin.Int, kotlin.Int, kotlin.String)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets$resolution(kotlin.Int, kotlin.Int, kotlin.String)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="ktx.assets$resolution(kotlin.Int, kotlin.Int, kotlin.String)/folder">folder</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"${width}x$height"<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Resolution</span></code></td>
 </tr>
 </tbody>
 </table>

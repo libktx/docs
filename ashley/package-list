@@ -3,6 +3,7 @@ $dokka.linkExtension:html
 $dokka.location:ktx.ashley$add(com.badlogic.ashley.core.Engine, kotlin.Function1((com.badlogic.ashley.core.Engine, kotlin.Unit)))ktx.ashley/com.badlogic.ashley.core.-engine/add.html
 $dokka.location:ktx.ashley$addComponent(com.badlogic.ashley.core.Entity, com.badlogic.ashley.core.Engine, kotlin.Function1((ktx.ashley.addComponent.T, kotlin.Unit)))ktx.ashley/com.badlogic.ashley.core.-entity/add-component.html
 $dokka.location:ktx.ashley$allOf(com.badlogic.ashley.core.Family.Builder, kotlin.Array((kotlin.reflect.KClass((com.badlogic.ashley.core.Component)))))ktx.ashley/com.badlogic.ashley.core.-family.-builder/all-of.html
+$dokka.location:ktx.ashley$configureEntity(com.badlogic.ashley.core.Engine, com.badlogic.ashley.core.Entity, kotlin.Function1((ktx.ashley.EngineEntity, kotlin.Unit)))ktx.ashley/com.badlogic.ashley.core.-engine/configure-entity.html
 $dokka.location:ktx.ashley$contains(com.badlogic.ashley.core.Entity, com.badlogic.ashley.core.ComponentMapper((ktx.ashley.contains.T)))ktx.ashley/com.badlogic.ashley.core.-entity/contains.html
 $dokka.location:ktx.ashley$create(com.badlogic.ashley.core.Engine, kotlin.Function1((ktx.ashley.create.T, kotlin.Unit)))ktx.ashley/com.badlogic.ashley.core.-engine/create.html
 $dokka.location:ktx.ashley$entity(com.badlogic.ashley.core.Engine, kotlin.Function1((ktx.ashley.EngineEntity, kotlin.Unit)))ktx.ashley/com.badlogic.ashley.core.-engine/entity.html

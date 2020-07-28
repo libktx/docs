@@ -8,8 +8,10 @@
 <a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">ktx.app</a>&nbsp;/&nbsp;<a href="./index.html">KtxScreen</a><br/>
 <br/>
 <h1>KtxScreen</h1>
-<code><span class="keyword">interface </span><span class="identifier">KtxScreen</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Screen</span></code>
+<code><span class="keyword">interface </span><span class="identifier">KtxScreen</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Screen</span><span class="symbol">, </span><span class="identifier">Disposable</span></code>
 <p>Provides empty implementations of all <a href="#">Screen</a> methods, making them optional to override.</p>
+<p>Explicitly extends the <a href="#">Disposable</a> interface, matching the <a href="#">Screen.dispose</a> method,
+which allows to leverage <a href="#">Disposable</a> utilities.</p>
 <p><strong>See Also</strong><br/>
 <p><a href="../-ktx-game/index.html">KtxGame</a></p>
 </p>
