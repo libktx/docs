@@ -1,0 +1,547 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Context</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+    <link href="../../../styles/style.css" rel="Stylesheet">
+    <link href="../../../styles/logo-styles.css" rel="Stylesheet">
+    <link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+    <link href="../../../styles/main.css" rel="Stylesheet">
+    <script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+    <script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+    <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+    <script type="text/javascript" src="../../../scripts/main.js" async="async"></script>
+    <script>var pathToRoot = "../../../";</script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="leftColumn">
+        <div id="logo"></div>
+        <div id="paneSearch"></div>
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div id="leftToggler"><span class="icon-toggler"></span></div>
+        <div id="searchBar"></div>
+        <script type="text/javascript" src="../../../scripts/pages.js"></script>
+        <script type="text/javascript" src="../../../scripts/main.js"></script>
+        <div id="content" pageIds="ktx.inject/Context///PointingToDeclaration//-1857508241">
+          <div class="breadcrumbs"><a href="../../index.html">ktx</a>/<a href="../index.html">ktx.inject</a>/<a href="index.html">Context</a></div>
+          <div class="cover ">
+            <h1 class="cover"><span>Context</span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">open class <a href="index.html">Context</a> : <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span><span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Handles dependency injection mechanism. Allows to bind selected classes with their providers.</p><p class="paragraph">Note that <a href="index.html">Context</a> instances are not considered fully thread-safe - while it is usually safe to access a fully built context from within multiple threads, you should override <span data-unresolved-link="ktx.inject/Context/createProvidersMap/#/PointingToDeclaration/">createProvidersMap</span> method and return a thread-safe <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a> implementation to avoid concurrency bugs.</p></div></div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Extensions">Extensions</button></div>
+            <div class="tabs-section-body">
+              <h2 class="tabbedcontent">Constructors</h2>
+              <div class="table" data-togglable="Constructors"><a data-name="%5Bktx.inject%2FContext%2FContext%2F%23%2FPointingToDeclaration%2F%5D%2FConstructors%2F-1857508241" anchor-label="Context" id="%5Bktx.inject%2FContext%2FContext%2F%23%2FPointingToDeclaration%2F%5D%2FConstructors%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue TabbedContent">
+                    <div class=""><span class="inline-flex"><a href="-context.html">Context</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bktx.inject%2FContext%2FContext%2F%23%2FPointingToDeclaration%2F%5D%2FConstructors%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">fun <a href="-context.html">Context</a>()<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Functions</h2>
+              <div class="table" data-togglable="Functions"><a data-name="%5Bktx.inject%2FContext%2Fbind%2F%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2Fbind%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="bind" id="%5Bktx.inject%2FContext%2Fbind%2F%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2Fbind%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="bind.html">bind</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bktx.inject%2FContext%2Fbind%2F%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2Fbind%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">inline fun &lt;<a href="bind.html">Type</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <a href="bind.html">bind</a>(noinline provider: () -&gt; <a href="bind.html">Type</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bktx.inject%2FContext%2Fbind%2F%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="bind" id="%5Bktx.inject%2FContext%2Fbind%2F%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bktx.inject%2FContext%2Fbind%2F%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="bind" id="%5Bktx.inject%2FContext%2Fbind%2F%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>Allows to bind a provider producing instances of the selected type.</div></div>
+<div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">fun &lt;<a href="bind.html">Type</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <a href="bind.html">bind</a>(vararg to: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html">KClass</a>&lt;out <a href="bind.html">Type</a>&gt;, provider: () -&gt; <a href="bind.html">Type</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bktx.inject%2FContext%2Fbind%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="bind" id="%5Bktx.inject%2FContext%2Fbind%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bktx.inject%2FContext%2Fbind%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="bind" id="%5Bktx.inject%2FContext%2Fbind%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>Allows to bind a provider to multiple classes in hierarchy of the provided instances class.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bktx.inject%2FContext%2FbindSingleton%2F%23TypeParam%28bounds%3D%5Bkotlin.Any%5D%29%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23TypeParam%28bounds%3D%5Bkotlin.Any%5D%29%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="bindSingleton" id="%5Bktx.inject%2FContext%2FbindSingleton%2F%23TypeParam%28bounds%3D%5Bkotlin.Any%5D%29%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23TypeParam%28bounds%3D%5Bkotlin.Any%5D%29%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="bind-singleton.html">bindSingleton</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bktx.inject%2FContext%2FbindSingleton%2F%23TypeParam%28bounds%3D%5Bkotlin.Any%5D%29%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23TypeParam%28bounds%3D%5Bkotlin.Any%5D%29%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">inline fun &lt;<a href="bind-singleton.html">Type</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <a href="bind-singleton.html">bindSingleton</a>(singleton: <a href="bind-singleton.html">Type</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bktx.inject%2FContext%2FbindSingleton%2F%23TypeParam%28bounds%3D%5Bkotlin.Any%5D%29%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="bindSingleton" id="%5Bktx.inject%2FContext%2FbindSingleton%2F%23TypeParam%28bounds%3D%5Bkotlin.Any%5D%29%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bktx.inject%2FContext%2FbindSingleton%2F%23TypeParam%28bounds%3D%5Bkotlin.Any%5D%29%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="bindSingleton" id="%5Bktx.inject%2FContext%2FbindSingleton%2F%23TypeParam%28bounds%3D%5Bkotlin.Any%5D%29%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>Allows to bind a singleton to the chosen class.</div></div>
+<div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">inline fun &lt;<a href="bind-singleton.html">Type</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <a href="bind-singleton.html">bindSingleton</a>(provider: () -&gt; <a href="bind-singleton.html">Type</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="bindSingleton" id="%5Bktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="bindSingleton" id="%5Bktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>Allows to bind a singleton to the chosen class.</div></div>
+<div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">fun &lt;<a href="bind-singleton.html">Type</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <a href="bind-singleton.html">bindSingleton</a>(vararg to: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html">KClass</a>&lt;out <a href="bind-singleton.html">Type</a>&gt;, singleton: <a href="bind-singleton.html">Type</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23TypeParam%28bounds%3D%5Bkotlin.Any%5D%29%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="bindSingleton" id="%5Bktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23TypeParam%28bounds%3D%5Bkotlin.Any%5D%29%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23TypeParam%28bounds%3D%5Bkotlin.Any%5D%29%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="bindSingleton" id="%5Bktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23TypeParam%28bounds%3D%5Bkotlin.Any%5D%29%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>Allows to bind a singleton instance to multiple classes in its hierarchy.</div></div>
+<div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">inline fun &lt;<a href="bind-singleton.html">Type</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <a href="bind-singleton.html">bindSingleton</a>(vararg to: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html">KClass</a>&lt;out <a href="bind-singleton.html">Type</a>&gt;, provider: () -&gt; <a href="bind-singleton.html">Type</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="bindSingleton" id="%5Bktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="bindSingleton" id="%5Bktx.inject%2FContext%2FbindSingleton%2F%23kotlin.Array%5Bkotlin.reflect.KClass%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%5D%23kotlin.Function0%5BTypeParam%28bounds%3D%5Bkotlin.Any%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>Allows to bind the result of the provider to multiple classes in its hierarchy.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bktx.inject%2FContext%2Fclear%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="clear" id="%5Bktx.inject%2FContext%2Fclear%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="clear.html">clear</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bktx.inject%2FContext%2Fclear%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">open fun <a href="clear.html">clear</a>()<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bktx.inject%2FContext%2Fclear%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="clear" id="%5Bktx.inject%2FContext%2Fclear%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bktx.inject%2FContext%2Fclear%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="clear" id="%5Bktx.inject%2FContext%2Fclear%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>Removes all user-defined providers and singletons from the context.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bktx.inject%2FContext%2Fcontains%2F%23%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2Fcontains%2F%23java.lang.Class%5B*%5D%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2Fcontains%2F%23kotlin.reflect.KClass%5B*%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="contains" id="%5Bktx.inject%2FContext%2Fcontains%2F%23%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2Fcontains%2F%23java.lang.Class%5B*%5D%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2Fcontains%2F%23kotlin.reflect.KClass%5B*%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="contains.html">contains</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bktx.inject%2FContext%2Fcontains%2F%23%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2Fcontains%2F%23java.lang.Class%5B*%5D%2FPointingToDeclaration%2F%2C+ktx.inject%2FContext%2Fcontains%2F%23kotlin.reflect.KClass%5B*%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">inline fun &lt;<a href="contains.html">Type</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <a href="contains.html">contains</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace">operator fun <a href="contains.html">contains</a>(type: <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a>&lt;*&gt;): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace">operator fun <a href="contains.html">contains</a>(type: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html">KClass</a>&lt;*&gt;): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bktx.inject%2FContext%2Fdispose%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="dispose" id="%5Bktx.inject%2FContext%2Fdispose%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="dispose.html">dispose</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bktx.inject%2FContext%2Fdispose%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">open override fun <a href="dispose.html">dispose</a>()<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bktx.inject%2FContext%2Fdispose%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="dispose" id="%5Bktx.inject%2FContext%2Fdispose%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bktx.inject%2FContext%2Fdispose%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="dispose" id="%5Bktx.inject%2FContext%2Fdispose%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>Disposes of all <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span> singletons and providers registered in the context and removes them.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="equals" id="%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="../../ktx.scene2d.vis/-k-horizontal-collapsible/index.html#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241">equals</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">open operator fun <a href="../../ktx.scene2d.vis/-k-horizontal-collapsible/index.html#%5Bkotlin%2FAny%2Fequals%2F%23kotlin.Any%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241">equals</a>(other: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>?): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bktx.inject%2FContext%2FgetProvider%2F%23java.lang.Class%5BTypeParam%28bounds%3D%5Bkotlin.Any%3F%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="getProvider" id="%5Bktx.inject%2FContext%2FgetProvider%2F%23java.lang.Class%5BTypeParam%28bounds%3D%5Bkotlin.Any%3F%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-provider.html">getProvider</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bktx.inject%2FContext%2FgetProvider%2F%23java.lang.Class%5BTypeParam%28bounds%3D%5Bkotlin.Any%3F%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">open fun &lt;<a href="get-provider.html">Type</a>&gt; <a href="get-provider.html">getProvider</a>(forClass: <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a>&lt;<a href="get-provider.html">Type</a>&gt;): () -&gt; <a href="get-provider.html">Type</a><span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bktx.inject%2FContext%2FgetProvider%2F%23java.lang.Class%5BTypeParam%28bounds%3D%5Bkotlin.Any%3F%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="getProvider" id="%5Bktx.inject%2FContext%2FgetProvider%2F%23java.lang.Class%5BTypeParam%28bounds%3D%5Bkotlin.Any%3F%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bktx.inject%2FContext%2FgetProvider%2F%23java.lang.Class%5BTypeParam%28bounds%3D%5Bkotlin.Any%3F%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="getProvider" id="%5Bktx.inject%2FContext%2FgetProvider%2F%23java.lang.Class%5BTypeParam%28bounds%3D%5Bkotlin.Any%3F%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>Extracts provider of instances of the selected type.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="hashCode" id="%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="../../ktx.scene2d.vis/-k-horizontal-collapsible/index.html#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241">hashCode</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">open fun <a href="../../ktx.scene2d.vis/-k-horizontal-collapsible/index.html#%5Bkotlin%2FAny%2FhashCode%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241">hashCode</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bktx.inject%2FContext%2Finject%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="inject" id="%5Bktx.inject%2FContext%2Finject%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="inject.html">inject</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bktx.inject%2FContext%2Finject%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">inline fun &lt;<a href="inject.html">Type</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <a href="inject.html">inject</a>(): <a href="inject.html">Type</a><span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bktx.inject%2FContext%2Finject%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="inject" id="%5Bktx.inject%2FContext%2Finject%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bktx.inject%2FContext%2Finject%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="inject" id="%5Bktx.inject%2FContext%2Finject%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>Provides instance of the selected type.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bktx.inject%2FContext%2Finvoke%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="invoke" id="%5Bktx.inject%2FContext%2Finvoke%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="invoke.html">invoke</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bktx.inject%2FContext%2Finvoke%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">inline operator fun &lt;<a href="invoke.html">Type</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <a href="invoke.html">invoke</a>(): <a href="invoke.html">Type</a><span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bktx.inject%2FContext%2Finvoke%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="invoke" id="%5Bktx.inject%2FContext%2Finvoke%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bktx.inject%2FContext%2Finvoke%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="invoke" id="%5Bktx.inject%2FContext%2Finvoke%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>Provides instance of the selected type.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bktx.inject%2FContext%2Fprovider%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="provider" id="%5Bktx.inject%2FContext%2Fprovider%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="provider.html">provider</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bktx.inject%2FContext%2Fprovider%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">inline fun &lt;<a href="provider.html">Type</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <a href="provider.html">provider</a>(): () -&gt; <a href="provider.html">Type</a><span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bktx.inject%2FContext%2Fprovider%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="provider" id="%5Bktx.inject%2FContext%2Fprovider%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bktx.inject%2FContext%2Fprovider%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="provider" id="%5Bktx.inject%2FContext%2Fprovider%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>Extracts provider of instances of the selected type.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bktx.inject%2FContext%2Fremove%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="remove" id="%5Bktx.inject%2FContext%2Fremove%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="remove.html">remove</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bktx.inject%2FContext%2Fremove%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">inline fun &lt;<a href="remove.html">Type</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <a href="remove.html">remove</a>(): () -&gt; <a href="remove.html">Type</a>?<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bktx.inject%2FContext%2Fremove%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="remove" id="%5Bktx.inject%2FContext%2Fremove%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bktx.inject%2FContext%2Fremove%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="remove" id="%5Bktx.inject%2FContext%2Fremove%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>Removes singleton or provider of instances of the selected type registered in the <a href="index.html">Context</a>.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bktx.inject%2FContext%2FremoveProvider%2F%23java.lang.Class%5BTypeParam%28bounds%3D%5Bkotlin.Any%3F%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="removeProvider" id="%5Bktx.inject%2FContext%2FremoveProvider%2F%23java.lang.Class%5BTypeParam%28bounds%3D%5Bkotlin.Any%3F%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="remove-provider.html">removeProvider</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bktx.inject%2FContext%2FremoveProvider%2F%23java.lang.Class%5BTypeParam%28bounds%3D%5Bkotlin.Any%3F%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">open fun &lt;<a href="remove-provider.html">Type</a>&gt; <a href="remove-provider.html">removeProvider</a>(ofClass: <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a>&lt;<a href="remove-provider.html">Type</a>&gt;): () -&gt; <a href="remove-provider.html">Type</a>?<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bktx.inject%2FContext%2FremoveProvider%2F%23java.lang.Class%5BTypeParam%28bounds%3D%5Bkotlin.Any%3F%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="removeProvider" id="%5Bktx.inject%2FContext%2FremoveProvider%2F%23java.lang.Class%5BTypeParam%28bounds%3D%5Bkotlin.Any%3F%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bktx.inject%2FContext%2FremoveProvider%2F%23java.lang.Class%5BTypeParam%28bounds%3D%5Bkotlin.Any%3F%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="removeProvider" id="%5Bktx.inject%2FContext%2FremoveProvider%2F%23java.lang.Class%5BTypeParam%28bounds%3D%5Bkotlin.Any%3F%5D%29%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>Removes provider of instances of the selected type.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bktx.inject%2FContext%2FsetProvider%2F%23java.lang.Class%5B*%5D%23kotlin.Function0%5Bkotlin.Any%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="setProvider" id="%5Bktx.inject%2FContext%2FsetProvider%2F%23java.lang.Class%5B*%5D%23kotlin.Function0%5Bkotlin.Any%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="set-provider.html">setProvider</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bktx.inject%2FContext%2FsetProvider%2F%23java.lang.Class%5B*%5D%23kotlin.Function0%5Bkotlin.Any%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">open fun <a href="set-provider.html">setProvider</a>(forClass: <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a>&lt;*&gt;, provider: () -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>)<span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bktx.inject%2FContext%2FsetProvider%2F%23java.lang.Class%5B*%5D%23kotlin.Function0%5Bkotlin.Any%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="setProvider" id="%5Bktx.inject%2FContext%2FsetProvider%2F%23java.lang.Class%5B*%5D%23kotlin.Function0%5Bkotlin.Any%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bktx.inject%2FContext%2FsetProvider%2F%23java.lang.Class%5B*%5D%23kotlin.Function0%5Bkotlin.Any%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="setProvider" id="%5Bktx.inject%2FContext%2FsetProvider%2F%23java.lang.Class%5B*%5D%23kotlin.Function0%5Bkotlin.Any%5D%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>Adds the selected provider to the <a href="index.html">Context</a>.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" anchor-label="toString" id="%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="../../ktx.scene2d.vis/-k-tab/index.html#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241">toString</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">open fun <a href="../../ktx.scene2d.vis/-k-tab/index.html#%5Bkotlin%2FAny%2FtoString%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F-1857508241">toString</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="tabbedcontent">Extensions</h2>
+              <div class="table" data-togglable="Extensions"><a data-name="%5Bktx.inject%2F%2Fregister%2Fktx.inject.Context%23kotlin.Function1%5Bktx.inject.Context%2Ckotlin.Unit%5D%2FPointingToDeclaration%2F%5D%2FExtensions%2F-1857508241" anchor-label="register" id="%5Bktx.inject%2F%2Fregister%2Fktx.inject.Context%23kotlin.Function1%5Bktx.inject.Context%2Ckotlin.Unit%5D%2FPointingToDeclaration%2F%5D%2FExtensions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="../register.html">register</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bktx.inject%2F%2Fregister%2Fktx.inject.Context%23kotlin.Function1%5Bktx.inject.Context%2Ckotlin.Unit%5D%2FPointingToDeclaration%2F%5D%2FExtensions%2F-1857508241"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.2496 5.3C20.3496 4.5 19.2496 4 18.0496 4C16.8496 4 15.6496 4.5 14.8496 5.3L10.3496 9.8L11.7496 11.2L16.2496 6.7C17.2496 5.7 18.8496 5.7 19.8496 6.7C20.8496 7.7 20.8496 9.3 19.8496 10.3L15.3496 14.8L16.7496 16.2L21.2496 11.7C22.1496 10.8 22.5496 9.7 22.5496 8.5C22.5496 7.3 22.1496 6.2 21.2496 5.3Z"/>
+    <path d="M8.35 16.7998C7.35 17.7998 5.75 17.7998 4.75 16.7998C3.75 15.7998 3.75 14.1998 4.75 13.1998L9.25 8.6998L7.85 7.2998L3.35 11.7998C1.55 13.5998 1.55 16.3998 3.35 18.1998C4.25 19.0998 5.35 19.4998 6.55 19.4998C7.75 19.4998 8.85 19.0998 9.75 18.1998L14.25 13.6998L12.85 12.2998L8.35 16.7998Z"/>
+</svg></span>
+                          <div class="copy-popup-wrapper "><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":vis-style:dokkaHtml/main" data-filterable-set=":vis-style:dokkaHtml/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis-style:dokkaHtml/main"><div class="symbol monospace">inline fun <a href="index.html">Context</a>.<a href="../register.html">register</a>(init: <a href="index.html">Context</a>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>): <a href="index.html">Context</a><span class="top-right-position"><span class="copy-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4H15V16H5V4ZM17 7H19V18V20H17H8V18H17V7Z" fill="black"/>
+                       </svg></span><div class="copy-popup-wrapper popup-to-left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9C18 14 14 18 9 18C4 18 0 14 0 9C0 4 4 0 9 0C14 0 18 4 18 9ZM14.2 6.2L12.8 4.8L7.5 10.1L5.3 7.8L3.8 9.2L7.5 13L14.2 6.2Z" fill="#4DBB5F"/>
+</svg><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bktx.inject%2F%2Fregister%2Fktx.inject.Context%23kotlin.Function1%5Bktx.inject.Context%2Ckotlin.Unit%5D%2FPointingToDeclaration%2F%5D%2FExtensions%2F-1857508241" anchor-label="register" id="%5Bktx.inject%2F%2Fregister%2Fktx.inject.Context%23kotlin.Function1%5Bktx.inject.Context%2Ckotlin.Unit%5D%2FPointingToDeclaration%2F%5D%2FExtensions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a><div class="brief "><a data-name="%5Bktx.inject%2F%2Fregister%2Fktx.inject.Context%23kotlin.Function1%5Bktx.inject.Context%2Ckotlin.Unit%5D%2FPointingToDeclaration%2F%5D%2FExtensions%2F-1857508241" anchor-label="register" id="%5Bktx.inject%2F%2Fregister%2Fktx.inject.Context%23kotlin.Function1%5Bktx.inject.Context%2Ckotlin.Unit%5D%2FPointingToDeclaration%2F%5D%2FExtensions%2F-1857508241" data-filterable-set=":vis-style:dokkaHtml/main"></a>Allows to register new components in the context with builder-like DSL.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#container"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.3337 9.66683H0.666992L6.00033 3.66683L11.3337 9.66683Z" fill="black"/>
+    <path d="M0.666992 0.333496H11.3337V1.66683H0.666992V0.333496Z" fill="black"/>
+</svg></a></span><span>© 2020 Copyright</span><span class="pull-right"><span>Sponsored and developed by dokka</span><a href="https://github.com/Kotlin/dokka"><span class="padded-icon"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 0H2.3949L4.84076 2.44586L0 7.28662L0.713376 8L5.55414 3.15924L8 5.6051V0Z" fill="black"/>
+</svg></span></a></span></div>
+      </div>
+    </div>
+  </body>
+</html>
+
