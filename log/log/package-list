@@ -1,0 +1,26 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:ktx.log////PointingToDeclaration/log/ktx.log/index.html
+$dokka.location:ktx.log//debug/#kotlin.String#kotlin.Function0[kotlin.String]/PointingToDeclaration/log/ktx.log/debug.html
+$dokka.location:ktx.log//debug/#kotlin.Throwable#kotlin.String#kotlin.Function0[kotlin.String]/PointingToDeclaration/log/ktx.log/debug.html
+$dokka.location:ktx.log//debug/ktx.log.Logger#kotlin.Function0[kotlin.String]/PointingToDeclaration/log/ktx.log/debug.html
+$dokka.location:ktx.log//debug/ktx.log.Logger#kotlin.Throwable#kotlin.Function0[kotlin.String]/PointingToDeclaration/log/ktx.log/debug.html
+$dokka.location:ktx.log//error/#kotlin.String#kotlin.Function0[kotlin.String]/PointingToDeclaration/log/ktx.log/error.html
+$dokka.location:ktx.log//error/#kotlin.Throwable#kotlin.String#kotlin.Function0[kotlin.String]/PointingToDeclaration/log/ktx.log/error.html
+$dokka.location:ktx.log//error/ktx.log.Logger#kotlin.Function0[kotlin.String]/PointingToDeclaration/log/ktx.log/error.html
+$dokka.location:ktx.log//error/ktx.log.Logger#kotlin.Throwable#kotlin.Function0[kotlin.String]/PointingToDeclaration/log/ktx.log/error.html
+$dokka.location:ktx.log//info/#kotlin.String#kotlin.Function0[kotlin.String]/PointingToDeclaration/log/ktx.log/info.html
+$dokka.location:ktx.log//info/#kotlin.Throwable#kotlin.String#kotlin.Function0[kotlin.String]/PointingToDeclaration/log/ktx.log/info.html
+$dokka.location:ktx.log//info/ktx.log.Logger#kotlin.Function0[kotlin.String]/PointingToDeclaration/log/ktx.log/info.html
+$dokka.location:ktx.log//info/ktx.log.Logger#kotlin.Throwable#kotlin.Function0[kotlin.String]/PointingToDeclaration/log/ktx.log/info.html
+$dokka.location:ktx.log//logger/#/PointingToDeclaration/log/ktx.log/logger.html
+$dokka.location:ktx.log/Logger///PointingToDeclaration/log/ktx.log/-logger/index.html
+$dokka.location:ktx.log/Logger/Logger/#kotlin.String#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/log/ktx.log/-logger/-logger.html
+$dokka.location:ktx.log/Logger/debugTag/#/PointingToDeclaration/log/ktx.log/-logger/debug-tag.html
+$dokka.location:ktx.log/Logger/errorTag/#/PointingToDeclaration/log/ktx.log/-logger/error-tag.html
+$dokka.location:ktx.log/Logger/infoTag/#/PointingToDeclaration/log/ktx.log/-logger/info-tag.html
+$dokka.location:ktx.log/Logger/invoke/#kotlin.Function0[kotlin.String]/PointingToDeclaration/log/ktx.log/-logger/invoke.html
+$dokka.location:ktx.log/Logger/invoke/#kotlin.Throwable#kotlin.Function0[kotlin.String]/PointingToDeclaration/log/ktx.log/-logger/invoke.html
+$dokka.location:ktx.log/Logger/tag/#/PointingToDeclaration/log/ktx.log/-logger/tag.html
+ktx.log
+

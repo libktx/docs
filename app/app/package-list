@@ -1,0 +1,53 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:ktx.app////PointingToDeclaration/app/ktx.app/index.html
+$dokka.location:ktx.app//clearScreen/#kotlin.Float#kotlin.Float#kotlin.Float#kotlin.Float#kotlin.Boolean/PointingToDeclaration/app/ktx.app/clear-screen.html
+$dokka.location:ktx.app//emptyScreen/#/PointingToDeclaration/app/ktx.app/empty-screen.html
+$dokka.location:ktx.app//prettyPrint/com.badlogic.gdx.utils.PerformanceCounter#kotlin.String/PointingToDeclaration/app/ktx.app/pretty-print.html
+$dokka.location:ktx.app//profile/#kotlin.String#kotlin.Int#kotlin.Boolean#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/app/ktx.app/profile.html
+$dokka.location:ktx.app//profile/com.badlogic.gdx.utils.PerformanceCounter#kotlin.Int#kotlin.Boolean#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/app/ktx.app/profile.html
+$dokka.location:ktx.app/KtxApplicationAdapter///PointingToDeclaration/app/ktx.app/-ktx-application-adapter/index.html
+$dokka.location:ktx.app/KtxApplicationAdapter/create/#/PointingToDeclaration/app/ktx.app/-ktx-application-adapter/create.html
+$dokka.location:ktx.app/KtxApplicationAdapter/dispose/#/PointingToDeclaration/app/ktx.app/-ktx-application-adapter/dispose.html
+$dokka.location:ktx.app/KtxApplicationAdapter/pause/#/PointingToDeclaration/app/ktx.app/-ktx-application-adapter/pause.html
+$dokka.location:ktx.app/KtxApplicationAdapter/render/#/PointingToDeclaration/app/ktx.app/-ktx-application-adapter/render.html
+$dokka.location:ktx.app/KtxApplicationAdapter/resize/#kotlin.Int#kotlin.Int/PointingToDeclaration/app/ktx.app/-ktx-application-adapter/resize.html
+$dokka.location:ktx.app/KtxApplicationAdapter/resume/#/PointingToDeclaration/app/ktx.app/-ktx-application-adapter/resume.html
+$dokka.location:ktx.app/KtxGame///PointingToDeclaration/app/ktx.app/-ktx-game/index.html
+$dokka.location:ktx.app/KtxGame/KtxGame/#TypeParam(bounds=[com.badlogic.gdx.Screen])?#kotlin.Boolean/PointingToDeclaration/app/ktx.app/-ktx-game/-ktx-game.html
+$dokka.location:ktx.app/KtxGame/addScreen/#TypeParam(bounds=[TypeParam(bounds=[com.badlogic.gdx.Screen])])/PointingToDeclaration/app/ktx.app/-ktx-game/add-screen.html
+$dokka.location:ktx.app/KtxGame/addScreen/#java.lang.Class[TypeParam(bounds=[TypeParam(bounds=[com.badlogic.gdx.Screen])])]#TypeParam(bounds=[TypeParam(bounds=[com.badlogic.gdx.Screen])])/PointingToDeclaration/app/ktx.app/-ktx-game/add-screen.html
+$dokka.location:ktx.app/KtxGame/containsScreen/#/PointingToDeclaration/app/ktx.app/-ktx-game/contains-screen.html
+$dokka.location:ktx.app/KtxGame/containsScreen/#java.lang.Class[TypeParam(bounds=[TypeParam(bounds=[com.badlogic.gdx.Screen])])]/PointingToDeclaration/app/ktx.app/-ktx-game/contains-screen.html
+$dokka.location:ktx.app/KtxGame/create/#/PointingToDeclaration/app/ktx.app/-ktx-game/create.html
+$dokka.location:ktx.app/KtxGame/dispose/#/PointingToDeclaration/app/ktx.app/-ktx-game/dispose.html
+$dokka.location:ktx.app/KtxGame/getScreen/#/PointingToDeclaration/app/ktx.app/-ktx-game/get-screen.html
+$dokka.location:ktx.app/KtxGame/getScreen/#java.lang.Class[TypeParam(bounds=[TypeParam(bounds=[com.badlogic.gdx.Screen])])]/PointingToDeclaration/app/ktx.app/-ktx-game/get-screen.html
+$dokka.location:ktx.app/KtxGame/pause/#/PointingToDeclaration/app/ktx.app/-ktx-game/pause.html
+$dokka.location:ktx.app/KtxGame/removeScreen/#/PointingToDeclaration/app/ktx.app/-ktx-game/remove-screen.html
+$dokka.location:ktx.app/KtxGame/removeScreen/#java.lang.Class[TypeParam(bounds=[TypeParam(bounds=[com.badlogic.gdx.Screen])])]/PointingToDeclaration/app/ktx.app/-ktx-game/remove-screen.html
+$dokka.location:ktx.app/KtxGame/render/#/PointingToDeclaration/app/ktx.app/-ktx-game/render.html
+$dokka.location:ktx.app/KtxGame/resize/#kotlin.Int#kotlin.Int/PointingToDeclaration/app/ktx.app/-ktx-game/resize.html
+$dokka.location:ktx.app/KtxGame/resume/#/PointingToDeclaration/app/ktx.app/-ktx-game/resume.html
+$dokka.location:ktx.app/KtxGame/setScreen/#/PointingToDeclaration/app/ktx.app/-ktx-game/set-screen.html
+$dokka.location:ktx.app/KtxGame/setScreen/#java.lang.Class[TypeParam(bounds=[TypeParam(bounds=[com.badlogic.gdx.Screen])])]/PointingToDeclaration/app/ktx.app/-ktx-game/set-screen.html
+$dokka.location:ktx.app/KtxGame/shownScreen/#/PointingToDeclaration/app/ktx.app/-ktx-game/shown-screen.html
+$dokka.location:ktx.app/KtxInputAdapter///PointingToDeclaration/app/ktx.app/-ktx-input-adapter/index.html
+$dokka.location:ktx.app/KtxInputAdapter/keyDown/#kotlin.Int/PointingToDeclaration/app/ktx.app/-ktx-input-adapter/key-down.html
+$dokka.location:ktx.app/KtxInputAdapter/keyTyped/#kotlin.Char/PointingToDeclaration/app/ktx.app/-ktx-input-adapter/key-typed.html
+$dokka.location:ktx.app/KtxInputAdapter/keyUp/#kotlin.Int/PointingToDeclaration/app/ktx.app/-ktx-input-adapter/key-up.html
+$dokka.location:ktx.app/KtxInputAdapter/mouseMoved/#kotlin.Int#kotlin.Int/PointingToDeclaration/app/ktx.app/-ktx-input-adapter/mouse-moved.html
+$dokka.location:ktx.app/KtxInputAdapter/scrolled/#kotlin.Float#kotlin.Float/PointingToDeclaration/app/ktx.app/-ktx-input-adapter/scrolled.html
+$dokka.location:ktx.app/KtxInputAdapter/touchDown/#kotlin.Int#kotlin.Int#kotlin.Int#kotlin.Int/PointingToDeclaration/app/ktx.app/-ktx-input-adapter/touch-down.html
+$dokka.location:ktx.app/KtxInputAdapter/touchDragged/#kotlin.Int#kotlin.Int#kotlin.Int/PointingToDeclaration/app/ktx.app/-ktx-input-adapter/touch-dragged.html
+$dokka.location:ktx.app/KtxInputAdapter/touchUp/#kotlin.Int#kotlin.Int#kotlin.Int#kotlin.Int/PointingToDeclaration/app/ktx.app/-ktx-input-adapter/touch-up.html
+$dokka.location:ktx.app/KtxScreen///PointingToDeclaration/app/ktx.app/-ktx-screen/index.html
+$dokka.location:ktx.app/KtxScreen/dispose/#/PointingToDeclaration/app/ktx.app/-ktx-screen/dispose.html
+$dokka.location:ktx.app/KtxScreen/hide/#/PointingToDeclaration/app/ktx.app/-ktx-screen/hide.html
+$dokka.location:ktx.app/KtxScreen/pause/#/PointingToDeclaration/app/ktx.app/-ktx-screen/pause.html
+$dokka.location:ktx.app/KtxScreen/render/#kotlin.Float/PointingToDeclaration/app/ktx.app/-ktx-screen/render.html
+$dokka.location:ktx.app/KtxScreen/resize/#kotlin.Int#kotlin.Int/PointingToDeclaration/app/ktx.app/-ktx-screen/resize.html
+$dokka.location:ktx.app/KtxScreen/resume/#/PointingToDeclaration/app/ktx.app/-ktx-screen/resume.html
+$dokka.location:ktx.app/KtxScreen/show/#/PointingToDeclaration/app/ktx.app/-ktx-screen/show.html
+ktx.app
+

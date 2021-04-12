@@ -1,0 +1,33 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:ktx.inject////PointingToDeclaration/inject/ktx.inject/index.html
+$dokka.location:ktx.inject//register/ktx.inject.Context#kotlin.Function1[ktx.inject.Context,kotlin.Unit]/PointingToDeclaration/inject/ktx.inject/register.html
+$dokka.location:ktx.inject/Context///PointingToDeclaration/inject/ktx.inject/-context/index.html
+$dokka.location:ktx.inject/Context/Context/#/PointingToDeclaration/inject/ktx.inject/-context/-context.html
+$dokka.location:ktx.inject/Context/bind/#kotlin.Array[kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Any])]]#kotlin.Function0[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/inject/ktx.inject/-context/bind.html
+$dokka.location:ktx.inject/Context/bind/#kotlin.Function0[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/inject/ktx.inject/-context/bind.html
+$dokka.location:ktx.inject/Context/bindSingleton/#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/inject/ktx.inject/-context/bind-singleton.html
+$dokka.location:ktx.inject/Context/bindSingleton/#kotlin.Array[kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Any])]]#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/inject/ktx.inject/-context/bind-singleton.html
+$dokka.location:ktx.inject/Context/bindSingleton/#kotlin.Array[kotlin.reflect.KClass[TypeParam(bounds=[kotlin.Any])]]#kotlin.Function0[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/inject/ktx.inject/-context/bind-singleton.html
+$dokka.location:ktx.inject/Context/bindSingleton/#kotlin.Function0[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/inject/ktx.inject/-context/bind-singleton.html
+$dokka.location:ktx.inject/Context/clear/#/PointingToDeclaration/inject/ktx.inject/-context/clear.html
+$dokka.location:ktx.inject/Context/contains/#/PointingToDeclaration/inject/ktx.inject/-context/contains.html
+$dokka.location:ktx.inject/Context/contains/#java.lang.Class[*]/PointingToDeclaration/inject/ktx.inject/-context/contains.html
+$dokka.location:ktx.inject/Context/contains/#kotlin.reflect.KClass[*]/PointingToDeclaration/inject/ktx.inject/-context/contains.html
+$dokka.location:ktx.inject/Context/dispose/#/PointingToDeclaration/inject/ktx.inject/-context/dispose.html
+$dokka.location:ktx.inject/Context/getProvider/#java.lang.Class[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/inject/ktx.inject/-context/get-provider.html
+$dokka.location:ktx.inject/Context/inject/#/PointingToDeclaration/inject/ktx.inject/-context/inject.html
+$dokka.location:ktx.inject/Context/invoke/#/PointingToDeclaration/inject/ktx.inject/-context/invoke.html
+$dokka.location:ktx.inject/Context/provider/#/PointingToDeclaration/inject/ktx.inject/-context/provider.html
+$dokka.location:ktx.inject/Context/remove/#/PointingToDeclaration/inject/ktx.inject/-context/remove.html
+$dokka.location:ktx.inject/Context/removeProvider/#java.lang.Class[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/inject/ktx.inject/-context/remove-provider.html
+$dokka.location:ktx.inject/Context/setProvider/#java.lang.Class[*]#kotlin.Function0[kotlin.Any]/PointingToDeclaration/inject/ktx.inject/-context/set-provider.html
+$dokka.location:ktx.inject/InjectionException///PointingToDeclaration/inject/ktx.inject/-injection-exception/index.html
+$dokka.location:ktx.inject/InjectionException/InjectionException/#kotlin.String#kotlin.Throwable?/PointingToDeclaration/inject/ktx.inject/-injection-exception/-injection-exception.html
+$dokka.location:ktx.inject/SingletonProvider///PointingToDeclaration/inject/ktx.inject/-singleton-provider/index.html
+$dokka.location:ktx.inject/SingletonProvider/SingletonProvider/#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/inject/ktx.inject/-singleton-provider/-singleton-provider.html
+$dokka.location:ktx.inject/SingletonProvider/dispose/#/PointingToDeclaration/inject/ktx.inject/-singleton-provider/dispose.html
+$dokka.location:ktx.inject/SingletonProvider/invoke/#/PointingToDeclaration/inject/ktx.inject/-singleton-provider/invoke.html
+$dokka.location:ktx.inject/SingletonProvider/singleton/#/PointingToDeclaration/inject/ktx.inject/-singleton-provider/singleton.html
+ktx.inject
+
