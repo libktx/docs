@@ -24,7 +24,7 @@ $dokka.location:ktx.assets//load/com.badlogic.gdx.assets.AssetManager#kotlin.Str
 $dokka.location:ktx.assets//loadAsset/com.badlogic.gdx.assets.AssetManager#com.badlogic.gdx.assets.AssetDescriptor[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/assets/ktx.assets/load-asset.html
 $dokka.location:ktx.assets//loadOnDemand/com.badlogic.gdx.assets.AssetManager#com.badlogic.gdx.assets.AssetDescriptor[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/assets/ktx.assets/load-on-demand.html
 $dokka.location:ktx.assets//loadOnDemand/com.badlogic.gdx.assets.AssetManager#kotlin.String#com.badlogic.gdx.assets.AssetLoaderParameters[TypeParam(bounds=[kotlin.Any])]?/PointingToDeclaration/assets/ktx.assets/load-on-demand.html
-$dokka.location:ktx.assets//pool/#kotlin.Int#kotlin.Int#kotlin.Function0[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/assets/ktx.assets/pool.html
+$dokka.location:ktx.assets//pool/#kotlin.Int#kotlin.Int#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]#kotlin.Function0[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/assets/ktx.assets/pool.html
 $dokka.location:ktx.assets//resolution/#kotlin.Int#kotlin.Int#kotlin.String/PointingToDeclaration/assets/ktx.assets/resolution.html
 $dokka.location:ktx.assets//setLoader/com.badlogic.gdx.assets.AssetManager#com.badlogic.gdx.assets.loaders.AssetLoader[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[com.badlogic.gdx.assets.AssetLoaderParameters[TypeParam(bounds=[kotlin.Any])]])]#kotlin.String?/PointingToDeclaration/assets/ktx.assets/set-loader.html
 $dokka.location:ktx.assets//toAbsoluteFile/kotlin.String?#/PointingToDeclaration/assets/ktx.assets/to-absolute-file.html
