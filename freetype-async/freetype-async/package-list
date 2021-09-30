@@ -1,7 +1,0 @@
-$dokka.format:html-v1
-$dokka.linkExtension:html
-$dokka.location:ktx.freetype.async////PointingToDeclaration/freetype-async/ktx.freetype.async/index.html
-$dokka.location:ktx.freetype.async//loadFreeTypeFont/ktx.assets.async.AssetStorage#kotlin.String#kotlin.Function1[com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter,kotlin.Unit]/PointingToDeclaration/freetype-async/ktx.freetype.async/load-free-type-font.html
-$dokka.location:ktx.freetype.async//registerFreeTypeFontLoaders/ktx.assets.async.AssetStorage#kotlin.Array[kotlin.String]#kotlin.Boolean/PointingToDeclaration/freetype-async/ktx.freetype.async/register-free-type-font-loaders.html
-ktx.freetype.async
-

@@ -1,0 +1,612 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AssetStorage</title>
+</head><body><link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script><script type="text/javascript" src="../../../scripts/main.js" async></script>
+  
+    <div id="container">
+      <div id="leftColumn"><a href="../../../index.html">
+            <div id="logo"></div>
+          </a>
+        <div id="paneSearch"></div>
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <script type="text/javascript" src="../../../scripts/main.js"></script><div id="leftToggler"><span class="icon-toggler"></span></div>
+
+        <div class="main-content" id="content" pageids="assets-async::ktx.assets.async/AssetStorage///PointingToDeclaration//-1707403626">
+          <div class="navigation-wrapper" id="navigation-wrapper">
+            <div class="breadcrumbs"><a href="../../index.html">assets-async</a>/<a href="../index.html">ktx.assets.async</a>/<a href="index.html">AssetStorage</a></div>
+            <div class="pull-right d-flex">
+              <div id="searchBar"></div>
+            </div>
+          </div>
+          <div class="cover ">
+            <h1 class="cover"><span>Asset</span><wbr><span><span>Storage</span></span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">class <a href="index.html">AssetStorage</a>(asyncContext: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a>, fileResolver: <span data-unresolved-link="com.badlogic.gdx.assets.loaders/FileHandleResolver///PointingToDeclaration/">FileHandleResolver</span>, useDefaultLoaders: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>) : <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Asynchronous asset loader based on coroutines API. An <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a> alternative.</p><p class="paragraph">Note that <a href="../../../async/ktx.async/-ktx-async/initiate.html">KtxAsync.initiate</a> must be called on the rendering thread before creating an <a href="index.html">AssetStorage</a>.</p><p class="paragraph"><a href="async-context.html">asyncContext</a> is used to perform asynchronous file loading. Defaults to a single-threaded context using an <span data-unresolved-link="com.badlogic.gdx.utils.async/AsyncExecutor///PointingToDeclaration/">AsyncExecutor</span>. See <a href="../../../async/ktx.async/index.html">newSingleThreadAsyncContext</a> or <a href="../../../async/ktx.async/index.html">ktx.async.newAsyncContext</a> functions to create a custom loading context. Multi-threaded contexts are fully supported and might boost loading performance if the assets are loaded asynchronously in parallel.</p><p class="paragraph"><a href="file-resolver.html">fileResolver</a> determines how file paths are interpreted. Defaults to <span data-unresolved-link="com.badlogic.gdx.assets.loaders.resolvers/InternalFileHandleResolver///PointingToDeclaration/">InternalFileHandleResolver</span>, which loads internal files.</p><p class="paragraph">If <code>useDefaultLoaders</code> is true (which is the default), all default LibGDX <span data-unresolved-link="com.badlogic.gdx.assets.loaders/AssetLoader///PointingToDeclaration/">AssetLoader</span> implementations will be registered.</p></div></div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+            <div class="tabs-section-body">
+              <h2 class="tabbedcontent">Constructors</h2>
+              <div class="table" data-togglable="Constructors"><a data-name="-741721059%2FConstructors%2F-1707403626" anchor-label="AssetStorage" id="-741721059%2FConstructors%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue TabbedContent">
+                    <div class=""><span class="inline-flex"><a href="-asset-storage.html">AssetStorage</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-741721059%2FConstructors%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="-asset-storage.html">AssetStorage</a>(asyncContext: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a> = newSingleThreadAsyncContext(threadName = "AssetStorage-Thread"), fileResolver: <span data-unresolved-link="com.badlogic.gdx.assets.loaders/FileHandleResolver///PointingToDeclaration/">FileHandleResolver</span> = InternalFileHandleResolver(), useDefaultLoaders: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = true)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Functions</h2>
+              <div class="table" data-togglable="Functions"><a data-name="732689050%2FFunctions%2F-1707403626" anchor-label="add" id="732689050%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="add.html"><span><span>add</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="732689050%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">suspend fun &lt;<a href="add.html">T</a>&gt; <a href="add.html">add</a>(descriptor: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a>&lt;<a href="add.html">T</a>&gt;, asset: <a href="add.html">T</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace">inline suspend fun &lt;<a href="add.html">T</a>&gt; <a href="add.html">add</a>(path: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, asset: <a href="add.html">T</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace">suspend fun &lt;<a href="add.html">T</a>&gt; <a href="add.html">add</a>(identifier: <a href="../-identifier/index.html">Identifier</a>&lt;<a href="add.html">T</a>&gt;, asset: <a href="add.html">T</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Adds a fully loaded <a href="add.html">asset</a> to the storage. Allows to avoid loading the asset with the <a href="index.html">AssetStorage</a> and to manually add it to storage context.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-2048296283%2FFunctions%2F-1707403626" anchor-label="contains" id="-2048296283%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="contains.html"><span><span>contains</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2048296283%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">operator fun <a href="contains.html">contains</a>(descriptor: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a>&lt;*&gt;): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Checks whether an asset described by <a href="contains.html">descriptor</a> is currently managed by the storage. This will return true for assets that are currently being loaded or</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">inline operator fun &lt;<a href="contains.html">T</a>&gt; <a href="contains.html">contains</a>(path: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Checks whether an asset in the selected <a href="contains.html">path</a> and <a href="contains.html">T</a> type is currently managed by the storage. This will return true for assets that are currently being loaded or</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">operator fun <a href="contains.html">contains</a>(identifier: <a href="../-identifier/index.html">Identifier</a>&lt;*&gt;): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Checks whether an asset identified by <a href="contains.html">identifier</a> is currently managed by the storage. This will return true for assets that are currently being loaded or</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1594551366%2FFunctions%2F-1707403626" anchor-label="dispose" id="-1594551366%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="dispose.html"><span><span>dispose</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1594551366%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">open override fun <a href="dispose.html">dispose</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Unloads all assets. Blocks current thread until are assets are unloaded. Logs all disposing exceptions.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">suspend fun <a href="dispose.html">dispose</a>(onError: (identifier: <a href="../-identifier/index.html">Identifier</a>&lt;*&gt;, cause: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html">Throwable</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Unloads all assets. Cancels loading of all scheduled assets. <a href="dispose.html">onError</a> will be invoked on every caught disposing exception.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1130555920%2FFunctions%2F-1707403626" anchor-label="get" id="-1130555920%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get.html"><span><span>get</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1130555920%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">operator fun &lt;<a href="get.html">T</a>&gt; <a href="get.html">get</a>(descriptor: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a>&lt;<a href="get.html">T</a>&gt;): <a href="get.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Returns a loaded asset of type <a href="get.html">T</a> described by <a href="get.html">descriptor</a> or throws <a href="../-missing-asset-exception/index.html">MissingAssetException</a> if the asset is not loaded yet or was never scheduled for loading. Rethrows any exceptions encountered during asset loading.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">inline operator fun &lt;<a href="get.html">T</a>&gt; <a href="get.html">get</a>(path: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="get.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Returns a loaded asset of type <a href="get.html">T</a> loaded from selected <a href="get.html">path</a> or throws <a href="../-missing-asset-exception/index.html">MissingAssetException</a> if the asset is not loaded yet or was never scheduled for loading. Rethrows any exceptions encountered during asset loading.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">operator fun &lt;<a href="get.html">T</a>&gt; <a href="get.html">get</a>(identifier: <a href="../-identifier/index.html">Identifier</a>&lt;<a href="get.html">T</a>&gt;): <a href="get.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Returns a loaded asset of type <a href="get.html">T</a> identified by <a href="get.html">identifier</a> or throws <a href="../-missing-asset-exception/index.html">MissingAssetException</a> if the asset is not loaded yet or was never scheduled for loading. Rethrows any exceptions encountered during asset loading.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1241494650%2FFunctions%2F-1707403626" anchor-label="getAssetDescriptor" id="-1241494650%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-asset-descriptor.html"><span>get</span><wbr><span>Asset</span><wbr><span><span>Descriptor</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1241494650%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="get-asset-descriptor.html">T</a>&gt; <a href="get-asset-descriptor.html">getAssetDescriptor</a>(path: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, parameters: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-loader-parameters/index.html">AssetLoaderParameters</a>&lt;<a href="get-asset-descriptor.html">T</a>&gt;? = null, fileHandle: <span data-unresolved-link="com.badlogic.gdx.files/FileHandle///PointingToDeclaration/">FileHandle</span>? = null): <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a>&lt;<a href="get-asset-descriptor.html">T</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Creates a new <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a> for the selected asset.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1023249662%2FFunctions%2F-1707403626" anchor-label="getAsync" id="1023249662%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-async.html"><span>get</span><wbr><span><span>Async</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1023249662%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun &lt;<a href="get-async.html">T</a>&gt; <a href="get-async.html">getAsync</a>(descriptor: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a>&lt;<a href="get-async.html">T</a>&gt;): <span data-unresolved-link="kotlinx.coroutines/Deferred///PointingToDeclaration/">Deferred</span>&lt;<a href="get-async.html">T</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Returns the reference to the asset wrapped with <span data-unresolved-link="kotlinx.coroutines/Deferred///PointingToDeclaration/">Deferred</span>. Use <span data-unresolved-link="kotlinx.coroutines/Deferred/await/#/PointingToDeclaration/">Deferred.await</span> to obtain the instance. Throws <a href="../-asset-storage-exception/index.html">AssetStorageException</a> if the asset was unloaded or never scheduled to begin with.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="get-async.html">T</a>&gt; <a href="get-async.html">getAsync</a>(path: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <span data-unresolved-link="kotlinx.coroutines/Deferred///PointingToDeclaration/">Deferred</span>&lt;<a href="get-async.html">T</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace">fun &lt;<a href="get-async.html">T</a>&gt; <a href="get-async.html">getAsync</a>(identifier: <a href="../-identifier/index.html">Identifier</a>&lt;<a href="get-async.html">T</a>&gt;): <span data-unresolved-link="kotlinx.coroutines/Deferred///PointingToDeclaration/">Deferred</span>&lt;<a href="get-async.html">T</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Returns the reference to the asset wrapped with <span data-unresolved-link="kotlinx.coroutines/Deferred///PointingToDeclaration/">Deferred</span>. Use <span data-unresolved-link="kotlinx.coroutines/Deferred/await/#/PointingToDeclaration/">Deferred.await</span> to obtain the instance.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1539091801%2FFunctions%2F-1707403626" anchor-label="getDependencies" id="1539091801%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-dependencies.html"><span>get</span><wbr><span><span>Dependencies</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1539091801%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="get-dependencies.html">getDependencies</a>(descriptor: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a>&lt;*&gt;): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../-identifier/index.html">Identifier</a>&lt;*&gt;&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Returns a copy of the list of dependencies of the asset described by <a href="get-dependencies.html">descriptor</a>. If the asset is not loaded or has no dependencies, an empty list is returned.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="get-dependencies.html">T</a>&gt; <a href="get-dependencies.html">getDependencies</a>(path: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../-identifier/index.html">Identifier</a>&lt;*&gt;&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Returns a copy of the list of dependencies of the asset under <a href="get-dependencies.html">path</a> with <a href="get-dependencies.html">T</a> type. If the asset is not loaded or has no dependencies, an empty list is returned.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="get-dependencies.html">getDependencies</a>(identifier: <a href="../-identifier/index.html">Identifier</a>&lt;*&gt;): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a>&lt;<a href="../-identifier/index.html">Identifier</a>&lt;*&gt;&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Returns a copy of the list of dependencies of the asset identified by <a href="get-dependencies.html">identifier</a>. If the asset is not loaded or has no dependencies, an empty list is returned.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="720397761%2FFunctions%2F-1707403626" anchor-label="getIdentifier" id="720397761%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-identifier.html"><span>get</span><wbr><span><span>Identifier</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="720397761%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="get-identifier.html">T</a>&gt; <a href="get-identifier.html">getIdentifier</a>(path: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="../-identifier/index.html">Identifier</a>&lt;<a href="get-identifier.html">T</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Creates a new <a href="../-identifier/index.html">Identifier</a> that allows to uniquely describe an asset by <a href="get-identifier.html">path</a> and class. Uses reified <a href="get-identifier.html">T</a> type to obtain the asset class.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1014586849%2FFunctions%2F-1707403626" anchor-label="getLoader" id="1014586849%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-loader.html"><span>get</span><wbr><span><span>Loader</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1014586849%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="get-loader.html">Asset</a>&gt; <a href="get-loader.html">getLoader</a>(path: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null): <a href="../index.html#342116095%2FClasslikes%2F-1707403626">Loader</a>&lt;<a href="get-loader.html">Asset</a>&gt;?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Returns the <span data-unresolved-link="com.badlogic.gdx.assets.loaders/AssetLoader///PointingToDeclaration/">AssetLoader</span> associated with the file. <a href="get-loader.html">Asset</a> is used to determine the type of the loaded file. <a href="get-loader.html">path</a> might be necessary to choose the correct loader, as some loaders might be assigned to specific file  suffixes or extensions.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun &lt;<a href="get-loader.html">Asset</a>&gt; <a href="get-loader.html">getLoader</a>(type: <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a>&lt;<a href="get-loader.html">Asset</a>&gt;, path: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>?): <a href="../index.html#342116095%2FClasslikes%2F-1707403626">Loader</a>&lt;<a href="get-loader.html">Asset</a>&gt;?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Internal API exposed for inlined method. See inlined <a href="get-loader.html">getLoader</a> with generics. <a href="get-loader.html">type</a> is the class of the loaded asset, while path is used to determine if a loader specifically assigned to a file suffix or extension is necessary.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="91098778%2FFunctions%2F-1707403626" anchor-label="getOrNull" id="91098778%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-or-null.html"><span>get</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="91098778%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun &lt;<a href="get-or-null.html">T</a>&gt; <a href="get-or-null.html">getOrNull</a>(descriptor: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a>&lt;<a href="get-or-null.html">T</a>&gt;): <a href="get-or-null.html">T</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Returns a loaded asset of type <a href="get-or-null.html">T</a> described by <a href="get-or-null.html">descriptor</a> or <code>null</code> if the asset is not loaded yet or was never scheduled for loading. Rethrows any exceptions encountered during asset loading.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="get-or-null.html">T</a>&gt; <a href="get-or-null.html">getOrNull</a>(path: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="get-or-null.html">T</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Returns a loaded asset of type <a href="get-or-null.html">T</a> loaded from selected <a href="get-or-null.html">path</a> or <code>null</code> if the asset is not loaded yet or was never scheduled for loading. Rethrows any exceptions encountered during asset loading.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun &lt;<a href="get-or-null.html">T</a>&gt; <a href="get-or-null.html">getOrNull</a>(identifier: <a href="../-identifier/index.html">Identifier</a>&lt;<a href="get-or-null.html">T</a>&gt;): <a href="get-or-null.html">T</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Returns a loaded asset of type <a href="get-or-null.html">T</a> identified by <a href="get-or-null.html">identifier</a> or <code>null</code> if the asset is not loaded yet or was never scheduled for loading. Rethrows any exceptions encountered during asset loading.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1044792620%2FFunctions%2F-1707403626" anchor-label="getReferenceCount" id="-1044792620%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="get-reference-count.html"><span>get</span><wbr><span>Reference</span><wbr><span><span>Count</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1044792620%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="get-reference-count.html">getReferenceCount</a>(descriptor: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a>&lt;*&gt;): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Returns the amount of references to the asset described by <a href="get-reference-count.html">descriptor</a>.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="get-reference-count.html">T</a>&gt; <a href="get-reference-count.html">getReferenceCount</a>(path: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Returns the amount of references to the asset under the given <a href="get-reference-count.html">path</a> of <a href="get-reference-count.html">T</a> type.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="get-reference-count.html">getReferenceCount</a>(identifier: <a href="../-identifier/index.html">Identifier</a>&lt;*&gt;): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Returns the amount of references to the asset identified by <a href="get-reference-count.html">identifier</a>.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="343119605%2FFunctions%2F-1707403626" anchor-label="isLoaded" id="343119605%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="is-loaded.html"><span>is</span><wbr><span><span>Loaded</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="343119605%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="is-loaded.html">isLoaded</a>(descriptor: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a>&lt;*&gt;): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Checks whether an asset described with <a href="is-loaded.html">descriptor</a> is already loaded. Returns false if the asset is not loaded yet, is unloaded or was never loaded to begin with.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="is-loaded.html">T</a>&gt; <a href="is-loaded.html">isLoaded</a>(path: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Checks whether an asset in the selected <a href="is-loaded.html">path</a> with <a href="is-loaded.html">T</a> type is already loaded. Returns false if the asset is not loaded yet, is unloaded or was never loaded to begin with.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="is-loaded.html">isLoaded</a>(identifier: <a href="../-identifier/index.html">Identifier</a>&lt;*&gt;): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Checks whether an asset identified with <a href="is-loaded.html">identifier</a> is already loaded. Returns false if the asset is not loaded yet, is unloaded or was never loaded to begin with.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-337584450%2FFunctions%2F-1707403626" anchor-label="load" id="-337584450%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="load.html"><span><span>load</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-337584450%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">suspend fun &lt;<a href="load.html">T</a>&gt; <a href="load.html">load</a>(descriptor: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a>&lt;<a href="load.html">T</a>&gt;): <a href="load.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Schedules loading of an asset of <a href="load.html">T</a> type described by the <a href="load.html">descriptor</a>. Suspends the coroutine until an asset is loaded and returns a fully loaded instance of <a href="load.html">T</a>.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">inline suspend fun &lt;<a href="load.html">T</a>&gt; <a href="load.html">load</a>(path: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, parameters: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-loader-parameters/index.html">AssetLoaderParameters</a>&lt;<a href="load.html">T</a>&gt;? = null): <a href="load.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Schedules loading of an asset of <a href="load.html">T</a> type located at <a href="load.html">path</a>. Suspends the coroutine until an asset is loaded and returns a fully loaded instance of <a href="load.html">T</a>.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">suspend fun &lt;<a href="load.html">T</a>&gt; <a href="load.html">load</a>(identifier: <a href="../-identifier/index.html">Identifier</a>&lt;<a href="load.html">T</a>&gt;, parameters: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-loader-parameters/index.html">AssetLoaderParameters</a>&lt;<a href="load.html">T</a>&gt;? = null): <a href="load.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Schedules loading of an asset with path and type specified by <a href="load.html">identifier</a>. Suspends the coroutine until an asset is loaded and returns a fully loaded instance of <a href="load.html">T</a>.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="431811654%2FFunctions%2F-1707403626" anchor-label="loadAsync" id="431811654%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="load-async.html"><span>load</span><wbr><span><span>Async</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="431811654%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun &lt;<a href="load-async.html">T</a>&gt; <a href="load-async.html">loadAsync</a>(descriptor: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a>&lt;<a href="load-async.html">T</a>&gt;): <span data-unresolved-link="kotlinx.coroutines/Deferred///PointingToDeclaration/">Deferred</span>&lt;<a href="load-async.html">T</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Schedules loading of an asset of <a href="load-async.html">T</a> type described by the <a href="load-async.html">descriptor</a>. Suspends the coroutine until an asset is loaded and returns a fully loaded instance of <a href="load-async.html">T</a>.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="load-async.html">T</a>&gt; <a href="load-async.html">loadAsync</a>(path: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, parameters: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-loader-parameters/index.html">AssetLoaderParameters</a>&lt;<a href="load-async.html">T</a>&gt;? = null): <span data-unresolved-link="kotlinx.coroutines/Deferred///PointingToDeclaration/">Deferred</span>&lt;<a href="load-async.html">T</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Schedules asynchronous loading of an asset of <a href="load-async.html">T</a> type located at <a href="load-async.html">path</a>. Return a <span data-unresolved-link="kotlinx.coroutines/Deferred///PointingToDeclaration/">Deferred</span> reference which will eventually point to a fully loaded instance of <a href="load-async.html">T</a>.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun &lt;<a href="load-async.html">T</a>&gt; <a href="load-async.html">loadAsync</a>(identifier: <a href="../-identifier/index.html">Identifier</a>&lt;<a href="load-async.html">T</a>&gt;, parameters: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-loader-parameters/index.html">AssetLoaderParameters</a>&lt;<a href="load-async.html">T</a>&gt;? = null): <span data-unresolved-link="kotlinx.coroutines/Deferred///PointingToDeclaration/">Deferred</span>&lt;<a href="load-async.html">T</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Schedules loading of an asset with path and type specified by <a href="load-async.html">identifier</a>. Suspends the coroutine until an asset is loaded and returns a fully loaded instance of <a href="load-async.html">T</a>.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-1581165346%2FFunctions%2F-1707403626" anchor-label="loadSync" id="-1581165346%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="load-sync.html"><span>load</span><wbr><span><span>Sync</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1581165346%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun &lt;<a href="load-sync.html">T</a>&gt; <a href="load-sync.html">loadSync</a>(descriptor: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a>&lt;<a href="load-sync.html">T</a>&gt;): <a href="load-sync.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Blocks the current thread until the asset with <a href="load-sync.html">T</a> type is loaded using the asset <a href="load-sync.html">descriptor</a>.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="load-sync.html">T</a>&gt; <a href="load-sync.html">loadSync</a>(path: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="load-sync.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Blocks the current thread until the asset with <a href="load-sync.html">T</a> type is loaded from the given <a href="load-sync.html">path</a>.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun &lt;<a href="load-sync.html">T</a>&gt; <a href="load-sync.html">loadSync</a>(identifier: <a href="../-identifier/index.html">Identifier</a>&lt;<a href="load-sync.html">T</a>&gt;, parameters: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-loader-parameters/index.html">AssetLoaderParameters</a>&lt;<a href="load-sync.html">T</a>&gt;? = null): <a href="load-sync.html">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Blocks the current thread until the asset with <a href="load-sync.html">T</a> type is loaded with data specified by the <a href="load-sync.html">identifier</a> and optional loading <a href="load-sync.html">parameters</a>.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-520924982%2FFunctions%2F-1707403626" anchor-label="normalizePath" id="-520924982%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="normalize-path.html"><span>normalize</span><wbr><span><span>Path</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-520924982%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>.<a href="normalize-path.html">normalizePath</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Matches <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a> pre-processing. Return this <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> with normalized file separators.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-708344995%2FFunctions%2F-1707403626" anchor-label="setLoader" id="-708344995%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="set-loader.html"><span>set</span><wbr><span><span>Loader</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-708344995%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="set-loader.html">T</a>&gt; <a href="set-loader.html">setLoader</a>(suffix: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, noinline loaderProvider: () -&gt; <a href="../index.html#342116095%2FClasslikes%2F-1707403626">Loader</a>&lt;<a href="set-loader.html">T</a>&gt;)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Associates the <span data-unresolved-link="com.badlogic.gdx.assets.loaders/AssetLoader///PointingToDeclaration/">AssetLoader</span> with specific asset type determined by <a href="set-loader.html">T</a>. <a href="set-loader.html">loaderProvider</a> should create a new instance of loader of the selected types. Optional <a href="set-loader.html">suffix</a> can be passed if the loader should handle only the files with a specific file name suffix or extension.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun &lt;<a href="set-loader.html">T</a>&gt; <a href="set-loader.html">setLoader</a>(type: <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a>&lt;<a href="set-loader.html">T</a>&gt;, suffix: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, loaderProvider: () -&gt; <a href="../index.html#342116095%2FClasslikes%2F-1707403626">Loader</a>&lt;<a href="set-loader.html">T</a>&gt;)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Internal API exposed for inlined method. See inlined <a href="set-loader.html">setLoader</a> with reified generics. Associates the <a href="set-loader.html">AssetLoader</a> with <a href="set-loader.html">type</a> under the specified optional <a href="set-loader.html">suffix</a>.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="686183917%2FFunctions%2F-1707403626" anchor-label="takeSnapshot" id="686183917%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="take-snapshot.html"><span>take</span><wbr><span><span>Snapshot</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="686183917%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="take-snapshot.html">takeSnapshot</a>(): <a href="../-asset-storage-snapshot/index.html">AssetStorageSnapshot</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Creates a deep copy of the internal assets storage. Returns an <a href="../-asset-storage-snapshot/index.html">AssetStorageSnapshot</a> with the current storage state. Blocks the current thread until the snapshot is complete. If assets are currently being loaded, avoid calling this method from within the rendering thread. For debugging purposes.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-914826063%2FFunctions%2F-1707403626" anchor-label="takeSnapshotAsync" id="-914826063%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="take-snapshot-async.html"><span>take</span><wbr><span>Snapshot</span><wbr><span><span>Async</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-914826063%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">suspend fun <a href="take-snapshot-async.html">takeSnapshotAsync</a>(): <a href="../-asset-storage-snapshot/index.html">AssetStorageSnapshot</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Creates a deep copy of the internal assets storage. Returns an <a href="../-asset-storage-snapshot/index.html">AssetStorageSnapshot</a> with the current storage state. For debugging purposes.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-2071428212%2FFunctions%2F-1707403626" anchor-label="toString" id="-2071428212%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="to-string.html"><span>to</span><wbr><span><span>String</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2071428212%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">open override fun <a href="to-string.html">toString</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+</div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-663815739%2FFunctions%2F-1707403626" anchor-label="unload" id="-663815739%2FFunctions%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="unload.html"><span><span>unload</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-663815739%2FFunctions%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">suspend fun <a href="unload.html">unload</a>(descriptor: <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a>&lt;*&gt;): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Removes asset described by the <a href="unload.html">descriptor</a> and all of its dependencies. Does nothing if asset was not loaded in the first place. Will not dispose of the asset if it still is referenced by any other assets. Any removed assets that implement <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span> will be disposed.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">inline suspend fun &lt;<a href="unload.html">T</a>&gt; <a href="unload.html">unload</a>(path: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Removes asset loaded with the given <a href="unload.html">path</a> and <a href="unload.html">T</a> type and all of its dependencies. Does nothing if asset was not loaded in the first place. Will not dispose of the asset if it still is referenced by any other assets. Any removed assets that implement <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span> will be disposed.</p></div></div>
+<div class="divergent-group" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace">suspend fun <a href="unload.html">unload</a>(identifier: <a href="../-identifier/index.html">Identifier</a>&lt;*&gt;): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<div class="brief "><p class="paragraph">Removes asset loaded with the given <a href="unload.html">identifier</a> and all of its dependencies. Does nothing if asset was not loaded in the first place. Will not dispose of the asset if it still is referenced by any other assets. Any removed assets that implement <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span> will be disposed.</p></div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Properties</h2>
+              <div class="table" data-togglable="Properties"><a data-name="559219397%2FProperties%2F-1707403626" anchor-label="asyncContext" id="559219397%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="async-context.html">asyncContext</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="559219397%2FProperties%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><a data-name="559219397%2FProperties%2F-1707403626" anchor-label="asyncContext" id="559219397%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a><div class="symbol monospace">val <a href="async-context.html">asyncContext</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="404000662%2FProperties%2F-1707403626" anchor-label="fileResolver" id="404000662%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="file-resolver.html">fileResolver</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="404000662%2FProperties%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><a data-name="404000662%2FProperties%2F-1707403626" anchor-label="fileResolver" id="404000662%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a><div class="symbol monospace">val <a href="file-resolver.html">fileResolver</a>: <span data-unresolved-link="com.badlogic.gdx.assets.loaders/FileHandleResolver///PointingToDeclaration/">FileHandleResolver</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="1846207400%2FProperties%2F-1707403626" anchor-label="logger" id="1846207400%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="logger.html">logger</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1846207400%2FProperties%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><a data-name="1846207400%2FProperties%2F-1707403626" anchor-label="logger" id="1846207400%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a><div class="symbol monospace">var <a href="logger.html">logger</a>: <span data-unresolved-link="com.badlogic.gdx.utils/Logger///PointingToDeclaration/">Logger</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="1846207400%2FProperties%2F-1707403626" anchor-label="logger" id="1846207400%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a><p class="paragraph">LibGDX <span data-unresolved-link="com.badlogic.gdx.utils/Logger///PointingToDeclaration/">Logger</span> used internally, usually to report issues.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="-672358677%2FProperties%2F-1707403626" anchor-label="progress" id="-672358677%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+                <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="progress.html">progress</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-672358677%2FProperties%2F-1707403626"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><a data-name="-672358677%2FProperties%2F-1707403626" anchor-label="progress" id="-672358677%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a><div class="symbol monospace">val <a href="progress.html">progress</a>: <a href="../-loading-progress/index.html">LoadingProgress</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-672358677%2FProperties%2F-1707403626" anchor-label="progress" id="-672358677%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a><p class="paragraph">Allows tracking progress of the loaded assets.</p></div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2021 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  
+</body></html>
+
+
