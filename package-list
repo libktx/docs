@@ -40,6 +40,8 @@ module:reflect
 ktx.reflect
 module:scene2d
 ktx.scene2d
+module:script
+ktx.script
 module:style
 ktx.style
 module:tiled
