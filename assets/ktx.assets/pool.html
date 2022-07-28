@@ -1,40 +1,54 @@
+<!doctype html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>pool</title>
-</head><body><link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script><script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script><link href="../../styles/style.css" rel="Stylesheet"><link href="../../styles/logo-styles.css" rel="Stylesheet"><link href="../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../scripts/clipboard.js" async></script><script type="text/javascript" src="../../scripts/navigation-loader.js" async></script><script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script><script type="text/javascript" src="../../scripts/main.js" async></script>
-  
-    <div id="container">
-      <div id="leftColumn"><a href="../../index.html">
-            <div id="logo"></div>
-          </a>
-        <div id="paneSearch"></div>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../index.html">
+<span>ktx</span>            </a>    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
         <div id="sideMenu"></div>
-      </div>
-      <div id="main">
-        <script type="text/javascript" src="../../scripts/main.js"></script><div id="leftToggler"><span class="icon-toggler"></span></div>
-
-        <div class="main-content" id="content" pageids="assets::ktx.assets//pool/#kotlin.Int#kotlin.Int#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]#kotlin.Function0[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration//493088805">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../index.html">assets</a>/<a href="index.html">ktx.assets</a>/<a href="pool.html">pool</a></div>
-            <div class="pull-right d-flex">
-              <div id="searchBar"></div>
-            </div>
-          </div>
-          <div class="cover ">
-            <h1 class="cover"><span><span>pool</span></span></h1>
-          </div>
-<div class="divergent-group" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="pool.html">Type</a>&gt; <a href="pool.html">pool</a>(initialCapacity: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a> = 16, max: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a> = Int.MAX_VALUE, crossinline discard: (<a href="pool.html">Type</a>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}, crossinline provider: () -&gt; <a href="pool.html">Type</a>): <span data-unresolved-link="com.badlogic.gdx.utils/Pool///PointingToDeclaration/">Pool</span>&lt;<a href="pool.html">Type</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="assets::ktx.assets//pool/#kotlin.Int#kotlin.Int#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]#kotlin.Function0[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration//493088805">
+  <div class="breadcrumbs"><a href="../index.html">assets</a><span class="delimiter">/</span><a href="index.html">ktx.assets</a><span class="delimiter">/</span><a href="pool.html">pool</a></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>pool</span></span></h1>
   </div>
-<h4 class="">Return</h4><p class="paragraph">a new <span data-unresolved-link="com.badlogic.gdx.utils/Pool///PointingToDeclaration/">Pool</span> instance, creating the object with the passed provider.</p><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><span>initial</span><wbr><span><span>Capacity</span></span></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">initial size of the backing collection.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><span><span>max</span></span></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">max amount stored in the pool. When exceeded, freed objects are no longer accepted.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><span><span>discard</span></span></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">invoked each time an object is rejected or removed from the pool. This might happen if an object is freed with <span data-unresolved-link="com.badlogic.gdx.utils/Pool/free/#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/">Pool.free</span> or <span data-unresolved-link="com.badlogic.gdx.utils/Pool/freeAll/#com.badlogic.gdx.utils.Array[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/">Pool.freeAll</span> if the pool is full, or when <span data-unresolved-link="com.badlogic.gdx.utils/Pool/clear/#/PointingToDeclaration/">Pool.clear</span> is called. Optional, defaults to no operation. If the objects are <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span>, this lambda might be used to dispose of them.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><span><span>provider</span></span></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">creates instances of the requested objects.</p></div></div></div></div></div></div></div></div></div></div></div>
-        </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="pool.html">Type</a><span class="token operator">&gt; </span><a href="pool.html"><span class="token function">pool</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;initialCapacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">16</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;max<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>Int.MAX_VALUE<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">crossinline </span>discard<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="pool.html">Type</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token keyword">crossinline </span>provider<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="pool.html">Type</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils/Pool///PointingToDeclaration/">Pool</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="pool.html">Type</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h4 class="">Return</h4><p class="paragraph">a new <span data-unresolved-link="com.badlogic.gdx.utils/Pool///PointingToDeclaration/">Pool</span> instance, creating the object with the passed provider.</p><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span>initial</span><wbr><span><span>Capacity</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">initial size of the backing collection.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>max</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">max amount stored in the pool. When exceeded, freed objects are no longer accepted.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>discard</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">invoked each time an object is rejected or removed from the pool. This might happen if an object is freed with <span data-unresolved-link="com.badlogic.gdx.utils/Pool/free/#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/">Pool.free</span> or <span data-unresolved-link="com.badlogic.gdx.utils/Pool/freeAll/#com.badlogic.gdx.utils.Array[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/">Pool.freeAll</span> if the pool is full, or when <span data-unresolved-link="com.badlogic.gdx.utils/Pool/clear/#/PointingToDeclaration/">Pool.clear</span> is called. Optional, defaults to no operation. If the objects are <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span>, this lambda might be used to dispose of them.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>provider</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">creates instances of the requested objects.</p></div></div></div></div></div></div></div></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
       </div>
     </div>
-  
-</body></html>
+</div>
 
+</body></html>
 

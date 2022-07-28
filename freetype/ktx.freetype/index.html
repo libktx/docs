@@ -1,109 +1,120 @@
+<!doctype html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>ktx.freetype</title>
-</head><body><link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script><script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script><link href="../../styles/style.css" rel="Stylesheet"><link href="../../styles/logo-styles.css" rel="Stylesheet"><link href="../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../scripts/clipboard.js" async></script><script type="text/javascript" src="../../scripts/navigation-loader.js" async></script><script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script><script type="text/javascript" src="../../scripts/main.js" async></script>
-  
-    <div id="container">
-      <div id="leftColumn"><a href="../../index.html">
-            <div id="logo"></div>
-          </a>
-        <div id="paneSearch"></div>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../index.html">
+<span>ktx</span>            </a>    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
         <div id="sideMenu"></div>
-      </div>
-      <div id="main">
-        <script type="text/javascript" src="../../scripts/main.js"></script><div id="leftToggler"><span class="icon-toggler"></span></div>
-
-        <div class="main-content" id="content" pageids="freetype::ktx.freetype////PointingToDeclaration//-678808414">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../index.html">freetype</a>/<a href="index.html">ktx.freetype</a></div>
-            <div class="pull-right d-flex">
-              <div id="searchBar"></div>
-            </div>
-          </div>
-          <div class="cover ">
-            <h1 class="cover"><span><span>Package</span></span> <span>ktx.</span><wbr><span>freetype</span></h1>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button></div>
-            <div class="tabs-section-body">
-              <h2 class="">Functions</h2>
-              <div class="table" data-togglable="Functions"><a data-name="-1846598876%2FFunctions%2F-678808414" anchor-label="freeTypeFontParameters" id="-1846598876%2FFunctions%2F-678808414" data-filterable-set=":freetype:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":freetype:dokkaHtmlPartial/main" data-filterable-set=":freetype:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="free-type-font-parameters.html"><span>free</span><wbr><span>Type</span><wbr><span>Font</span><wbr><span><span>Parameters</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1846598876%2FFunctions%2F-678808414"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":freetype:dokkaHtmlPartial/main" data-filterable-set=":freetype:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":freetype:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <a href="free-type-font-parameters.html">freeTypeFontParameters</a>(file: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, setup: <span data-unresolved-link="com.badlogic.gdx.graphics.g2d.freetype/FreeTypeFontGenerator.FreeTypeFontParameter///PointingToDeclaration/">FreeTypeFontGenerator.FreeTypeFontParameter</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.graphics.g2d.freetype/FreetypeFontLoader.FreeTypeFontLoaderParameter///PointingToDeclaration/">FreetypeFontLoader.FreeTypeFontLoaderParameter</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="freetype::ktx.freetype////PointingToDeclaration//-678808414">
+  <div class="breadcrumbs"><a href="../index.html">freetype</a><span class="delimiter">/</span><a href="index.html">ktx.freetype</a></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package</span></span> <span>ktx.</span><wbr><span>freetype</span></h1>
   </div>
-<div class="brief "><p class="paragraph">Syntax sugar for <span data-unresolved-link="com.badlogic.gdx.graphics.g2d.freetype/FreetypeFontLoader.FreeTypeFontLoaderParameter///PointingToDeclaration/">FreeTypeFontLoaderParameter</span> initialization. Used internally by <a href="load-free-type-font.html">loadFreeTypeFont</a>.</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-284583305%2FFunctions%2F-678808414" anchor-label="generateFont" id="-284583305%2FFunctions%2F-678808414" data-filterable-set=":freetype:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":freetype:dokkaHtmlPartial/main" data-filterable-set=":freetype:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="generate-font.html"><span>generate</span><wbr><span><span>Font</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-284583305%2FFunctions%2F-678808414"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":freetype:dokkaHtmlPartial/main" data-filterable-set=":freetype:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":freetype:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.graphics.g2d.freetype/FreeTypeFontGenerator///PointingToDeclaration/">FreeTypeFontGenerator</span>.<a href="generate-font.html">generateFont</a>(setup: <span data-unresolved-link="com.badlogic.gdx.graphics.g2d.freetype/FreeTypeFontGenerator.FreeTypeFontParameter///PointingToDeclaration/">FreeTypeFontGenerator.FreeTypeFontParameter</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.graphics.g2d/BitmapFont///PointingToDeclaration/">BitmapFont</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Syntax sugar for <span data-unresolved-link="com.badlogic.gdx.graphics.g2d.freetype/FreeTypeFontGenerator/generateFont/#com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter/PointingToDeclaration/">FreeTypeFontGenerator.generateFont</span>. Allows using Kotlin DSL to initiate font parameters.</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1337673429%2FFunctions%2F-678808414" anchor-label="loadFreeTypeFont" id="1337673429%2FFunctions%2F-678808414" data-filterable-set=":freetype:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":freetype:dokkaHtmlPartial/main" data-filterable-set=":freetype:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="load-free-type-font.html"><span>load</span><wbr><span>Free</span><wbr><span>Type</span><wbr><span><span>Font</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1337673429%2FFunctions%2F-678808414"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":freetype:dokkaHtmlPartial/main" data-filterable-set=":freetype:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":freetype:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <a href="../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a>.<a href="load-free-type-font.html">loadFreeTypeFont</a>(file: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, setup: <span data-unresolved-link="com.badlogic.gdx.graphics.g2d.freetype/FreeTypeFontGenerator.FreeTypeFontParameter///PointingToDeclaration/">FreeTypeFontGenerator.FreeTypeFontParameter</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <a href="../../assets/ktx.assets/-asset/index.html">Asset</a>&lt;<span data-unresolved-link="com.badlogic.gdx.graphics.g2d/BitmapFont///PointingToDeclaration/">BitmapFont</span>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Allows customizing parameters of a loaded FreeType font.</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="894506199%2FFunctions%2F-678808414" anchor-label="registerFreeTypeFontLoaders" id="894506199%2FFunctions%2F-678808414" data-filterable-set=":freetype:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":freetype:dokkaHtmlPartial/main" data-filterable-set=":freetype:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="register-free-type-font-loaders.html"><span>register</span><wbr><span>Free</span><wbr><span>Type</span><wbr><span>Font</span><wbr><span><span>Loaders</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="894506199%2FFunctions%2F-678808414"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":freetype:dokkaHtmlPartial/main" data-filterable-set=":freetype:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":freetype:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a>.<a href="register-free-type-font-loaders.html">registerFreeTypeFontLoaders</a>(fileExtensions: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>&gt; = arrayOf(".ttf", ".otf"), replaceDefaultBitmapFontLoader: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> = false)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Registers all loaders necessary to load <span data-unresolved-link="com.badlogic.gdx.graphics.g2d/BitmapFont///PointingToDeclaration/">BitmapFont</span> and <span data-unresolved-link="com.badlogic.gdx.graphics.g2d.freetype/FreeTypeFontGenerator///PointingToDeclaration/">FreeTypeFontGenerator</span> instances from TTF and OTF files.</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-1846598876%2FFunctions%2F-678808414" anchor-label="freeTypeFontParameters" id="-1846598876%2FFunctions%2F-678808414" data-filterable-set=":freetype:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":freetype:dokkaHtmlPartial/main" data-filterable-set=":freetype:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="free-type-font-parameters.html"><span>free</span><wbr><span>Type</span><wbr><span>Font</span><wbr><span><span>Parameters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1846598876%2FFunctions%2F-678808414"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":freetype:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="free-type-font-parameters.html"><span class="token function">freeTypeFontParameters</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">file<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">setup<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.graphics.g2d.freetype/FreeTypeFontGenerator.FreeTypeFontParameter///PointingToDeclaration/">FreeTypeFontGenerator.FreeTypeFontParameter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.graphics.g2d.freetype/FreetypeFontLoader.FreeTypeFontLoaderParameter///PointingToDeclaration/">FreetypeFontLoader.FreeTypeFontLoaderParameter</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Syntax sugar for <span data-unresolved-link="com.badlogic.gdx.graphics.g2d.freetype/FreetypeFontLoader.FreeTypeFontLoaderParameter///PointingToDeclaration/">FreeTypeFontLoaderParameter</span> initialization. Used internally by <a href="load-free-type-font.html">loadFreeTypeFont</a>.</p></div></div></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+<a data-name="-284583305%2FFunctions%2F-678808414" anchor-label="generateFont" id="-284583305%2FFunctions%2F-678808414" data-filterable-set=":freetype:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":freetype:dokkaHtmlPartial/main" data-filterable-set=":freetype:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="generate-font.html"><span>generate</span><wbr><span><span>Font</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-284583305%2FFunctions%2F-678808414"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":freetype:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.graphics.g2d.freetype/FreeTypeFontGenerator///PointingToDeclaration/">FreeTypeFontGenerator</span><span class="token punctuation">.</span><a href="generate-font.html"><span class="token function">generateFont</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">setup<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.graphics.g2d.freetype/FreeTypeFontGenerator.FreeTypeFontParameter///PointingToDeclaration/">FreeTypeFontGenerator.FreeTypeFontParameter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.graphics.g2d/BitmapFont///PointingToDeclaration/">BitmapFont</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Syntax sugar for <span data-unresolved-link="com.badlogic.gdx.graphics.g2d.freetype/FreeTypeFontGenerator/generateFont/#com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter/PointingToDeclaration/">FreeTypeFontGenerator.generateFont</span>. Allows using Kotlin DSL to initiate font parameters.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1337673429%2FFunctions%2F-678808414" anchor-label="loadFreeTypeFont" id="1337673429%2FFunctions%2F-678808414" data-filterable-set=":freetype:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":freetype:dokkaHtmlPartial/main" data-filterable-set=":freetype:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="load-free-type-font.html"><span>load</span><wbr><span>Free</span><wbr><span>Type</span><wbr><span><span>Font</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1337673429%2FFunctions%2F-678808414"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":freetype:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a><span class="token punctuation">.</span><a href="load-free-type-font.html"><span class="token function">loadFreeTypeFont</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">file<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">setup<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.graphics.g2d.freetype/FreeTypeFontGenerator.FreeTypeFontParameter///PointingToDeclaration/">FreeTypeFontGenerator.FreeTypeFontParameter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../assets/ktx.assets/-asset/index.html">Asset</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.graphics.g2d/BitmapFont///PointingToDeclaration/">BitmapFont</span><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Allows customizing parameters of a loaded FreeType font.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="894506199%2FFunctions%2F-678808414" anchor-label="registerFreeTypeFontLoaders" id="894506199%2FFunctions%2F-678808414" data-filterable-set=":freetype:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":freetype:dokkaHtmlPartial/main" data-filterable-set=":freetype:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="register-free-type-font-loaders.html"><span>register</span><wbr><span>Free</span><wbr><span>Type</span><wbr><span>Font</span><wbr><span><span>Loaders</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="894506199%2FFunctions%2F-678808414"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":freetype:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a><span class="token punctuation">.</span><a href="register-free-type-font-loaders.html"><span class="token function">registerFreeTypeFontLoaders</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fileExtensions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>arrayOf(".ttf", ".otf")<span class="token punctuation">, </span></span><span class="parameter ">replaceDefaultBitmapFontLoader<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Registers all loaders necessary to load <span data-unresolved-link="com.badlogic.gdx.graphics.g2d/BitmapFont///PointingToDeclaration/">BitmapFont</span> and <span data-unresolved-link="com.badlogic.gdx.graphics.g2d.freetype/FreeTypeFontGenerator///PointingToDeclaration/">FreeTypeFontGenerator</span> instances from TTF and OTF files.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  
-</body></html>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
 
+</body></html>
 

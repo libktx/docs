@@ -1,378 +1,335 @@
+<!doctype html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>KTab</title>
-</head><body><link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script><script type="text/javascript" src="../../../scripts/main.js" async></script>
-  
-    <div id="container">
-      <div id="leftColumn"><a href="../../../index.html">
-            <div id="logo"></div>
-          </a>
-        <div id="paneSearch"></div>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>ktx</span>            </a>    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
         <div id="sideMenu"></div>
-      </div>
-      <div id="main">
-        <script type="text/javascript" src="../../../scripts/main.js"></script><div id="leftToggler"><span class="icon-toggler"></span></div>
-
-        <div class="main-content" id="content" pageids="vis::ktx.scene2d.vis/KTab///PointingToDeclaration//322183930">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../../index.html">vis</a>/<a href="../index.html">ktx.scene2d.vis</a>/<a href="index.html">KTab</a></div>
-            <div class="pull-right d-flex">
-              <div id="searchBar"></div>
-            </div>
-          </div>
-          <div class="cover ">
-            <h1 class="cover"><span><span>KTab</span></span></h1>
-            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">class <a href="index.html">KTab</a>(title: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, savable: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, closeableByUser: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>) : <span data-unresolved-link="com.kotcrab.vis.ui.widget.tabbedpane/Tab///PointingToDeclaration/">Tab</span>, <a href="../../../scene2d/ktx.scene2d/-k-table/index.html">KTable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">See <span data-unresolved-link="com.kotcrab.vis.ui.widget.tabbedpane/Tab///PointingToDeclaration/">Tab</span>. Note that <a href="index.html">KTab</a> is only intended to by used with type-safe builder from within <a href="../tab.html">KTabbedPane.tab</a>.</p></div></div>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
-            <div class="tabs-section-body">
-              <h2 class="tabbedcontent">Constructors</h2>
-              <div class="table" data-togglable="Constructors"><a data-name="-34227592%2FConstructors%2F322183930" anchor-label="KTab" id="-34227592%2FConstructors%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue TabbedContent">
-                    <div class=""><span class="inline-flex"><a href="-k-tab.html">KTab</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-34227592%2FConstructors%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">fun <a href="-k-tab.html">KTab</a>(title: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, savable: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, closeableByUser: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="">Functions</h2>
-              <div class="table" data-togglable="Functions"><a data-name="1896445090%2FFunctions%2F322183930" anchor-label="add" id="1896445090%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="add.html"><span><span>add</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1896445090%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open override fun &lt;<a href="add.html">T</a> : <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d/Actor///PointingToDeclaration/">Actor</span>&gt; <a href="add.html">add</a>(actor: <a href="add.html">T</a>): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Cell///PointingToDeclaration/">Cell</span>&lt;<a href="add.html">T</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="vis::ktx.scene2d.vis/KTab///PointingToDeclaration//322183930">
+  <div class="breadcrumbs"><a href="../../index.html">vis</a><span class="delimiter">/</span><a href="../index.html">ktx.scene2d.vis</a><span class="delimiter">/</span><a href="index.html">KTab</a></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>KTab</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">KTab</a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;title<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;savable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;closeableByUser<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.kotcrab.vis.ui.widget.tabbedpane/Tab///PointingToDeclaration/">Tab</span>, <a href="../../../scene2d/ktx.scene2d/-k-table/index.html">KTable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">See <span data-unresolved-link="com.kotcrab.vis.ui.widget.tabbedpane/Tab///PointingToDeclaration/">Tab</span>. Note that <a href="index.html">KTab</a> is only intended to by used with type-safe builder from within <a href="../tab.html">KTabbedPane.tab</a>.</p></div></div>
   </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1261533004%2FFunctions%2F322183930" anchor-label="cell" id="1261533004%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-k-horizontal-collapsible/index.html#1261533004%2FFunctions%2F322183930"><span><span>cell</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1261533004%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open fun &lt;<a href="../-k-horizontal-collapsible/index.html#1261533004%2FFunctions%2F322183930">T</a> : <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d/Actor///PointingToDeclaration/">Actor</span>&gt; <a href="../-k-horizontal-collapsible/index.html#1261533004%2FFunctions%2F322183930">T</a>.<a href="../-k-horizontal-collapsible/index.html#1261533004%2FFunctions%2F322183930">cell</a>(grow: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, growX: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, growY: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>, expand: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, expandX: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, expandY: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, fill: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, fillX: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, fillY: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, uniform: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, uniformX: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, uniformY: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>?, align: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, colspan: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, width: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, minWidth: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, preferredWidth: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, maxWidth: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, height: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, minHeight: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, preferredHeight: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, maxHeight: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, pad: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, padTop: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, padLeft: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, padRight: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, padBottom: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, space: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, spaceTop: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, spaceLeft: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, spaceRight: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, spaceBottom: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>?, row: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>): <a href="../-k-horizontal-collapsible/index.html#1261533004%2FFunctions%2F322183930">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="170824295%2FFunctions%2F322183930" anchor-label="dirty" id="170824295%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#170824295%2FFunctions%2F322183930"><span><span>dirty</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="170824295%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="index.html#170824295%2FFunctions%2F322183930">dirty</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1114066502%2FFunctions%2F322183930" anchor-label="dispose" id="-1114066502%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-1114066502%2FFunctions%2F322183930"><span><span>dispose</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1114066502%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open override fun <a href="index.html#-1114066502%2FFunctions%2F322183930">dispose</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="626428761%2FFunctions%2F322183930" anchor-label="getContentTable" id="626428761%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-content-table.html"><span>get</span><wbr><span>Content</span><wbr><span><span>Table</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="626428761%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open override fun <a href="get-content-table.html">getContentTable</a>(): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Table///PointingToDeclaration/">Table</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1892503333%2FFunctions%2F322183930" anchor-label="getPane" id="-1892503333%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-1892503333%2FFunctions%2F322183930"><span>get</span><wbr><span><span>Pane</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1892503333%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="index.html#-1892503333%2FFunctions%2F322183930">getPane</a>(): <span data-unresolved-link="com.kotcrab.vis.ui.widget.tabbedpane/TabbedPane///PointingToDeclaration/">TabbedPane</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="855275179%2FFunctions%2F322183930" anchor-label="getTabTitle" id="855275179%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-tab-title.html"><span>get</span><wbr><span>Tab</span><wbr><span><span>Title</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="855275179%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open override fun <a href="get-tab-title.html">getTabTitle</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1360508916%2FFunctions%2F322183930" anchor-label="isActiveTab" id="1360508916%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#1360508916%2FFunctions%2F322183930"><span>is</span><wbr><span>Active</span><wbr><span><span>Tab</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1360508916%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="index.html#1360508916%2FFunctions%2F322183930">isActiveTab</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-399337713%2FFunctions%2F322183930" anchor-label="isCloseableByUser" id="-399337713%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-399337713%2FFunctions%2F322183930"><span>is</span><wbr><span>Closeable</span><wbr><span>By</span><wbr><span><span>User</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-399337713%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="index.html#-399337713%2FFunctions%2F322183930">isCloseableByUser</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="662546225%2FFunctions%2F322183930" anchor-label="isDirty" id="662546225%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#662546225%2FFunctions%2F322183930"><span>is</span><wbr><span><span>Dirty</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="662546225%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="index.html#662546225%2FFunctions%2F322183930">isDirty</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-511311295%2FFunctions%2F322183930" anchor-label="isSavable" id="-511311295%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-511311295%2FFunctions%2F322183930"><span>is</span><wbr><span><span>Savable</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-511311295%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="index.html#-511311295%2FFunctions%2F322183930">isSavable</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1799414688%2FFunctions%2F322183930" anchor-label="onHide" id="-1799414688%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-1799414688%2FFunctions%2F322183930"><span>on</span><wbr><span><span>Hide</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1799414688%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="index.html#-1799414688%2FFunctions%2F322183930">onHide</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="35682053%2FFunctions%2F322183930" anchor-label="onShow" id="35682053%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#35682053%2FFunctions%2F322183930"><span>on</span><wbr><span><span>Show</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="35682053%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="index.html#35682053%2FFunctions%2F322183930">onShow</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1422339990%2FFunctions%2F322183930" anchor-label="removeFromTabPane" id="-1422339990%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-1422339990%2FFunctions%2F322183930"><span>remove</span><wbr><span>From</span><wbr><span>Tab</span><wbr><span><span>Pane</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1422339990%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="index.html#-1422339990%2FFunctions%2F322183930">removeFromTabPane</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1355636516%2FFunctions%2F322183930" anchor-label="save" id="1355636516%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#1355636516%2FFunctions%2F322183930"><span><span>save</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1355636516%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="index.html#1355636516%2FFunctions%2F322183930">save</a>(): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-2036886794%2FFunctions%2F322183930" anchor-label="setDirty" id="-2036886794%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-2036886794%2FFunctions%2F322183930"><span>set</span><wbr><span><span>Dirty</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2036886794%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="index.html#-2036886794%2FFunctions%2F322183930">setDirty</a>(p0: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-623116450%2FFunctions%2F322183930" anchor-label="setPane" id="-623116450%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="index.html#-623116450%2FFunctions%2F322183930"><span>set</span><wbr><span><span>Pane</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-623116450%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open fun <a href="index.html#-623116450%2FFunctions%2F322183930">setPane</a>(p0: <span data-unresolved-link="com.kotcrab.vis.ui.widget.tabbedpane/TabbedPane///PointingToDeclaration/">TabbedPane</span>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="409730424%2FFunctions%2F322183930" anchor-label="storeActor" id="409730424%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-k-horizontal-collapsible/index.html#409730424%2FFunctions%2F322183930"><span>store</span><wbr><span><span>Actor</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="409730424%2FFunctions%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace">open override fun &lt;<a href="../-k-horizontal-collapsible/index.html#409730424%2FFunctions%2F322183930">T</a> : <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d/Actor///PointingToDeclaration/">Actor</span>&gt; <a href="../-k-horizontal-collapsible/index.html#409730424%2FFunctions%2F322183930">storeActor</a>(actor: <a href="../-k-horizontal-collapsible/index.html#409730424%2FFunctions%2F322183930">T</a>): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Cell///PointingToDeclaration/">Cell</span>&lt;<a href="../-k-horizontal-collapsible/index.html#409730424%2FFunctions%2F322183930">T</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="">Properties</h2>
-              <div class="table" data-togglable="Properties"><a data-name="-1466210561%2FProperties%2F322183930" anchor-label="inCell" id="-1466210561%2FProperties%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="../-k-horizontal-collapsible/index.html#-1466210561%2FProperties%2F322183930">inCell</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1466210561%2FProperties%2F322183930"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><a data-name="-1466210561%2FProperties%2F322183930" anchor-label="inCell" id="-1466210561%2FProperties%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a><div class="symbol monospace">open val &lt;<a href="../-k-horizontal-collapsible/index.html#-1466210561%2FProperties%2F322183930">T</a> : <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d/Actor///PointingToDeclaration/">Actor</span>&gt; <a href="../-k-horizontal-collapsible/index.html#-1466210561%2FProperties%2F322183930">T</a>.<a href="../-k-horizontal-collapsible/index.html#-1466210561%2FProperties%2F322183930">inCell</a>: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Cell///PointingToDeclaration/">Cell</span>&lt;<a href="../-k-horizontal-collapsible/index.html#-1466210561%2FProperties%2F322183930">T</a>&gt;<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-34227592%2FConstructors%2F322183930" anchor-label="KTab" id="-34227592%2FConstructors%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-k-tab.html"><span><span>KTab</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-34227592%2FConstructors%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-k-tab.html"><span class="token function">KTab</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;title<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;savable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;closeableByUser<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="1896445090%2FFunctions%2F322183930" anchor-label="add" id="1896445090%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="add.html"><span><span>add</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1896445090%2FFunctions%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="add.html">T</a><span class="token operator"> : </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d/Actor///PointingToDeclaration/">Actor</span><span class="token operator">&gt; </span><a href="add.html"><span class="token function">add</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">actor<span class="token operator">: </span><a href="add.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Cell///PointingToDeclaration/">Cell</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="add.html">T</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1261533004%2FFunctions%2F322183930" anchor-label="cell" id="1261533004%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-k-horizontal-collapsible/index.html#1261533004%2FFunctions%2F322183930"><span><span>cell</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1261533004%2FFunctions%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-k-horizontal-collapsible/index.html#1261533004%2FFunctions%2F322183930">T</a><span class="token operator"> : </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d/Actor///PointingToDeclaration/">Actor</span><span class="token operator">&gt; </span><a href="../-k-horizontal-collapsible/index.html#1261533004%2FFunctions%2F322183930">T</a><span class="token punctuation">.</span><a href="../-k-horizontal-collapsible/index.html#1261533004%2FFunctions%2F322183930"><span class="token function">cell</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;grow<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;growX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;growY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;expand<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;expandX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;expandY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;fill<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;fillX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;fillY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;uniform<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;uniformX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;uniformY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;align<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;colspan<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;width<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;minWidth<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;preferredWidth<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;maxWidth<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;height<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;minHeight<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;preferredHeight<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;maxHeight<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;pad<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;padTop<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;padLeft<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;padRight<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;padBottom<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;space<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;spaceTop<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;spaceLeft<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;spaceRight<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;spaceBottom<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;row<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-k-horizontal-collapsible/index.html#1261533004%2FFunctions%2F322183930">T</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="170824295%2FFunctions%2F322183930" anchor-label="dirty" id="170824295%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#170824295%2FProperties%2F322183930"><span><span>dirty</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="170824295%2FFunctions%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#170824295%2FProperties%2F322183930"><span class="token function">dirty</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1114066502%2FFunctions%2F322183930" anchor-label="dispose" id="-1114066502%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-1114066502%2FFunctions%2F322183930"><span><span>dispose</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1114066502%2FFunctions%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-1114066502%2FFunctions%2F322183930"><span class="token function">dispose</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="626428761%2FFunctions%2F322183930" anchor-label="getContentTable" id="626428761%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-content-table.html"><span>get</span><wbr><span>Content</span><wbr><span><span>Table</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="626428761%2FFunctions%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-content-table.html"><span class="token function">getContentTable</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Table///PointingToDeclaration/">Table</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="855275179%2FFunctions%2F322183930" anchor-label="getTabTitle" id="855275179%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-tab-title.html"><span>get</span><wbr><span>Tab</span><wbr><span><span>Title</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="855275179%2FFunctions%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-tab-title.html"><span class="token function">getTabTitle</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1799414688%2FFunctions%2F322183930" anchor-label="onHide" id="-1799414688%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-1799414688%2FFunctions%2F322183930"><span>on</span><wbr><span><span>Hide</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1799414688%2FFunctions%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1799414688%2FFunctions%2F322183930"><span class="token function">onHide</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="35682053%2FFunctions%2F322183930" anchor-label="onShow" id="35682053%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#35682053%2FFunctions%2F322183930"><span>on</span><wbr><span><span>Show</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="35682053%2FFunctions%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#35682053%2FFunctions%2F322183930"><span class="token function">onShow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1422339990%2FFunctions%2F322183930" anchor-label="removeFromTabPane" id="-1422339990%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-1422339990%2FFunctions%2F322183930"><span>remove</span><wbr><span>From</span><wbr><span>Tab</span><wbr><span><span>Pane</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1422339990%2FFunctions%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1422339990%2FFunctions%2F322183930"><span class="token function">removeFromTabPane</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1355636516%2FFunctions%2F322183930" anchor-label="save" id="1355636516%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#1355636516%2FFunctions%2F322183930"><span><span>save</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1355636516%2FFunctions%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1355636516%2FFunctions%2F322183930"><span class="token function">save</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="409730424%2FFunctions%2F322183930" anchor-label="storeActor" id="409730424%2FFunctions%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-k-horizontal-collapsible/index.html#409730424%2FFunctions%2F322183930"><span>store</span><wbr><span><span>Actor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="409730424%2FFunctions%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-k-horizontal-collapsible/index.html#409730424%2FFunctions%2F322183930">T</a><span class="token operator"> : </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d/Actor///PointingToDeclaration/">Actor</span><span class="token operator">&gt; </span><a href="../-k-horizontal-collapsible/index.html#409730424%2FFunctions%2F322183930"><span class="token function">storeActor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">actor<span class="token operator">: </span><a href="../-k-horizontal-collapsible/index.html#409730424%2FFunctions%2F322183930">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Cell///PointingToDeclaration/">Cell</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-k-horizontal-collapsible/index.html#409730424%2FFunctions%2F322183930">T</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="1314134058%2FProperties%2F322183930" anchor-label="activeTab" id="1314134058%2FProperties%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#1314134058%2FProperties%2F322183930"><span>active</span><wbr><span><span>Tab</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1314134058%2FProperties%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><a data-name="1314134058%2FProperties%2F322183930" anchor-label="activeTab" id="1314134058%2FProperties%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html#1314134058%2FProperties%2F322183930">activeTab</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2026408251%2FProperties%2F322183930" anchor-label="closeableByUser" id="-2026408251%2FProperties%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-2026408251%2FProperties%2F322183930"><span>closeable</span><wbr><span>By</span><wbr><span><span>User</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2026408251%2FProperties%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><a data-name="-2026408251%2FProperties%2F322183930" anchor-label="closeableByUser" id="-2026408251%2FProperties%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html#-2026408251%2FProperties%2F322183930">closeableByUser</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="170824295%2FProperties%2F322183930" anchor-label="dirty" id="170824295%2FProperties%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#170824295%2FProperties%2F322183930"><span><span>dirty</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="170824295%2FProperties%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><a data-name="170824295%2FProperties%2F322183930" anchor-label="dirty" id="170824295%2FProperties%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#170824295%2FProperties%2F322183930">dirty</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1466210561%2FProperties%2F322183930" anchor-label="inCell" id="-1466210561%2FProperties%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../-k-horizontal-collapsible/index.html#-1466210561%2FProperties%2F322183930"><span>in</span><wbr><span><span>Cell</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1466210561%2FProperties%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><a data-name="-1466210561%2FProperties%2F322183930" anchor-label="inCell" id="-1466210561%2FProperties%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-k-horizontal-collapsible/index.html#-1466210561%2FProperties%2F322183930">T</a><span class="token operator"> : </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d/Actor///PointingToDeclaration/">Actor</span><span class="token operator">&gt; </span><a href="../-k-horizontal-collapsible/index.html#-1466210561%2FProperties%2F322183930">T</a><span class="token punctuation">.</span><a href="../-k-horizontal-collapsible/index.html#-1466210561%2FProperties%2F322183930">inCell</a><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Cell///PointingToDeclaration/">Cell</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-k-horizontal-collapsible/index.html#-1466210561%2FProperties%2F322183930">T</a><span class="token operator">&gt;</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="173353881%2FProperties%2F322183930" anchor-label="pane" id="173353881%2FProperties%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#173353881%2FProperties%2F322183930"><span><span>pane</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="173353881%2FProperties%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><a data-name="173353881%2FProperties%2F322183930" anchor-label="pane" id="173353881%2FProperties%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#173353881%2FProperties%2F322183930">pane</a><span class="token operator">: </span><span data-unresolved-link="com.kotcrab.vis.ui.widget.tabbedpane/TabbedPane///PointingToDeclaration/">TabbedPane</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-609683465%2FProperties%2F322183930" anchor-label="savable" id="-609683465%2FProperties%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":vis:dokkaHtmlPartial/main" data-filterable-set=":vis:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-609683465%2FProperties%2F322183930"><span><span>savable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-609683465%2FProperties%2F322183930"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":vis:dokkaHtmlPartial/main"><a data-name="-609683465%2FProperties%2F322183930" anchor-label="savable" id="-609683465%2FProperties%2F322183930" data-filterable-set=":vis:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html#-609683465%2FProperties%2F322183930">savable</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  
-</body></html>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
 
+</body></html>
 

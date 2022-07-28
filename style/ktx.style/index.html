@@ -1,568 +1,529 @@
+<!doctype html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>ktx.style</title>
-</head><body><link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script><script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script><link href="../../styles/style.css" rel="Stylesheet"><link href="../../styles/logo-styles.css" rel="Stylesheet"><link href="../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../scripts/clipboard.js" async></script><script type="text/javascript" src="../../scripts/navigation-loader.js" async></script><script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script><script type="text/javascript" src="../../scripts/main.js" async></script>
-  
-    <div id="container">
-      <div id="leftColumn"><a href="../../index.html">
-            <div id="logo"></div>
-          </a>
-        <div id="paneSearch"></div>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+const savedDarkMode = storage ? JSON.parse(storage) : false
+if(savedDarkMode === true){
+    document.getElementsByTagName("html")[0].classList.add("theme-dark")
+}</script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../index.html">
+<span>ktx</span>            </a>    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
         <div id="sideMenu"></div>
-      </div>
-      <div id="main">
-        <script type="text/javascript" src="../../scripts/main.js"></script><div id="leftToggler"><span class="icon-toggler"></span></div>
-
-        <div class="main-content" id="content" pageids="style::ktx.style////PointingToDeclaration//-686914743">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../index.html">style</a>/<a href="index.html">ktx.style</a></div>
-            <div class="pull-right d-flex">
-              <div id="searchBar"></div>
-            </div>
-          </div>
-          <div class="cover ">
-            <h1 class="cover"><span><span>Package</span></span> <span>ktx.</span><wbr><span>style</span></h1>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
-            <div class="tabs-section-body">
-              <h2 class="">Types</h2>
-              <div class="table" data-togglable="Types"><a data-name="-1906997618%2FClasslikes%2F-686914743" anchor-label="SkinDsl" id="-1906997618%2FClasslikes%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="-skin-dsl/index.html"><span>Skin</span><wbr><span><span>Dsl</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1906997618%2FClasslikes%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block">@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-dsl-marker/index.html">DslMarker</a></div><div class="block">@<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-target/index.html">Target</a>(<span>allowedTargets = [<span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-annotation-target/-c-l-a-s-s/index.html">AnnotationTarget.CLASS</a>, </span><wbr><span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-annotation-target/-t-y-p-e_-p-a-r-a-m-e-t-e-r/index.html">AnnotationTarget.TYPE_PARAMETER</a>, </span><wbr><span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-annotation-target/-f-u-n-c-t-i-o-n/index.html">AnnotationTarget.FUNCTION</a>, </span><wbr><span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-annotation-target/-t-y-p-e/index.html">AnnotationTarget.TYPE</a>, </span><wbr><span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-annotation-target/-t-y-p-e-a-l-i-a-s/index.html">AnnotationTarget.TYPEALIAS</a></span><wbr>]</span><wbr>)</div></div>annotation class <a href="-skin-dsl/index.html">SkinDsl</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="style::ktx.style////PointingToDeclaration//-686914743">
+  <div class="breadcrumbs"><a href="../index.html">style</a><span class="delimiter">/</span><a href="index.html">ktx.style</a></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package</span></span> <span>ktx.</span><wbr><span>style</span></h1>
   </div>
-<div class="brief "><p class="paragraph">Should annotate builder methods of Scene2D <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="">Functions</h2>
-              <div class="table" data-togglable="Functions"><a data-name="-956028453%2FFunctions%2F-686914743" anchor-label="add" id="-956028453%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="add.html"><span><span>add</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-956028453%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="add.html">Resource</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="add.html">add</a>(resource: <a href="add.html">Resource</a>, name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Utility function that makes it easier to add <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span> assets.</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="930448007%2FFunctions%2F-686914743" anchor-label="addStyle" id="930448007%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="add-style.html"><span>add</span><wbr><span><span>Style</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="930448007%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="add-style.html">Style</a>&gt; <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="add-style.html">addStyle</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, style: <a href="add-style.html">Style</a>, init: <a href="add-style.html">Style</a>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <a href="add-style.html">Style</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Utility function for adding existing styles to the skin. Mostly for internal use.</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1049847125%2FFunctions%2F-686914743" anchor-label="button" id="1049847125%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="button.html"><span><span>button</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1049847125%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="button.html">button</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Button.ButtonStyle///PointingToDeclaration/">Button.ButtonStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Button.ButtonStyle///PointingToDeclaration/">Button.ButtonStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1354040870%2FFunctions%2F-686914743" anchor-label="checkBox" id="1354040870%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="check-box.html"><span>check</span><wbr><span><span>Box</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1354040870%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="check-box.html">checkBox</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/CheckBox.CheckBoxStyle///PointingToDeclaration/">CheckBox.CheckBoxStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/CheckBox.CheckBoxStyle///PointingToDeclaration/">CheckBox.CheckBoxStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="165831129%2FFunctions%2F-686914743" anchor-label="color" id="165831129%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="color.html"><span><span>color</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="165831129%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="color.html">color</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, red: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>, green: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>, blue: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>, alpha: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a> = 1f): <span data-unresolved-link="com.badlogic.gdx.graphics/Color///PointingToDeclaration/">Color</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Adds a new <span data-unresolved-link="com.badlogic.gdx.graphics/Color///PointingToDeclaration/">Color</span> instance to the skin.</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-431215020%2FFunctions%2F-686914743" anchor-label="get" id="-431215020%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get.html"><span><span>get</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-431215020%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline operator fun &lt;<a href="get.html">Resource</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, <a href="get.html">E</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a>&lt;<a href="get.html">E</a>&gt;&gt; <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="get.html">get</a>(name: <a href="get.html">E</a>): <a href="get.html">Resource</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace">inline operator fun &lt;<a href="get.html">Resource</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="get.html">get</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle): <a href="get.html">Resource</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Utility function that makes it easier to access <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span> assets.</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1125524983%2FFunctions%2F-686914743" anchor-label="getAll" id="1125524983%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="get-all.html"><span>get</span><wbr><span><span>All</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1125524983%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="get-all.html">Resource</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="get-all.html">getAll</a>(): <span data-unresolved-link="com.badlogic.gdx.utils/ObjectMap///PointingToDeclaration/">ObjectMap</span>&lt;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, <a href="get-all.html">Resource</a>&gt;?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Utility function that makes it easier to access all <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span> assets of a certain type.</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="955579138%2FFunctions%2F-686914743" anchor-label="has" id="955579138%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="has.html"><span><span>has</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="955579138%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="has.html">Resource</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="has.html">has</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle): <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Utility function that makes it easier to check if <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span> contains assets.</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1469468846%2FFunctions%2F-686914743" anchor-label="imageButton" id="1469468846%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="image-button.html"><span>image</span><wbr><span><span>Button</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1469468846%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="image-button.html">imageButton</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/ImageButton.ImageButtonStyle///PointingToDeclaration/">ImageButton.ImageButtonStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/ImageButton.ImageButtonStyle///PointingToDeclaration/">ImageButton.ImageButtonStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1410407647%2FFunctions%2F-686914743" anchor-label="imageTextButton" id="-1410407647%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="image-text-button.html"><span>image</span><wbr><span>Text</span><wbr><span><span>Button</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1410407647%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="image-text-button.html">imageTextButton</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/ImageTextButton.ImageTextButtonStyle///PointingToDeclaration/">ImageTextButton.ImageTextButtonStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/ImageTextButton.ImageTextButtonStyle///PointingToDeclaration/">ImageTextButton.ImageTextButtonStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1625374169%2FFunctions%2F-686914743" anchor-label="label" id="-1625374169%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="label.html"><span><span>label</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1625374169%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="label.html">label</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Label.LabelStyle///PointingToDeclaration/">Label.LabelStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Label.LabelStyle///PointingToDeclaration/">Label.LabelStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-647560383%2FFunctions%2F-686914743" anchor-label="list" id="-647560383%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="list.html"><span><span>list</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-647560383%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="list.html">list</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/List.ListStyle///PointingToDeclaration/">List.ListStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/List.ListStyle///PointingToDeclaration/">List.ListStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1333543400%2FFunctions%2F-686914743" anchor-label="optional" id="-1333543400%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="optional.html"><span><span>optional</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1333543400%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="optional.html">Resource</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="optional.html">optional</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle): <a href="optional.html">Resource</a>?<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Utility function that makes it easier to access <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span> assets or return null if they don't exist.</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1064385762%2FFunctions%2F-686914743" anchor-label="plusAssign" id="1064385762%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="plus-assign.html"><span>plus</span><wbr><span><span>Assign</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1064385762%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline operator fun &lt;<a href="plus-assign.html">Resource</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="plus-assign.html">plusAssign</a>(resource: <a href="plus-assign.html">Resource</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Utility function that makes it easier to add <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span> assets under the <a href="default-style.html">defaultStyle</a> name.</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1114239733%2FFunctions%2F-686914743" anchor-label="progressBar" id="1114239733%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="progress-bar.html"><span>progress</span><wbr><span><span>Bar</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1114239733%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="progress-bar.html">progressBar</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/ProgressBar.ProgressBarStyle///PointingToDeclaration/">ProgressBar.ProgressBarStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/ProgressBar.ProgressBarStyle///PointingToDeclaration/">ProgressBar.ProgressBarStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1216081943%2FFunctions%2F-686914743" anchor-label="register" id="1216081943%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="register.html"><span><span>register</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1216081943%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="register.html">register</a>(styles: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.(<span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Allows to create new UI component styles with the KTX DSL. This method is very similar to the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/index.html">apply</a> extension method from the standard library, but supports the DSL annotation.</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="204766964%2FFunctions%2F-686914743" anchor-label="remove" id="204766964%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="remove.html"><span><span>remove</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="204766964%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun &lt;<a href="remove.html">Resource</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="remove.html">remove</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Utility function that makes it easier to remove <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span> assets.</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1396563160%2FFunctions%2F-686914743" anchor-label="scrollPane" id="1396563160%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="scroll-pane.html"><span>scroll</span><wbr><span><span>Pane</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1396563160%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="scroll-pane.html">scrollPane</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/ScrollPane.ScrollPaneStyle///PointingToDeclaration/">ScrollPane.ScrollPaneStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/ScrollPane.ScrollPaneStyle///PointingToDeclaration/">ScrollPane.ScrollPaneStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1980849964%2FFunctions%2F-686914743" anchor-label="selectBox" id="1980849964%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="select-box.html"><span>select</span><wbr><span><span>Box</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1980849964%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="select-box.html">selectBox</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/SelectBox.SelectBoxStyle///PointingToDeclaration/">SelectBox.SelectBoxStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/SelectBox.SelectBoxStyle///PointingToDeclaration/">SelectBox.SelectBoxStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1678397640%2FFunctions%2F-686914743" anchor-label="set" id="1678397640%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="set.html"><span><span>set</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1678397640%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline operator fun &lt;<a href="set.html">Resource</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>, <a href="set.html">E</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a>&lt;<a href="set.html">E</a>&gt;&gt; <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="set.html">set</a>(name: <a href="set.html">E</a>, resource: <a href="set.html">Resource</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace">inline operator fun &lt;<a href="set.html">Resource</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a>&gt; <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="set.html">set</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>, resource: <a href="set.html">Resource</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-<div class="brief "><p class="paragraph">Utility function that makes it easier to add <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span> assets.</p></div></div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1829433892%2FFunctions%2F-686914743" anchor-label="skin" id="-1829433892%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="skin.html"><span><span>skin</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1829433892%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <a href="skin.html">skin</a>(init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.(<span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace">inline fun <a href="skin.html">skin</a>(atlas: <span data-unresolved-link="com.badlogic.gdx.graphics.g2d/TextureAtlas///PointingToDeclaration/">TextureAtlas</span>, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.(<span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>) -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-310721564%2FFunctions%2F-686914743" anchor-label="slider" id="-310721564%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="slider.html"><span><span>slider</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-310721564%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="slider.html">slider</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Slider.SliderStyle///PointingToDeclaration/">Slider.SliderStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Slider.SliderStyle///PointingToDeclaration/">Slider.SliderStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1188182777%2FFunctions%2F-686914743" anchor-label="splitPane" id="1188182777%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="split-pane.html"><span>split</span><wbr><span><span>Pane</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1188182777%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="split-pane.html">splitPane</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/SplitPane.SplitPaneStyle///PointingToDeclaration/">SplitPane.SplitPaneStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/SplitPane.SplitPaneStyle///PointingToDeclaration/">SplitPane.SplitPaneStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-1137707006%2FFunctions%2F-686914743" anchor-label="textButton" id="-1137707006%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="text-button.html"><span>text</span><wbr><span><span>Button</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1137707006%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="text-button.html">textButton</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/TextButton.TextButtonStyle///PointingToDeclaration/">TextButton.TextButtonStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/TextButton.TextButtonStyle///PointingToDeclaration/">TextButton.TextButtonStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="1422486798%2FFunctions%2F-686914743" anchor-label="textField" id="1422486798%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="text-field.html"><span>text</span><wbr><span><span>Field</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1422486798%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="text-field.html">textField</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/TextField.TextFieldStyle///PointingToDeclaration/">TextField.TextFieldStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/TextField.TextFieldStyle///PointingToDeclaration/">TextField.TextFieldStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="243841925%2FFunctions%2F-686914743" anchor-label="textTooltip" id="243841925%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="text-tooltip.html"><span>text</span><wbr><span><span>Tooltip</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="243841925%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="text-tooltip.html">textTooltip</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/TextTooltip.TextTooltipStyle///PointingToDeclaration/">TextTooltip.TextTooltipStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/TextTooltip.TextTooltipStyle///PointingToDeclaration/">TextTooltip.TextTooltipStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="2123246039%2FFunctions%2F-686914743" anchor-label="touchpad" id="2123246039%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="touchpad.html"><span><span>touchpad</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2123246039%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="touchpad.html">touchpad</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Touchpad.TouchpadStyle///PointingToDeclaration/">Touchpad.TouchpadStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Touchpad.TouchpadStyle///PointingToDeclaration/">Touchpad.TouchpadStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="312239681%2FFunctions%2F-686914743" anchor-label="tree" id="312239681%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="tree.html"><span><span>tree</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="312239681%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="tree.html">tree</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Tree.TreeStyle///PointingToDeclaration/">Tree.TreeStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Tree.TreeStyle///PointingToDeclaration/">Tree.TreeStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="-153370669%2FFunctions%2F-686914743" anchor-label="window" id="-153370669%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="window.html"><span><span>window</span></span></a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-153370669%2FFunctions%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace">inline fun <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.<a href="window.html">window</a>(name: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> = defaultStyle, extend: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>? = null, init: <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Window.WindowStyle///PointingToDeclaration/">Window.WindowStyle</span>.() -&gt; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> = {}): <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Window.WindowStyle///PointingToDeclaration/">Window.WindowStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h2 class="">Properties</h2>
-              <div class="table" data-togglable="Properties"><a data-name="-1317363589%2FProperties%2F-686914743" anchor-label="defaultStyle" id="-1317363589%2FProperties%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
-                <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="default-style.html">defaultStyle</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1317363589%2FProperties%2F-686914743"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title">
-                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><a data-name="-1317363589%2FProperties%2F-686914743" anchor-label="defaultStyle" id="-1317363589%2FProperties%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a><div class="symbol monospace">const val <a href="default-style.html">defaultStyle</a>: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1317363589%2FProperties%2F-686914743" anchor-label="defaultStyle" id="-1317363589%2FProperties%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a><p class="paragraph">Name of default resources in <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>. Often used as default Scene2D actor style names.</p></div></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="-1906997618%2FClasslikes%2F-686914743" anchor-label="SkinDsl" id="-1906997618%2FClasslikes%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-skin-dsl/index.html"><span>Skin</span><wbr><span><span>Dsl</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1906997618%2FClasslikes%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-dsl-marker/index.html"><span class="token annotation">DslMarker</span></a></div><div class="block"><span class="token annotation">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-target/index.html"><span class="token annotation">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-annotation-target/-c-l-a-s-s/index.html">AnnotationTarget.CLASS</a><span class="token punctuation">, </span></span><wbr><span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-annotation-target/-t-y-p-e_-p-a-r-a-m-e-t-e-r/index.html">AnnotationTarget.TYPE_PARAMETER</a><span class="token punctuation">, </span></span><wbr><span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-annotation-target/-f-u-n-c-t-i-o-n/index.html">AnnotationTarget.FUNCTION</a><span class="token punctuation">, </span></span><wbr><span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-annotation-target/-t-y-p-e/index.html">AnnotationTarget.TYPE</a><span class="token punctuation">, </span></span><wbr><span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-annotation-target/-t-y-p-e-a-l-i-a-s/index.html">AnnotationTarget.TYPEALIAS</a></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">annotation class </span><a href="-skin-dsl/index.html">SkinDsl</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Should annotate builder methods of Scene2D <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>.</p></div></div></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-956028453%2FFunctions%2F-686914743" anchor-label="add" id="-956028453%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="add.html"><span><span>add</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-956028453%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="add.html">Resource</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="add.html"><span class="token function">add</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">resource<span class="token operator">: </span><a href="add.html">Resource</a><span class="token punctuation">, </span></span><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle</span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Utility function that makes it easier to add <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span> assets.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="930448007%2FFunctions%2F-686914743" anchor-label="addStyle" id="930448007%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="add-style.html"><span>add</span><wbr><span><span>Style</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="930448007%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="add-style.html">Style</a><span class="token operator">&gt; </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="add-style.html"><span class="token function">addStyle</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;style<span class="token operator">: </span><a href="add-style.html">Style</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><a href="add-style.html">Style</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="add-style.html">Style</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Utility function for adding existing styles to the skin. Mostly for internal use.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1049847125%2FFunctions%2F-686914743" anchor-label="button" id="1049847125%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="button.html"><span><span>button</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1049847125%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="button.html"><span class="token function">button</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Button.ButtonStyle///PointingToDeclaration/">Button.ButtonStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Button.ButtonStyle///PointingToDeclaration/">Button.ButtonStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1354040870%2FFunctions%2F-686914743" anchor-label="checkBox" id="1354040870%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="check-box.html"><span>check</span><wbr><span><span>Box</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1354040870%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="check-box.html"><span class="token function">checkBox</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/CheckBox.CheckBoxStyle///PointingToDeclaration/">CheckBox.CheckBoxStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/CheckBox.CheckBoxStyle///PointingToDeclaration/">CheckBox.CheckBoxStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="165831129%2FFunctions%2F-686914743" anchor-label="color" id="165831129%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="color.html"><span><span>color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="165831129%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="color.html"><span class="token function">color</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;red<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;green<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;blue<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;alpha<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">1.0f</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.graphics/Color///PointingToDeclaration/">Color</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Adds a new <span data-unresolved-link="com.badlogic.gdx.graphics/Color///PointingToDeclaration/">Color</span> instance to the skin.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-431215020%2FFunctions%2F-686914743" anchor-label="get" id="-431215020%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get.html"><span><span>get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-431215020%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get.html">Resource</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="get.html">E</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get.html">E</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="get.html">E</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="get.html">Resource</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get.html">Resource</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="get.html">Resource</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Utility function that makes it easier to access <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span> assets.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1125524983%2FFunctions%2F-686914743" anchor-label="getAll" id="1125524983%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-all.html"><span>get</span><wbr><span><span>All</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1125524983%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get-all.html">Resource</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="get-all.html"><span class="token function">getAll</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils/ObjectMap///PointingToDeclaration/">ObjectMap</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="get-all.html">Resource</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Utility function that makes it easier to access all <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span> assets of a certain type.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="955579138%2FFunctions%2F-686914743" anchor-label="has" id="955579138%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="has.html"><span><span>has</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="955579138%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="has.html">Resource</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="has.html"><span class="token function">has</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Utility function that makes it easier to check if <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span> contains assets.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1469468846%2FFunctions%2F-686914743" anchor-label="imageButton" id="1469468846%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="image-button.html"><span>image</span><wbr><span><span>Button</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1469468846%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="image-button.html"><span class="token function">imageButton</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/ImageButton.ImageButtonStyle///PointingToDeclaration/">ImageButton.ImageButtonStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/ImageButton.ImageButtonStyle///PointingToDeclaration/">ImageButton.ImageButtonStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1410407647%2FFunctions%2F-686914743" anchor-label="imageTextButton" id="-1410407647%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="image-text-button.html"><span>image</span><wbr><span>Text</span><wbr><span><span>Button</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1410407647%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="image-text-button.html"><span class="token function">imageTextButton</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/ImageTextButton.ImageTextButtonStyle///PointingToDeclaration/">ImageTextButton.ImageTextButtonStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/ImageTextButton.ImageTextButtonStyle///PointingToDeclaration/">ImageTextButton.ImageTextButtonStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1625374169%2FFunctions%2F-686914743" anchor-label="label" id="-1625374169%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="label.html"><span><span>label</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1625374169%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="label.html"><span class="token function">label</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Label.LabelStyle///PointingToDeclaration/">Label.LabelStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Label.LabelStyle///PointingToDeclaration/">Label.LabelStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-647560383%2FFunctions%2F-686914743" anchor-label="list" id="-647560383%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="list.html"><span><span>list</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-647560383%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="list.html"><span class="token function">list</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/List.ListStyle///PointingToDeclaration/">List.ListStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/List.ListStyle///PointingToDeclaration/">List.ListStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1333543400%2FFunctions%2F-686914743" anchor-label="optional" id="-1333543400%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="optional.html"><span><span>optional</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1333543400%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="optional.html">Resource</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="optional.html"><span class="token function">optional</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="optional.html">Resource</a><span class="token operator">?</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Utility function that makes it easier to access <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span> assets or return null if they don't exist.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1064385762%2FFunctions%2F-686914743" anchor-label="plusAssign" id="1064385762%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="plus-assign.html"><span>plus</span><wbr><span><span>Assign</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1064385762%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="plus-assign.html">Resource</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="plus-assign.html"><span class="token function">plusAssign</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">resource<span class="token operator">: </span><a href="plus-assign.html">Resource</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Utility function that makes it easier to add <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span> assets under the <a href="default-style.html">defaultStyle</a> name.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1114239733%2FFunctions%2F-686914743" anchor-label="progressBar" id="1114239733%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="progress-bar.html"><span>progress</span><wbr><span><span>Bar</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1114239733%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="progress-bar.html"><span class="token function">progressBar</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/ProgressBar.ProgressBarStyle///PointingToDeclaration/">ProgressBar.ProgressBarStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/ProgressBar.ProgressBarStyle///PointingToDeclaration/">ProgressBar.ProgressBarStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1216081943%2FFunctions%2F-686914743" anchor-label="register" id="1216081943%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="register.html"><span><span>register</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1216081943%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="register.html"><span class="token function">register</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">styles<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Allows to create new UI component styles with the KTX DSL. This method is very similar to the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/index.html">apply</a> extension method from the standard library, but supports the DSL annotation.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="204766964%2FFunctions%2F-686914743" anchor-label="remove" id="204766964%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="remove.html"><span><span>remove</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="204766964%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="remove.html">Resource</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="remove.html"><span class="token function">remove</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle</span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Utility function that makes it easier to remove <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span> assets.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1396563160%2FFunctions%2F-686914743" anchor-label="scrollPane" id="1396563160%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="scroll-pane.html"><span>scroll</span><wbr><span><span>Pane</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1396563160%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="scroll-pane.html"><span class="token function">scrollPane</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/ScrollPane.ScrollPaneStyle///PointingToDeclaration/">ScrollPane.ScrollPaneStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/ScrollPane.ScrollPaneStyle///PointingToDeclaration/">ScrollPane.ScrollPaneStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1980849964%2FFunctions%2F-686914743" anchor-label="selectBox" id="1980849964%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="select-box.html"><span>select</span><wbr><span><span>Box</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1980849964%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="select-box.html"><span class="token function">selectBox</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/SelectBox.SelectBoxStyle///PointingToDeclaration/">SelectBox.SelectBoxStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/SelectBox.SelectBoxStyle///PointingToDeclaration/">SelectBox.SelectBoxStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1678397640%2FFunctions%2F-686914743" anchor-label="set" id="1678397640%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set.html"><span><span>set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1678397640%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="set.html">Resource</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="set.html">E</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="set.html">E</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="set.html"><span class="token function">set</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="set.html">E</a><span class="token punctuation">, </span></span><span class="parameter ">resource<span class="token operator">: </span><a href="set.html">Resource</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="set.html">Resource</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="set.html"><span class="token function">set</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">resource<span class="token operator">: </span><a href="set.html">Resource</a></span></span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><p class="paragraph">Utility function that makes it easier to add <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span> assets.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1829433892%2FFunctions%2F-686914743" anchor-label="skin" id="-1829433892%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="skin.html"><span><span>skin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1829433892%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="skin.html"><span class="token function">skin</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="skin.html"><span class="token function">skin</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">atlas<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.graphics.g2d/TextureAtlas///PointingToDeclaration/">TextureAtlas</span><span class="token punctuation">, </span></span><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-310721564%2FFunctions%2F-686914743" anchor-label="slider" id="-310721564%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="slider.html"><span><span>slider</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-310721564%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="slider.html"><span class="token function">slider</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Slider.SliderStyle///PointingToDeclaration/">Slider.SliderStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Slider.SliderStyle///PointingToDeclaration/">Slider.SliderStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1188182777%2FFunctions%2F-686914743" anchor-label="splitPane" id="1188182777%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="split-pane.html"><span>split</span><wbr><span><span>Pane</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1188182777%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="split-pane.html"><span class="token function">splitPane</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/SplitPane.SplitPaneStyle///PointingToDeclaration/">SplitPane.SplitPaneStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/SplitPane.SplitPaneStyle///PointingToDeclaration/">SplitPane.SplitPaneStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1137707006%2FFunctions%2F-686914743" anchor-label="textButton" id="-1137707006%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="text-button.html"><span>text</span><wbr><span><span>Button</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1137707006%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="text-button.html"><span class="token function">textButton</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/TextButton.TextButtonStyle///PointingToDeclaration/">TextButton.TextButtonStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/TextButton.TextButtonStyle///PointingToDeclaration/">TextButton.TextButtonStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1422486798%2FFunctions%2F-686914743" anchor-label="textField" id="1422486798%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="text-field.html"><span>text</span><wbr><span><span>Field</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1422486798%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="text-field.html"><span class="token function">textField</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/TextField.TextFieldStyle///PointingToDeclaration/">TextField.TextFieldStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/TextField.TextFieldStyle///PointingToDeclaration/">TextField.TextFieldStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="243841925%2FFunctions%2F-686914743" anchor-label="textTooltip" id="243841925%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="text-tooltip.html"><span>text</span><wbr><span><span>Tooltip</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="243841925%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="text-tooltip.html"><span class="token function">textTooltip</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/TextTooltip.TextTooltipStyle///PointingToDeclaration/">TextTooltip.TextTooltipStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/TextTooltip.TextTooltipStyle///PointingToDeclaration/">TextTooltip.TextTooltipStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2123246039%2FFunctions%2F-686914743" anchor-label="touchpad" id="2123246039%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="touchpad.html"><span><span>touchpad</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2123246039%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="touchpad.html"><span class="token function">touchpad</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Touchpad.TouchpadStyle///PointingToDeclaration/">Touchpad.TouchpadStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Touchpad.TouchpadStyle///PointingToDeclaration/">Touchpad.TouchpadStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="312239681%2FFunctions%2F-686914743" anchor-label="tree" id="312239681%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="tree.html"><span><span>tree</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="312239681%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="tree.html"><span class="token function">tree</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Tree.TreeStyle///PointingToDeclaration/">Tree.TreeStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Tree.TreeStyle///PointingToDeclaration/">Tree.TreeStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-153370669%2FFunctions%2F-686914743" anchor-label="window" id="-153370669%2FFunctions%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="window.html"><span><span>window</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-153370669%2FFunctions%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span><span class="token punctuation">.</span><a href="window.html"><span class="token function">window</span></a><span class="token punctuation">(</span><span class="parameters wrapped"><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>defaultStyle<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;extend<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter indented">&nbsp;&nbsp;&nbsp;&nbsp;init<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Window.WindowStyle///PointingToDeclaration/">Window.WindowStyle</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Window.WindowStyle///PointingToDeclaration/">Window.WindowStyle</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-1317363589%2FProperties%2F-686914743" anchor-label="defaultStyle" id="-1317363589%2FProperties%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a>
+        <div class="table-row" data-filterable-current=":style:dokkaHtmlPartial/main" data-filterable-set=":style:dokkaHtmlPartial/main">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="default-style.html"><span>default</span><wbr><span><span>Style</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1317363589%2FProperties%2F-686914743"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-depenent-content" data-active="" data-togglable=":style:dokkaHtmlPartial/main"><a data-name="-1317363589%2FProperties%2F-686914743" anchor-label="defaultStyle" id="-1317363589%2FProperties%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="default-style.html">defaultStyle</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief "><a data-name="-1317363589%2FProperties%2F-686914743" anchor-label="defaultStyle" id="-1317363589%2FProperties%2F-686914743" data-filterable-set=":style:dokkaHtmlPartial/main"></a><p class="paragraph">Name of default resources in <span data-unresolved-link="com.badlogic.gdx.scenes.scene2d.ui/Skin///PointingToDeclaration/">Skin</span>. Often used as default Scene2D actor style names.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  
-</body></html>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
 
+</body></html>
 
