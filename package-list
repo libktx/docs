@@ -5,6 +5,8 @@ module:actors
 ktx.actors
 module:app
 ktx.app
+module:artemis
+ktx.artemis
 module:ashley
 ktx.ashley
 module:assets
