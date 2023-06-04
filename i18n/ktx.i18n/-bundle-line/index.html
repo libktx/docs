@@ -37,6 +37,9 @@
     <div>
     </div>
     <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":i18n:dokkaHtmlPartial/main">jvm</button>
+        </div>
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
     </div>
@@ -46,74 +49,78 @@
         <div id="sideMenu"></div>
     </div>
     <div id="main">
-<div class="main-content" id="content" pageids="i18n::ktx.i18n/BundleLine///PointingToDeclaration//-2040232790">
+<div class="main-content" data-page-type="classlike" id="content" pageids="i18n::ktx.i18n/BundleLine///PointingToDeclaration//-2040232790">
   <div class="breadcrumbs"><a href="../../index.html">i18n</a><span class="delimiter">/</span><a href="../index.html">ktx.i18n</a><span class="delimiter">/</span><span class="current">BundleLine</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Bundle</span><wbr><span><span>Line</span></span></h1>
     <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18n:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">BundleLine</a></div><p class="paragraph">Represents a single <span data-unresolved-link="com.badlogic.gdx.utils/I18NBundle///PointingToDeclaration/">I18NBundle</span>. Expects that its <a href="../../../i18n/ktx.i18n/-bundle-line/to-string.html">toString</a> method returns a valid bundle line ID. Advised to be implemented by an enum to introduce type-safe bundle representation with compile time safety.</p></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
     <div class="tabs-section-body">
-      <h2 class="">Functions</h2>
-      <div class="table" data-togglable="Functions"><a data-name="-473379254%2FFunctions%2F-2040232790" anchor-label="invoke" id="-473379254%2FFunctions%2F-2040232790" data-filterable-set=":i18n:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":i18n:dokkaHtmlPartial/main" data-filterable-set=":i18n:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="invoke.html"><span><span>invoke</span></span></a></div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-473379254%2FFunctions%2F-2040232790" anchor-label="invoke" id="-473379254%2FFunctions%2F-2040232790" data-filterable-set=":i18n:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":i18n:dokkaHtmlPartial/main" data-filterable-set=":i18n:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="invoke.html"><span><span>invoke</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-473379254%2FFunctions%2F-2040232790"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18n:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="invoke.html"><span class="token function">invoke</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph"><a href="nls.html">nls</a> alias for extra conciseness. Use this property if the bundle line has no arguments.</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="invoke.html"><span class="token function">invoke</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>arguments<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph"><a href="nls.html">nls</a> alias for extra conciseness. Use this method if the bundle line has any arguments.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18n:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="invoke.html"><span class="token function">invoke</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph"><a href="nls.html">nls</a> alias for extra conciseness. Use this property if the bundle line has no arguments.</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="invoke.html"><span class="token function">invoke</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>arguments<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph"><a href="nls.html">nls</a> alias for extra conciseness. Use this method if the bundle line has any arguments.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="978950503%2FFunctions%2F-2040232790" anchor-label="nls" id="978950503%2FFunctions%2F-2040232790" data-filterable-set=":i18n:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":i18n:dokkaHtmlPartial/main" data-filterable-set=":i18n:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="nls.html"><span><span>nls</span></span></a></div>
+          <div class="table-row" data-filterable-current=":i18n:dokkaHtmlPartial/main" data-filterable-set=":i18n:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="nls.html"><span><span>nls</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="978950503%2FFunctions%2F-2040232790"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18n:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="nls.html"><span class="token function">nls</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>arguments<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Use this method if the bundle line has any arguments.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18n:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="nls.html"><span class="token function">nls</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>arguments<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Use this method if the bundle line has any arguments.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h2 class="">Properties</h2>
-      <div class="table" data-togglable="Properties"><a data-name="995892212%2FProperties%2F-2040232790" anchor-label="bundle" id="995892212%2FProperties%2F-2040232790" data-filterable-set=":i18n:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":i18n:dokkaHtmlPartial/main" data-filterable-set=":i18n:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="bundle.html"><span><span>bundle</span></span></a></div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="995892212%2FProperties%2F-2040232790" anchor-label="bundle" id="995892212%2FProperties%2F-2040232790" data-filterable-set=":i18n:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":i18n:dokkaHtmlPartial/main" data-filterable-set=":i18n:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bundle.html"><span><span>bundle</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="995892212%2FProperties%2F-2040232790"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18n:dokkaHtmlPartial/main"><a data-name="995892212%2FProperties%2F-2040232790" anchor-label="bundle" id="995892212%2FProperties%2F-2040232790" data-filterable-set=":i18n:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="bundle.html">bundle</a><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils/I18NBundle///PointingToDeclaration/">I18NBundle</span></div><div class="brief "><a data-name="995892212%2FProperties%2F-2040232790" anchor-label="bundle" id="995892212%2FProperties%2F-2040232790" data-filterable-set=":i18n:dokkaHtmlPartial/main"></a><p class="paragraph"><span data-unresolved-link="com.badlogic.gdx.utils/I18NBundle///PointingToDeclaration/">I18NBundle</span> instance storing the localized line. Has to be overridden in order to use <a href="nls.html">nls</a> and <a href="invoke.html">invoke</a> methods.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18n:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="bundle.html">bundle</a><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils/I18NBundle///PointingToDeclaration/">I18NBundle</span></div><div class="brief "><p class="paragraph"><span data-unresolved-link="com.badlogic.gdx.utils/I18NBundle///PointingToDeclaration/">I18NBundle</span> instance storing the localized line. Has to be overridden in order to use <a href="nls.html">nls</a> and <a href="invoke.html">invoke</a> methods.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1898479857%2FProperties%2F-2040232790" anchor-label="nls" id="-1898479857%2FProperties%2F-2040232790" data-filterable-set=":i18n:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":i18n:dokkaHtmlPartial/main" data-filterable-set=":i18n:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="nls.html"><span><span>nls</span></span></a></div>
+          <div class="table-row" data-filterable-current=":i18n:dokkaHtmlPartial/main" data-filterable-set=":i18n:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="nls.html"><span><span>nls</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1898479857%2FProperties%2F-2040232790"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18n:dokkaHtmlPartial/main"><a data-name="-1898479857%2FProperties%2F-2040232790" anchor-label="nls" id="-1898479857%2FProperties%2F-2040232790" data-filterable-set=":i18n:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="nls.html">nls</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><a data-name="-1898479857%2FProperties%2F-2040232790" anchor-label="nls" id="-1898479857%2FProperties%2F-2040232790" data-filterable-set=":i18n:dokkaHtmlPartial/main"></a><p class="paragraph"><span data-unresolved-link="com.badlogic.gdx.utils/I18NBundle///PointingToDeclaration/">I18NBundle</span> line value provided by <a href="bundle.html">bundle</a>. Use this property if the bundle line has no arguments.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":i18n:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="nls.html">nls</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph"><span data-unresolved-link="com.badlogic.gdx.utils/I18NBundle///PointingToDeclaration/">I18NBundle</span> line value provided by <a href="bundle.html">bundle</a>. Use this property if the bundle line has no arguments.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
@@ -127,6 +134,6 @@
       </div>
     </div>
 </div>
-
-</body></html>
+</body>
+</html>
 

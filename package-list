@@ -3,6 +3,8 @@ $dokka.linkExtension:html
 
 module:actors
 ktx.actors
+module:ai
+ktx.ai
 module:app
 ktx.app
 module:artemis

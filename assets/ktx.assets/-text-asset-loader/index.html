@@ -37,6 +37,9 @@
     <div>
     </div>
     <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":assets:dokkaHtmlPartial/main">jvm</button>
+        </div>
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
     </div>
@@ -46,142 +49,146 @@
         <div id="sideMenu"></div>
     </div>
     <div id="main">
-<div class="main-content" id="content" pageids="assets::ktx.assets/TextAssetLoader///PointingToDeclaration//493088805">
+<div class="main-content" data-page-type="classlike" id="content" pageids="assets::ktx.assets/TextAssetLoader///PointingToDeclaration//493088805">
   <div class="breadcrumbs"><a href="../../index.html">assets</a><span class="delimiter">/</span><a href="../index.html">ktx.assets</a><span class="delimiter">/</span><span class="current">TextAssetLoader</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Text</span><wbr><span>Asset</span><wbr><span><span>Loader</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">TextAssetLoader</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fileResolver<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.assets.loaders/FileHandleResolver///PointingToDeclaration/">FileHandleResolver</span><span class="token operator"> = </span>InternalFileHandleResolver()<span class="token punctuation">, </span></span><span class="parameter ">charset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">"UTF-8"</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.badlogic.gdx.assets.loaders/AsynchronousAssetLoader///PointingToDeclaration/">AsynchronousAssetLoader</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-text-asset-loader-parameters/index.html">TextAssetLoader.TextAssetLoaderParameters</a><span class="token operator">&gt; </span></div><p class="paragraph">Allows reading text files with an <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a>. Must be registered via <a href="../set-loader.html">setLoader</a>.</p><p class="paragraph">Note that <a href="load-async.html">loadAsync</a> <i>must</i> be called before <a href="load-sync.html">loadSync</a>, as usual in case of <span data-unresolved-link="com.badlogic.gdx.assets.loaders/AsynchronousAssetLoader///PointingToDeclaration/">AsynchronousAssetLoader</span> implementations. Similarly to standard libGDX loaders, this loader is not considered thread-safe and assumes that a single file is loaded at a time.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">TextAssetLoader</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fileResolver<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.assets.loaders/FileHandleResolver///PointingToDeclaration/">FileHandleResolver</span><span class="token operator"> = </span>InternalFileHandleResolver()<span class="token punctuation">, </span></span><span class="parameter ">charset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">"UTF-8"</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.badlogic.gdx.assets.loaders/AsynchronousAssetLoader///PointingToDeclaration/">AsynchronousAssetLoader</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-text-asset-loader-parameters/index.html">TextAssetLoader.TextAssetLoaderParameters</a><span class="token operator">&gt; </span></div><p class="paragraph">Allows reading text files with an <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a>. Must be registered via <a href="../set-loader.html">setLoader</a>.</p><p class="paragraph">Note that <a href="load-async.html">loadAsync</a> <i>must</i> be called before <a href="load-sync.html">loadSync</a>, as usual in case of <span data-unresolved-link="com.badlogic.gdx.assets.loaders/AsynchronousAssetLoader///PointingToDeclaration/">AsynchronousAssetLoader</span> implementations. Similarly to standard libGDX loaders, this loader is not considered thread-safe and assumes that a single file is loaded at a time.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>file</span><wbr><span><span>Resolver</span></span></u></div></span></div><div><div class="title"><p class="paragraph">not used, required by the superclass.</p></div></div></div></div><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>charset</span></span></u></div></span></div><div><div class="title"><p class="paragraph">name of the charset used to read text. Can be overridden with     <a href="-text-asset-loader-parameters/index.html">TextAssetLoader.TextAssetLoaderParameters</a>. Should match text files encoding. Defaults to UTF-8.</p></div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Parameters">Parameters</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
     <div class="tabs-section-body">
-      <h4 class="">Parameters</h4>
-      <div data-togglable="Parameters">
-        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>file</span><wbr><span><span>Resolver</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">not used, required by the superclass.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span><span>charset</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">name of the charset used to read text. Can be overridden with     <a href="-text-asset-loader-parameters/index.html">TextAssetLoader.TextAssetLoaderParameters</a>. Should match text files encoding. Defaults to UTF-8.</p></div></div></div></div></div></div></div></div></div>
-      </div>
-      <h2 class="tabbedcontent">Constructors</h2>
-      <div class="table" data-togglable="Constructors"><a data-name="-493033974%2FConstructors%2F493088805" anchor-label="TextAssetLoader" id="-493033974%2FConstructors%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue TabbedContent">
-            <div class=""><span class="inline-flex">
-                <div><a href="-text-asset-loader.html"><span>Text</span><wbr><span>Asset</span><wbr><span><span>Loader</span></span></a></div>
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-493033974%2FConstructors%2F493088805" anchor-label="TextAssetLoader" id="-493033974%2FConstructors%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-asset-loader.html"><span>Text</span><wbr><span>Asset</span><wbr><span><span>Loader</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-493033974%2FConstructors%2F493088805"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-text-asset-loader.html"><span class="token function">TextAssetLoader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fileResolver<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.assets.loaders/FileHandleResolver///PointingToDeclaration/">FileHandleResolver</span><span class="token operator"> = </span>InternalFileHandleResolver()<span class="token punctuation">, </span></span><span class="parameter ">charset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">"UTF-8"</span></span></span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fileResolver<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.assets.loaders/FileHandleResolver///PointingToDeclaration/">FileHandleResolver</span><span class="token operator"> = </span>InternalFileHandleResolver()<span class="token punctuation">, </span></span><span class="parameter ">charset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">"UTF-8"</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h2 class="">Types</h2>
-      <div class="table" data-togglable="Types"><a data-name="466506870%2FClasslikes%2F493088805" anchor-label="TextAssetLoaderParameters" id="466506870%2FClasslikes%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-text-asset-loader-parameters/index.html"><span>Text</span><wbr><span>Asset</span><wbr><span>Loader</span><wbr><span><span>Parameters</span></span></a></div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="466506870%2FClasslikes%2F493088805" anchor-label="TextAssetLoaderParameters" id="466506870%2FClasslikes%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-asset-loader-parameters/index.html"><span>Text</span><wbr><span>Asset</span><wbr><span>Loader</span><wbr><span><span>Parameters</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="466506870%2FClasslikes%2F493088805"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-asset-loader-parameters/index.html">TextAssetLoaderParameters</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>charset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">"UTF-8"</span></span></span><span class="token punctuation">)</span> : <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-loader-parameters/index.html">AssetLoaderParameters</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Optional parameters used to load text files.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-asset-loader-parameters/index.html">TextAssetLoaderParameters</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>charset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">"UTF-8"</span></span></span><span class="token punctuation">)</span> : <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-loader-parameters/index.html">AssetLoaderParameters</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Optional parameters used to load text files.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h2 class="">Functions</h2>
-      <div class="table" data-togglable="Functions"><a data-name="203240115%2FFunctions%2F493088805" anchor-label="getDependencies" id="203240115%2FFunctions%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="get-dependencies.html"><span>get</span><wbr><span><span>Dependencies</span></span></a></div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="203240115%2FFunctions%2F493088805" anchor-label="getDependencies" id="203240115%2FFunctions%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-dependencies.html"><span>get</span><wbr><span><span>Dependencies</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="203240115%2FFunctions%2F493088805"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-dependencies.html"><span class="token function">getDependencies</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fileName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">file<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.files/FileHandle///PointingToDeclaration/">FileHandle</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">parameter<span class="token operator">: </span><a href="-text-asset-loader-parameters/index.html">TextAssetLoader.TextAssetLoaderParameters</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-dependencies.html"><span class="token function">getDependencies</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fileName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">file<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.files/FileHandle///PointingToDeclaration/">FileHandle</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">parameter<span class="token operator">: </span><a href="-text-asset-loader-parameters/index.html">TextAssetLoader.TextAssetLoaderParameters</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="825636904%2FFunctions%2F493088805" anchor-label="loadAsync" id="825636904%2FFunctions%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="load-async.html"><span>load</span><wbr><span><span>Async</span></span></a></div>
+          <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="load-async.html"><span>load</span><wbr><span><span>Async</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="825636904%2FFunctions%2F493088805"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="load-async.html"><span class="token function">loadAsync</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">assetManager<span class="token operator">: </span><a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">fileName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">file<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.files/FileHandle///PointingToDeclaration/">FileHandle</span><span class="token punctuation">, </span></span><span class="parameter ">parameter<span class="token operator">: </span><a href="-text-asset-loader-parameters/index.html">TextAssetLoader.TextAssetLoaderParameters</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="load-async.html"><span class="token function">loadAsync</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">assetManager<span class="token operator">: </span><a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">fileName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">file<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.files/FileHandle///PointingToDeclaration/">FileHandle</span><span class="token punctuation">, </span></span><span class="parameter ">parameter<span class="token operator">: </span><a href="-text-asset-loader-parameters/index.html">TextAssetLoader.TextAssetLoaderParameters</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1472703343%2FFunctions%2F493088805" anchor-label="loadSync" id="-1472703343%2FFunctions%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="load-sync.html"><span>load</span><wbr><span><span>Sync</span></span></a></div>
+          <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="load-sync.html"><span>load</span><wbr><span><span>Sync</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1472703343%2FFunctions%2F493088805"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="load-sync.html"><span class="token function">loadSync</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">assetManager<span class="token operator">: </span><a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">fileName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">file<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.files/FileHandle///PointingToDeclaration/">FileHandle</span><span class="token punctuation">, </span></span><span class="parameter ">parameter<span class="token operator">: </span><a href="-text-asset-loader-parameters/index.html">TextAssetLoader.TextAssetLoaderParameters</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="load-sync.html"><span class="token function">loadSync</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">assetManager<span class="token operator">: </span><a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">fileName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">file<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.files/FileHandle///PointingToDeclaration/">FileHandle</span><span class="token punctuation">, </span></span><span class="parameter ">parameter<span class="token operator">: </span><a href="-text-asset-loader-parameters/index.html">TextAssetLoader.TextAssetLoaderParameters</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="31518472%2FFunctions%2F493088805" anchor-label="resolve" id="31518472%2FFunctions%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="index.html#31518472%2FFunctions%2F493088805"><span><span>resolve</span></span></a></div>
+          <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#31518472%2FFunctions%2F493088805"><span><span>resolve</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="31518472%2FFunctions%2F493088805"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#31518472%2FFunctions%2F493088805"><span class="token function">resolve</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.files/FileHandle///PointingToDeclaration/">FileHandle</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#31518472%2FFunctions%2F493088805"><span class="token function">resolve</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.files/FileHandle///PointingToDeclaration/">FileHandle</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-2039365813%2FFunctions%2F493088805" anchor-label="unloadAsync" id="-2039365813%2FFunctions%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="index.html#-2039365813%2FFunctions%2F493088805"><span>unload</span><wbr><span><span>Async</span></span></a></div>
+          <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-2039365813%2FFunctions%2F493088805"><span>unload</span><wbr><span><span>Async</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2039365813%2FFunctions%2F493088805"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-2039365813%2FFunctions%2F493088805"><span class="token function">unloadAsync</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">p2<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.files/FileHandle///PointingToDeclaration/">FileHandle</span><span class="token punctuation">, </span></span><span class="parameter ">p3<span class="token operator">: </span><a href="-text-asset-loader-parameters/index.html">TextAssetLoader.TextAssetLoaderParameters</a></span></span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-2039365813%2FFunctions%2F493088805"><span class="token function">unloadAsync</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">p2<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.files/FileHandle///PointingToDeclaration/">FileHandle</span><span class="token punctuation">, </span></span><span class="parameter ">p3<span class="token operator">: </span><a href="-text-asset-loader-parameters/index.html">TextAssetLoader.TextAssetLoaderParameters</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h2 class="">Properties</h2>
-      <div class="table" data-togglable="Properties"><a data-name="151359398%2FProperties%2F493088805" anchor-label="fileContent" id="151359398%2FProperties%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="file-content.html"><span>file</span><wbr><span><span>Content</span></span></a></div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="151359398%2FProperties%2F493088805" anchor-label="fileContent" id="151359398%2FProperties%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="file-content.html"><span>file</span><wbr><span><span>Content</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="151359398%2FProperties%2F493088805"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><a data-name="151359398%2FProperties%2F493088805" anchor-label="fileContent" id="151359398%2FProperties%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-volatile/index.html"><span class="token annotation builtin">Volatile</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="file-content.html">fileContent</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-volatile/index.html"><span class="token annotation builtin">Volatile</span></a></div></div><span class="token keyword"></span><span class="token keyword">var </span><a href="file-content.html">fileContent</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
@@ -195,6 +202,6 @@
       </div>
     </div>
 </div>
-
-</body></html>
+</body>
+</html>
 

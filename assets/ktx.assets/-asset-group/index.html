@@ -37,6 +37,9 @@
     <div>
     </div>
     <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":assets:dokkaHtmlPartial/main">jvm</button>
+        </div>
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
     </div>
@@ -46,140 +49,142 @@
         <div id="sideMenu"></div>
     </div>
     <div id="main">
-<div class="main-content" id="content" pageids="assets::ktx.assets/AssetGroup///PointingToDeclaration//493088805">
+<div class="main-content" data-page-type="classlike" id="content" pageids="assets::ktx.assets/AssetGroup///PointingToDeclaration//493088805">
   <div class="breadcrumbs"><a href="../../index.html">assets</a><span class="delimiter">/</span><a href="../index.html">ktx.assets</a><span class="delimiter">/</span><span class="current">AssetGroup</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Asset</span><wbr><span><span>Group</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">AssetGroup</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>manager<span class="token operator">: </span><a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a><span class="token punctuation">, </span></span><span class="parameter ">filePrefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">A class for managing a group of assets together, such that they can be loaded or unloaded en masse. <a href="index.html">AssetGroup</a> should be subclassed and the assets should be defined by properties in the subclass by using <a href="../../../assets/ktx.assets/-asset-group/asset.html">asset</a> or, <a href="../../../assets/ktx.assets/-asset-group/delayed-asset.html">delayedAsset</a>, which can be used as delegates. If not using delegates, it is possible to selectively load and unload them, in which case it is not advised to use <a href="load-all.html">loadAll</a> and <a href="unload-all.html">unloadAll</a>, because AssetManager's reference counts may be thrown off.</p><p class="paragraph">If fine control over individual assets of this group is not needed, a strategy to avoid the complexity of AssetManager's reference counting is to:</p><ul><li><p class="paragraph">Use <a href="../../../assets/ktx.assets/-asset-group/asset.html">asset</a>/<a href="../../../assets/ktx.assets/-asset-group/delayed-asset.html">delayedAsset</a> exclusively as delegates.</p></li><li><p class="paragraph">Do not mix and match use of <a href="../../../assets/ktx.assets/-asset-group/asset.html">asset</a> and <a href="../../../assets/ktx.assets/-asset-group/delayed-asset.html">delayedAsset</a>.</p></li><li><p class="paragraph">Never access any of the asset properties until the group is finished loading.</p></li><li><p class="paragraph">Do not initially call <a href="load-all.html">loadAll</a> if using <a href="../../../assets/ktx.assets/-asset-group/asset.html">asset</a> (as opposed to <a href="../../../assets/ktx.assets/-asset-group/delayed-asset.html">delayedAsset</a>).</p></li></ul></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">AssetGroup</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>manager<span class="token operator">: </span><a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a><span class="token punctuation">, </span></span><span class="parameter ">filePrefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">A class for managing a group of assets together, such that they can be loaded or unloaded en masse. <a href="index.html">AssetGroup</a> should be subclassed and the assets should be defined by properties in the subclass by using <a href="../../../assets/ktx.assets/-asset-group/asset.html">asset</a> or, <a href="../../../assets/ktx.assets/-asset-group/delayed-asset.html">delayedAsset</a>, which can be used as delegates. If not using delegates, it is possible to selectively load and unload them, in which case it is not advised to use <a href="load-all.html">loadAll</a> and <a href="unload-all.html">unloadAll</a>, because AssetManager's reference counts may be thrown off.</p><p class="paragraph">If fine control over individual assets of this group is not needed, a strategy to avoid the complexity of AssetManager's reference counting is to:</p><ul><li><p class="paragraph">Use <a href="../../../assets/ktx.assets/-asset-group/asset.html">asset</a>/<a href="../../../assets/ktx.assets/-asset-group/delayed-asset.html">delayedAsset</a> exclusively as delegates.</p></li><li><p class="paragraph">Do not mix and match use of <a href="../../../assets/ktx.assets/-asset-group/asset.html">asset</a> and <a href="../../../assets/ktx.assets/-asset-group/delayed-asset.html">delayedAsset</a>.</p></li><li><p class="paragraph">Never access any of the asset properties until the group is finished loading.</p></li><li><p class="paragraph">Do not initially call <a href="load-all.html">loadAll</a> if using <a href="../../../assets/ktx.assets/-asset-group/asset.html">asset</a> (as opposed to <a href="../../../assets/ktx.assets/-asset-group/delayed-asset.html">delayedAsset</a>).</p></li></ul><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>manager</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a> that will handle loading and unloading of this group.</p></div></div></div></div><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>file</span><wbr><span><span>Prefix</span></span></u></div></span></div><div><div class="title"><p class="paragraph">A string that will be prefixed to any file path parameter passed to <a href="../../../assets/ktx.assets/-asset-group/asset.html">asset</a> or <a href="../../../assets/ktx.assets/-asset-group/delayed-asset.html">delayedAsset</a>.</p></div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Parameters">Parameters</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
     <div class="tabs-section-body">
-      <h4 class="">Parameters</h4>
-      <div data-togglable="Parameters">
-        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span><span>manager</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a> that will handle loading and unloading of this group.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>file</span><wbr><span><span>Prefix</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">A string that will be prefixed to any file path parameter passed to <a href="../../../assets/ktx.assets/-asset-group/asset.html">asset</a> or <a href="../../../assets/ktx.assets/-asset-group/delayed-asset.html">delayedAsset</a>.</p></div></div></div></div></div></div></div></div></div>
-      </div>
-      <h2 class="tabbedcontent">Constructors</h2>
-      <div class="table" data-togglable="Constructors"><a data-name="-1738670477%2FConstructors%2F493088805" anchor-label="AssetGroup" id="-1738670477%2FConstructors%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue TabbedContent">
-            <div class=""><span class="inline-flex">
-                <div><a href="-asset-group.html"><span>Asset</span><wbr><span><span>Group</span></span></a></div>
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1738670477%2FConstructors%2F493088805" anchor-label="AssetGroup" id="-1738670477%2FConstructors%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-asset-group.html"><span>Asset</span><wbr><span><span>Group</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1738670477%2FConstructors%2F493088805"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-asset-group.html"><span class="token function">AssetGroup</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">manager<span class="token operator">: </span><a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a><span class="token punctuation">, </span></span><span class="parameter ">filePrefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span></span></span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">manager<span class="token operator">: </span><a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a><span class="token punctuation">, </span></span><span class="parameter ">filePrefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h2 class="">Functions</h2>
-      <div class="table" data-togglable="Functions"><a data-name="1389924487%2FFunctions%2F493088805" anchor-label="finishLoading" id="1389924487%2FFunctions%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="finish-loading.html"><span>finish</span><wbr><span><span>Loading</span></span></a></div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1389924487%2FFunctions%2F493088805" anchor-label="finishLoading" id="1389924487%2FFunctions%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="finish-loading.html"><span>finish</span><wbr><span><span>Loading</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1389924487%2FFunctions%2F493088805"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="finish-loading.html"><span class="token function">finishLoading</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Blocks until all members of this group are loaded. This does not prioritize this group's members, so assets from outside this group may be loaded as well.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="finish-loading.html"><span class="token function">finishLoading</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Blocks until all members of this group are loaded. This does not prioritize this group's members, so assets from outside this group may be loaded as well.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1422945509%2FFunctions%2F493088805" anchor-label="isLoaded" id="-1422945509%2FFunctions%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="is-loaded.html"><span>is</span><wbr><span><span>Loaded</span></span></a></div>
+          <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-loaded.html"><span>is</span><wbr><span><span>Loaded</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1422945509%2FFunctions%2F493088805"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-loaded.html"><span class="token function">isLoaded</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-loaded.html"><span class="token function">isLoaded</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="190381397%2FFunctions%2F493088805" anchor-label="loadAll" id="190381397%2FFunctions%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="load-all.html"><span>load</span><wbr><span><span>All</span></span></a></div>
+          <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="load-all.html"><span>load</span><wbr><span><span>All</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="190381397%2FFunctions%2F493088805"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="load-all.html"><span class="token function">loadAll</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Queues all assets of this group for loading by the associated <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a>. If any assets of this group are already loaded, their load counts in the AssetManager will still be incremented.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="load-all.html"><span class="token function">loadAll</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Queues all assets of this group for loading by the associated <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a>. If any assets of this group are already loaded, their load counts in the AssetManager will still be incremented.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1721675566%2FFunctions%2F493088805" anchor-label="unloadAll" id="1721675566%2FFunctions%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="unload-all.html"><span>unload</span><wbr><span><span>All</span></span></a></div>
+          <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unload-all.html"><span>unload</span><wbr><span><span>All</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1721675566%2FFunctions%2F493088805"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="unload-all.html"><span class="token function">unloadAll</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Unloads all of the assets in this group. If any of the assets are dependencies of assets outside this group, or if they were loaded more than once, their load counts will only be decremented by one and the associated <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a> will retain them.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="unload-all.html"><span class="token function">unloadAll</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Unloads all of the assets in this group. If any of the assets are dependencies of assets outside this group, or if they were loaded more than once, their load counts will only be decremented by one and the associated <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a> will retain them.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1189159999%2FFunctions%2F493088805" anchor-label="unloadAllSafely" id="-1189159999%2FFunctions%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="unload-all-safely.html"><span>unload</span><wbr><span>All</span><wbr><span><span>Safely</span></span></a></div>
+          <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unload-all-safely.html"><span>unload</span><wbr><span>All</span><wbr><span><span>Safely</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1189159999%2FFunctions%2F493088805"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="unload-all-safely.html"><span class="token function">unloadAllSafely</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">onError<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../-asset/index.html">Asset</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html">Exception</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{ _, exception -&gt; exception.ignore() }</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Unloads all of the assets in this group, catching any exceptions. If any of the assets are dependencies of assets outside this group, or if they were loaded more than once, their load counts will only be decremented by one and the associated <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a> will retain them.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="unload-all-safely.html"><span class="token function">unloadAllSafely</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">onError<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../-asset/index.html">Asset</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html">Exception</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{ _, exception -&gt; exception.ignore() }</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Unloads all of the assets in this group, catching any exceptions. If any of the assets are dependencies of assets outside this group, or if they were loaded more than once, their load counts will only be decremented by one and the associated <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a> will retain them.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="212179105%2FFunctions%2F493088805" anchor-label="update" id="212179105%2FFunctions%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="update.html"><span><span>update</span></span></a></div>
+          <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update.html"><span><span>update</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="212179105%2FFunctions%2F493088805"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="update.html"><span class="token function">update</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Updates the associated <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a> if the members of this group are not finished loading. This does not prioritize this group's assets, but it might provide early feedback that the members of this specific group are ready.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="update.html"><span class="token function">update</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Updates the associated <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a> if the members of this group are not finished loading. This does not prioritize this group's assets, but it might provide early feedback that the members of this specific group are ready.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h2 class="">Properties</h2>
-      <div class="table" data-togglable="Properties"><a data-name="881518787%2FProperties%2F493088805" anchor-label="manager" id="881518787%2FProperties%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="manager.html"><span><span>manager</span></span></a></div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="881518787%2FProperties%2F493088805" anchor-label="manager" id="881518787%2FProperties%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="manager.html"><span><span>manager</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="881518787%2FProperties%2F493088805"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><a data-name="881518787%2FProperties%2F493088805" anchor-label="manager" id="881518787%2FProperties%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="manager.html">manager</a><span class="token operator">: </span><a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="manager.html">manager</a><span class="token operator">: </span><a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
@@ -193,6 +198,6 @@
       </div>
     </div>
 </div>
-
-</body></html>
+</body>
+</html>
 

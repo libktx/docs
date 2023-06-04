@@ -37,6 +37,9 @@
     <div>
     </div>
     <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":app:dokkaHtmlPartial/main">jvm</button>
+        </div>
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
     </div>
@@ -46,219 +49,217 @@
         <div id="sideMenu"></div>
     </div>
     <div id="main">
-<div class="main-content" id="content" pageids="app::ktx.app/KtxGame///PointingToDeclaration//1413502745">
+<div class="main-content" data-page-type="classlike" id="content" pageids="app::ktx.app/KtxGame///PointingToDeclaration//1413502745">
   <div class="breadcrumbs"><a href="../../index.html">app</a><span class="delimiter">/</span><a href="../index.html">ktx.app</a><span class="delimiter">/</span><span class="current">KtxGame</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Ktx</span><wbr><span><span>Game</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">KtxGame</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">ScreenType</a><span class="token operator"> : </span><span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">firstScreen<span class="token operator">: </span><a href="index.html">ScreenType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">clearScreen<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span> : <a href="../-ktx-application-adapter/index.html">KtxApplicationAdapter</a></div><p class="paragraph">An equivalent of <span data-unresolved-link="com.badlogic.gdx/Game///PointingToDeclaration/">com.badlogic.gdx.Game</span> delegating game events to a <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span>. On contrary to <code class="lang-kotlin">Game</code>, <a href="index.html">KtxGame</a> maintains a collection of screens mapped by their type and allows to change screens knowing only their type with <a href="set-screen.html">setScreen</a>. Thanks to this, its easier to cache screens without maintaining a singleton with all <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span> instances manually. <a href="index.html">ScreenType</a> generic type allows to users to use an extended specific base class (or interface) for all screens, without locking into <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span>.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">KtxGame</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">ScreenType</a><span class="token operator"> : </span><span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">firstScreen<span class="token operator">: </span><a href="index.html">ScreenType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">clearScreen<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span> : <a href="../-ktx-application-adapter/index.html">KtxApplicationAdapter</a></div><p class="paragraph">An equivalent of <span data-unresolved-link="com.badlogic.gdx/Game///PointingToDeclaration/">com.badlogic.gdx.Game</span> delegating game events to a <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span>. On contrary to <code class="lang-kotlin">Game</code>, <a href="index.html">KtxGame</a> maintains a collection of screens mapped by their type and allows to change screens knowing only their type with <a href="set-screen.html">setScreen</a>. Thanks to this, its easier to cache screens without maintaining a singleton with all <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span> instances manually. <a href="index.html">ScreenType</a> generic type allows to users to use an extended specific base class (or interface) for all screens, without locking into <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span>.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>first</span><wbr><span><span>Screen</span></span></u></div></span></div><div><div class="title"><p class="paragraph">will be immediately used by the application. Note that it cannot use any resources initiated by the libGDX (like the OpenGL context) in the constructor, as the screen will be created before the application is launched. Defaults to an empty, mock-up screen implementation that should be replaced with the first <a href="set-screen.html">setScreen</a> method call in <a href="create.html">create</a>. Note: <code class="lang-kotlin">firstScreen</code> still has to be explicitly registered with <a href="add-screen.html">addScreen</a> if you want it to be accessible with <a href="get-screen.html">getScreen</a>.</p></div></div></div></div><div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>clear</span><wbr><span><span>Screen</span></span></u></div></span></div><div><div class="title"><p class="paragraph">if true (the default), <a href="../../../app/ktx.app/-ktx-game/clear-screen.html">clearScreen</a> will be called before screen rendering.</p></div></div></div></div><div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>Screen</span><wbr><span><span>Type</span></span></u></div></span></div><div><div class="title"><p class="paragraph">common base interface or class of all screens. Allows to use custom extended <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span> API.</p></div></div></div></div></div><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-ktx-screen/index.html"><span>Ktx</span><wbr><span><span>Screen</span></span></a></div></span></div><div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Parameters">Parameters</button><button class="section-tab" data-togglable="See also">See also</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
     <div class="tabs-section-body">
-      <h4 class="">See also</h4>
-      <div data-togglable="See also">
-        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="See also"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="../-ktx-screen/index.html"><span>Ktx</span><wbr><span><span>Screen</span></span></a></div></span></div><div></div></div></div></div></div></div></div>
-      </div>
-      <h4 class="">Parameters</h4>
-      <div data-togglable="Parameters">
-        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>first</span><wbr><span><span>Screen</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">will be immediately used by the application. Note that it cannot use any resources initiated by the libGDX (like the OpenGL context) in the constructor, as the screen will be created before the application is launched. Defaults to an empty, mock-up screen implementation that should be replaced with the first <a href="set-screen.html">setScreen</a> method call in <a href="create.html">create</a>. Note: <code class="lang-kotlin">firstScreen</code> still has to be explicitly registered with <a href="add-screen.html">addScreen</a> if you want it to be accessible with <a href="get-screen.html">getScreen</a>.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>clear</span><wbr><span><span>Screen</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">if true (the default), <a href="../../../app/ktx.app/-ktx-game/clear-screen.html">clearScreen</a> will be called before screen rendering.</p></div></div></div></div></div><div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span>Screen</span><wbr><span><span>Type</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">common base interface or class of all screens. Allows to use custom extended <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span> API.</p></div></div></div></div></div></div></div></div></div>
-      </div>
-      <h2 class="tabbedcontent">Constructors</h2>
-      <div class="table" data-togglable="Constructors"><a data-name="-692675007%2FConstructors%2F1413502745" anchor-label="KtxGame" id="-692675007%2FConstructors%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue TabbedContent">
-            <div class=""><span class="inline-flex">
-                <div><a href="-ktx-game.html"><span>Ktx</span><wbr><span><span>Game</span></span></a></div>
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-692675007%2FConstructors%2F1413502745" anchor-label="KtxGame" id="-692675007%2FConstructors%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ktx-game.html"><span>Ktx</span><wbr><span><span>Game</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-692675007%2FConstructors%2F1413502745"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">ScreenType</a><span class="token operator"> : </span><span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span><span class="token operator">&gt; </span><a href="-ktx-game.html"><span class="token function">KtxGame</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">firstScreen<span class="token operator">: </span><a href="index.html">ScreenType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">clearScreen<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">firstScreen<span class="token operator">: </span><a href="index.html">ScreenType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">clearScreen<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h2 class="">Functions</h2>
-      <div class="table" data-togglable="Functions"><a data-name="1546823830%2FFunctions%2F1413502745" anchor-label="addScreen" id="1546823830%2FFunctions%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="add-screen.html"><span>add</span><wbr><span><span>Screen</span></span></a></div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1546823830%2FFunctions%2F1413502745" anchor-label="addScreen" id="1546823830%2FFunctions%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-screen.html"><span>add</span><wbr><span><span>Screen</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1546823830%2FFunctions%2F1413502745"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="add-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="add-screen.html"><span class="token function">addScreen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">screen<span class="token operator">: </span><a href="add-screen.html">Type</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Registers an instance of <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span>.</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="add-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="add-screen.html"><span class="token function">addScreen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="add-screen.html">Type</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">screen<span class="token operator">: </span><a href="add-screen.html">Type</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Registers an instance of <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span>. Override this method to change the way screens are registered.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="add-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="add-screen.html"><span class="token function">addScreen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">screen<span class="token operator">: </span><a href="add-screen.html">Type</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Registers an instance of <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span>.</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="add-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="add-screen.html"><span class="token function">addScreen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="add-screen.html">Type</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">screen<span class="token operator">: </span><a href="add-screen.html">Type</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Registers an instance of <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span>. Override this method to change the way screens are registered.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-261442393%2FFunctions%2F1413502745" anchor-label="containsScreen" id="-261442393%2FFunctions%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="contains-screen.html"><span>contains</span><wbr><span><span>Screen</span></span></a></div>
+          <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="contains-screen.html"><span>contains</span><wbr><span><span>Screen</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-261442393%2FFunctions%2F1413502745"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="contains-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="contains-screen.html"><span class="token function">containsScreen</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="contains-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="contains-screen.html"><span class="token function">containsScreen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="contains-screen.html">Type</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if screen of the given type is registered.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="contains-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="contains-screen.html"><span class="token function">containsScreen</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="contains-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="contains-screen.html"><span class="token function">containsScreen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="contains-screen.html">Type</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if screen of the given type is registered.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1597216678%2FFunctions%2F1413502745" anchor-label="create" id="1597216678%2FFunctions%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="create.html"><span><span>create</span></span></a></div>
+          <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create.html"><span><span>create</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1597216678%2FFunctions%2F1413502745"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="create.html"><span class="token function">create</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">By default, this method resizes (<span data-unresolved-link="com.badlogic.gdx/Screen/resize/#kotlin.Int#kotlin.Int/PointingToDeclaration/">Screen.resize</span>) and shows (<span data-unresolved-link="com.badlogic.gdx/Screen/show/#/PointingToDeclaration/">Screen.show</span>) initial view. You do not have to call super if you used <a href="set-screen.html">setScreen</a> in the overridden <a href="create.html">create</a> method or the selected first view does not need to be resized and showed before usage.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="create.html"><span class="token function">create</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">By default, this method resizes (<span data-unresolved-link="com.badlogic.gdx/Screen/resize/#kotlin.Int#kotlin.Int/PointingToDeclaration/">Screen.resize</span>) and shows (<span data-unresolved-link="com.badlogic.gdx/Screen/show/#/PointingToDeclaration/">Screen.show</span>) initial view. You do not have to call super if you used <a href="set-screen.html">setScreen</a> in the overridden <a href="create.html">create</a> method or the selected first view does not need to be resized and showed before usage.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="2050144697%2FFunctions%2F1413502745" anchor-label="dispose" id="2050144697%2FFunctions%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="dispose.html"><span><span>dispose</span></span></a></div>
+          <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dispose.html"><span><span>dispose</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2050144697%2FFunctions%2F1413502745"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="dispose.html"><span class="token function">dispose</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Disposes of all registered screens with <span data-unresolved-link="com.badlogic.gdx/Screen/dispose/#/PointingToDeclaration/">Screen.dispose</span>. Catches thrown errors and logs them with libGDX application API by default. Override <a href="../../../app/ktx.app/-ktx-game/on-screen-disposal-error.html">onScreenDisposalError</a> method to change error handling behavior. Should be called automatically by libGDX application lifecycle handler.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="dispose.html"><span class="token function">dispose</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Disposes of all registered screens with <span data-unresolved-link="com.badlogic.gdx/Screen/dispose/#/PointingToDeclaration/">Screen.dispose</span>. Catches thrown errors and logs them with libGDX application API by default. Override <a href="../../../app/ktx.app/-ktx-game/on-screen-disposal-error.html">onScreenDisposalError</a> method to change error handling behavior. Should be called automatically by libGDX application lifecycle handler.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-668579749%2FFunctions%2F1413502745" anchor-label="getScreen" id="-668579749%2FFunctions%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="get-screen.html"><span>get</span><wbr><span><span>Screen</span></span></a></div>
+          <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-screen.html"><span>get</span><wbr><span><span>Screen</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-668579749%2FFunctions%2F1413502745"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="get-screen.html"><span class="token function">getScreen</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="get-screen.html">Type</a></div><div class="brief "><p class="paragraph">Returns cached instance of <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span> of the selected type.</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="get-screen.html"><span class="token function">getScreen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get-screen.html">Type</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="get-screen.html">Type</a></div><div class="brief "><p class="paragraph">Returns cached instance of <a href="get-screen.html">Type</a> of the selected type.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="get-screen.html"><span class="token function">getScreen</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="get-screen.html">Type</a></div><div class="brief "><p class="paragraph">Returns cached instance of <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span> of the selected type.</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="get-screen.html"><span class="token function">getScreen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get-screen.html">Type</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="get-screen.html">Type</a></div><div class="brief "><p class="paragraph">Returns cached instance of <a href="get-screen.html">Type</a> of the selected type.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="454622338%2FFunctions%2F1413502745" anchor-label="pause" id="454622338%2FFunctions%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="pause.html"><span><span>pause</span></span></a></div>
+          <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pause.html"><span><span>pause</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="454622338%2FFunctions%2F1413502745"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="pause.html"><span class="token function">pause</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="pause.html"><span class="token function">pause</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1056211065%2FFunctions%2F1413502745" anchor-label="removeScreen" id="-1056211065%2FFunctions%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="remove-screen.html"><span>remove</span><wbr><span><span>Screen</span></span></a></div>
+          <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-screen.html"><span>remove</span><wbr><span><span>Screen</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1056211065%2FFunctions%2F1413502745"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="remove-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="remove-screen.html"><span class="token function">removeScreen</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="remove-screen.html">Type</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="remove-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="remove-screen.html"><span class="token function">removeScreen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="remove-screen.html">Type</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="remove-screen.html">Type</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Removes cached instance of <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span> of the selected type. Note that this method does not dispose of the screen and will not affect <a href="shown-screen.html">shownScreen</a>.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="remove-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="remove-screen.html"><span class="token function">removeScreen</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="remove-screen.html">Type</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="remove-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="remove-screen.html"><span class="token function">removeScreen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="remove-screen.html">Type</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="remove-screen.html">Type</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Removes cached instance of <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span> of the selected type. Note that this method does not dispose of the screen and will not affect <a href="shown-screen.html">shownScreen</a>.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1835141044%2FFunctions%2F1413502745" anchor-label="render" id="-1835141044%2FFunctions%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="render.html"><span><span>render</span></span></a></div>
+          <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="render.html"><span><span>render</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1835141044%2FFunctions%2F1413502745"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="render.html"><span class="token function">render</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="render.html"><span class="token function">render</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-809428271%2FFunctions%2F1413502745" anchor-label="resize" id="-809428271%2FFunctions%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="resize.html"><span><span>resize</span></span></a></div>
+          <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="resize.html"><span><span>resize</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-809428271%2FFunctions%2F1413502745"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="resize.html"><span class="token function">resize</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">width<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="resize.html"><span class="token function">resize</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">width<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="294533525%2FFunctions%2F1413502745" anchor-label="resume" id="294533525%2FFunctions%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="resume.html"><span><span>resume</span></span></a></div>
+          <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="resume.html"><span><span>resume</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="294533525%2FFunctions%2F1413502745"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="resume.html"><span class="token function">resume</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="resume.html"><span class="token function">resume</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1510508867%2FFunctions%2F1413502745" anchor-label="setScreen" id="1510508867%2FFunctions%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="set-screen.html"><span>set</span><wbr><span><span>Screen</span></span></a></div>
+          <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-screen.html"><span>set</span><wbr><span><span>Screen</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1510508867%2FFunctions%2F1413502745"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="set-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="set-screen.html"><span class="token function">setScreen</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Replaces current screen with the registered screen instance of the passed type.</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="set-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="set-screen.html"><span class="token function">setScreen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="set-screen.html">Type</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Replaces current screen with the registered screen instance of the passed type. Calls <code class="lang-kotlin">hide</code> method of the previous screen and <code class="lang-kotlin">show</code> method of the current screen. Override this method to control screen transitions.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="set-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="set-screen.html"><span class="token function">setScreen</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Replaces current screen with the registered screen instance of the passed type.</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="set-screen.html">Type</a><span class="token operator"> : </span><a href="index.html">ScreenType</a><span class="token operator">&gt; </span><a href="set-screen.html"><span class="token function">setScreen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="set-screen.html">Type</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Replaces current screen with the registered screen instance of the passed type. Calls <code class="lang-kotlin">hide</code> method of the previous screen and <code class="lang-kotlin">show</code> method of the current screen. Override this method to control screen transitions.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h2 class="">Properties</h2>
-      <div class="table" data-togglable="Properties"><a data-name="-1719116997%2FProperties%2F1413502745" anchor-label="shownScreen" id="-1719116997%2FProperties%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="shown-screen.html"><span>shown</span><wbr><span><span>Screen</span></span></a></div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1719116997%2FProperties%2F1413502745" anchor-label="shownScreen" id="-1719116997%2FProperties%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtmlPartial/main" data-filterable-set=":app:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="shown-screen.html"><span>shown</span><wbr><span><span>Screen</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1719116997%2FProperties%2F1413502745"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><a data-name="-1719116997%2FProperties%2F1413502745" anchor-label="shownScreen" id="-1719116997%2FProperties%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="shown-screen.html">shownScreen</a><span class="token operator">: </span><a href="index.html">ScreenType</a></div><div class="brief "><a data-name="-1719116997%2FProperties%2F1413502745" anchor-label="shownScreen" id="-1719116997%2FProperties%2F1413502745" data-filterable-set=":app:dokkaHtmlPartial/main"></a><p class="paragraph">Provides direct access to current <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span> instance handling game events.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">val </span><a href="shown-screen.html">shownScreen</a><span class="token operator">: </span><a href="index.html">ScreenType</a></div><div class="brief "><p class="paragraph">Provides direct access to current <span data-unresolved-link="com.badlogic.gdx/Screen///PointingToDeclaration/">Screen</span> instance handling game events.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
@@ -272,6 +273,6 @@
       </div>
     </div>
 </div>
-
-</body></html>
+</body>
+</html>
 

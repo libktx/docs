@@ -37,6 +37,9 @@
     <div>
     </div>
     <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":async:dokkaHtmlPartial/main">jvm</button>
+        </div>
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
     </div>
@@ -46,331 +49,337 @@
         <div id="sideMenu"></div>
     </div>
     <div id="main">
-<div class="main-content" id="content" pageids="async::ktx.async/AsyncExecutorDispatcher///PointingToDeclaration//396876254">
+<div class="main-content" data-page-type="classlike" id="content" pageids="async::ktx.async/AsyncExecutorDispatcher///PointingToDeclaration//396876254">
   <div class="breadcrumbs"><a href="../../index.html">async</a><span class="delimiter">/</span><a href="../index.html">ktx.async</a><span class="delimiter">/</span><span class="current">AsyncExecutorDispatcher</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Async</span><wbr><span>Executor</span><wbr><span><span>Dispatcher</span></span></h1>
     <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">AsyncExecutorDispatcher</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>executor<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils.async/AsyncExecutor///PointingToDeclaration/">AsyncExecutor</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>threads<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1</span></span><span class="token punctuation">)</span> : <a href="../-abstract-ktx-dispatcher/index.html">AbstractKtxDispatcher</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html">Closeable</a>, <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span></div><p class="paragraph">A <span data-unresolved-link="kotlinx.coroutines/CoroutineDispatcher///PointingToDeclaration/">CoroutineDispatcher</span> that wraps around libGDX <span data-unresolved-link="com.badlogic.gdx.utils.async/AsyncExecutor///PointingToDeclaration/">AsyncExecutor</span> instance (available via <a href="executor.html">executor</a> property) to execute tasks asynchronously. <a href="threads.html">threads</a> property is purely informational and cannot be verified, since <span data-unresolved-link="com.badlogic.gdx.utils.async/AsyncExecutor///PointingToDeclaration/">AsyncExecutor</span> does not expose the amount of threads it uses internally; provide a valid <a href="threads.html">threads</a> amount during initiation or use the official factory methods to prevent from mismatches with the actual max threads amount.</p><p class="paragraph">Uses libGDX <span data-unresolved-link="com.badlogic.gdx.utils/Timer///PointingToDeclaration/">Timer</span> API to support <a href="../../../async/ktx.async/-async-executor-dispatcher/delay.html">delay</a>.</p></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
     <div class="tabs-section-body">
-      <h2 class="tabbedcontent">Constructors</h2>
-      <div class="table" data-togglable="Constructors"><a data-name="-472848496%2FConstructors%2F396876254" anchor-label="AsyncExecutorDispatcher" id="-472848496%2FConstructors%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue TabbedContent">
-            <div class=""><span class="inline-flex">
-                <div><a href="-async-executor-dispatcher.html"><span>Async</span><wbr><span>Executor</span><wbr><span><span>Dispatcher</span></span></a></div>
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-472848496%2FConstructors%2F396876254" anchor-label="AsyncExecutorDispatcher" id="-472848496%2FConstructors%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-async-executor-dispatcher.html"><span>Async</span><wbr><span>Executor</span><wbr><span><span>Dispatcher</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-472848496%2FConstructors%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-async-executor-dispatcher.html"><span class="token function">AsyncExecutorDispatcher</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">executor<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils.async/AsyncExecutor///PointingToDeclaration/">AsyncExecutor</span><span class="token punctuation">, </span></span><span class="parameter ">threads<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1</span></span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">executor<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils.async/AsyncExecutor///PointingToDeclaration/">AsyncExecutor</span><span class="token punctuation">, </span></span><span class="parameter ">threads<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h2 class="">Functions</h2>
-      <div class="table" data-togglable="Functions"><a data-name="-2102046480%2FFunctions%2F396876254" anchor-label="close" id="-2102046480%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="close.html"><span><span>close</span></span></a></div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-2102046480%2FFunctions%2F396876254" anchor-label="close" id="-2102046480%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="close.html"><span><span>close</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2102046480%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="close.html"><span class="token function">close</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="close.html"><span class="token function">close</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="328100086%2FFunctions%2F396876254" anchor-label="delay" id="328100086%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../-main-dispatcher/index.html#328100086%2FFunctions%2F396876254"><span><span>delay</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-main-dispatcher/index.html#328100086%2FFunctions%2F396876254"><span><span>delay</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="328100086%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="../-main-dispatcher/index.html#328100086%2FFunctions%2F396876254"><span class="token function"><strike>delay</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">time<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="../-main-dispatcher/index.html#328100086%2FFunctions%2F396876254"><span class="token function"><strike>delay</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">time<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1957882411%2FFunctions%2F396876254" anchor-label="dispatch" id="-1957882411%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../-abstract-ktx-dispatcher/dispatch.html"><span><span>dispatch</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-abstract-ktx-dispatcher/dispatch.html"><span><span>dispatch</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1957882411%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../-abstract-ktx-dispatcher/dispatch.html"><span class="token function">dispatch</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Runnable///PointingToDeclaration/">Runnable</span></span></span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../-abstract-ktx-dispatcher/dispatch.html"><span class="token function">dispatch</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Runnable///PointingToDeclaration/">Runnable</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1925042348%2FFunctions%2F396876254" anchor-label="dispatchYield" id="-1925042348%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../-main-dispatcher/index.html#-1925042348%2FFunctions%2F396876254"><span>dispatch</span><wbr><span><span>Yield</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-main-dispatcher/index.html#-1925042348%2FFunctions%2F396876254"><span>dispatch</span><wbr><span><span>Yield</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1925042348%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-main-dispatcher/index.html#-1925042348%2FFunctions%2F396876254"><span class="token function">dispatchYield</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Runnable///PointingToDeclaration/">Runnable</span></span></span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-main-dispatcher/index.html#-1925042348%2FFunctions%2F396876254"><span class="token function">dispatchYield</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Runnable///PointingToDeclaration/">Runnable</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1955222505%2FFunctions%2F396876254" anchor-label="dispose" id="1955222505%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="dispose.html"><span><span>dispose</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dispose.html"><span><span>dispose</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1955222505%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="dispose.html"><span class="token function">dispose</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="dispose.html"><span class="token function">dispose</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="221130562%2FFunctions%2F396876254" anchor-label="execute" id="221130562%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="execute.html"><span><span>execute</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="execute.html"><span><span>execute</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="221130562%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="execute.html"><span class="token function">execute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Runnable///PointingToDeclaration/">Runnable</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Immediately executes or schedules execution of the passed <a href="execute.html">block</a>.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="execute.html"><span class="token function">execute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Runnable///PointingToDeclaration/">Runnable</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Immediately executes or schedules execution of the passed <a href="execute.html">block</a>.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="466442070%2FFunctions%2F396876254" anchor-label="fold" id="466442070%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../-main-dispatcher/index.html#466442070%2FFunctions%2F396876254"><span><span>fold</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-main-dispatcher/index.html#466442070%2FFunctions%2F396876254"><span><span>fold</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="466442070%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-main-dispatcher/index.html#466442070%2FFunctions%2F396876254">R</a><span class="token operator">&gt; </span><a href="../-main-dispatcher/index.html#466442070%2FFunctions%2F396876254"><span class="token function">fold</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">initial<span class="token operator">: </span><a href="../-main-dispatcher/index.html#466442070%2FFunctions%2F396876254">R</a><span class="token punctuation">, </span></span><span class="parameter ">operation<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../-main-dispatcher/index.html#466442070%2FFunctions%2F396876254">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/-element/index.html">CoroutineContext.Element</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../-main-dispatcher/index.html#466442070%2FFunctions%2F396876254">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-main-dispatcher/index.html#466442070%2FFunctions%2F396876254">R</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-main-dispatcher/index.html#466442070%2FFunctions%2F396876254">R</a><span class="token operator">&gt; </span><a href="../-main-dispatcher/index.html#466442070%2FFunctions%2F396876254"><span class="token function">fold</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">initial<span class="token operator">: </span><a href="../-main-dispatcher/index.html#466442070%2FFunctions%2F396876254">R</a><span class="token punctuation">, </span></span><span class="parameter ">operation<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="../-main-dispatcher/index.html#466442070%2FFunctions%2F396876254">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/-element/index.html">CoroutineContext.Element</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="../-main-dispatcher/index.html#466442070%2FFunctions%2F396876254">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-main-dispatcher/index.html#466442070%2FFunctions%2F396876254">R</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="232613081%2FFunctions%2F396876254" anchor-label="get" id="232613081%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../-main-dispatcher/index.html#232613081%2FFunctions%2F396876254"><span><span>get</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-main-dispatcher/index.html#232613081%2FFunctions%2F396876254"><span><span>get</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="232613081%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-main-dispatcher/index.html#232613081%2FFunctions%2F396876254">E</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/-element/index.html">CoroutineContext.Element</a><span class="token operator">&gt; </span><a href="../-main-dispatcher/index.html#232613081%2FFunctions%2F396876254"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/-key/index.html">CoroutineContext.Key</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-main-dispatcher/index.html#232613081%2FFunctions%2F396876254">E</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-main-dispatcher/index.html#232613081%2FFunctions%2F396876254">E</a><span class="token operator">?</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-main-dispatcher/index.html#232613081%2FFunctions%2F396876254">E</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/-element/index.html">CoroutineContext.Element</a><span class="token operator">&gt; </span><a href="../-main-dispatcher/index.html#232613081%2FFunctions%2F396876254"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/-key/index.html">CoroutineContext.Key</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-main-dispatcher/index.html#232613081%2FFunctions%2F396876254">E</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-main-dispatcher/index.html#232613081%2FFunctions%2F396876254">E</a><span class="token operator">?</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1798799910%2FFunctions%2F396876254" anchor-label="interceptContinuation" id="-1798799910%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../-main-dispatcher/index.html#-1798799910%2FFunctions%2F396876254"><span>intercept</span><wbr><span><span>Continuation</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-main-dispatcher/index.html#-1798799910%2FFunctions%2F396876254"><span>intercept</span><wbr><span><span>Continuation</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1798799910%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">override </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-main-dispatcher/index.html#-1798799910%2FFunctions%2F396876254">T</a><span class="token operator">&gt; </span><a href="../-main-dispatcher/index.html#-1798799910%2FFunctions%2F396876254"><span class="token function">interceptContinuation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">continuation<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-continuation/index.html">Continuation</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-main-dispatcher/index.html#-1798799910%2FFunctions%2F396876254">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-continuation/index.html">Continuation</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-main-dispatcher/index.html#-1798799910%2FFunctions%2F396876254">T</a><span class="token operator">&gt;</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">override </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-main-dispatcher/index.html#-1798799910%2FFunctions%2F396876254">T</a><span class="token operator">&gt; </span><a href="../-main-dispatcher/index.html#-1798799910%2FFunctions%2F396876254"><span class="token function">interceptContinuation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">continuation<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-continuation/index.html">Continuation</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-main-dispatcher/index.html#-1798799910%2FFunctions%2F396876254">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-continuation/index.html">Continuation</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-main-dispatcher/index.html#-1798799910%2FFunctions%2F396876254">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-550982961%2FFunctions%2F396876254" anchor-label="invokeOnTimeout" id="-550982961%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../-ktx-dispatcher/invoke-on-timeout.html"><span>invoke</span><wbr><span>On</span><wbr><span><span>Timeout</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-ktx-dispatcher/invoke-on-timeout.html"><span>invoke</span><wbr><span>On</span><wbr><span><span>Timeout</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-550982961%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../-ktx-dispatcher/invoke-on-timeout.html"><span class="token function">invokeOnTimeout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">timeMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Runnable///PointingToDeclaration/">Runnable</span><span class="token punctuation">, </span></span><span class="parameter ">context<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/DisposableHandle///PointingToDeclaration/">DisposableHandle</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../-ktx-dispatcher/invoke-on-timeout.html"><span class="token function">invokeOnTimeout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">timeMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Runnable///PointingToDeclaration/">Runnable</span><span class="token punctuation">, </span></span><span class="parameter ">context<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/DisposableHandle///PointingToDeclaration/">DisposableHandle</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-381715142%2FFunctions%2F396876254" anchor-label="isDispatchNeeded" id="-381715142%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../-rendering-thread-dispatcher/index.html#-381715142%2FFunctions%2F396876254"><span>is</span><wbr><span>Dispatch</span><wbr><span><span>Needed</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-rendering-thread-dispatcher/index.html#-381715142%2FFunctions%2F396876254"><span>is</span><wbr><span>Dispatch</span><wbr><span><span>Needed</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-381715142%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-rendering-thread-dispatcher/index.html#-381715142%2FFunctions%2F396876254"><span class="token function">isDispatchNeeded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-rendering-thread-dispatcher/index.html#-381715142%2FFunctions%2F396876254"><span class="token function">isDispatchNeeded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="311038380%2FFunctions%2F396876254" anchor-label="limitedParallelism" id="311038380%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="index.html#311038380%2FFunctions%2F396876254"><span>limited</span><wbr><span><span>Parallelism</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#311038380%2FFunctions%2F396876254"><span>limited</span><wbr><span><span>Parallelism</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="311038380%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#311038380%2FFunctions%2F396876254"><span class="token function">limitedParallelism</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">parallelism<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineDispatcher///PointingToDeclaration/">CoroutineDispatcher</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#311038380%2FFunctions%2F396876254"><span class="token function">limitedParallelism</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">parallelism<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineDispatcher///PointingToDeclaration/">CoroutineDispatcher</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1830620809%2FFunctions%2F396876254" anchor-label="minusKey" id="-1830620809%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../-main-dispatcher/index.html#-1830620809%2FFunctions%2F396876254"><span>minus</span><wbr><span><span>Key</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-main-dispatcher/index.html#-1830620809%2FFunctions%2F396876254"><span>minus</span><wbr><span><span>Key</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1830620809%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../-main-dispatcher/index.html#-1830620809%2FFunctions%2F396876254"><span class="token function">minusKey</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/-key/index.html">CoroutineContext.Key</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../-main-dispatcher/index.html#-1830620809%2FFunctions%2F396876254"><span class="token function">minusKey</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/-key/index.html">CoroutineContext.Key</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1635288188%2FFunctions%2F396876254" anchor-label="plus" id="1635288188%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../-main-dispatcher/index.html#1141296693%2FFunctions%2F396876254"><span><span>plus</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-main-dispatcher/index.html#1141296693%2FFunctions%2F396876254"><span><span>plus</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1635288188%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="../-main-dispatcher/index.html#1141296693%2FFunctions%2F396876254"><span class="token function">plus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="../-main-dispatcher/index.html#1709458771%2FFunctions%2F396876254"><span class="token function"><strike>plus</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineDispatcher///PointingToDeclaration/">CoroutineDispatcher</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineDispatcher///PointingToDeclaration/">CoroutineDispatcher</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="../-main-dispatcher/index.html#1141296693%2FFunctions%2F396876254"><span class="token function">plus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="../-main-dispatcher/index.html#1709458771%2FFunctions%2F396876254"><span class="token function"><strike>plus</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineDispatcher///PointingToDeclaration/">CoroutineDispatcher</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineDispatcher///PointingToDeclaration/">CoroutineDispatcher</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1994945966%2FFunctions%2F396876254" anchor-label="releaseInterceptedContinuation" id="-1994945966%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../-main-dispatcher/index.html#-1994945966%2FFunctions%2F396876254"><span>release</span><wbr><span>Intercepted</span><wbr><span><span>Continuation</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-main-dispatcher/index.html#-1994945966%2FFunctions%2F396876254"><span>release</span><wbr><span>Intercepted</span><wbr><span><span>Continuation</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1994945966%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../-main-dispatcher/index.html#-1994945966%2FFunctions%2F396876254"><span class="token function">releaseInterceptedContinuation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">continuation<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-continuation/index.html">Continuation</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../-main-dispatcher/index.html#-1994945966%2FFunctions%2F396876254"><span class="token function">releaseInterceptedContinuation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">continuation<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-continuation/index.html">Continuation</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-10856427%2FFunctions%2F396876254" anchor-label="scheduleResumeAfterDelay" id="-10856427%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../-ktx-dispatcher/schedule-resume-after-delay.html"><span>schedule</span><wbr><span>Resume</span><wbr><span>After</span><wbr><span><span>Delay</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-ktx-dispatcher/schedule-resume-after-delay.html"><span>schedule</span><wbr><span>Resume</span><wbr><span>After</span><wbr><span><span>Delay</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-10856427%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../-ktx-dispatcher/schedule-resume-after-delay.html"><span class="token function">scheduleResumeAfterDelay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">timeMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">continuation<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CancellableContinuation///PointingToDeclaration/">CancellableContinuation</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../-ktx-dispatcher/schedule-resume-after-delay.html"><span class="token function">scheduleResumeAfterDelay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">timeMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">continuation<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CancellableContinuation///PointingToDeclaration/">CancellableContinuation</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-272545082%2FFunctions%2F396876254" anchor-label="toString" id="-272545082%2FFunctions%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="to-string.html"><span>to</span><wbr><span><span>String</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-string.html"><span>to</span><wbr><span><span>String</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-272545082%2FFunctions%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h2 class="">Properties</h2>
-      <div class="table" data-togglable="Properties"><a data-name="-381102529%2FProperties%2F396876254" anchor-label="executor" id="-381102529%2FProperties%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="executor.html"><span><span>executor</span></span></a></div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-381102529%2FProperties%2F396876254" anchor-label="executor" id="-381102529%2FProperties%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="executor.html"><span><span>executor</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-381102529%2FProperties%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><a data-name="-381102529%2FProperties%2F396876254" anchor-label="executor" id="-381102529%2FProperties%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="executor.html">executor</a><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils.async/AsyncExecutor///PointingToDeclaration/">AsyncExecutor</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="executor.html">executor</a><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils.async/AsyncExecutor///PointingToDeclaration/">AsyncExecutor</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1762250447%2FProperties%2F396876254" anchor-label="key" id="-1762250447%2FProperties%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="../-main-dispatcher/index.html#-1762250447%2FProperties%2F396876254"><span><span>key</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-main-dispatcher/index.html#-1762250447%2FProperties%2F396876254"><span><span>key</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1762250447%2FProperties%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><a data-name="-1762250447%2FProperties%2F396876254" anchor-label="key" id="-1762250447%2FProperties%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-main-dispatcher/index.html#-1762250447%2FProperties%2F396876254">key</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/-key/index.html">CoroutineContext.Key</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-main-dispatcher/index.html#-1762250447%2FProperties%2F396876254">key</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/-key/index.html">CoroutineContext.Key</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1371654753%2FProperties%2F396876254" anchor-label="threads" id="-1371654753%2FProperties%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-        <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="threads.html"><span><span>threads</span></span></a></div>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="threads.html"><span><span>threads</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1371654753%2FProperties%2F396876254"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><a data-name="-1371654753%2FProperties%2F396876254" anchor-label="threads" id="-1371654753%2FProperties%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="threads.html">threads</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="threads.html">threads</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
               </div>
             </div>
           </div>
@@ -384,6 +393,6 @@
       </div>
     </div>
 </div>
-
-</body></html>
+</body>
+</html>
 
