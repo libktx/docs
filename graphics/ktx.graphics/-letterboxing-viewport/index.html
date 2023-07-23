@@ -56,7 +56,7 @@
     <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">LetterboxingViewport</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>targetPpiX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>defaultTargetPpi<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>targetPpiY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>defaultTargetPpi<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>aspectRatio<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>4f / 3f</span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.badlogic.gdx.utils.viewport/ScalingViewport///PointingToDeclaration/">ScalingViewport</span></div><p class="paragraph">Combines <span data-unresolved-link="com.badlogic.gdx.utils.viewport/ScreenViewport///PointingToDeclaration/">screen</span> and <span data-unresolved-link="com.badlogic.gdx.utils.viewport/FitViewport///PointingToDeclaration/">fit</span> viewports. Similarly to ScreenViewport, world size is changed on each update (resize), so <a href="update.html">update</a> should be generally called with <code class="lang-kotlin">true</code> parameter (camera should be centered). Tries to keep the passed aspect ratio by applying letterboxing - horizontal or vertical black bars.</p><p class="paragraph">On contrary to regular ScreenViewport, this viewport analyzes screen density (pixel per inch ratio) to preserve correct look on every platform, including mobiles. This is very convenient for GUIs (especially when using fit viewport with the same aspect ratio for game logic rendering), as they will not be scaled when the screen is resized (comparably to using similarly to screen viewport), and yet should still look acceptable on mobile devices (comparably to using fit viewport with a fixed world size).</p><p class="paragraph">It is advised to pair this viewport with FitViewport - LetterboxingViewport can be used for the GUI, while FitViewport is excellent for the actual (2D) game rendering.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>target</span><wbr><span>Ppi</span><wbr><span><span>X</span></span></u></div></span></div><div><div class="title"><p class="paragraph">this is the targeted pixel per inch ratio on X axis, which allows to scale the viewport     correctly on different devices. Usually about 96 for desktop and WebGL platforms, 160 for mobiles.     Make sure to call <a href="update-scale.html">updateScale</a> after changing this variable.</p></div></div></div></div><div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>target</span><wbr><span>Ppi</span><wbr><span><span>Y</span></span></u></div></span></div><div><div class="title"><p class="paragraph">targeted pixel per inch ratio on Y axis. Usually about 96 for desktop and WebGL platforms, 160     for mobiles. Make sure to call <a href="update-scale.html">updateScale</a> after changing this variable.</p></div></div></div></div><div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>aspect</span><wbr><span><span>Ratio</span></span></u></div></span></div><div><div class="title"><p class="paragraph">width divided by height. Will preserve this aspect ratio by applying letterboxing.</p></div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
         <h2 class="">Constructors</h2>
@@ -71,6 +71,205 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">targetPpiX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>defaultTargetPpi<span class="token punctuation">, </span></span><span class="parameter ">targetPpiY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>defaultTargetPpi<span class="token punctuation">, </span></span><span class="parameter ">aspectRatio<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>4f / 3f</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1889177841%2FProperties%2F-1008208803" anchor-label="aspectRatio" id="1889177841%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="aspect-ratio.html"><span>aspect</span><wbr><span><span>Ratio</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1889177841%2FProperties%2F-1008208803"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="aspect-ratio.html">aspectRatio</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-961824%2FProperties%2F-1008208803" anchor-label="camera" id="-961824%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-961824%2FProperties%2F-1008208803"><span><span>camera</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-961824%2FProperties%2F-1008208803"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#-961824%2FProperties%2F-1008208803">camera</a><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.graphics/Camera///PointingToDeclaration/">Camera</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2212248%2FProperties%2F-1008208803" anchor-label="scaleX" id="-2212248%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="scale-x.html"><span>scale</span><wbr><span><span>X</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2212248%2FProperties%2F-1008208803"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="scale-x.html">scaleX</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">You can directly modify unit per pixel ratio (bypassing PPI check) by modifying this value.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="28807559%2FProperties%2F-1008208803" anchor-label="scaleY" id="28807559%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="scale-y.html"><span>scale</span><wbr><span><span>Y</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="28807559%2FProperties%2F-1008208803"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="scale-y.html">scaleY</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">You can directly modify unit per pixel ratio (bypassing PPI check) by modifying this value.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="309555625%2FProperties%2F-1008208803" anchor-label="scaling" id="309555625%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#309555625%2FProperties%2F-1008208803"><span><span>scaling</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="309555625%2FProperties%2F-1008208803"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#309555625%2FProperties%2F-1008208803">scaling</a><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils/Scaling///PointingToDeclaration/">Scaling</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1379829998%2FProperties%2F-1008208803" anchor-label="screenHeight" id="-1379829998%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1379829998%2FProperties%2F-1008208803"><span>screen</span><wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1379829998%2FProperties%2F-1008208803"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#-1379829998%2FProperties%2F-1008208803">screenHeight</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-420543845%2FProperties%2F-1008208803" anchor-label="screenWidth" id="-420543845%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-420543845%2FProperties%2F-1008208803"><span>screen</span><wbr><span><span>Width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-420543845%2FProperties%2F-1008208803"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#-420543845%2FProperties%2F-1008208803">screenWidth</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2007118295%2FProperties%2F-1008208803" anchor-label="screenX" id="-2007118295%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-2007118295%2FProperties%2F-1008208803"><span>screen</span><wbr><span><span>X</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2007118295%2FProperties%2F-1008208803"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#-2007118295%2FProperties%2F-1008208803">screenX</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1976098488%2FProperties%2F-1008208803" anchor-label="screenY" id="-1976098488%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1976098488%2FProperties%2F-1008208803"><span>screen</span><wbr><span><span>Y</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1976098488%2FProperties%2F-1008208803"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#-1976098488%2FProperties%2F-1008208803">screenY</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="732446262%2FProperties%2F-1008208803" anchor-label="targetPpiX" id="732446262%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="target-ppi-x.html"><span>target</span><wbr><span>Ppi</span><wbr><span><span>X</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="732446262%2FProperties%2F-1008208803"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="target-ppi-x.html">targetPpiX</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="763466069%2FProperties%2F-1008208803" anchor-label="targetPpiY" id="763466069%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="target-ppi-y.html"><span>target</span><wbr><span>Ppi</span><wbr><span><span>Y</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="763466069%2FProperties%2F-1008208803"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="target-ppi-y.html">targetPpiY</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1702584100%2FProperties%2F-1008208803" anchor-label="worldHeight" id="-1702584100%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1702584100%2FProperties%2F-1008208803"><span>world</span><wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1702584100%2FProperties%2F-1008208803"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#-1702584100%2FProperties%2F-1008208803">worldHeight</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="261781393%2FProperties%2F-1008208803" anchor-label="worldWidth" id="261781393%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#261781393%2FProperties%2F-1008208803"><span>world</span><wbr><span><span>Width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="261781393%2FProperties%2F-1008208803"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#261781393%2FProperties%2F-1008208803">worldWidth</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -360,205 +559,6 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="update-world-size.html"><span class="token function">updateWorldSize</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Forces update of current world size according to window size. Will try to keep the set aspect ratio.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-togglable="PROPERTY">
-        <h2 class="">Properties</h2>
-        <div class="table"><a data-name="1889177841%2FProperties%2F-1008208803" anchor-label="aspectRatio" id="1889177841%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="aspect-ratio.html"><span>aspect</span><wbr><span><span>Ratio</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1889177841%2FProperties%2F-1008208803"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="aspect-ratio.html">aspectRatio</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-961824%2FProperties%2F-1008208803" anchor-label="camera" id="-961824%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-961824%2FProperties%2F-1008208803"><span><span>camera</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-961824%2FProperties%2F-1008208803"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#-961824%2FProperties%2F-1008208803">camera</a><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.graphics/Camera///PointingToDeclaration/">Camera</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-2212248%2FProperties%2F-1008208803" anchor-label="scaleX" id="-2212248%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="scale-x.html"><span>scale</span><wbr><span><span>X</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2212248%2FProperties%2F-1008208803"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="scale-x.html">scaleX</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">You can directly modify unit per pixel ratio (bypassing PPI check) by modifying this value.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="28807559%2FProperties%2F-1008208803" anchor-label="scaleY" id="28807559%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="scale-y.html"><span>scale</span><wbr><span><span>Y</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="28807559%2FProperties%2F-1008208803"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="scale-y.html">scaleY</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">You can directly modify unit per pixel ratio (bypassing PPI check) by modifying this value.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="309555625%2FProperties%2F-1008208803" anchor-label="scaling" id="309555625%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="index.html#309555625%2FProperties%2F-1008208803"><span><span>scaling</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="309555625%2FProperties%2F-1008208803"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#309555625%2FProperties%2F-1008208803">scaling</a><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils/Scaling///PointingToDeclaration/">Scaling</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1379829998%2FProperties%2F-1008208803" anchor-label="screenHeight" id="-1379829998%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-1379829998%2FProperties%2F-1008208803"><span>screen</span><wbr><span><span>Height</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1379829998%2FProperties%2F-1008208803"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#-1379829998%2FProperties%2F-1008208803">screenHeight</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-420543845%2FProperties%2F-1008208803" anchor-label="screenWidth" id="-420543845%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-420543845%2FProperties%2F-1008208803"><span>screen</span><wbr><span><span>Width</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-420543845%2FProperties%2F-1008208803"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#-420543845%2FProperties%2F-1008208803">screenWidth</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-2007118295%2FProperties%2F-1008208803" anchor-label="screenX" id="-2007118295%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-2007118295%2FProperties%2F-1008208803"><span>screen</span><wbr><span><span>X</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2007118295%2FProperties%2F-1008208803"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#-2007118295%2FProperties%2F-1008208803">screenX</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1976098488%2FProperties%2F-1008208803" anchor-label="screenY" id="-1976098488%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-1976098488%2FProperties%2F-1008208803"><span>screen</span><wbr><span><span>Y</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1976098488%2FProperties%2F-1008208803"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#-1976098488%2FProperties%2F-1008208803">screenY</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="732446262%2FProperties%2F-1008208803" anchor-label="targetPpiX" id="732446262%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="target-ppi-x.html"><span>target</span><wbr><span>Ppi</span><wbr><span><span>X</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="732446262%2FProperties%2F-1008208803"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="target-ppi-x.html">targetPpiX</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="763466069%2FProperties%2F-1008208803" anchor-label="targetPpiY" id="763466069%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="target-ppi-y.html"><span>target</span><wbr><span>Ppi</span><wbr><span><span>Y</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="763466069%2FProperties%2F-1008208803"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="target-ppi-y.html">targetPpiY</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1702584100%2FProperties%2F-1008208803" anchor-label="worldHeight" id="-1702584100%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-1702584100%2FProperties%2F-1008208803"><span>world</span><wbr><span><span>Height</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1702584100%2FProperties%2F-1008208803"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#-1702584100%2FProperties%2F-1008208803">worldHeight</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="261781393%2FProperties%2F-1008208803" anchor-label="worldWidth" id="261781393%2FProperties%2F-1008208803" data-filterable-set=":graphics:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":graphics:dokkaHtmlPartial/main" data-filterable-set=":graphics:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="index.html#261781393%2FProperties%2F-1008208803"><span>world</span><wbr><span><span>Width</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="261781393%2FProperties%2F-1008208803"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":graphics:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#261781393%2FProperties%2F-1008208803">worldWidth</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
                 </div>
               </div>
             </div>

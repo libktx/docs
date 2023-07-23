@@ -56,7 +56,7 @@
     <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">AsyncExecutorDispatcher</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>executor<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils.async/AsyncExecutor///PointingToDeclaration/">AsyncExecutor</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>threads<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1</span></span><span class="token punctuation">)</span> : <a href="../-abstract-ktx-dispatcher/index.html">AbstractKtxDispatcher</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html">Closeable</a>, <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span></div><p class="paragraph">A <span data-unresolved-link="kotlinx.coroutines/CoroutineDispatcher///PointingToDeclaration/">CoroutineDispatcher</span> that wraps around libGDX <span data-unresolved-link="com.badlogic.gdx.utils.async/AsyncExecutor///PointingToDeclaration/">AsyncExecutor</span> instance (available via <a href="executor.html">executor</a> property) to execute tasks asynchronously. <a href="threads.html">threads</a> property is purely informational and cannot be verified, since <span data-unresolved-link="com.badlogic.gdx.utils.async/AsyncExecutor///PointingToDeclaration/">AsyncExecutor</span> does not expose the amount of threads it uses internally; provide a valid <a href="threads.html">threads</a> amount during initiation or use the official factory methods to prevent from mismatches with the actual max threads amount.</p><p class="paragraph">Uses libGDX <span data-unresolved-link="com.badlogic.gdx.utils/Timer///PointingToDeclaration/">Timer</span> API to support <a href="../../../async/ktx.async/-async-executor-dispatcher/delay.html">delay</a>.</p></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
         <h2 class="">Constructors</h2>
@@ -71,6 +71,55 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">executor<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils.async/AsyncExecutor///PointingToDeclaration/">AsyncExecutor</span><span class="token punctuation">, </span></span><span class="parameter ">threads<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-381102529%2FProperties%2F396876254" anchor-label="executor" id="-381102529%2FProperties%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="executor.html"><span><span>executor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-381102529%2FProperties%2F396876254"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="executor.html">executor</a><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils.async/AsyncExecutor///PointingToDeclaration/">AsyncExecutor</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1762250447%2FProperties%2F396876254" anchor-label="key" id="-1762250447%2FProperties%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-main-dispatcher/index.html#-1762250447%2FProperties%2F396876254"><span><span>key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1762250447%2FProperties%2F396876254"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-main-dispatcher/index.html#-1762250447%2FProperties%2F396876254">key</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/-key/index.html">CoroutineContext.Key</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1371654753%2FProperties%2F396876254" anchor-label="threads" id="-1371654753%2FProperties%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="threads.html"><span><span>threads</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1371654753%2FProperties%2F396876254"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="threads.html">threads</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -330,55 +379,6 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-togglable="PROPERTY">
-        <h2 class="">Properties</h2>
-        <div class="table"><a data-name="-381102529%2FProperties%2F396876254" anchor-label="executor" id="-381102529%2FProperties%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="executor.html"><span><span>executor</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-381102529%2FProperties%2F396876254"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="executor.html">executor</a><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils.async/AsyncExecutor///PointingToDeclaration/">AsyncExecutor</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1762250447%2FProperties%2F396876254" anchor-label="key" id="-1762250447%2FProperties%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../-main-dispatcher/index.html#-1762250447%2FProperties%2F396876254"><span><span>key</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1762250447%2FProperties%2F396876254"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-main-dispatcher/index.html#-1762250447%2FProperties%2F396876254">key</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/-key/index.html">CoroutineContext.Key</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1371654753%2FProperties%2F396876254" anchor-label="threads" id="-1371654753%2FProperties%2F396876254" data-filterable-set=":async:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":async:dokkaHtmlPartial/main" data-filterable-set=":async:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="threads.html"><span><span>threads</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1371654753%2FProperties%2F396876254"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="threads.html">threads</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
                 </div>
               </div>
             </div>

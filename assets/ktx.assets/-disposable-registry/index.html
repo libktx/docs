@@ -56,8 +56,27 @@
     <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">DisposableRegistry</a> : <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span></div><p class="paragraph">Interface describing a container for <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span>s that provides functions for disposing all its registered items. An implementing class's Disposable declarations can be tagged with <a href="also-register.html">.alsoRegister()</a> to conveniently register them as they are instantiated and assigned.</p><p class="paragraph">Calling <a href="dispose.html">dispose</a> on the registry will call <span data-unresolved-link="com.badlogic.gdx.utils/Disposable/dispose/#/PointingToDeclaration/">Disposable.dispose</span> on all its registered members.</p><p class="paragraph">The existing implementation <a href="../-disposable-container/index.html">DisposableContainer</a> can be extended or used as a delegate to implement this interface.</p><p class="paragraph">Note that since <a href="index.html">DisposableRegistry</a> implements <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span>, registries can be stacked within each other - a registry might contain other registries, keeping track of nested assets.</p><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-disposable-container/index.html">DisposableContainer</a></div></span></div><div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
     <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1552526479%2FProperties%2F493088805" anchor-label="registeredDisposables" id="-1552526479%2FProperties%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="registered-disposables.html"><span>registered</span><wbr><span><span>Disposables</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1552526479%2FProperties%2F493088805"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="registered-disposables.html">registeredDisposables</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">A copy of the registered Disposables. The order does not necessarily represent the registration order.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div data-togglable="FUNCTION">
         <h2 class="">Functions</h2>
         <div class="table"><a data-name="-1745828693%2FFunctions%2F493088805" anchor-label="alsoDeregister" id="-1745828693%2FFunctions%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
@@ -176,25 +195,6 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="register.html"><span class="token function">register</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">disposable<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Registers <a href="register.html">disposable</a> with this registry.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-togglable="PROPERTY">
-        <h2 class="">Properties</h2>
-        <div class="table"><a data-name="-1552526479%2FProperties%2F493088805" anchor-label="registeredDisposables" id="-1552526479%2FProperties%2F493088805" data-filterable-set=":assets:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":assets:dokkaHtmlPartial/main" data-filterable-set=":assets:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="registered-disposables.html"><span>registered</span><wbr><span><span>Disposables</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1552526479%2FProperties%2F493088805"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="registered-disposables.html">registeredDisposables</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">A copy of the registered Disposables. The order does not necessarily represent the registration order.</p></div></div></div>
                 </div>
               </div>
             </div>

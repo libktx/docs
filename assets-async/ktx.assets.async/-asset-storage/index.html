@@ -56,7 +56,7 @@
     <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">AssetStorage</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>asyncContext<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a><span class="token operator"> = </span>newSingleThreadAsyncContext(threadName = "AssetStorage-Thread")<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fileResolver<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.assets.loaders/FileHandleResolver///PointingToDeclaration/">FileHandleResolver</span><span class="token operator"> = </span>InternalFileHandleResolver()<span class="token punctuation">, </span></span><span class="parameter ">useDefaultLoaders<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>silenceAssetManagerWarnings<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span></div><p class="paragraph">Asynchronous asset loader based on coroutines API. An <a href="../../../assets-async/com.badlogic.gdx.assets/-asset-manager/index.html">AssetManager</a> alternative.</p><p class="paragraph">Note that <a href="../../../async/ktx.async/-ktx-async/initiate.html">KtxAsync.initiate</a> must be called on the rendering thread before creating an <a href="index.html">AssetStorage</a>.</p><p class="paragraph"><a href="async-context.html">asyncContext</a> is used to perform asynchronous file loading. Defaults to a single-threaded context using an <span data-unresolved-link="com.badlogic.gdx.utils.async/AsyncExecutor///PointingToDeclaration/">AsyncExecutor</span>. See <a href="../../../async/ktx.async/index.html">newSingleThreadAsyncContext</a> or <a href="../../../async/ktx.async/index.html">ktx.async.newAsyncContext</a> functions to create a custom loading context. Multithreaded contexts are fully supported and might boost loading performance if the assets are loaded asynchronously in parallel.</p><p class="paragraph"><a href="file-resolver.html">fileResolver</a> determines how file paths are interpreted. Defaults to <span data-unresolved-link="com.badlogic.gdx.assets.loaders.resolvers/InternalFileHandleResolver///PointingToDeclaration/">InternalFileHandleResolver</span>, which loads internal files.</p><p class="paragraph">If <code class="lang-kotlin">useDefaultLoaders</code> is true (which is the default), all default libGDX <span data-unresolved-link="com.badlogic.gdx.assets.loaders/AssetLoader///PointingToDeclaration/">AssetLoader</span> implementations will be registered. If <a href="silence-asset-manager-warnings.html">silenceAssetManagerWarnings</a> is false (which is the default), all non-fatal asset loading issues caused by asset loaders will be logged as errors. It is encouraged not to change this setting to true during the development to avoid potential errors.</p></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
         <h2 class="">Constructors</h2>
@@ -71,6 +71,85 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">asyncContext<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a><span class="token operator"> = </span>newSingleThreadAsyncContext(threadName = "AssetStorage-Thread")<span class="token punctuation">, </span></span><span class="parameter ">fileResolver<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.assets.loaders/FileHandleResolver///PointingToDeclaration/">FileHandleResolver</span><span class="token operator"> = </span>InternalFileHandleResolver()<span class="token punctuation">, </span></span><span class="parameter ">useDefaultLoaders<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">silenceAssetManagerWarnings<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="559219397%2FProperties%2F-1707403626" anchor-label="asyncContext" id="559219397%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="async-context.html"><span>async</span><wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="559219397%2FProperties%2F-1707403626"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="async-context.html">asyncContext</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="404000662%2FProperties%2F-1707403626" anchor-label="fileResolver" id="404000662%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="file-resolver.html"><span>file</span><wbr><span><span>Resolver</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="404000662%2FProperties%2F-1707403626"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="file-resolver.html">fileResolver</a><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.assets.loaders/FileHandleResolver///PointingToDeclaration/">FileHandleResolver</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1846207400%2FProperties%2F-1707403626" anchor-label="logger" id="1846207400%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="logger.html"><span><span>logger</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1846207400%2FProperties%2F-1707403626"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="logger.html">logger</a><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils/Logger///PointingToDeclaration/">Logger</span></div><div class="brief "><p class="paragraph">libGDX <span data-unresolved-link="com.badlogic.gdx.utils/Logger///PointingToDeclaration/">Logger</span> used internally, usually to report issues.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-672358677%2FProperties%2F-1707403626" anchor-label="progress" id="-672358677%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="progress.html"><span><span>progress</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-672358677%2FProperties%2F-1707403626"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="progress.html">progress</a><span class="token operator">: </span><a href="../-loading-progress/index.html">LoadingProgress</a></div><div class="brief "><p class="paragraph">Allows tracking progress of the loaded assets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="234757229%2FProperties%2F-1707403626" anchor-label="silenceAssetManagerWarnings" id="234757229%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="silence-asset-manager-warnings.html"><span>silence</span><wbr><span>Asset</span><wbr><span>Manager</span><wbr><span><span>Warnings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="234757229%2FProperties%2F-1707403626"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="silence-asset-manager-warnings.html">silenceAssetManagerWarnings</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -405,85 +484,6 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="unload.html"><span class="token function">unload</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">descriptor<span class="token operator">: </span><a href="../../../assets-async/com.badlogic.gdx.assets/-asset-descriptor/index.html">AssetDescriptor</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Removes asset described by the <a href="unload.html">descriptor</a> and all of its dependencies. Does nothing if asset was not loaded in the first place. Will not dispose of the asset if it still is referenced by any other assets. Any removed assets that implement <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span> will be disposed.</p></div><div class="symbol monospace"><span class="token keyword">inline suspend </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="unload.html">T</a><span class="token operator">&gt; </span><a href="unload.html"><span class="token function">unload</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Removes asset loaded with the given <a href="unload.html">path</a> and <a href="unload.html">T</a> type and all of its dependencies. Does nothing if asset was not loaded in the first place. Will not dispose of the asset if it still is referenced by any other assets. Any removed assets that implement <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span> will be disposed.</p></div><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="unload.html"><span class="token function">unload</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">identifier<span class="token operator">: </span><a href="../-identifier/index.html">Identifier</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Removes asset loaded with the given <a href="unload.html">identifier</a> and all of its dependencies. Does nothing if asset was not loaded in the first place. Will not dispose of the asset if it still is referenced by any other assets. Any removed assets that implement <span data-unresolved-link="com.badlogic.gdx.utils/Disposable///PointingToDeclaration/">Disposable</span> will be disposed.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-togglable="PROPERTY">
-        <h2 class="">Properties</h2>
-        <div class="table"><a data-name="559219397%2FProperties%2F-1707403626" anchor-label="asyncContext" id="559219397%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="async-context.html"><span>async</span><wbr><span><span>Context</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="559219397%2FProperties%2F-1707403626"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="async-context.html">asyncContext</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="404000662%2FProperties%2F-1707403626" anchor-label="fileResolver" id="404000662%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="file-resolver.html"><span>file</span><wbr><span><span>Resolver</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="404000662%2FProperties%2F-1707403626"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="file-resolver.html">fileResolver</a><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.assets.loaders/FileHandleResolver///PointingToDeclaration/">FileHandleResolver</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1846207400%2FProperties%2F-1707403626" anchor-label="logger" id="1846207400%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="logger.html"><span><span>logger</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1846207400%2FProperties%2F-1707403626"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="logger.html">logger</a><span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.utils/Logger///PointingToDeclaration/">Logger</span></div><div class="brief "><p class="paragraph">libGDX <span data-unresolved-link="com.badlogic.gdx.utils/Logger///PointingToDeclaration/">Logger</span> used internally, usually to report issues.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-672358677%2FProperties%2F-1707403626" anchor-label="progress" id="-672358677%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="progress.html"><span><span>progress</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-672358677%2FProperties%2F-1707403626"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="progress.html">progress</a><span class="token operator">: </span><a href="../-loading-progress/index.html">LoadingProgress</a></div><div class="brief "><p class="paragraph">Allows tracking progress of the loaded assets.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="234757229%2FProperties%2F-1707403626" anchor-label="silenceAssetManagerWarnings" id="234757229%2FProperties%2F-1707403626" data-filterable-set=":assets-async:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":assets-async:dokkaHtmlPartial/main" data-filterable-set=":assets-async:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="silence-asset-manager-warnings.html"><span>silence</span><wbr><span>Asset</span><wbr><span>Manager</span><wbr><span><span>Warnings</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="234757229%2FProperties%2F-1707403626"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":assets-async:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="silence-asset-manager-warnings.html">silenceAssetManagerWarnings</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
                 </div>
               </div>
             </div>
