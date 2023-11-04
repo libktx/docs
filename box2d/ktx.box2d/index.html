@@ -1,9 +1,11 @@
 <!doctype html>
-<html>
+<html class="no-js">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>ktx.box2d</title>
-<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
     if (storage == null) {
         const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
         if (osDarkSchemePreferred === true) {
@@ -16,12 +18,13 @@
         }
     }
     </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
 <script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
 <link href="../../styles/style.css" rel="Stylesheet">
-<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
 <link href="../../styles/main.css" rel="Stylesheet">
 <link href="../../styles/prism.css" rel="Stylesheet">
 <link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
 <script type="text/javascript" src="../../scripts/clipboard.js" async></script>
 <script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
 <script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
@@ -29,26 +32,32 @@
 <script type="text/javascript" src="../../scripts/prism.js" async></script>
 <script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
 <body>
-<div class="navigation-wrapper" id="navigation-wrapper">
-    <div id="leftToggler"><span class="icon-toggler"></span></div>
-    <div class="library-name">
-<a href="../../index.html">
-<span>ktx</span>            </a>    </div>
-    <div>
-    </div>
-    <div class="pull-right d-flex">
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../index.html">
+                            ktx
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
         <div class="filter-section" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":box2d:dokkaHtmlPartial/main">jvm</button>
         </div>
-        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
-        <div id="searchBar"></div>
     </div>
-</div>
-<div id="container">
-    <div id="leftColumn">
-        <div id="sideMenu"></div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
     </div>
-    <div id="main">
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
 <div class="main-content" data-page-type="package" id="content" pageids="box2d::ktx.box2d////PointingToDeclaration//-334584579">
   <div class="breadcrumbs"><a href="../index.html">box2d</a><span class="delimiter">/</span><span class="current">ktx.box2d</span></div>
   <div class="cover ">
@@ -108,13 +117,13 @@
           <div class="table-row" data-filterable-current=":box2d:dokkaHtmlPartial/main" data-filterable-set=":box2d:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-786162494%2FClasslikes%2F-334584579"><span>Ktx</span><wbr><span>Query</span><wbr><span><span>Callback</span></span></a></div>
+                  <div><a href="-ktx-query-callback/index.html"><span>Ktx</span><wbr><span>Query</span><wbr><span><span>Callback</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-786162494%2FClasslikes%2F-334584579"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":box2d:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="index.html#-786162494%2FClasslikes%2F-334584579">KtxQueryCallback</a><span class="token operator"> = </span><span class="token punctuation">(</span><span class="token keyword"></span>fixture<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.physics.box2d/Fixture///PointingToDeclaration/">Fixture</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Callback lambda for querying with an AABB.</p><p class="paragraph">This lambda is called for each fixture the AABB overlaps.</p><p class="paragraph">There is no guarantee on the order of the callback is called.</p><p class="paragraph">The lambda returns whether to terminate the query.</p><p class="paragraph">Can be used in place of <span data-unresolved-link="com.badlogic.gdx.physics.box2d/QueryCallback///PointingToDeclaration/">com.badlogic.gdx.physics.box2d.QueryCallback</span> via Kotlin SAM conversion.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":box2d:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-ktx-query-callback/index.html">KtxQueryCallback</a><span class="token operator"> = </span><span class="token punctuation">(</span><span class="token keyword"></span>fixture<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.physics.box2d/Fixture///PointingToDeclaration/">Fixture</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Callback lambda for querying with an AABB.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -123,13 +132,13 @@
           <div class="table-row" data-filterable-current=":box2d:dokkaHtmlPartial/main" data-filterable-set=":box2d:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="index.html#-1389994079%2FClasslikes%2F-334584579"><span>Ktx</span><wbr><span>Ray</span><wbr><span>Cast</span><wbr><span><span>Callback</span></span></a></div>
+                  <div><a href="-ktx-ray-cast-callback/index.html"><span>Ktx</span><wbr><span>Ray</span><wbr><span>Cast</span><wbr><span><span>Callback</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1389994079%2FClasslikes%2F-334584579"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":box2d:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="index.html#-1389994079%2FClasslikes%2F-334584579">KtxRayCastCallback</a><span class="token operator"> = </span><span class="token punctuation">(</span><span class="token keyword"></span>fixture<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.physics.box2d/Fixture///PointingToDeclaration/">Fixture</span><span class="token punctuation">, </span><span class="token keyword"></span>point<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.math/Vector2///PointingToDeclaration/">Vector2</span><span class="token punctuation">, </span><span class="token keyword"></span>normal<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.math/Vector2///PointingToDeclaration/">Vector2</span><span class="token punctuation">, </span><span class="token keyword"></span>fraction<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Callback lambda for ray-casts.</p><p class="paragraph">This lambda is called for each fixture the ray-cast hits.</p><p class="paragraph">There is no guarantee on the order of the callback is called, e.g. the first call to the lambda is not necessarily the nearest to the start point of the ray.</p><p class="paragraph">The lambda accepts these parameters:</p><ul><li><p class="paragraph"><span data-unresolved-link="com.badlogic.gdx.physics.box2d/Fixture///PointingToDeclaration/">Fixture</span>, the fixture hit by the ray.</p></li><li><p class="paragraph"><span data-unresolved-link="com.badlogic.gdx.math/Vector2///PointingToDeclaration/">Vector2</span>, the point of initial intersection.</p></li><li><p class="paragraph"><span data-unresolved-link="com.badlogic.gdx.math/Vector2///PointingToDeclaration/">Vector2</span>, the normal vector at the point of intersection.</p></li><li><p class="paragraph"><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>, the fraction of the distance from <code class="lang-kotlin">start</code> to <code class="lang-kotlin">end</code> that the intersection point is at.</p></li></ul><p class="paragraph">The lambda returns the new length of the ray as a fraction of the distance between the start and end or the ray. Common values are:</p><ul><li><p class="paragraph"><code class="lang-kotlin">-1f</code>, ignore this fixture and continue.</p></li><li><p class="paragraph"><code class="lang-kotlin">0f</code>, terminate the ray cast.</p></li><li><p class="paragraph">A fraction, clip the length of the ray to this point.</p></li><li><p class="paragraph"><code class="lang-kotlin">1f</code>, don't clip the ray and continue.</p></li></ul><p class="paragraph">Can be used in place of <span data-unresolved-link="com.badlogic.gdx.physics.box2d/RayCastCallback///PointingToDeclaration/">com.badlogic.gdx.physics.box2d.RayCastCallback</span> via Kotlin SAM conversion.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":box2d:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-ktx-ray-cast-callback/index.html">KtxRayCastCallback</a><span class="token operator"> = </span><span class="token punctuation">(</span><span class="token keyword"></span>fixture<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.physics.box2d/Fixture///PointingToDeclaration/">Fixture</span><span class="token punctuation">, </span><span class="token keyword"></span>point<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.math/Vector2///PointingToDeclaration/">Vector2</span><span class="token punctuation">, </span><span class="token keyword"></span>normal<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.math/Vector2///PointingToDeclaration/">Vector2</span><span class="token punctuation">, </span><span class="token keyword"></span>fraction<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Callback lambda for ray-casts.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -144,7 +153,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":box2d:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-query/index.html">Query</a></div><div class="brief "><p class="paragraph">Stores constants that can be returned by <a href="index.html#-786162494%2FClasslikes%2F-334584579">KtxQueryCallback</a> to control its behavior.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":box2d:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-query/index.html">Query</a></div><div class="brief "><p class="paragraph">Stores constants that can be returned by <a href="-ktx-query-callback/index.html">KtxQueryCallback</a> to control its behavior.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -159,7 +168,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":box2d:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-ray-cast/index.html">RayCast</a></div><div class="brief "><p class="paragraph">Stores constants that can be returned by <a href="index.html#-1389994079%2FClasslikes%2F-334584579">KtxRayCastCallback</a> to control its behavior.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":box2d:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-ray-cast/index.html">RayCast</a></div><div class="brief "><p class="paragraph">Stores constants that can be returned by <a href="-ktx-ray-cast-callback/index.html">KtxRayCastCallback</a> to control its behavior.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -482,7 +491,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":box2d:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.physics.box2d/World///PointingToDeclaration/">World</span><span class="token punctuation">.</span><a href="query.html"><span class="token function">query</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lowerX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">lowerY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">upperX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">upperY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="index.html#-786162494%2FClasslikes%2F-334584579">KtxQueryCallback</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Query the world for all fixtures that potentially overlap the provided AABB (Axis-Aligned Bounding Box).</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":box2d:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.physics.box2d/World///PointingToDeclaration/">World</span><span class="token punctuation">.</span><a href="query.html"><span class="token function">query</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lowerX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">lowerY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">upperX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">upperY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="-ktx-query-callback/index.html">KtxQueryCallback</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Query the world for all fixtures that potentially overlap the provided AABB (Axis-Aligned Bounding Box).</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -497,7 +506,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":box2d:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.physics.box2d/World///PointingToDeclaration/">World</span><span class="token punctuation">.</span><a href="ray-cast.html"><span class="token function">rayCast</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">start<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.math/Vector2///PointingToDeclaration/">Vector2</span><span class="token punctuation">, </span></span><span class="parameter ">end<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.math/Vector2///PointingToDeclaration/">Vector2</span><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="index.html#-1389994079%2FClasslikes%2F-334584579">KtxRayCastCallback</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.physics.box2d/World///PointingToDeclaration/">World</span><span class="token punctuation">.</span><a href="ray-cast.html"><span class="token function">rayCast</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">startX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">startY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">endX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">endY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="index.html#-1389994079%2FClasslikes%2F-334584579">KtxRayCastCallback</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Ray-cast the world for all fixtures in the path of the ray.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":box2d:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.physics.box2d/World///PointingToDeclaration/">World</span><span class="token punctuation">.</span><a href="ray-cast.html"><span class="token function">rayCast</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">start<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.math/Vector2///PointingToDeclaration/">Vector2</span><span class="token punctuation">, </span></span><span class="parameter ">end<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.math/Vector2///PointingToDeclaration/">Vector2</span><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="-ktx-ray-cast-callback/index.html">KtxRayCastCallback</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="com.badlogic.gdx.physics.box2d/World///PointingToDeclaration/">World</span><span class="token punctuation">.</span><a href="ray-cast.html"><span class="token function">rayCast</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">startX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">startY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">endX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">endY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">callback<span class="token operator">: </span><a href="-ktx-ray-cast-callback/index.html">KtxRayCastCallback</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Ray-cast the world for all fixtures in the path of the ray.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -570,8 +579,9 @@
       <div class="footer">
         <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
       </div>
+            </div>
+        </div>
     </div>
-</div>
 </body>
 </html>
 

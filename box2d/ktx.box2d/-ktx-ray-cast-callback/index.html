@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>KtxRayCastCallback</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            ktx
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":box2d:dokkaHtmlPartial/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="box2d::ktx.box2d/KtxRayCastCallback///PointingToDeclaration//-334584579">
+  <div class="breadcrumbs"><a href="../../index.html">box2d</a><span class="delimiter">/</span><a href="../index.html">ktx.box2d</a><span class="delimiter">/</span><span class="current">KtxRayCastCallback</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Ktx</span><wbr><span>Ray</span><wbr><span>Cast</span><wbr><span><span>Callback</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":box2d:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="index.html">KtxRayCastCallback</a><span class="token operator"> = </span><span class="token punctuation">(</span><span class="token keyword"></span>fixture<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.physics.box2d/Fixture///PointingToDeclaration/">Fixture</span><span class="token punctuation">, </span><span class="token keyword"></span>point<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.math/Vector2///PointingToDeclaration/">Vector2</span><span class="token punctuation">, </span><span class="token keyword"></span>normal<span class="token operator">: </span><span data-unresolved-link="com.badlogic.gdx.math/Vector2///PointingToDeclaration/">Vector2</span><span class="token punctuation">, </span><span class="token keyword"></span>fraction<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><p class="paragraph">Callback lambda for ray-casts.</p><p class="paragraph">This lambda is called for each fixture the ray-cast hits.</p><p class="paragraph">There is no guarantee on the order of the callback is called, e.g. the first call to the lambda is not necessarily the nearest to the start point of the ray.</p><p class="paragraph">The lambda accepts these parameters:</p><ul><li><p class="paragraph"><span data-unresolved-link="com.badlogic.gdx.physics.box2d/Fixture///PointingToDeclaration/">Fixture</span>, the fixture hit by the ray.</p></li><li><p class="paragraph"><span data-unresolved-link="com.badlogic.gdx.math/Vector2///PointingToDeclaration/">Vector2</span>, the point of initial intersection.</p></li><li><p class="paragraph"><span data-unresolved-link="com.badlogic.gdx.math/Vector2///PointingToDeclaration/">Vector2</span>, the normal vector at the point of intersection.</p></li><li><p class="paragraph"><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>, the fraction of the distance from <code class="lang-kotlin">start</code> to <code class="lang-kotlin">end</code> that the intersection point is at.</p></li></ul><p class="paragraph">The lambda returns the new length of the ray as a fraction of the distance between the start and end or the ray. Common values are:</p><ul><li><p class="paragraph"><code class="lang-kotlin">-1f</code>, ignore this fixture and continue.</p></li><li><p class="paragraph"><code class="lang-kotlin">0f</code>, terminate the ray cast.</p></li><li><p class="paragraph">A fraction, clip the length of the ray to this point.</p></li><li><p class="paragraph"><code class="lang-kotlin">1f</code>, don't clip the ray and continue.</p></li></ul><p class="paragraph">Can be used in place of <span data-unresolved-link="com.badlogic.gdx.physics.box2d/RayCastCallback///PointingToDeclaration/">com.badlogic.gdx.physics.box2d.RayCastCallback</span> via Kotlin SAM conversion.</p><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":box2d:dokkaHtmlPartial/main" data-filterable-set=":box2d:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-ray-cast/index.html"><span>Ray</span><wbr><span><span>Cast</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":box2d:dokkaHtmlPartial/main" data-filterable-set=":box2d:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../ray-cast.html"><span>ray</span><wbr><span><span>Cast</span></span></a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"></div>
+    <div class="tabs-section-body"></div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
